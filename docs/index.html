@@ -85,6 +85,35 @@
       color: var(--muted);
     }
 
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .filter-btn {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.88rem;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
     .grid {
       display: grid;
       gap: 18px;
@@ -142,6 +171,16 @@
     .tag.job-type {
       background: #e8e4f0;
       color: #5b21b6;
+    }
+
+    .tag.protected {
+      background: #fde8e8;
+      color: #b91c1c;
+    }
+
+    .tag.category {
+      background: #e0f2fe;
+      color: #075985;
     }
 
     .section-title {
@@ -245,6 +284,8 @@
       </div>
     </header>
 
+    <div class="filters" id="filters"></div>
+
     <main class="grid" id="grid"></main>
   </div>
 
@@ -252,6 +293,18 @@
     const grid = document.getElementById("grid");
     const statCount = document.getElementById("stat-count");
     const statRange = document.getElementById("stat-range");
+    const filters = document.getElementById("filters");
+    const CATEGORY_ORDER = [
+      "All",
+      "Doctor",
+      "Nurse",
+      "Pharmacist",
+      "Medical Laboratory Scientist",
+      "Dentist",
+      "Other",
+    ];
+    let activeCategory = "All";
+    let allJobs = [];
 
     function safeText(text) {
       return (text || "").toString().trim();
@@ -305,6 +358,212 @@
       }
     }
 
+    function normalizeCategory(category) {
+      const raw = safeText(category).toLowerCase();
+      if (!raw) return "Other";
+      if (raw.includes("medical laboratory") || (raw.includes("laboratory") && raw.includes("scientist"))) {
+        return "Medical Laboratory Scientist";
+      }
+      if (raw.includes("dentist") || raw.includes("dental")) return "Dentist";
+      if (raw.includes("pharmacist")) return "Pharmacist";
+      if (raw.includes("nurse") || raw.includes("midwife")) return "Nurse";
+      if (raw.includes("doctor") || raw.includes("physician") || raw.includes("medical officer")) return "Doctor";
+      return "Other";
+    }
+
+    function updateStats(list) {
+      statCount.querySelector("strong").textContent = String(list.length);
+      const dates = list.map(j => j.date_posted).filter(Boolean).sort();
+      if (dates.length) {
+        const oldest = formatDate(dates[0]);
+        const newest = formatDate(dates[dates.length - 1]);
+        statRange.querySelector("strong").textContent = `${oldest} to ${newest}`;
+      } else {
+        statRange.querySelector("strong").textContent = "Unknown";
+      }
+    }
+
+    function renderFilters() {
+      const counts = {};
+      CATEGORY_ORDER.forEach(c => { counts[c] = 0; });
+      allJobs.forEach(j => {
+        const cat = normalizeCategory(j.job_category);
+        counts[cat] = (counts[cat] || 0) + 1;
+        counts.All += 1;
+      });
+
+      filters.innerHTML = "";
+      CATEGORY_ORDER.forEach(cat => {
+        const btn = document.createElement("button");
+        const count = cat === "All" ? allJobs.length : (counts[cat] || 0);
+        btn.className = `filter-btn${cat === activeCategory ? " active" : ""}`;
+        btn.textContent = `${cat} (${count})`;
+        btn.addEventListener("click", () => {
+          activeCategory = cat;
+          renderJobs();
+          renderFilters();
+        });
+        filters.appendChild(btn);
+      });
+    }
+
+    function renderJobs() {
+      const list = activeCategory === "All"
+        ? allJobs
+        : allJobs.filter(j => normalizeCategory(j.job_category) === activeCategory);
+      grid.innerHTML = "";
+      updateStats(list);
+
+      list.forEach(j => {
+        const card = document.createElement("article");
+        card.className = "card";
+
+        // Title
+        const title = document.createElement("h3");
+        title.className = "title";
+        title.textContent = safeText(j.job_title) || "Untitled role";
+
+        // Meta
+        const meta = document.createElement("div");
+        meta.className = "meta";
+        const company = safeText(j.company);
+        const location = safeText(j.location);
+        meta.textContent = [company, location].filter(Boolean).join(" • ") || "Company not listed";
+
+        // Tags
+        const tags = document.createElement("div");
+        tags.className = "tags";
+
+        const postedTag = document.createElement("div");
+        postedTag.className = "tag";
+        const postedDate = formatDate(j.date_posted);
+        postedTag.textContent = postedDate ? `Posted ${postedDate}` : "Date unknown";
+        tags.appendChild(postedTag);
+
+        const categoryTag = normalizeCategory(j.job_category);
+        if (categoryTag && categoryTag !== "Other") {
+          const catTag = document.createElement("div");
+          catTag.className = "tag category";
+          catTag.textContent = categoryTag;
+          tags.appendChild(catTag);
+        }
+
+        if (j.job_type && safeText(j.job_type)) {
+          const typeTag = document.createElement("div");
+          typeTag.className = "tag job-type";
+          typeTag.textContent = safeText(j.job_type);
+          tags.appendChild(typeTag);
+        }
+
+        if (j.deadline && safeText(j.deadline)) {
+          const deadlineTag = document.createElement("div");
+          deadlineTag.className = "tag deadline";
+          const deadlineDate = formatDate(j.deadline);
+          deadlineTag.textContent = `Closes ${deadlineDate || j.deadline}`;
+          tags.appendChild(deadlineTag);
+        }
+
+        if (j.email_protected) {
+          const protectedTag = document.createElement("div");
+          protectedTag.className = "tag protected";
+          protectedTag.textContent = "Email protected";
+          tags.appendChild(protectedTag);
+        }
+
+        // Salary
+        const salary = document.createElement("div");
+        salary.className = "salary";
+        salary.textContent = safeText(j.salary) || "Salary not listed";
+
+        // Divider
+        const divider1 = document.createElement("div");
+        divider1.className = "divider";
+
+        // Requirements
+        const reqLabel = document.createElement("div");
+        reqLabel.className = "section-title";
+        reqLabel.textContent = "Requirements";
+
+        const reqWrap = document.createElement("div");
+        addList(reqWrap, j.requirements);
+
+        // Responsibilities (if present)
+        let respLabel, respWrap;
+        if (j.responsibilities && j.responsibilities.length > 0) {
+          respLabel = document.createElement("div");
+          respLabel.className = "section-title";
+          respLabel.textContent = "Responsibilities";
+
+          respWrap = document.createElement("div");
+          addList(respWrap, j.responsibilities);
+        }
+
+        // How to Apply
+        const applyLabel = document.createElement("div");
+        applyLabel.className = "section-title";
+        applyLabel.textContent = "How to Apply";
+
+        const applyWrap = document.createElement("div");
+        const applyItems = Array.isArray(j.how_to_apply) ? j.how_to_apply.slice() : [];
+        if (j.email_protected && applyItems.length === 0) {
+          applyItems.push("Email protected – see original listing");
+        }
+        addList(applyWrap, applyItems);
+
+        // Contact info
+        let contactDiv;
+        const email = safeText(j.contact_email);
+        const phone = safeText(j.contact_phone);
+        if (email || phone) {
+          contactDiv = document.createElement("div");
+          contactDiv.className = "contact";
+          const parts = [];
+          if (email) parts.push(`<a href="mailto:${email}">${email}</a>`);
+          if (phone) parts.push(phone);
+          contactDiv.innerHTML = parts.join(" · ");
+        }
+
+        // Apply button
+        const applyUrl = safeText(j.apply_url);
+        const applyBtn = document.createElement("a");
+        applyBtn.className = "apply-btn";
+        if (applyUrl) {
+          applyBtn.href = applyUrl;
+          applyBtn.target = "_blank";
+          applyBtn.rel = "noopener noreferrer";
+          applyBtn.textContent = "Apply Now →";
+        } else {
+          applyBtn.className = "apply-btn disabled";
+          applyBtn.textContent = "No application link";
+        }
+
+        // Build card
+        card.appendChild(title);
+        card.appendChild(meta);
+        card.appendChild(tags);
+        card.appendChild(salary);
+        card.appendChild(divider1);
+        card.appendChild(reqLabel);
+        card.appendChild(reqWrap);
+        
+        if (respLabel && respWrap) {
+          card.appendChild(respLabel);
+          card.appendChild(respWrap);
+        }
+        
+        card.appendChild(applyLabel);
+        card.appendChild(applyWrap);
+        
+        if (contactDiv) {
+          card.appendChild(contactDiv);
+        }
+        
+        card.appendChild(applyBtn);
+
+        grid.appendChild(card);
+      });
+    }
+
     fetch("master_jobs.json")
       .then(r => r.json())
       .then(data => {
@@ -316,148 +575,9 @@
         }
 
         jobs.sort((a, b) => (b.date_posted || "").localeCompare(a.date_posted || ""));
-
-        // Stats
-        statCount.querySelector("strong").textContent = String(jobs.length);
-        const dates = jobs.map(j => j.date_posted).filter(Boolean).sort();
-        if (dates.length) {
-          const oldest = formatDate(dates[0]);
-          const newest = formatDate(dates[dates.length - 1]);
-          statRange.querySelector("strong").textContent = `${oldest} to ${newest}`;
-        } else {
-          statRange.querySelector("strong").textContent = "Unknown";
-        }
-
-        // Cards
-        jobs.forEach(j => {
-          const card = document.createElement("article");
-          card.className = "card";
-
-          // Title
-          const title = document.createElement("h3");
-          title.className = "title";
-          title.textContent = safeText(j.job_title) || "Untitled Role";
-
-          // Meta (company + location)
-          const meta = document.createElement("div");
-          meta.className = "meta";
-          const company = safeText(j.company) || "Unknown company";
-          const location = safeText(j.location) || "Location not listed";
-          meta.textContent = `${company} · ${location}`;
-
-          // Tags row
-          const tags = document.createElement("div");
-          tags.className = "tags";
-
-          const postedTag = document.createElement("div");
-          postedTag.className = "tag";
-          const postedDate = formatDate(j.date_posted);
-          postedTag.textContent = postedDate ? `Posted ${postedDate}` : "Date unknown";
-          tags.appendChild(postedTag);
-
-          if (j.job_type && safeText(j.job_type)) {
-            const typeTag = document.createElement("div");
-            typeTag.className = "tag job-type";
-            typeTag.textContent = safeText(j.job_type);
-            tags.appendChild(typeTag);
-          }
-
-          if (j.deadline && safeText(j.deadline)) {
-            const deadlineTag = document.createElement("div");
-            deadlineTag.className = "tag deadline";
-            const deadlineDate = formatDate(j.deadline);
-            deadlineTag.textContent = `Closes ${deadlineDate || j.deadline}`;
-            tags.appendChild(deadlineTag);
-          }
-
-          // Salary
-          const salary = document.createElement("div");
-          salary.className = "salary";
-          salary.textContent = safeText(j.salary) || "Salary not listed";
-
-          // Divider
-          const divider1 = document.createElement("div");
-          divider1.className = "divider";
-
-          // Requirements
-          const reqLabel = document.createElement("div");
-          reqLabel.className = "section-title";
-          reqLabel.textContent = "Requirements";
-
-          const reqWrap = document.createElement("div");
-          addList(reqWrap, j.requirements);
-
-          // Responsibilities (if present)
-          let respLabel, respWrap;
-          if (j.responsibilities && j.responsibilities.length > 0) {
-            respLabel = document.createElement("div");
-            respLabel.className = "section-title";
-            respLabel.textContent = "Responsibilities";
-
-            respWrap = document.createElement("div");
-            addList(respWrap, j.responsibilities);
-          }
-
-          // How to Apply
-          const applyLabel = document.createElement("div");
-          applyLabel.className = "section-title";
-          applyLabel.textContent = "How to Apply";
-
-          const applyWrap = document.createElement("div");
-          addList(applyWrap, j.how_to_apply);
-
-          // Contact info
-          let contactDiv;
-          const email = safeText(j.contact_email);
-          const phone = safeText(j.contact_phone);
-          if (email || phone) {
-            contactDiv = document.createElement("div");
-            contactDiv.className = "contact";
-            const parts = [];
-            if (email) parts.push(`<a href="mailto:${email}">${email}</a>`);
-            if (phone) parts.push(phone);
-            contactDiv.innerHTML = parts.join(" · ");
-          }
-
-          // Apply button
-          const applyUrl = safeText(j.apply_url);
-          const applyBtn = document.createElement("a");
-          applyBtn.className = "apply-btn";
-          if (applyUrl) {
-            applyBtn.href = applyUrl;
-            applyBtn.target = "_blank";
-            applyBtn.rel = "noopener noreferrer";
-            applyBtn.textContent = "Apply Now →";
-          } else {
-            applyBtn.className = "apply-btn disabled";
-            applyBtn.textContent = "No application link";
-          }
-
-          // Build card
-          card.appendChild(title);
-          card.appendChild(meta);
-          card.appendChild(tags);
-          card.appendChild(salary);
-          card.appendChild(divider1);
-          card.appendChild(reqLabel);
-          card.appendChild(reqWrap);
-          
-          if (respLabel && respWrap) {
-            card.appendChild(respLabel);
-            card.appendChild(respWrap);
-          }
-          
-          card.appendChild(applyLabel);
-          card.appendChild(applyWrap);
-          
-          if (contactDiv) {
-            card.appendChild(contactDiv);
-          }
-          
-          card.appendChild(applyBtn);
-
-          grid.appendChild(card);
-        });
+        allJobs = jobs;
+        renderFilters();
+        renderJobs();
       })
       .catch(err => {
         grid.innerHTML = `<p style="color: var(--muted); padding: 40px; text-align: center;">

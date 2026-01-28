@@ -12,5 +12,5 @@ from .patterns import (
     extract_phone,          # ← ADD
     extract_location,       # ← ADD
 )
-from .cleaning import clean_html, clean_ad_content
+from .cleaning import clean_html, clean_ad_content, extract_emails_safely
 from .exporters import save_to_csv, save_to_json, calculate_field_completion, print_field_completion

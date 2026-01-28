@@ -62,3 +62,14 @@ def clean_raw_content(text: str) -> str:
     
     text = re.sub(r'\n\s*\n\s*\n+', '\n\n', text)
     return text.strip()
+
+
+def extract_emails_safely(html: str) -> dict:
+    """Detect protected emails in HTML (e.g., Cloudflare) and return safe defaults."""
+    lowered = (html or "").lower()
+    protected = ("cdn-cgi/l/email-protection" in lowered) or ("__cf_email__" in lowered)
+    return {
+        "emails": [] if protected else None,
+        "email_protected": protected,
+        "apply_text": "Email protected – see original listing" if protected else None,
+    }

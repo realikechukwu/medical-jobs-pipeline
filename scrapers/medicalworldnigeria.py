@@ -10,6 +10,7 @@ from utils import (
     extract_email,
     extract_phone,
     extract_location,
+    extract_emails_safely,
     SALARY_PATTERNS,
     QUALIFICATION_PATTERNS,
     EXPERIENCE_PATTERNS,
@@ -58,6 +59,8 @@ class MedicalWorldNigeriaScraper(BaseScraper):
         html = self.get_page(url)
         if not html:
             return {}
+
+        email_safety = extract_emails_safely(html)
         
         soup = BeautifulSoup(html, 'html.parser')
         content = soup.find('div', class_='single-page-content')
@@ -82,8 +85,12 @@ class MedicalWorldNigeriaScraper(BaseScraper):
             'email': '',
             'phone': '',
             'website': '',
+            'email_protected': email_safety.get('email_protected', False),
             'raw_content': full_text[:5000],
         }
+
+        if email_safety.get('email_protected'):
+            details['how_to_apply'] = email_safety.get('apply_text') or ''
         
         # Description
         paragraphs = content.find_all('p')
@@ -98,7 +105,8 @@ class MedicalWorldNigeriaScraper(BaseScraper):
         details['experience'] = extract_first_match(EXPERIENCE_PATTERNS, full_text)
         details['qualification'] = extract_first_match(QUALIFICATION_PATTERNS, full_text)
         details['deadline'] = extract_first_match(DEADLINE_PATTERNS, full_text)
-        details['email'] = extract_email(full_text)
+        if not details.get('email_protected'):
+            details['email'] = extract_email(full_text)
         details['phone'] = extract_phone(full_text)
         
         # Company
@@ -123,12 +131,13 @@ class MedicalWorldNigeriaScraper(BaseScraper):
             details['responsibilities'] = resp_match.group(1).strip()[:2000]
         
         # How to apply
-        apply_match = re.search(
-            r'(?:method of application|how to apply)[:\s]*(.*?)(?=note:|deadline|closing|$)',
-            full_text, re.IGNORECASE | re.DOTALL
-        )
-        if apply_match and len(apply_match.group(1).strip()) > 10:
-            details['how_to_apply'] = apply_match.group(1).strip()[:1000]
+        if not details.get('email_protected'):
+            apply_match = re.search(
+                r'(?:method of application|how to apply)[:\s]*(.*?)(?=note:|deadline|closing|$)',
+                full_text, re.IGNORECASE | re.DOTALL
+            )
+            if apply_match and len(apply_match.group(1).strip()) > 10:
+                details['how_to_apply'] = apply_match.group(1).strip()[:1000]
         
         # Website (exclude self)
         website_match = re.search(r'https?://[^\s<>"{}|\\^`]+', full_text)
@@ -185,6 +194,7 @@ class MedicalWorldNigeriaScraper(BaseScraper):
                     'email': details.get('email', ''),
                     'phone': details.get('phone', ''),
                     'website': details.get('website', ''),
+                    'email_protected': details.get('email_protected', False),
                     'raw_content': details.get('raw_content', ''),
                     'link': job['link'],
                     'profession': profession_name,

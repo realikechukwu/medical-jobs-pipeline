@@ -14,12 +14,12 @@ SCRAPER_CONFIG = {
     "medlocum": {
         "enabled": True,
         "rate_limit": 1.0,
-        "max_pages": 2,
+        "max_pages": 1,
     },
     "jobsinnigeria": {
         "enabled": True,
-        "rate_limit": 3.0,
-        "max_pages": 2,
+        "rate_limit": 2.0,
+        "max_pages": 1,
     },
     "medicalworldnigeria": {
         "enabled": True,

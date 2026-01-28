@@ -14,7 +14,7 @@ This pipeline automatically scrapes medical/healthcare job postings from three N
 ┌─────────────────────────────────────────────────────────────┐
 │  CONFIGURATION                                               │
 ├─────────────────────────────────────────────────────────────┤
-│  • Sets up directory paths (json/, output/)                  │
+│  • Sets up directory paths (json/, docs/)                    │
 │  • Defines which scrapers are enabled                        │
 │  • Sets rate limits (delays between requests)                │
 │  • Configures extraction settings (AI model, date cutoff)    │
@@ -29,6 +29,7 @@ This pipeline automatically scrapes medical/healthcare job postings from three N
 | `rate_limit` | Seconds to wait between requests (be polite to servers) |
 | `max_pages` | How many listing pages to scrape per source |
 | `max_age_days` | Only process jobs posted within X days |
+| `max_jobs` | Max jobs to send to OpenAI per run (0 = all) |
 
 ---
 
@@ -192,7 +193,7 @@ Special:    Organized by profession ID in URL
 │         Add metadata (source, timestamp)                     │
 │                                                              │
 │  OUTPUT:                                                     │
-│         json/all_raw_jobs_20250115_120000.json               │
+│         json/raw_jobs.json                                   │
 │         json/latest_raw_jobs.json (always current)           │
 │                                                              │
 └─────────────────────────────────────────────────────────────┘
@@ -269,7 +270,7 @@ Special:    Organized by profession ID in URL
 
 **Filtering logic:**
 ```
-For each job in json/*.json:
+For each job in json/raw_jobs.json:
     │
     ├─ Is date older than 61 days? → SKIP
     │
@@ -337,13 +338,11 @@ For each job in json/*.json:
 │  │ 4. Run scrapers (main.py)               │                 │
 │  │ 5. Run extraction (extract.py)          │                 │
 │  │    └─ Uses OPENAI_API_KEY secret        │                 │
-│  │ 6. Upload artifact (backup)             │                 │
-│  │ 7. Deploy to GitHub Pages               │                 │
-│  │    └─ output/ → gh-pages branch /data/  │                 │
+│  │ 6. Commit updated docs/master_jobs.json │                 │
 │  └─────────────────────────────────────────┘                 │
 │                                                              │
 │  RESULT:                                                     │
-│  https://username.github.io/repo/data/master_jobs.json       │
+│  docs/master_jobs.json updated in the repo                   │
 │                                                              │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -375,7 +374,7 @@ For each job in json/*.json:
                                                                │
                                                                ▼
                                                         ┌───────────┐
-                                                        │  output/  │
+                                                        │  docs/    │
                                                         │  master_  │
                                                         │  jobs.json│
                                                         └─────┬─────┘
@@ -385,9 +384,9 @@ For each job in json/*.json:
   ┌─────────────────────────────────────────────────────────────────────┐
   │                         GITHUB ACTIONS                               │
   │  ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────────────┐   │
-  │  │ Weekly  │───►│  Run    │───►│ Deploy  │───►│ GitHub Pages    │   │
-  │  │ Trigger │    │ Pipeline│    │ to GH   │    │ /data/master_   │   │
-  │  │ Mon 6AM │    │         │    │ Pages   │    │ jobs.json       │   │
+  │  │ Weekly  │───►│  Run    │───►│ Commit  │───►│ Repo contains   │   │
+  │  │ Trigger │    │ Pipeline│    │ updates │    │ docs/master_   │   │
+  │  │ Mon 6AM │    │         │    │ to repo │    │ jobs.json       │   │
   │  └─────────┘    └─────────┘    └─────────┘    └────────┬────────┘   │
   └────────────────────────────────────────────────────────┼────────────┘
                                                            │
@@ -406,9 +405,9 @@ For each job in json/*.json:
 
 | File | Location | Purpose |
 |------|----------|---------|
-| `all_raw_jobs_YYYYMMDD_HHMMSS.json` | `json/` | Timestamped raw scrape |
+| `raw_jobs.json` | `json/` | Latest raw scrape (combined) |
 | `latest_raw_jobs.json` | `json/` | Always-current raw data |
-| `master_jobs.json` | `output/` | Final cleaned data for website |
+| `master_jobs.json` | `docs/` | Final cleaned data for website |
 
 ---
 
@@ -468,7 +467,7 @@ python extract.py --max 10
 | Scraper | Delay | Reason |
 |---------|-------|--------|
 | MedLocum | 1 sec | Fast site, light delay |
-| JobsInNigeria | 6 sec | Slower, respect their servers |
+| JobsInNigeria | 3 sec | Slower, respect their servers |
 | MedicalWorld | 2 sec | Medium delay |
 
 ---

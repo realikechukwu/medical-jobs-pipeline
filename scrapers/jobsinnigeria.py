@@ -8,6 +8,7 @@ from config import SCRAPER_CONFIG
 from utils import (
     NIGERIAN_LOCATIONS,
     clean_ad_content,
+    extract_emails_safely,
     extract_first_match,
     extract_email,
     extract_phone,
@@ -128,6 +129,8 @@ class JobsInNigeriaScraper(BaseScraper):
         html = self.get_page(url)
         if not html:
             return {}
+
+        email_safety = extract_emails_safely(html)
         
         soup = BeautifulSoup(html, 'html.parser')
         soup = clean_ad_content(soup)
@@ -156,8 +159,12 @@ class JobsInNigeriaScraper(BaseScraper):
             'email': '',
             'phone': '',
             'website': '',
+            'email_protected': email_safety.get('email_protected', False),
             'raw_content': full_text[:5000],
         }
+
+        if email_safety.get('email_protected'):
+            details['how_to_apply'] = email_safety.get('apply_text') or ''
         
         # Extract from JSON-LD first
         json_ld_data = self.extract_from_json_ld(soup)
@@ -188,7 +195,7 @@ class JobsInNigeriaScraper(BaseScraper):
         if not details['deadline']:
             details['deadline'] = extract_first_match(DEADLINE_PATTERNS, full_text)
         
-        if not details['email']:
+        if not details['email'] and not details.get('email_protected'):
             details['email'] = extract_email(full_text)
         
         if not details['phone']:
@@ -211,12 +218,13 @@ class JobsInNigeriaScraper(BaseScraper):
             details['responsibilities'] = resp_match.group(1).strip()[:2000]
         
         # How to apply
-        apply_match = re.search(
-            r'(?:method of application|how to apply)[:\s]*(.*?)(?=note:|deadline|closing|$)',
-            full_text, re.IGNORECASE | re.DOTALL
-        )
-        if apply_match and len(apply_match.group(1).strip()) > 10:
-            details['how_to_apply'] = apply_match.group(1).strip()[:1000]
+        if not details.get('email_protected'):
+            apply_match = re.search(
+                r'(?:method of application|how to apply)[:\s]*(.*?)(?=note:|deadline|closing|$)',
+                full_text, re.IGNORECASE | re.DOTALL
+            )
+            if apply_match and len(apply_match.group(1).strip()) > 10:
+                details['how_to_apply'] = apply_match.group(1).strip()[:1000]
         
         return details
     
@@ -266,6 +274,7 @@ class JobsInNigeriaScraper(BaseScraper):
                 'email': details.get('email', ''),
                 'phone': details.get('phone', ''),
                 'website': details.get('website', ''),
+                'email_protected': details.get('email_protected', False),
                 'raw_content': details.get('raw_content', ''),
                 'link': job['link'],
             }

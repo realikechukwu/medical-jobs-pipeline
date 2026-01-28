@@ -79,6 +79,7 @@ def build_text(job: dict) -> str:
     add("Experience", job.get("experience"))
     add("Qualification", job.get("qualification"))
     add("Apply URL", job.get("link") or job.get("job_url"))
+    add("Email Protected", job.get("email_protected"))
 
     for key in (
         "full_description",
@@ -143,6 +144,23 @@ def iter_jobs(json_dir: Path):
     except (json.JSONDecodeError, IOError) as e:
         print(f"⚠️  Error reading {raw_jobs_file.name}: {e}")
 
+def classify_job_category(title: str) -> str:
+    """Derive job category from title keywords when possible."""
+    t = (title or "").strip().lower()
+    if not t:
+        return ""
+    if "dentist" in t or "dental" in t:
+        return "Dentist"
+    if "medical laboratory" in t or ("laboratory" in t and "scientist" in t):
+        return "Medical Laboratory Scientist"
+    if "pharmacist" in t or "pharmacy" in t:
+        return "Pharmacist"
+    if "midwife" in t or "nurse" in t or "nursing" in t:
+        return "Nurse"
+    if "medical officer" in t or "doctor" in t or "physician" in t:
+        return "Doctor"
+    return ""
+
 def main():
     load_dotenv()
     
@@ -173,6 +191,7 @@ def main():
             "company": {"type": "string"},
             "location": {"type": "string"},
             "job_type": {"type": "string"},
+            "job_category": {"type": "string"},
             "salary": {"type": "string"},
             "experience": {"type": "string"},
             "qualification": {"type": "string"},
@@ -186,7 +205,7 @@ def main():
             "apply_url": {"type": "string"},
         },
         "required": [
-            "job_title", "company", "location", "job_type", "salary",
+            "job_title", "company", "location", "job_type", "job_category", "salary",
             "experience", "qualification", "requirements", "responsibilities",
             "how_to_apply", "date_posted", "deadline", "contact_email", 
             "contact_phone", "apply_url",
@@ -240,10 +259,18 @@ def main():
                     {
                         "role": "system",
                         "content": (
-                            "Extract job fields from the text. Use only what is explicitly present. "
-                            "If a field is missing, return an empty string or empty array as appropriate. "
-                            "For location, include city and state/country if available."
-                        ),
+                    "Extract job fields from the text. Use only what is explicitly present. "
+                    "If a field is missing, return an empty string or empty array as appropriate. "
+                    "For location, include city and state/country if available. "
+                    "For job_category, choose one: Doctor, Nurse, Pharmacist, Medical Laboratory Scientist, Dentist, Other. "
+                    "If job title includes 'medical officer', choose Doctor. "
+                    "If job title includes 'midwife', choose Nurse. "
+                    "Use job title/requirements to decide; default to Other if unclear. "
+                    "If the text indicates email protection/redaction (e.g., '__cf_email__', "
+                    "'email-protection', 'email protected', 'email redacted'), do not infer an email; "
+                    "leave contact_email empty and set how_to_apply to 'Email protected – see original listing' "
+                    "only if no other application instructions are present."
+                ),
                     },
                     {"role": "user", "content": text},
                 ],
@@ -262,6 +289,9 @@ def main():
             # Preserve/enhance certain fields
             if d:
                 data["date_posted"] = d.isoformat()
+            title_category = classify_job_category(data.get("job_title") or "")
+            if title_category:
+                data["job_category"] = title_category
             if not data.get("salary") and job.get("salary"):
                 data["salary"] = str(job.get("salary"))
             if not data.get("apply_url"):
