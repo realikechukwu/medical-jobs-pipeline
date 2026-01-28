@@ -2,12 +2,13 @@ name: Weekly Job Scrape
 
 on:
   schedule:
-    - cron: '0 6 * * 1'
-  workflow_dispatch:
+    - cron: '0 6 * * 1'  # Every Monday 6am UTC
+  workflow_dispatch:      # Manual trigger
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    
     permissions:
       contents: write
     
@@ -19,23 +20,24 @@ jobs:
           python-version: '3.11'
           cache: 'pip'
       
-      - run: pip install -r requirements.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
       
-      - run: mkdir -p json output
+      - name: Create directories
+        run: mkdir -p json docs
       
-      - run: python main.py
+      - name: Run scrapers
+        run: python main.py
       
-      - run: python extract.py
+      - name: Run extraction
+        run: python extract.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       
-      - uses: actions/upload-artifact@v4
-        with:
-          name: job-data
-          path: output/master_jobs.json
-      
-      - uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
-          destination_dir: data
+      - name: Commit updated master_jobs.json
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add docs/master_jobs.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update jobs data $(date +'%Y-%m-%d')"
+          git push
