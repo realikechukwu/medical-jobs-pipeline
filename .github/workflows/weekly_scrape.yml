@@ -1,0 +1,41 @@
+name: Weekly Job Scrape
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - run: pip install -r requirements.txt
+      
+      - run: mkdir -p json output
+      
+      - run: python main.py
+      
+      - run: python extract.py
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      
+      - uses: actions/upload-artifact@v4
+        with:
+          name: job-data
+          path: output/master_jobs.json
+      
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          destination_dir: data
