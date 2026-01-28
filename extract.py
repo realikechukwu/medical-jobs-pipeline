@@ -13,7 +13,14 @@ from pathlib import Path
 from dotenv import load_dotenv
 from openai import OpenAI
 
-from config import JSON_DIR, OUTPUT_DIR, OUTPUT_FILES, EXTRACTION_CONFIG
+from config import (
+    JSON_DIR,
+    OUTPUT_DIR,
+    OUTPUT_FILES,
+    EXTRACTION_CONFIG,
+    normalize_how_to_apply,
+    has_protected_email,
+)
 
 
 DATE_FORMATS = [
@@ -259,18 +266,27 @@ def main():
                     {
                         "role": "system",
                         "content": (
-                    "Extract job fields from the text. Use only what is explicitly present. "
-                    "If a field is missing, return an empty string or empty array as appropriate. "
-                    "For location, include city and state/country if available. "
-                    "For job_category, choose one: Doctor, Nurse, Pharmacist, Medical Laboratory Scientist, Dentist, Other. "
-                    "If job title includes 'medical officer', choose Doctor. "
-                    "If job title includes 'midwife', choose Nurse. "
-                    "Use job title/requirements to decide; default to Other if unclear. "
-                    "If the text indicates email protection/redaction (e.g., '__cf_email__', "
-                    "'email-protection', 'email protected', 'email redacted'), do not infer an email; "
-                    "leave contact_email empty and set how_to_apply to 'Email protected – see original listing' "
-                    "only if no other application instructions are present."
-                ),
+                            "Extract job fields from the text. Use only what is explicitly present. "
+                            "If a field is missing, return an empty string or empty array as appropriate. "
+                            "For location, include city and state/country if available. "
+                            "For job_category, choose one: Doctor, Nurse, Pharmacist, Medical Laboratory Scientist, Dentist, Other. "
+                            "If job title includes 'medical officer', choose Doctor. "
+                            "If job title includes 'midwife', choose Nurse. "
+                            "Use job title/requirements to decide; default to Other if unclear. "
+                            "how_to_apply must be 1-2 short bullets, never include raw URLs or emails, "
+                            "and always end with 'Click Apply Now for full details.' "
+                            "Never output 'Email protected – see original listing' as the whole how_to_apply. "
+                            "If email is protected/redacted, do not infer an email; leave contact_email empty "
+                            "and use wording like 'Email the address shown on the original listing (email is protected on some sites).' "
+                            "If subject instructions exist (e.g., 'Subject: X' or 'use job title as subject'), capture that in how_to_apply "
+                            "without emails/URLs. "
+                            "If apply method is phone/WhatsApp, say: "
+                            "'Open the listing via Apply Now to view the contact details and follow the call or WhatsApp instructions.' "
+                            "If apply method is via portal/link, say: "
+                            "'Apply via the Apply Now button for full details.' "
+                            "If the text indicates email protection/redaction (e.g., '__cf_email__', "
+                            "'email-protection', 'email protected', 'email redacted'), do not infer an email."
+                        ),
                     },
                     {"role": "user", "content": text},
                 ],
@@ -296,6 +312,16 @@ def main():
                 data["salary"] = str(job.get("salary"))
             if not data.get("apply_url"):
                 data["apply_url"] = job.get("link") or job.get("job_url") or ""
+
+            protected = has_protected_email(job.get("raw_content") or "")
+            if protected:
+                data["contact_email"] = ""
+
+            data["how_to_apply"] = normalize_how_to_apply(
+                model_list=data.get("how_to_apply"),
+                raw_job=job,
+                apply_url=data.get("apply_url") or "",
+            )
             
             # Add source tracking
             data["_source"] = job.get("_source", source_name)
