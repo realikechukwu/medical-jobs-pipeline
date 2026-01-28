@@ -3,7 +3,7 @@ from pathlib import Path
 # Directories
 ROOT_DIR = Path(__file__).parent
 JSON_DIR = ROOT_DIR / "json"
-OUTPUT_DIR = ROOT_DIR / "output"
+OUTPUT_DIR = ROOT_DIR / "docs"
 
 # Ensure directories exist
 JSON_DIR.mkdir(exist_ok=True)
@@ -39,4 +39,6 @@ EXTRACTION_CONFIG = {
 # Output files
 OUTPUT_FILES = {
     "master_jobs": OUTPUT_DIR / "master_jobs.json",
+    "raw_jobs": JSON_DIR / "raw_jobs.json", 
+    
 }

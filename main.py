@@ -54,7 +54,7 @@ def run_scrapers(selected: list[str] = None):
             results[name] = {"status": "error", "error": str(e)}
     
     # Save combined output
-    output_file = JSON_DIR / f"all_raw_jobs_{timestamp}.json"
+    output_file = JSON_DIR / "raw_jobs.json"
     latest_file = JSON_DIR / "latest_raw_jobs.json"
     
     output_data = {
