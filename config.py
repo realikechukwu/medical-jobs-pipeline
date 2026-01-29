@@ -15,12 +15,12 @@ SCRAPER_CONFIG = {
     "medlocum": {
         "enabled": True,
         "rate_limit": 1.0,
-        "max_pages": 1,
+        "max_pages": 2,
     },
     "jobsinnigeria": {
         "enabled": True,
         "rate_limit": 2.0,
-        "max_pages": 1,
+        "max_pages": 2,
     },
     "medicalworldnigeria": {
         "enabled": True,
@@ -34,7 +34,7 @@ SCRAPER_CONFIG = {
 EXTRACTION_CONFIG = {
     "model": "gpt-4o-mini",
     "max_age_days": 61,
-    "max_jobs": 70,  # Limit OpenAI API calls
+    "max_jobs": 120,  # Limit OpenAI API calls
 }
 
 # Output files
@@ -112,6 +112,33 @@ def extract_subject(text: str) -> str:
     return ""
 
 
+def is_portal_apply(text: str, apply_url: str = "") -> bool:
+    """Detect portal-based application via text or ATS URL patterns."""
+    t = (text or "").lower()
+    phrases = [
+        "apply online",
+        "apply through the link",
+        "click here to apply",
+        "application portal",
+        "career portal",
+        "apply now",
+    ]
+    if any(p in t for p in phrases):
+        return True
+    url = (apply_url or "").lower()
+    ats_markers = [
+        "workday",
+        "myworkdayjobs",
+        "greenhouse",
+        "lever.co",
+        "smartrecruiters",
+        "icims",
+        "taleo",
+        "/apply",
+    ]
+    return any(m in url for m in ats_markers)
+
+
 def normalize_how_to_apply(model_list, raw_job: dict, apply_url: str = "") -> list[str]:
     """Return 1-2 short bullets, no URLs/emails, consistent ending."""
     model_items = []
@@ -129,12 +156,17 @@ def normalize_how_to_apply(model_list, raw_job: dict, apply_url: str = "") -> li
 
     has_email = bool(re.search(r"\bemail\b|e-mail", source_text, flags=re.IGNORECASE)) or protected
     has_phone = bool(re.search(r"\bwhatsapp\b|\bcall\b|\bphone\b", source_text, flags=re.IGNORECASE))
-    has_portal = bool(re.search(r"apply online|application portal|portal|website|online application", source_text, flags=re.IGNORECASE))
+    has_portal = is_portal_apply(source_text, apply_url)
     has_apply_url = bool(apply_url)
 
     bullets = []
 
-    if has_email:
+    if has_portal:
+        bullets = [
+            "Submit your application through the employer’s online recruitment portal.",
+            "Click Apply Now for full details.",
+        ]
+    elif has_email:
         line = "Email the address shown on the original listing"
         if protected:
             line += " (email is protected on some sites)."
@@ -143,10 +175,7 @@ def normalize_how_to_apply(model_list, raw_job: dict, apply_url: str = "") -> li
         if subject:
             line += f" Subject: {subject}."
         bullets.append(line)
-    elif has_phone:
-        bullets.append(
-            "Open the listing via Apply Now to view the contact details and follow the call or WhatsApp instructions."
-        )
+
     elif has_portal or has_apply_url:
         bullets.append("Apply via the Apply Now button for full details.")
 
