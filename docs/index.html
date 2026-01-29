@@ -114,6 +114,51 @@
       color: #fff;
     }
 
+    .filter-mobile { display: none; width: 100%; }
+    .filter-desktop { display: flex; flex-wrap: wrap; gap: 10px; width: 100%; }
+
+    .filter-label {
+      display: block;
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin: 0 0 6px;
+    }
+
+    .select-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .select-wrap select {
+      width: 100%;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 44px 10px 14px;
+      font-size: 0.95rem;
+      background: var(--card);
+      color: var(--ink);
+    }
+
+    .select-wrap::after {
+      content: "▾";
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      opacity: 0.65;
+      font-size: 18px;
+    }
+
+    @media (max-width: 640px) {
+      .filter-mobile { display: block; }
+      .filter-desktop { display: none; }
+    }
+
     .grid {
       display: grid;
       gap: 18px;
@@ -284,7 +329,18 @@
       </div>
     </header>
 
-    <div class="filters" id="filters"></div>
+    <div class="filters" id="filters">
+      <!-- Mobile dropdown -->
+      <div class="filter-mobile">
+        <label class="filter-label" for="categorySelect">Category</label>
+        <div class="select-wrap">
+          <select id="categorySelect" aria-label="Filter by category"></select>
+        </div>
+      </div>
+
+      <!-- Desktop chips -->
+      <div class="filter-desktop" id="filterChips" aria-label="Category filters"></div>
+    </div>
 
     <main class="grid" id="grid"></main>
   </div>
@@ -294,6 +350,8 @@
     const statCount = document.getElementById("stat-count");
     const statRange = document.getElementById("stat-range");
     const filters = document.getElementById("filters");
+    const filterChips = document.getElementById("filterChips");
+    const categorySelect = document.getElementById("categorySelect");
     const CATEGORY_ORDER = [
       "All",
       "Doctors",
@@ -358,6 +416,22 @@
       }
     }
 
+    function getCategoryFromUrl() {
+      const params = new URLSearchParams(window.location.search);
+      const cat = safeText(params.get("category"));
+      return cat || "All";
+    }
+
+    function setCategoryInUrl(category) {
+      const url = new URL(window.location.href);
+      if (!category || category === "All") {
+        url.searchParams.delete("category");
+      } else {
+        url.searchParams.set("category", category);
+      }
+      window.history.replaceState({}, "", url.toString());
+    }
+
     function normalizeCategory(category) {
       const raw = safeText(category).toLowerCase();
       if (!raw) return "Others";
@@ -392,19 +466,47 @@
         counts.All += 1;
       });
 
-      filters.innerHTML = "";
+      const validSet = new Set(CATEGORY_ORDER);
+      if (!validSet.has(activeCategory)) activeCategory = "All";
+
+      // Desktop chips
+      filterChips.innerHTML = "";
       CATEGORY_ORDER.forEach(cat => {
         const btn = document.createElement("button");
         const count = cat === "All" ? allJobs.length : (counts[cat] || 0);
         btn.className = `filter-btn${cat === activeCategory ? " active" : ""}`;
+        btn.type = "button";
         btn.textContent = `${cat} (${count})`;
+        btn.setAttribute("aria-pressed", cat === activeCategory ? "true" : "false");
         btn.addEventListener("click", () => {
           activeCategory = cat;
+          setCategoryInUrl(activeCategory);
           renderJobs();
           renderFilters();
         });
-        filters.appendChild(btn);
+        filterChips.appendChild(btn);
       });
+
+      // Mobile dropdown
+      categorySelect.innerHTML = "";
+      CATEGORY_ORDER.forEach(cat => {
+        const opt = document.createElement("option");
+        const count = cat === "All" ? allJobs.length : (counts[cat] || 0);
+        opt.value = cat;
+        opt.textContent = `${cat} (${count})`;
+        categorySelect.appendChild(opt);
+      });
+      categorySelect.value = activeCategory;
+
+      if (!categorySelect.dataset.bound) {
+        categorySelect.addEventListener("change", () => {
+          activeCategory = categorySelect.value || "All";
+          setCategoryInUrl(activeCategory);
+          renderJobs();
+          renderFilters();
+        });
+        categorySelect.dataset.bound = "1";
+      }
     }
 
     function renderJobs() {
@@ -576,6 +678,7 @@
 
         jobs.sort((a, b) => (b.date_posted || "").localeCompare(a.date_posted || ""));
         allJobs = jobs;
+        activeCategory = getCategoryFromUrl();
         renderFilters();
         renderJobs();
       })
