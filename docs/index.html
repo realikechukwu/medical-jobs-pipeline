@@ -115,6 +115,7 @@
     }
 
     .filter-mobile { display: none; width: 100%; }
+    .filter-location { display: block; width: 100%; }
     .filter-desktop { display: flex; flex-wrap: wrap; gap: 10px; width: 100%; }
 
     .filter-label {
@@ -342,6 +343,15 @@
       <div class="filter-desktop" id="filterChips" aria-label="Category filters"></div>
     </div>
 
+    <div class="filters">
+      <div class="filter-location">
+        <label class="filter-label" for="locationSelect">Location</label>
+        <div class="select-wrap">
+          <select id="locationSelect" aria-label="Filter by location"></select>
+        </div>
+      </div>
+    </div>
+
     <main class="grid" id="grid"></main>
   </div>
 
@@ -352,6 +362,7 @@
     const filters = document.getElementById("filters");
     const filterChips = document.getElementById("filterChips");
     const categorySelect = document.getElementById("categorySelect");
+    const locationSelect = document.getElementById("locationSelect");
     const CATEGORY_ORDER = [
       "All",
       "Doctors",
@@ -362,6 +373,7 @@
       "Others",
     ];
     let activeCategory = "All";
+    let activeLocation = "All locations";
     let allJobs = [];
 
     function safeText(text) {
@@ -445,6 +457,126 @@
       return "Others";
     }
 
+    const NIGERIAN_STATES = [
+      "Abia", "Adamawa", "Akwa Ibom", "Anambra", "Bauchi", "Bayelsa", "Benue",
+      "Borno", "Cross River", "Delta", "Ebonyi", "Edo", "Ekiti", "Enugu",
+      "Gombe", "Imo", "Jigawa", "Kaduna", "Kano", "Katsina", "Kebbi", "Kogi",
+      "Kwara", "Lagos", "Nasarawa", "Niger", "Ogun", "Ondo", "Osun", "Oyo",
+      "Plateau", "Rivers", "Sokoto", "Taraba", "Yobe", "Zamfara"
+    ];
+
+    const CITY_TO_STATE = {
+      "abuja": "FCT",
+      "fct": "FCT",
+      "lagos": "Lagos",
+      "kano": "Kano",
+      "ibadan": "Oyo",
+      "port harcourt": "Rivers",
+      "benin": "Edo",
+      "benin city": "Edo",
+      "kaduna": "Kaduna",
+      "enugu": "Enugu",
+      "jos": "Plateau",
+      "ilorin": "Kwara",
+      "sokoto": "Sokoto",
+      "calabar": "Cross River",
+      "warri": "Delta",
+      "owerri": "Imo",
+      "uyo": "Akwa Ibom",
+      "abeokuta": "Ogun",
+      "maiduguri": "Borno",
+      "zaria": "Kaduna",
+      "aba": "Abia",
+      "ogbomoso": "Oyo",
+      "onitsha": "Anambra",
+      "akure": "Ondo",
+      "bauchi": "Bauchi",
+      "yola": "Adamawa",
+      "gombe": "Gombe",
+      "lafia": "Nasarawa",
+      "lokoja": "Kogi",
+      "minna": "Niger",
+      "oshogbo": "Osun",
+      "asaba": "Delta",
+      "awka": "Anambra",
+      "birnin kebbi": "Kebbi",
+      "damaturu": "Yobe",
+      "dutse": "Jigawa",
+      "ado ekiti": "Ekiti",
+      "gusau": "Zamfara",
+      "jalingo": "Taraba",
+      "katsina": "Katsina",
+      "umuahia": "Abia",
+      "yenagoa": "Bayelsa",
+      "mowe": "Ogun",
+      "keffi": "Nasarawa"
+    };
+
+    const COUNTRY_ALIASES = [
+      ["uk", "UK"],
+      ["united kingdom", "UK"],
+      ["zambia", "Zambia"],
+      ["ghana", "Ghana"],
+      ["kenya", "Kenya"],
+      ["uganda", "Uganda"],
+      ["tanzania", "Tanzania"],
+      ["rwanda", "Rwanda"],
+      ["south africa", "South Africa"],
+      ["united states", "United States"],
+      ["usa", "United States"],
+      ["canada", "Canada"],
+      ["germany", "Germany"],
+      ["france", "France"],
+      ["netherlands", "Netherlands"],
+      ["switzerland", "Switzerland"],
+      ["sweden", "Sweden"],
+      ["norway", "Norway"],
+      ["denmark", "Denmark"],
+      ["australia", "Australia"],
+    ];
+
+    function getLocationBuckets(location) {
+      const raw = safeText(location);
+      if (!raw) return [];
+      const lower = raw.toLowerCase();
+      const buckets = new Set();
+      const isNigeria = lower.includes("nigeria") || NIGERIAN_STATES.some(s => lower.includes(s.toLowerCase()));
+
+      if (isNigeria) {
+        NIGERIAN_STATES.forEach(state => {
+          if (lower.includes(state.toLowerCase())) {
+            buckets.add(`${state} State`);
+          }
+        });
+
+        Object.keys(CITY_TO_STATE).forEach(city => {
+          if (lower.includes(city)) {
+            const state = CITY_TO_STATE[city];
+            if (state === "FCT") {
+              buckets.add("FCT");
+            } else {
+              buckets.add(`${state} State`);
+            }
+          }
+        });
+
+        if (buckets.size === 0) {
+          return [];
+        }
+        return Array.from(buckets);
+      }
+
+      for (const [needle, label] of COUNTRY_ALIASES) {
+        if (lower.includes(needle)) return [label];
+      }
+
+      const parts = raw.split(",").map(p => p.trim()).filter(Boolean);
+      if (parts.length > 1) {
+        return [parts[parts.length - 1]];
+      }
+      return [raw];
+    }
+
     function updateStats(list) {
       statCount.querySelector("strong").textContent = String(list.length);
       const dates = list.map(j => j.date_posted).filter(Boolean).sort();
@@ -507,16 +639,51 @@
         });
         categorySelect.dataset.bound = "1";
       }
+
+      // Location dropdown
+      const locationCounts = {};
+      allJobs.forEach(j => {
+        const buckets = j._locationBuckets || [];
+        buckets.forEach(b => {
+          locationCounts[b] = (locationCounts[b] || 0) + 1;
+        });
+      });
+      const locationOptions = ["All locations", ...Object.keys(locationCounts).sort()];
+
+      if (!locationOptions.includes(activeLocation)) {
+        activeLocation = "All locations";
+      }
+
+      locationSelect.innerHTML = "";
+      locationOptions.forEach(loc => {
+        const opt = document.createElement("option");
+        opt.value = loc;
+        opt.textContent = loc === "All locations" ? "All locations" : `${loc} (${locationCounts[loc] || 0})`;
+        locationSelect.appendChild(opt);
+      });
+      locationSelect.value = activeLocation;
+
+      if (!locationSelect.dataset.bound) {
+        locationSelect.addEventListener("change", () => {
+          activeLocation = locationSelect.value || "All locations";
+          renderJobs();
+          renderFilters();
+        });
+        locationSelect.dataset.bound = "1";
+      }
     }
 
     function renderJobs() {
       const list = activeCategory === "All"
         ? allJobs
         : allJobs.filter(j => normalizeCategory(j.job_category) === activeCategory);
+      const filtered = activeLocation === "All locations"
+        ? list
+        : list.filter(j => (j._locationBuckets || []).includes(activeLocation));
       grid.innerHTML = "";
-      updateStats(list);
+      updateStats(filtered);
 
-      list.forEach(j => {
+      filtered.forEach(j => {
         const card = document.createElement("article");
         card.className = "card";
 
@@ -677,7 +844,9 @@
         }
 
         jobs.sort((a, b) => (b.date_posted || "").localeCompare(a.date_posted || ""));
-        allJobs = jobs;
+        allJobs = jobs.map(j => {
+          return { ...j, _locationBuckets: getLocationBuckets(j.location) };
+        });
         activeCategory = getCategoryFromUrl();
         renderFilters();
         renderJobs();
