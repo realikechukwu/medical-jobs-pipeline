@@ -162,11 +162,40 @@ def classify_job_category(title: str) -> str:
         return "Medical Laboratory Scientist"
     if "pharmacist" in t or "pharmacy" in t:
         return "Pharmacist"
-    if "midwife" in t or "nurse" in t or "nursing" in t:
+    if "midwife" in t or "midwifery" in t or "nurse" in t or "nursing" in t or "matron" in t:
         return "Nurse"
-    if "medical officer" in t or "doctor" in t or "physician" in t:
+    if ("medical officer" in t or "doctor" in t or "physician" in t or
+        "obstetrician" in t or "gynaecologist" in t or "gynecologist" in t or
+        "general practitioner" in t or "oncology" in t):
         return "Doctor"
+    if ("public health" in t or "program officer" in t or "programme officer" in t or
+        "epidemiology" in t or "surveillance" in t or "health systems" in t or
+        "health security" in t or "project officer" in t):
+        return "Public Health"
+    if ("director" in t or "manager" in t or "coordinator" in t or
+        "provost" in t or "hse " in t or "quality officer" in t or
+        "inventory" in t or "warehouse" in t):
+        return "Healthcare Management"
+    if ("physiotherapist" in t or "optometrist" in t or "therapist" in t or
+        "radiographer" in t or "dietitian" in t or "nutritionist" in t):
+        return "Allied Health"
     return ""
+
+def deduplicate_jobs(jobs):
+    """Remove duplicate jobs based on job_title + company match."""
+    seen = set()
+    unique_jobs = []
+
+    for job in jobs:
+        title = (job.get("job_title") or "").strip().lower()
+        company = (job.get("company") or "").strip().lower()
+        key = f"{title}|{company}"
+
+        if key not in seen:
+            seen.add(key)
+            unique_jobs.append(job)
+
+    return unique_jobs
 
 def main():
     load_dotenv()
@@ -269,12 +298,15 @@ def main():
                             "Extract job fields from the text. Use only what is explicitly present. "
                             "If a field is missing, return an empty string or empty array as appropriate. "
                             "For location, include city and state/country if available. "
-                            "For job_category, choose one: Doctor, Nurse, Pharmacist, Medical Laboratory Scientist, Dentist, Other. "
-                            "If job title includes 'medical officer', choose Doctor. "
-                            "If job title includes 'midwife', choose Nurse. "
+                            "For job_category, choose one: Doctor, Nurse, Pharmacist, Medical Laboratory Scientist, Dentist, Public Health, Healthcare Management, Allied Health, Other. "
+                            "If job title includes 'medical officer', 'obstetrician', 'gynaecologist', or 'general practitioner', choose Doctor. "
+                            "If job title includes 'midwife', 'midwifery', or 'matron', choose Nurse. "
+                            "If job title includes 'program officer', 'project officer', 'epidemiology', 'surveillance', 'public health', or 'health systems', choose Public Health. "
+                            "If job title includes 'director', 'manager', 'coordinator', 'provost', or 'quality officer', choose Healthcare Management. "
+                            "If job title includes 'physiotherapist', 'optometrist', or 'therapist', choose Allied Health. "
                             "Use job title/requirements to decide; default to Other if unclear. "
                             "how_to_apply must be 1-2 short bullets, never include raw URLs or emails, "
-                            "and always end with 'Click Apply Now for full details.' "
+                            "and always end with 'Click the Apply Now button for full details.' "
                             "Never output 'Email protected – see original listing' as the whole how_to_apply. "
                             "If email is protected/redacted, do not infer an email; leave contact_email empty "
                             "and use wording like 'Email the address shown on the original listing (email is protected on some sites).' "
@@ -343,14 +375,23 @@ def main():
         if args.sleep:
             time.sleep(args.sleep)
 
+    # Deduplicate jobs
+    original_count = len(extracted)
+    extracted = deduplicate_jobs(extracted)
+    deduped_count = original_count - len(extracted)
+
+    if deduped_count > 0:
+        print(f"  🔄 Deduplicated: {deduped_count} duplicate(s) removed")
+
     # Save output
     args.out.parent.mkdir(parents=True, exist_ok=True)
-    
+
     output_data = {
         "metadata": {
             "extracted_at": datetime.now().isoformat(),
             "model": args.model,
             "total_processed": processed,
+            "duplicates_removed": deduped_count,
             "skipped_old": skipped_date,
             "skipped_empty": skipped_empty,
             "errors": errors,

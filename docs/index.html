@@ -167,118 +167,117 @@
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
 
+    /* ===== SIMPLIFIED CARD STYLES ===== */
     .card {
       background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 20px;
-      box-shadow: 0 10px 24px rgba(28, 27, 25, 0.06);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 4px 12px rgba(28, 27, 25, 0.04);
       display: flex;
       flex-direction: column;
       gap: 10px;
+      transition: box-shadow 0.2s, transform 0.2s;
     }
 
-    .title {
+    .card.clickable {
+      cursor: pointer;
+    }
+
+    .card.clickable:hover {
+      box-shadow: 0 8px 24px rgba(28, 27, 25, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .card .title {
       font-family: "IBM Plex Sans", sans-serif;
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       font-weight: 600;
       margin: 0;
-      line-height: 1.3;
+      line-height: 1.35;
+      color: var(--ink);
     }
 
-    .meta {
+    .card .meta {
       color: var(--muted);
-      font-size: 0.92rem;
+      font-size: 0.9rem;
+      margin: 0;
     }
 
-    .tags {
+    .card .tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 6px;
     }
 
-    .tag {
+    .card .tag {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      border-radius: 999px;
       padding: 4px 10px;
-      font-size: 0.82rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
       font-weight: 500;
     }
 
-    .tag.deadline {
-      background: #fef3e2;
-      color: #b45309;
-    }
-
-    .tag.job-type {
+    .card .tag.job-type {
       background: #e8e4f0;
       color: #5b21b6;
     }
 
-    .tag.protected {
-      background: #fde8e8;
-      color: #b91c1c;
+    .card .tag.deadline {
+      background: #fef3e2;
+      color: #b45309;
     }
 
-    .tag.category {
-      background: #e0f2fe;
-      color: #075985;
-    }
-
-    .section-title {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-      margin: 10px 0 6px;
-      font-weight: 500;
-    }
-
-    ul, ol {
-      margin: 0 0 4px 18px;
-      padding: 0;
-      color: var(--ink);
-      font-size: 0.92rem;
-      line-height: 1.5;
-    }
-
-    li {
-      margin-bottom: 4px;
-    }
-
-    .empty {
-      color: var(--muted);
-      font-size: 0.92rem;
-      font-style: italic;
-    }
-
-    .salary {
+    .card .salary {
       font-weight: 500;
       color: var(--accent);
-      font-size: 0.95rem;
+      font-size: 0.92rem;
     }
 
-    .apply-btn {
+    /* Action buttons row */
+    .card-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .view-btn {
+      flex: 1;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 6px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid transparent;
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .view-btn:hover {
+      background: #c8e0d5;
+      border-color: var(--accent);
+    }
+
+    .apply-btn {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       background: var(--accent);
       color: white;
       border: none;
       border-radius: 10px;
-      padding: 10px 18px;
-      font-size: 0.9rem;
+      padding: 10px 14px;
+      font-size: 0.88rem;
       font-weight: 500;
       text-decoration: none;
       cursor: pointer;
-      margin-top: 8px;
       transition: background 0.2s;
-      width: fit-content;
     }
 
     .apply-btn:hover {
@@ -291,26 +290,336 @@
       cursor: not-allowed;
     }
 
-    .contact {
-      font-size: 0.88rem;
+    @media (max-width: 480px) {
+      .card-actions {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .view-btn,
+      .apply-btn {
+        width: 100%;
+      }
+    }
+
+    /* Scope list styles to detail panel */
+    .detail-panel .section-title {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
       color: var(--muted);
-      margin-top: 4px;
+      margin: 10px 0 6px;
+      font-weight: 500;
     }
 
-    .contact a {
+    .detail-panel ul,
+    .detail-panel ol {
+      margin: 0 0 4px 18px;
+      padding: 0;
+      color: var(--ink);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    .detail-panel li {
+      margin-bottom: 6px;
+    }
+
+    .detail-panel .empty {
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-style: italic;
+    }
+
+    /* ===== DETAIL PANEL ===== */
+    .detail-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(28, 27, 25, 0.4);
+      z-index: 999;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .detail-overlay.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .detail-panel {
+      position: fixed;
+      background: var(--card);
+      z-index: 1000;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .detail-panel.hidden {
+      transform: translateX(100%);
+    }
+
+    .detail-panel.visible {
+      transform: translateX(0);
+    }
+
+    /* Desktop: Side Panel */
+    @media (min-width: 769px) {
+      .detail-panel {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 480px;
+        max-width: 50vw;
+        height: auto;
+        overflow-y: auto;
+        border-left: 1px solid var(--line);
+        box-shadow: -8px 0 30px rgba(0, 0, 0, 0.12);
+        padding: 24px;
+        padding-bottom: 100px;
+      }
+
+      body.panel-open .page {
+        pointer-events: none;
+      }
+    }
+
+    /* Mobile: Full Screen */
+    @media (max-width: 768px) {
+      .detail-panel {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        overflow-y: auto;
+        padding: 16px;
+        padding-top: 70px;
+        padding-bottom: 100px;
+      }
+
+      body.panel-open {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+      }
+    }
+
+    /* Safe area for notched phones */
+    @supports (padding-bottom: env(safe-area-inset-bottom)) {
+      .detail-panel {
+        padding-bottom: calc(24px + env(safe-area-inset-bottom));
+      }
+    }
+
+    /* Close button (desktop) */
+    .detail-close-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .detail-close-btn:hover {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    @media (max-width: 768px) {
+      .detail-close-btn {
+        display: none;
+      }
+    }
+
+    /* Back button (mobile) */
+    .detail-back-btn {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      z-index: 1001;
+      display: none;
+      align-items: center;
+      gap: 6px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 18px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .detail-back-btn {
+        display: flex;
+      }
+    }
+
+    /* Panel content */
+    .detail-header {
+      margin-bottom: 20px;
+      padding-right: 50px;
+    }
+
+    .detail-title {
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0 0 8px;
+      line-height: 1.3;
+      color: var(--ink);
+    }
+
+    .detail-meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    .detail-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 14px 0;
+    }
+
+    .detail-panel .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-soft);
       color: var(--accent);
-      text-decoration: none;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 0.82rem;
+      font-weight: 500;
     }
 
-    .contact a:hover {
-      text-decoration: underline;
+    .detail-panel .tag.category {
+      background: #e0f2fe;
+      color: #075985;
     }
 
-    .divider {
-      height: 1px;
-      background: var(--line);
+    .detail-panel .tag.job-type {
+      background: #e8e4f0;
+      color: #5b21b6;
+    }
+
+    .detail-panel .tag.deadline {
+      background: #fef3e2;
+      color: #b45309;
+    }
+
+    .detail-salary {
+      font-weight: 500;
+      color: var(--accent);
+      font-size: 1rem;
       margin: 8px 0;
     }
+
+    .detail-section {
+      margin: 24px 0;
+    }
+
+    .detail-section h4 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin: 0 0 12px;
+      font-weight: 500;
+    }
+
+    .detail-section ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .detail-section li {
+      margin-bottom: 10px;
+      line-height: 1.55;
+      color: var(--ink);
+      font-size: 0.92rem;
+    }
+
+    .detail-divider {
+      height: 1px;
+      background: var(--line);
+      margin: 20px 0;
+    }
+
+    /* Aggregator notice - IMPORTANT for honesty */
+    .aggregator-notice {
+      background: linear-gradient(135deg, var(--accent-soft) 0%, #f0f7f4 100%);
+      border: 1px solid #c8e0d5;
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 24px 0;
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    .aggregator-notice strong {
+      display: block;
+      color: var(--accent);
+      margin-bottom: 4px;
+      font-size: 0.85rem;
+    }
+
+    .aggregator-notice p {
+      margin: 0;
+      color: #2d5a47;
+    }
+
+    /* Source label */
+    .detail-source {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin: 16px 0 8px;
+    }
+
+    .detail-source span {
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    /* Primary CTA */
+    .detail-cta {
+      display: block;
+      width: 100%;
+      background: var(--accent);
+      color: white;
+      text-align: center;
+      padding: 16px 24px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: background 0.2s;
+    }
+
+    .detail-cta:hover {
+      background: #174a39;
+    }
+
   </style>
 </head>
 <body>
@@ -355,6 +664,50 @@
     <main class="grid" id="grid"></main>
   </div>
 
+  <!-- Detail Overlay (for desktop click-outside-to-close) -->
+  <div class="detail-overlay" id="detailOverlay"></div>
+
+  <!-- Detail Panel -->
+  <aside class="detail-panel hidden" id="detailPanel" aria-hidden="true" role="dialog" aria-labelledby="detailTitle">
+    <button class="detail-close-btn" id="detailCloseBtn" aria-label="Close panel">✕</button>
+    <button class="detail-back-btn" id="detailBackBtn">← Back to jobs</button>
+
+    <div class="detail-header">
+      <h2 class="detail-title" id="detailTitle"></h2>
+      <p class="detail-meta" id="detailMeta"></p>
+      <div class="detail-tags" id="detailTags"></div>
+      <p class="detail-salary" id="detailSalary"></p>
+    </div>
+
+    <div class="detail-divider"></div>
+
+    <div class="detail-section" id="detailReqSection">
+      <h4>Requirements</h4>
+      <ul id="detailRequirements"></ul>
+    </div>
+
+    <div class="detail-section" id="detailRespSection">
+      <h4>Responsibilities</h4>
+      <ul id="detailResponsibilities"></ul>
+    </div>
+
+    <div class="detail-section">
+      <h4>How to Apply</h4>
+      <ul id="detailHowToApply"></ul>
+    </div>
+
+    <div class="aggregator-notice">
+      <strong>📋 About this listing</strong>
+      <p>JobberMed is a job aggregator that collects medical and healthcare vacancies from multiple sources. We are not the employer. Some contact details may only be available on the original posting. Always verify details before applying.</p>
+    </div>
+
+    <p class="detail-source">Source: <span id="detailSource"></span></p>
+
+    <a class="detail-cta" id="detailCTA" href="" target="_blank" rel="noopener noreferrer">
+      View Original Posting →
+    </a>
+  </aside>
+
   <script>
     const grid = document.getElementById("grid");
     const statCount = document.getElementById("stat-count");
@@ -366,10 +719,13 @@
     const CATEGORY_ORDER = [
       "All",
       "Doctors",
-      "Nurses",
+      "Nurses & Midwives",
       "Pharmacists",
       "Medical Laboratory Scientists",
       "Dentists",
+      "Public Health",
+      "Healthcare Management",
+      "Allied Health",
       "Others",
     ];
     let activeCategory = "All";
@@ -400,6 +756,15 @@
       return `${day} ${month} ${year}`;
     }
 
+    function isExpired(deadline) {
+      if (!deadline) return false;
+      const deadlineDate = new Date(deadline);
+      if (Number.isNaN(deadlineDate.getTime())) return false;
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      return deadlineDate < today;
+    }
+
     function addList(target, items, maxItems = 4) {
       if (!Array.isArray(items) || items.length === 0) {
         const p = document.createElement("p");
@@ -428,6 +793,211 @@
       }
     }
 
+    // ===== DETAIL PANEL FUNCTIONALITY =====
+    const detailPanel = document.getElementById("detailPanel");
+    const detailOverlay = document.getElementById("detailOverlay");
+    const detailCloseBtn = document.getElementById("detailCloseBtn");
+    const detailBackBtn = document.getElementById("detailBackBtn");
+    let currentJob = null;
+
+    // Generate a URL-friendly slug from job
+    function getJobSlug(job) {
+      if (job.apply_url) {
+        const match = job.apply_url.match(/[^/]+$/);
+        if (match) return match[0];
+      }
+      return (job.job_title || "job")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "")
+        .substring(0, 60);
+    }
+
+    // Find job by slug
+    function findJobBySlug(slug) {
+      if (!slug) return null;
+      return allJobs.find(j => {
+        const jobSlug = getJobSlug(j);
+        return jobSlug === slug || (j.apply_url && j.apply_url.includes(slug));
+      });
+    }
+
+    // Populate list (show ALL items, no truncation)
+    function populateDetailList(container, items) {
+      container.innerHTML = "";
+      if (!Array.isArray(items) || items.length === 0) {
+        const li = document.createElement("li");
+        li.className = "empty";
+        li.textContent = "Not specified";
+        container.appendChild(li);
+        return;
+      }
+      items.forEach(item => {
+        const text = (item || "").toString().trim();
+        if (text) {
+          const li = document.createElement("li");
+          li.textContent = text;
+          container.appendChild(li);
+        }
+      });
+    }
+
+    // Open detail panel
+    function openDetail(job) {
+      if (!job) return;
+      currentJob = job;
+
+      // Update URL without reload
+      const slug = getJobSlug(job);
+      const url = new URL(window.location);
+      url.searchParams.set("job", slug);
+      history.pushState({ job: slug }, "", url.toString());
+
+      // Populate header
+      document.getElementById("detailTitle").textContent = job.job_title || "Untitled Role";
+      document.getElementById("detailMeta").textContent =
+        [job.company, job.location].filter(Boolean).join(" • ") || "Company not listed";
+      document.getElementById("detailSalary").textContent = job.salary || "Salary not listed";
+
+      // Source
+      const sourceMap = {
+        medlocum: "MedLocum Jobs",
+        jobsinnigeria: "Jobs In Nigeria",
+        medicalworldnigeria: "Medical World Nigeria",
+      };
+      document.getElementById("detailSource").textContent =
+        sourceMap[job._source] || job._source || "External Source";
+
+      // Tags
+      const tagsContainer = document.getElementById("detailTags");
+      tagsContainer.innerHTML = "";
+
+      if (job.date_posted) {
+        const tag = document.createElement("div");
+        tag.className = "tag";
+        tag.textContent = `Posted ${formatDate(job.date_posted)}`;
+        tagsContainer.appendChild(tag);
+      }
+
+      const category = normalizeCategory(job);
+      if (category && category !== "Others") {
+        const tag = document.createElement("div");
+        tag.className = "tag category";
+        tag.textContent = category;
+        tagsContainer.appendChild(tag);
+      }
+
+      if (job.job_type) {
+        const tag = document.createElement("div");
+        tag.className = "tag job-type";
+        tag.textContent = job.job_type;
+        tagsContainer.appendChild(tag);
+      }
+
+      if (job.deadline) {
+        const tag = document.createElement("div");
+        tag.className = "tag deadline";
+        tag.textContent = `Closes ${formatDate(job.deadline)}`;
+        tagsContainer.appendChild(tag);
+      }
+
+      // Content sections - show ALL items
+      populateDetailList(document.getElementById("detailRequirements"), job.requirements);
+      populateDetailList(document.getElementById("detailResponsibilities"), job.responsibilities);
+
+      // How to apply
+      const applyList = document.getElementById("detailHowToApply");
+      if (job.how_to_apply && job.how_to_apply.length > 0) {
+        populateDetailList(applyList, job.how_to_apply);
+      } else {
+        applyList.innerHTML = "<li>View the original posting for application instructions.</li>";
+      }
+
+      // Hide responsibilities section if empty
+      const respSection = document.getElementById("detailRespSection");
+      respSection.style.display = (job.responsibilities && job.responsibilities.length > 0) ? "block" : "none";
+
+      // CTA button
+      const cta = document.getElementById("detailCTA");
+      if (job.apply_url) {
+        cta.href = job.apply_url;
+        cta.textContent = "View Original Posting →";
+        cta.classList.remove("disabled");
+      } else {
+        cta.href = "#";
+        cta.textContent = "No application link available";
+        cta.classList.add("disabled");
+      }
+
+      // Show panel
+      detailPanel.classList.remove("hidden");
+      detailPanel.classList.add("visible");
+      detailPanel.setAttribute("aria-hidden", "false");
+      detailOverlay.classList.add("visible");
+      document.body.classList.add("panel-open");
+
+      // Scroll panel to top
+      detailPanel.scrollTop = 0;
+    }
+
+    // Close detail panel
+    function closeDetail() {
+      currentJob = null;
+
+      // Update URL - remove job param
+      const url = new URL(window.location);
+      url.searchParams.delete("job");
+      const newUrl = url.searchParams.toString() ? `${url.pathname}?${url.searchParams}` : url.pathname;
+      history.pushState({}, "", newUrl);
+
+      // Hide panel
+      detailPanel.classList.add("hidden");
+      detailPanel.classList.remove("visible");
+      detailPanel.setAttribute("aria-hidden", "true");
+      detailOverlay.classList.remove("visible");
+      document.body.classList.remove("panel-open");
+    }
+
+    // Check URL for job param on load
+    function checkUrlForJob() {
+      const params = new URLSearchParams(window.location.search);
+      const jobSlug = params.get("job");
+      if (jobSlug) {
+        const job = findJobBySlug(jobSlug);
+        if (job) {
+          openDetail(job);
+        }
+      }
+    }
+
+    // Event listeners for closing
+    detailCloseBtn.addEventListener("click", closeDetail);
+    detailBackBtn.addEventListener("click", closeDetail);
+    detailOverlay.addEventListener("click", closeDetail);
+
+    // Keyboard: Escape to close
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && currentJob) {
+        closeDetail();
+      }
+    });
+
+    // Browser back/forward navigation
+    window.addEventListener("popstate", () => {
+      const params = new URLSearchParams(window.location.search);
+      const jobSlug = params.get("job");
+      if (jobSlug) {
+        const job = findJobBySlug(jobSlug);
+        if (job) {
+          openDetail(job);
+        } else {
+          closeDetail();
+        }
+      } else {
+        closeDetail();
+      }
+    });
+
     function getCategoryFromUrl() {
       const params = new URLSearchParams(window.location.search);
       const cat = safeText(params.get("category"));
@@ -444,16 +1014,41 @@
       window.history.replaceState({}, "", url.toString());
     }
 
-    function normalizeCategory(category) {
-      const raw = safeText(category).toLowerCase();
-      if (!raw) return "Others";
-      if (raw.includes("medical laboratory") || (raw.includes("laboratory") && raw.includes("scientist"))) {
+    function normalizeCategory(job) {
+      const title = (typeof job === "object"
+        ? safeText(job.job_title)
+        : safeText(job)
+      ).toLowerCase();
+
+      if (!title) return "Others";
+
+      if (title.includes("medical laboratory") || (title.includes("laboratory") && title.includes("scientist"))) {
         return "Medical Laboratory Scientists";
       }
-      if (raw.includes("dentist") || raw.includes("dental")) return "Dentists";
-      if (raw.includes("pharmacist")) return "Pharmacists";
-      if (raw.includes("nurse") || raw.includes("midwife")) return "Nurses";
-      if (raw.includes("doctor") || raw.includes("physician") || raw.includes("medical officer")) return "Doctors";
+      if (title.includes("dentist") || title.includes("dental")) return "Dentists";
+      if (title.includes("pharmacist") || title.includes("pharmacy")) return "Pharmacists";
+      if (title.includes("nurse") || title.includes("nursing") || title.includes("midwife") || title.includes("midwifery") || title.includes("matron")) {
+        return "Nurses & Midwives";
+      }
+      if (title.includes("doctor") || title.includes("physician") || title.includes("medical officer") ||
+          title.includes("obstetrician") || title.includes("gynaecologist") || title.includes("oncology") ||
+          title.includes("general practitioner")) {
+        return "Doctors";
+      }
+      if (title.includes("public health") || title.includes("program officer") || title.includes("programme officer") ||
+          title.includes("epidemiology") || title.includes("surveillance") || title.includes("health systems") ||
+          title.includes("health security") || title.includes("project officer")) {
+        return "Public Health";
+      }
+      if (title.includes("director") || title.includes("manager") || title.includes("coordinator") ||
+          title.includes("management") || title.includes("provost") || title.includes("hse") ||
+          title.includes("inventory") || title.includes("warehouse") || title.includes("quality officer")) {
+        return "Healthcare Management";
+      }
+      if (title.includes("physiotherapist") || title.includes("optometrist") || title.includes("therapist") ||
+          title.includes("radiographer") || title.includes("dietitian") || title.includes("nutritionist")) {
+        return "Allied Health";
+      }
       return "Others";
     }
 
@@ -591,10 +1186,11 @@
     }
 
     function renderFilters() {
+      const activeJobs = allJobs.filter(j => !isExpired(j.deadline));
       const counts = {};
       CATEGORY_ORDER.forEach(c => { counts[c] = 0; });
-      allJobs.forEach(j => {
-        const cat = normalizeCategory(j.job_category);
+      activeJobs.forEach(j => {
+        const cat = normalizeCategory(j);
         counts[cat] = (counts[cat] || 0) + 1;
         counts.All += 1;
       });
@@ -606,7 +1202,7 @@
       filterChips.innerHTML = "";
       CATEGORY_ORDER.forEach(cat => {
         const btn = document.createElement("button");
-        const count = cat === "All" ? allJobs.length : (counts[cat] || 0);
+        const count = cat === "All" ? activeJobs.length : (counts[cat] || 0);
         btn.className = `filter-btn${cat === activeCategory ? " active" : ""}`;
         btn.type = "button";
         btn.textContent = `${cat} (${count})`;
@@ -624,7 +1220,7 @@
       categorySelect.innerHTML = "";
       CATEGORY_ORDER.forEach(cat => {
         const opt = document.createElement("option");
-        const count = cat === "All" ? allJobs.length : (counts[cat] || 0);
+        const count = cat === "All" ? activeJobs.length : (counts[cat] || 0);
         opt.value = cat;
         opt.textContent = `${cat} (${count})`;
         categorySelect.appendChild(opt);
@@ -643,7 +1239,7 @@
 
       // Location dropdown
       const locationCounts = {};
-      allJobs.forEach(j => {
+      activeJobs.forEach(j => {
         const buckets = j._locationBuckets || [];
         buckets.forEach(b => {
           locationCounts[b] = (locationCounts[b] || 0) + 1;
@@ -675,48 +1271,41 @@
     }
 
     function renderJobs() {
-      const list = activeCategory === "All"
+      let list = activeCategory === "All"
         ? allJobs
-        : allJobs.filter(j => normalizeCategory(j.job_category) === activeCategory);
-      const filtered = activeLocation === "All locations"
+        : allJobs.filter(j => normalizeCategory(j) === activeCategory);
+      list = activeLocation === "All locations"
         ? list
         : list.filter(j => (j._locationBuckets || []).includes(activeLocation));
+      list = list.filter(j => !isExpired(j.deadline));
       grid.innerHTML = "";
-      updateStats(filtered);
+      updateStats(list);
 
-      filtered.forEach(j => {
+      list.forEach(j => {
         const card = document.createElement("article");
-        card.className = "card";
+        card.className = "card clickable";
+
+        // Make card clickable to open detail panel
+        card.addEventListener("click", (e) => {
+          if (e.target.closest(".apply-btn")) return;
+          openDetail(j);
+        });
 
         // Title
         const title = document.createElement("h3");
         title.className = "title";
         title.textContent = safeText(j.job_title) || "Untitled role";
 
-        // Meta
+        // Meta: Company • Location
         const meta = document.createElement("div");
         meta.className = "meta";
         const company = safeText(j.company);
         const location = safeText(j.location);
         meta.textContent = [company, location].filter(Boolean).join(" • ") || "Company not listed";
 
-        // Tags
+        // Tags (minimal: job type + deadline only)
         const tags = document.createElement("div");
         tags.className = "tags";
-
-        const postedTag = document.createElement("div");
-        postedTag.className = "tag";
-        const postedDate = formatDate(j.date_posted);
-        postedTag.textContent = postedDate ? `Posted ${postedDate}` : "Date unknown";
-        tags.appendChild(postedTag);
-
-        const categoryTag = normalizeCategory(j.job_category);
-        if (categoryTag && categoryTag !== "Other") {
-          const catTag = document.createElement("div");
-          catTag.className = "tag category";
-          catTag.textContent = categoryTag;
-          tags.appendChild(catTag);
-        }
 
         if (j.job_type && safeText(j.job_type)) {
           const typeTag = document.createElement("div");
@@ -728,16 +1317,8 @@
         if (j.deadline && safeText(j.deadline)) {
           const deadlineTag = document.createElement("div");
           deadlineTag.className = "tag deadline";
-          const deadlineDate = formatDate(j.deadline);
-          deadlineTag.textContent = `Closes ${deadlineDate || j.deadline}`;
+          deadlineTag.textContent = `Closes ${formatDate(j.deadline)}`;
           tags.appendChild(deadlineTag);
-        }
-
-        if (j.email_protected) {
-          const protectedTag = document.createElement("div");
-          protectedTag.className = "tag protected";
-          protectedTag.textContent = "Email protected";
-          tags.appendChild(protectedTag);
         }
 
         // Salary
@@ -745,55 +1326,20 @@
         salary.className = "salary";
         salary.textContent = safeText(j.salary) || "Salary not listed";
 
-        // Divider
-        const divider1 = document.createElement("div");
-        divider1.className = "divider";
+        // Action buttons row
+        const actions = document.createElement("div");
+        actions.className = "card-actions";
 
-        // Requirements
-        const reqLabel = document.createElement("div");
-        reqLabel.className = "section-title";
-        reqLabel.textContent = "Requirements";
+        // View Details button
+        const viewBtn = document.createElement("button");
+        viewBtn.className = "view-btn";
+        viewBtn.textContent = "View Details";
+        viewBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          openDetail(j);
+        });
 
-        const reqWrap = document.createElement("div");
-        addList(reqWrap, j.requirements);
-
-        // Responsibilities (if present)
-        let respLabel, respWrap;
-        if (j.responsibilities && j.responsibilities.length > 0) {
-          respLabel = document.createElement("div");
-          respLabel.className = "section-title";
-          respLabel.textContent = "Responsibilities";
-
-          respWrap = document.createElement("div");
-          addList(respWrap, j.responsibilities);
-        }
-
-        // How to Apply
-        const applyLabel = document.createElement("div");
-        applyLabel.className = "section-title";
-        applyLabel.textContent = "How to Apply";
-
-        const applyWrap = document.createElement("div");
-        const applyItems = Array.isArray(j.how_to_apply) ? j.how_to_apply.slice() : [];
-        if (j.email_protected && applyItems.length === 0) {
-          applyItems.push("Email protected – see original listing");
-        }
-        addList(applyWrap, applyItems);
-
-        // Contact info
-        let contactDiv;
-        const email = safeText(j.contact_email);
-        const phone = safeText(j.contact_phone);
-        if (email || phone) {
-          contactDiv = document.createElement("div");
-          contactDiv.className = "contact";
-          const parts = [];
-          if (email) parts.push(`<a href="mailto:${email}">${email}</a>`);
-          if (phone) parts.push(phone);
-          contactDiv.innerHTML = parts.join(" · ");
-        }
-
-        // Apply button
+        // Apply Now button
         const applyUrl = safeText(j.apply_url);
         const applyBtn = document.createElement("a");
         applyBtn.className = "apply-btn";
@@ -804,31 +1350,18 @@
           applyBtn.textContent = "Apply Now →";
         } else {
           applyBtn.className = "apply-btn disabled";
-          applyBtn.textContent = "No application link";
+          applyBtn.textContent = "No link";
         }
 
-        // Build card
+        actions.appendChild(viewBtn);
+        actions.appendChild(applyBtn);
+
+        // Build card (minimal structure)
         card.appendChild(title);
         card.appendChild(meta);
         card.appendChild(tags);
         card.appendChild(salary);
-        card.appendChild(divider1);
-        card.appendChild(reqLabel);
-        card.appendChild(reqWrap);
-        
-        if (respLabel && respWrap) {
-          card.appendChild(respLabel);
-          card.appendChild(respWrap);
-        }
-        
-        card.appendChild(applyLabel);
-        card.appendChild(applyWrap);
-        
-        if (contactDiv) {
-          card.appendChild(contactDiv);
-        }
-        
-        card.appendChild(applyBtn);
+        card.appendChild(actions);
 
         grid.appendChild(card);
       });
@@ -851,6 +1384,7 @@
         activeCategory = getCategoryFromUrl();
         renderFilters();
         renderJobs();
+        checkUrlForJob();
       })
       .catch(err => {
         grid.innerHTML = `<p style="color: var(--muted); padding: 40px; text-align: center;">
