@@ -539,18 +539,19 @@
       const raw = safeText(location);
       if (!raw) return [];
       const lower = raw.toLowerCase();
+      const hasWord = (word) => new RegExp(`\\b${word}\\b`, "i").test(raw);
       const buckets = new Set();
-      const isNigeria = lower.includes("nigeria") || NIGERIAN_STATES.some(s => lower.includes(s.toLowerCase()));
+      const isNigeria = hasWord("nigeria") || NIGERIAN_STATES.some(s => hasWord(s.toLowerCase()));
 
       if (isNigeria) {
         NIGERIAN_STATES.forEach(state => {
-          if (lower.includes(state.toLowerCase())) {
+          if (hasWord(state.toLowerCase())) {
             buckets.add(`${state} State`);
           }
         });
 
         Object.keys(CITY_TO_STATE).forEach(city => {
-          if (lower.includes(city)) {
+          if (hasWord(city)) {
             const state = CITY_TO_STATE[city];
             if (state === "FCT") {
               buckets.add("FCT");

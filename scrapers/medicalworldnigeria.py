@@ -11,6 +11,7 @@ from utils import (
     extract_phone,
     extract_location,
     extract_emails_safely,
+    clean_ad_content,
     SALARY_PATTERNS,
     QUALIFICATION_PATTERNS,
     EXPERIENCE_PATTERNS,
@@ -63,6 +64,7 @@ class MedicalWorldNigeriaScraper(BaseScraper):
         email_safety = extract_emails_safely(html)
         
         soup = BeautifulSoup(html, 'html.parser')
+        soup = clean_ad_content(soup)
         content = soup.find('div', class_='single-page-content')
         
         if not content:
@@ -98,8 +100,14 @@ class MedicalWorldNigeriaScraper(BaseScraper):
         if desc_parts:
             details['description'] = ' '.join(desc_parts)[:1500]
         
-        # Use shared extractors
-        details['location'] = extract_location(full_text, NIGERIAN_LOCATIONS)
+        # Use shared extractors (location only from main content)
+        loc_match = re.search(r'location[:\s]+([^\n]+)', full_text, re.IGNORECASE)
+        if loc_match:
+            details['location'] = loc_match.group(1).strip()[:100]
+        else:
+            details['location'] = extract_location(full_text, NIGERIAN_LOCATIONS)
+        if not details['location']:
+            details['location'] = "N/A"
         details['salary'] = extract_first_match(SALARY_PATTERNS, full_text)
         details['job_type'] = extract_first_match(JOB_TYPE_PATTERNS, full_text)
         details['experience'] = extract_first_match(EXPERIENCE_PATTERNS, full_text)
