@@ -691,14 +691,9 @@
       <ul id="detailResponsibilities"></ul>
     </div>
 
-    <div class="detail-section">
-      <h4>How to Apply</h4>
-      <ul id="detailHowToApply"></ul>
-    </div>
-
     <div class="aggregator-notice">
       <strong>📋 About this listing</strong>
-      <p>JobberMed is a job aggregator that collects medical and healthcare vacancies from multiple sources. We are not the employer. Some contact details may only be available on the original posting. Always verify details before applying.</p>
+      <p>JobberMed aggregates medical jobs from multiple sources. We are not the employer. View the original posting below for application instructions, contact details, and full job information.</p>
     </div>
 
     <p class="detail-source">Source: <span id="detailSource"></span></p>
@@ -904,14 +899,6 @@
       // Content sections - show ALL items
       populateDetailList(document.getElementById("detailRequirements"), job.requirements);
       populateDetailList(document.getElementById("detailResponsibilities"), job.responsibilities);
-
-      // How to apply
-      const applyList = document.getElementById("detailHowToApply");
-      if (job.how_to_apply && job.how_to_apply.length > 0) {
-        populateDetailList(applyList, job.how_to_apply);
-      } else {
-        applyList.innerHTML = "<li>View the original posting for application instructions.</li>";
-      }
 
       // Hide responsibilities section if empty
       const respSection = document.getElementById("detailRespSection");
