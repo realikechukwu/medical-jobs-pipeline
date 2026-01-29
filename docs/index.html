@@ -271,16 +271,16 @@
   <div class="page">
     <header>
       <div class="hero">
-        <h1>Medical Jobs Digest</h1>
-        <p>Curated medical and healthcare job postings from across Nigeria. Updated weekly.</p>
+        <h1>JobberMed</h1>
+        <p>Live medical and healthcare jobs across Nigeria</p>
       </div>
       <div class="stat" id="stat-count">
         <strong>—</strong>
-        <span>Jobs loaded</span>
+        <span>Live jobs · updated automatically</span>
       </div>
       <div class="stat" id="stat-range">
         <strong>—</strong>
-        <span>Date range</span>
+        <span>Listings period</span>
       </div>
     </header>
 
@@ -296,12 +296,12 @@
     const filters = document.getElementById("filters");
     const CATEGORY_ORDER = [
       "All",
-      "Doctor",
-      "Nurse",
-      "Pharmacist",
-      "Medical Laboratory Scientist",
-      "Dentist",
-      "Other",
+      "Doctors",
+      "Nurses",
+      "Pharmacists",
+      "Medical Laboratory Scientists",
+      "Dentists",
+      "Others",
     ];
     let activeCategory = "All";
     let allJobs = [];
@@ -327,7 +327,7 @@
       const month = months[d.getMonth()];
       const year = d.getFullYear();
       
-      return `${getOrdinal(day)} ${month} ${year}`;
+      return `${day} ${month} ${year}`;
     }
 
     function addList(target, items, maxItems = 4) {
@@ -360,15 +360,15 @@
 
     function normalizeCategory(category) {
       const raw = safeText(category).toLowerCase();
-      if (!raw) return "Other";
+      if (!raw) return "Others";
       if (raw.includes("medical laboratory") || (raw.includes("laboratory") && raw.includes("scientist"))) {
-        return "Medical Laboratory Scientist";
+        return "Medical Laboratory Scientists";
       }
-      if (raw.includes("dentist") || raw.includes("dental")) return "Dentist";
-      if (raw.includes("pharmacist")) return "Pharmacist";
-      if (raw.includes("nurse") || raw.includes("midwife")) return "Nurse";
-      if (raw.includes("doctor") || raw.includes("physician") || raw.includes("medical officer")) return "Doctor";
-      return "Other";
+      if (raw.includes("dentist") || raw.includes("dental")) return "Dentists";
+      if (raw.includes("pharmacist")) return "Pharmacists";
+      if (raw.includes("nurse") || raw.includes("midwife")) return "Nurses";
+      if (raw.includes("doctor") || raw.includes("physician") || raw.includes("medical officer")) return "Doctors";
+      return "Others";
     }
 
     function updateStats(list) {
