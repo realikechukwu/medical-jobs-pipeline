@@ -331,6 +331,63 @@
       font-style: italic;
     }
 
+    /* ===== NEWSLETTER SECTION ===== */
+    .newsletter-section {
+      position: relative;
+      background: var(--accent-soft);
+      border: 1px solid #c8e0d5;
+      border-radius: 16px;
+      padding: 16px;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .newsletter-section.hidden {
+      display: none;
+    }
+
+    .newsletter-form {
+      width: 100%;
+      max-width: 560px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .newsletter-form iframe {
+      border-radius: 8px;
+      max-width: 100%;
+    }
+
+    .newsletter-dismiss {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      color: var(--accent);
+      cursor: pointer;
+      opacity: 0.5;
+      transition: opacity 0.2s;
+    }
+
+    .newsletter-dismiss:hover {
+      opacity: 1;
+    }
+
+    @media (max-width: 600px) {
+      .newsletter-section {
+        padding: 12px 8px;
+      }
+
+      .newsletter-form iframe {
+        height: 300px;
+      }
+    }
+
     /* ===== DETAIL PANEL ===== */
     .detail-overlay {
       position: fixed;
@@ -638,6 +695,22 @@
         <span>Listings period</span>
       </div>
     </header>
+
+    <!-- Newsletter Signup Section -->
+    <section class="newsletter-section" id="newsletterSection">
+      <div class="newsletter-form">
+        <iframe
+          width="540"
+          height="280"
+          src="https://58681e2d.sibforms.com/serve/MUIFAHXVR5tRFBDTcOiuh20_p5-O29yy8k6p5GA7_6vI8Mb29oJKSmjzFdFS_42mJMKpX3gRAnzPHIXoo3rmGHyDPdPUTmBgyYut9bQsy96jN4w0GOoddcGrWFGZYkT0ZFaCl4M5fCzyZig_rPFG-yB2pE-Lqro3GCHZ9det5WfikZkmJgdeG6iMIEktzRDAxSIwlId0D8akd_v1Cw=="
+          frameborder="0"
+          scrolling="no"
+          allowfullscreen
+          title="Newsletter signup form"
+        ></iframe>
+      </div>
+      <button class="newsletter-dismiss" id="newsletterDismiss" aria-label="Dismiss newsletter signup">✕</button>
+    </section>
 
     <div class="filters" id="filters">
       <!-- Mobile dropdown -->
@@ -984,6 +1057,40 @@
         closeDetail();
       }
     });
+
+    // ===== NEWSLETTER DISMISS FUNCTIONALITY =====
+    const newsletterSection = document.getElementById("newsletterSection");
+    const newsletterDismiss = document.getElementById("newsletterDismiss");
+    const NEWSLETTER_STORAGE_KEY = "jobbermed_newsletter_dismissed";
+    const DISMISS_DURATION_DAYS = 14;
+
+    function isNewsletterDismissed() {
+      const dismissed = localStorage.getItem(NEWSLETTER_STORAGE_KEY);
+      if (!dismissed) return false;
+
+      const dismissedDate = new Date(parseInt(dismissed, 10));
+      const now = new Date();
+      const daysSinceDismissed = (now - dismissedDate) / (1000 * 60 * 60 * 24);
+
+      return daysSinceDismissed < DISMISS_DURATION_DAYS;
+    }
+
+    function dismissNewsletter() {
+      localStorage.setItem(NEWSLETTER_STORAGE_KEY, Date.now().toString());
+      newsletterSection.classList.add("hidden");
+    }
+
+    function initNewsletter() {
+      if (!newsletterSection || !newsletterDismiss) return;
+
+      if (isNewsletterDismissed()) {
+        newsletterSection.classList.add("hidden");
+      }
+
+      newsletterDismiss.addEventListener("click", dismissNewsletter);
+    }
+
+    initNewsletter();
 
     function getCategoryFromUrl() {
       const params = new URLSearchParams(window.location.search);
