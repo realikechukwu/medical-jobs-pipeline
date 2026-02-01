@@ -731,6 +731,13 @@ function renderJobs() {
     const tags = document.createElement("div");
     tags.className = "tags";
 
+    if (j.date_posted) {
+      const postedTag = document.createElement("div");
+      postedTag.className = "tag posted";
+      postedTag.textContent = `Posted ${formatDate(j.date_posted)}`;
+      tags.appendChild(postedTag);
+    }
+
     if (j.job_type && safeText(j.job_type)) {
       const typeTag = document.createElement("div");
       typeTag.className = "tag job-type";
@@ -746,9 +753,12 @@ function renderJobs() {
     }
 
     // Salary
-    const salary = document.createElement("div");
-    salary.className = "salary";
-    salary.textContent = safeText(j.salary) || "Salary not listed";
+    let salary;
+    if (safeText(j.salary)) {
+      salary = document.createElement("div");
+      salary.className = "salary";
+      salary.textContent = safeText(j.salary);
+    }
 
     // Action buttons row
     const actions = document.createElement("div");
@@ -784,7 +794,9 @@ function renderJobs() {
     card.appendChild(title);
     card.appendChild(meta);
     card.appendChild(tags);
-    card.appendChild(salary);
+    if (salary) {
+      card.appendChild(salary);
+    }
     card.appendChild(actions);
 
     grid.appendChild(card);

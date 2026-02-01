@@ -154,7 +154,7 @@ header {
   padding: 18px 20px;
   border: 1px solid var(--line);
   border-radius: 16px;
-  background: var(--accent-soft);
+  background: rgba(12, 192, 223, 0.18);
 }
 
 .stat strong {
@@ -185,13 +185,13 @@ header {
 }
 
 .filter-btn:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: #0cc0df;
+  color: #1800ad;
 }
 
 .filter-btn.active {
-  background: var(--accent);
-  border-color: var(--accent);
+  background: #1800ad;
+  border-color: #1800ad;
   color: #fff;
 }
 
@@ -420,19 +420,24 @@ header {
   font-weight: 500;
 }
 
+.card .tag.posted {
+  background: rgba(16, 185, 129, 0.18);
+  color: #0f766e;
+}
+
 .card .tag.job-type {
-  background: #e8e4f0;
-  color: #5b21b6;
+  background: rgba(251, 191, 36, 0.2);
+  color: #b45309;
 }
 
 .card .tag.deadline {
-  background: #fef3e2;
-  color: #b45309;
+  background: rgba(239, 68, 68, 0.18);
+  color: #b91c1c;
 }
 
 .card .salary {
   font-weight: 500;
-  color: var(--accent);
+  color: #1800ad;
   font-size: 0.92rem;
 }
 
@@ -448,9 +453,9 @@ header {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--accent-soft);
-  color: var(--accent);
-  border: 1px solid transparent;
+  background: rgba(12, 192, 223, 0.18);
+  color: #1800ad;
+  border: 1px solid rgba(12, 192, 223, 0.45);
   border-radius: 10px;
   padding: 10px 14px;
   font-size: 0.88rem;
@@ -460,8 +465,8 @@ header {
 }
 
 .view-btn:hover {
-  background: #c8e0d5;
-  border-color: var(--accent);
+  background: rgba(12, 192, 223, 0.28);
+  border-color: rgba(12, 192, 223, 0.7);
 }
 
 .apply-btn {
@@ -469,7 +474,7 @@ header {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--accent);
+  background: #1800ad;
   color: white;
   border: none;
   border-radius: 10px;
@@ -482,7 +487,7 @@ header {
 }
 
 .apply-btn:hover {
-  background: #174a39;
+  background: #12007f;
 }
 
 .apply-btn.disabled {
@@ -759,8 +764,8 @@ header {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: rgba(16, 185, 129, 0.18);
+  color: #0f766e;
   border-radius: 999px;
   padding: 4px 10px;
   font-size: 0.82rem;
@@ -768,23 +773,23 @@ header {
 }
 
 .detail-panel .tag.category {
-  background: #e0f2fe;
-  color: #075985;
+  background: rgba(12, 192, 223, 0.2);
+  color: #1800ad;
 }
 
 .detail-panel .tag.job-type {
-  background: #e8e4f0;
-  color: #5b21b6;
+  background: rgba(251, 191, 36, 0.2);
+  color: #b45309;
 }
 
 .detail-panel .tag.deadline {
-  background: #fef3e2;
-  color: #b45309;
+  background: rgba(239, 68, 68, 0.18);
+  color: #b91c1c;
 }
 
 .detail-salary {
   font-weight: 500;
-  color: var(--accent);
+  color: #1800ad;
   font-size: 1rem;
   margin: 8px 0;
 }
@@ -822,8 +827,8 @@ header {
 
 /* Aggregator notice - IMPORTANT for honesty */
 .aggregator-notice {
-  background: linear-gradient(135deg, var(--accent-soft) 0%, #f0f7f4 100%);
-  border: 1px solid #c8e0d5;
+  background: rgba(12, 192, 223, 0.18);
+  border: 1px solid rgba(12, 192, 223, 0.35);
   border-radius: 12px;
   padding: 14px 16px;
   margin: 24px 0;
@@ -833,14 +838,14 @@ header {
 
 .aggregator-notice strong {
   display: block;
-  color: var(--accent);
+  color: #1800ad;
   margin-bottom: 4px;
   font-size: 0.85rem;
 }
 
 .aggregator-notice p {
   margin: 0;
-  color: #2d5a47;
+  color: #1800ad;
 }
 
 /* Source label */
@@ -862,7 +867,7 @@ header {
 .detail-cta {
   display: block;
   width: 100%;
-  background: var(--accent);
+  background: #1800ad;
   color: white;
   text-align: center;
   padding: 16px 24px;
@@ -875,5 +880,5 @@ header {
 }
 
 .detail-cta:hover {
-  background: #174a39;
+  background: #12007f;
 }

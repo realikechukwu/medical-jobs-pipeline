@@ -124,7 +124,7 @@ def build_email_html(jobs: list) -> str:
           </tr>
           <tr>
             <td style="padding: 0; background: #1800ad;">
-              <img src="https://jobbermed.com/images/banner.jpg" alt=\"JobberMed banner\" width=\"600\" style=\"display: block; width: 100%; height: auto;\" />
+              <img src="https://jobbermed.com/images/email-banner.jpg" alt=\"JobberMed banner\" width=\"600\" style=\"display: block; width: 100%; height: auto;\" />
             </td>
           </tr>
 
