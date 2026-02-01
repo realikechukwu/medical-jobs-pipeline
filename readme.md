@@ -6,6 +6,50 @@ This pipeline automatically scrapes medical/healthcare job postings from three N
 
 ---
 
+## Frontend (Static Site)
+
+The website lives in the `docs/` folder and is served via GitHub Pages or a custom domain.
+
+**Key files:**
+- `docs/index.html` — Main UI (cards, filters, detail panel, pagination)
+- `docs/style.css` — Styles
+- `docs/script.js` — Client-side logic (filters, search, panel, pagination)
+- `docs/master_jobs.json` — Data source for the UI
+- `docs/about.html`, `docs/privacy.html`, `docs/subscribe.html` — Static info pages
+
+**Local preview (recommended):**
+```
+python -m http.server
+```
+Then open:
+```
+http://localhost:8000/docs/index.html
+```
+
+---
+
+## Newsletter (Brevo)
+
+The weekly newsletter is generated and sent via Brevo.
+
+**Script:**
+- `newsletter.py` — Builds HTML and sends a Brevo email campaign
+
+**Environment variables:**
+- `BREVO_API_KEY`
+- `BREVO_LIST_ID`
+- `BREVO_SENDER_EMAIL`
+- `BREVO_SENDER_NAME`
+- `NEWSLETTER_DRY_RUN=true` (optional — generate preview without sending)
+
+**Dry run (preview):**
+```
+NEWSLETTER_DRY_RUN=true python newsletter.py
+```
+This writes `docs/newsletter_preview.html`.
+
+---
+
 ## How It Works (Step by Step)
 
 ### Step 1: Configuration (`config.py`)

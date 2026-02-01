@@ -71,7 +71,7 @@ def build_email_html(jobs: list) -> str:
 
         salary_html = ""
         if salary:
-            salary_html = f'<p style="color: #1f5f4a; font-weight: 500; margin: 8px 0 0 0;">{salary}</p>'
+            salary_html = f'<p style="color: #1800ad; font-weight: 600; margin: 8px 0 0 0;">{salary}</p>'
 
         job_rows += f'''
         <tr>
@@ -82,12 +82,12 @@ def build_email_html(jobs: list) -> str:
                   <h3 style="margin: 0 0 6px 0; font-size: 17px; color: #1c1b19;">
                     <a href="{apply_url}" style="color: #1c1b19; text-decoration: none;">{title}</a>
                   </h3>
-                  <p style="margin: 0 0 8px 0; color: #6d6760; font-size: 14px;">{meta}</p>
+                  <p style="margin: 0 0 8px 0; color: #6d6760; font-size: 13px;">{meta}</p>
                   {deadline_html}
                   {salary_html}
                 </td>
                 <td width="100" align="right" valign="top">
-                  <a href="{apply_url}" style="display: inline-block; background: #1f5f4a; color: white; padding: 10px 16px; border-radius: 8px; text-decoration: none; font-size: 13px; font-weight: 500;">View →</a>
+                  <a href="{apply_url}" style="display: inline-block; background: #1800ad; color: white; padding: 10px 16px; border-radius: 8px; text-decoration: none; font-size: 13px; font-weight: 600;">View →</a>
                 </td>
               </tr>
             </table>
@@ -103,24 +103,35 @@ def build_email_html(jobs: list) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JobberMed Weekly Digest</title>
 </head>
-<body style="margin: 0; padding: 0; background-color: #f7f4ef; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f7f4ef; padding: 40px 20px;">
+<body style="margin: 0; padding: 0; background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff; padding: 40px 20px;">
     <tr>
       <td align="center">
         <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
 
           <!-- Header -->
           <tr>
-            <td style="background: #1f5f4a; padding: 32px 40px; text-align: center;">
-              <h1 style="margin: 0; color: white; font-size: 28px; font-weight: 700;">JobberMed</h1>
-              <p style="margin: 8px 0 0 0; color: rgba(255,255,255,0.85); font-size: 15px;">Weekly Medical Jobs Digest</p>
+            <td style="background: #1800ad; padding: 10px 40px;">
+              <div style="height: 6px; background: linear-gradient(90deg, #1800ad 0%, #0cc0df 100%); border-radius: 999px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="background: #1800ad; padding: 24px 40px 28px 40px; text-align: left;">
+              <img src="https://jobbermed.com/images/logo.png" alt="JobberMed" width="200" style="display: block; height: auto; margin-bottom: 10px;">
+              <p style="margin: 0; color: rgba(255,255,255,0.9); font-size: 14px;">Weekly Medical Jobs Digest</p>
+              <div style="height: 6px; width: 140px; margin-top: 14px; border-radius: 999px; background: rgba(12, 192, 223, 0.55);"></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0; background: #1800ad;">
+              <img src="https://jobbermed.com/images/banner.jpg" alt=\"JobberMed banner\" width=\"600\" style=\"display: block; width: 100%; height: auto;\" />
             </td>
           </tr>
 
           <!-- Intro -->
           <tr>
-            <td style="padding: 32px 40px 20px 40px;">
-              <p style="margin: 0; color: #1c1b19; font-size: 16px; line-height: 1.6;">
+            <td style="padding: 28px 40px 20px 40px;">
+              <p style="margin: 0; color: #1c1b19; font-size: 15px; line-height: 1.6;">
                 Here are the <strong>top {len(jobs)} medical and healthcare jobs</strong> posted this week across the healthcare industry in the country.
               </p>
             </td>
@@ -138,18 +149,18 @@ def build_email_html(jobs: list) -> str:
           <!-- CTA -->
           <tr>
             <td style="padding: 32px 40px; text-align: center;">
-              <a href="https://jobbermed.com" style="display: inline-block; background: #1f5f4a; color: white; padding: 14px 32px; border-radius: 10px; text-decoration: none; font-size: 16px; font-weight: 500;">Browse All Jobs →</a>
+              <a href="https://jobbermed.com" style="display: inline-block; background: #1800ad; color: white; padding: 14px 32px; border-radius: 10px; text-decoration: none; font-size: 16px; font-weight: 600;">Browse All Jobs →</a>
             </td>
           </tr>
 
           <!-- Footer -->
           <tr>
-            <td style="background: #f7f4ef; padding: 24px 40px; text-align: center; border-top: 1px solid #e2ddd6;">
+            <td style="background: #f5f6fb; padding: 24px 40px; text-align: center; border-top: 1px solid #e2ddd6;">
               <p style="margin: 0 0 8px 0; color: #6d6760; font-size: 13px;">
                 You're receiving this because you subscribed at jobbermed.com
               </p>
               <p style="margin: 0; color: #6d6760; font-size: 13px;">
-                <a href="{{{{unsubscribe}}}}" style="color: #1f5f4a;">Unsubscribe</a> · <a href="https://jobbermed.com" style="color: #1f5f4a;">Visit Website</a>
+                <a href="{{{{unsubscribe}}}}" style="color: #1800ad;">Unsubscribe</a> · <a href="https://jobbermed.com" style="color: #1800ad;">Visit Website</a>
               </p>
             </td>
           </tr>
