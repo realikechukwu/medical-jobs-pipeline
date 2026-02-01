@@ -111,20 +111,8 @@ def build_email_html(jobs: list) -> str:
 
           <!-- Header -->
           <tr>
-            <td style="background: #1800ad; padding: 10px 40px;">
-              <div style="height: 6px; background: linear-gradient(90deg, #1800ad 0%, #0cc0df 100%); border-radius: 999px;"></div>
-            </td>
-          </tr>
-          <tr>
-            <td style="background: #1800ad; padding: 24px 40px 28px 40px; text-align: left;">
-              <img src="https://jobbermed.com/images/logo.png" alt="JobberMed" width="200" style="display: block; height: auto; margin-bottom: 10px;">
-              <p style="margin: 0; color: rgba(255,255,255,0.9); font-size: 14px;">Weekly Medical Jobs Digest</p>
-              <div style="height: 6px; width: 140px; margin-top: 14px; border-radius: 999px; background: rgba(12, 192, 223, 0.55);"></div>
-            </td>
-          </tr>
-          <tr>
             <td style="padding: 0; background: #1800ad;">
-              <img src="https://jobbermed.com/images/email-banner.jpg" alt=\"JobberMed banner\" width=\"600\" style=\"display: block; width: 100%; height: auto;\" />
+              <img src="https://jobbermed.com/images/email-banner.jpg" alt=\"JobberMed banner\" width=\"600\" style=\"display:block;border:0;outline:none;text-decoration:none;width:100%;height:auto;\" />
             </td>
           </tr>
 
