@@ -15,17 +15,17 @@ SCRAPER_CONFIG = {
     "medlocum": {
         "enabled": True,
         "rate_limit": 1.0,
-        "max_pages": 2,
+        "max_pages": 4,
     },
     "jobsinnigeria": {
         "enabled": True,
         "rate_limit": 2.0,
-        "max_pages": 2,
+        "max_pages": 4,
     },
     "medicalworldnigeria": {
         "enabled": True,
         "rate_limit": 2.0,
-        "max_pages": 1,
+        "max_pages": 2,
         "professions": {"Doctors": 7, "Nurses": 14},
     },
 }
@@ -33,8 +33,8 @@ SCRAPER_CONFIG = {
 # Extraction settings
 EXTRACTION_CONFIG = {
     "model": "gpt-4o-mini",
-    "max_age_days": 61,
-    "max_jobs": 120,  # Limit OpenAI API calls
+    "max_age_days": 90,
+    "max_jobs": 260,  # Limit OpenAI API calls
 }
 
 # Output files

@@ -605,6 +605,33 @@ function normalizeCategory(job) {
   return "Others";
 }
 
+function interleaveBySource(list) {
+  const buckets = new Map();
+  const order = [];
+  list.forEach(job => {
+    const key = job._source || "unknown";
+    if (!buckets.has(key)) {
+      buckets.set(key, []);
+      order.push(key);
+    }
+    buckets.get(key).push(job);
+  });
+
+  const result = [];
+  let added = true;
+  while (added) {
+    added = false;
+    order.forEach(key => {
+      const bucket = buckets.get(key);
+      if (bucket && bucket.length > 0) {
+        result.push(bucket.shift());
+        added = true;
+      }
+    });
+  }
+  return result;
+}
+
 const NIGERIAN_STATES = [
   "Abia", "Adamawa", "Akwa Ibom", "Anambra", "Bauchi", "Bayelsa", "Benue",
   "Borno", "Cross River", "Delta", "Ebonyi", "Edo", "Ekiti", "Enugu",
@@ -958,6 +985,7 @@ async function renderJobs() {
     });
   }
   list = list.filter(j => !isExpired(j.deadline));
+  list = interleaveBySource(list);
   grid.innerHTML = "";
   updateStats(list);
   renderPagination(list.length);
