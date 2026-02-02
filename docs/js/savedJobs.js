@@ -122,7 +122,7 @@ async function isJobSaved(jobId) {
         .select("id")
         .eq("user_id", user.id)
         .eq("job_id", jobId)
-        .single();
+        .maybeSingle();
 
       return !!data;
     } catch (error) {

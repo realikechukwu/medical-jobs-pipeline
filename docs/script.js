@@ -10,6 +10,9 @@ const searchClear = document.getElementById("searchClear");
 const pagination = document.getElementById("pagination");
 const savedToggle = document.getElementById("savedToggle");
 const detailSaveBtn = document.getElementById("detailSaveBtn");
+const heroUserEmail = document.getElementById("heroUserEmail");
+const heroSignIn = document.getElementById("heroSignIn");
+const heroSignOut = document.getElementById("heroSignOut");
 
 const CATEGORY_ORDER = [
   "All",
@@ -398,6 +401,38 @@ async function updateSavedToggle() {
   savedToggle.textContent = `Saved Jobs (${count})`;
   savedToggle.setAttribute("aria-pressed", savedOnly ? "true" : "false");
   savedToggle.classList.toggle("active", savedOnly);
+}
+
+function updateAuthUI(user) {
+  if (!heroUserEmail || !heroSignIn || !heroSignOut) return;
+  if (user && user.email) {
+    heroUserEmail.textContent = user.email;
+    heroSignIn.style.display = "none";
+    heroSignOut.style.display = "inline-flex";
+  } else {
+    heroUserEmail.textContent = "";
+    heroSignIn.style.display = "inline-flex";
+    heroSignOut.style.display = "none";
+  }
+}
+
+async function initAuthUI() {
+  if (typeof supabase === "undefined") return;
+  if (heroSignOut) {
+    heroSignOut.addEventListener("click", async () => {
+      await supabase.auth.signOut();
+      updateAuthUI(null);
+    });
+  }
+  try {
+    const { data } = await supabase.auth.getUser();
+    updateAuthUI(data?.user || null);
+  } catch {
+    updateAuthUI(null);
+  }
+  supabase.auth.onAuthStateChange((_event, session) => {
+    updateAuthUI(session?.user || null);
+  });
 }
 
 function getBookmarkIcon(isSaved) {
@@ -979,6 +1014,8 @@ async function renderJobs() {
   }
 }
 
+initAuthUI();
+
 fetch("master_jobs.json")
   .then(r => r.json())
   .then(data => {
@@ -1002,6 +1039,7 @@ fetch("master_jobs.json")
     updateSearchClearVisibility();
     currentPage = 1;
     updateSavedToggle();
+    initAuthUI();
     renderFilters();
     renderJobs();
     checkUrlForJob();

@@ -24,7 +24,11 @@
   <!-- Hero banner -->
   <section class="hero-banner">
     <div class="hero-inner hero-inner-signin">
-      <a class="hero-signin" href="signin.html">Sign In</a>
+      <div class="hero-auth">
+        <span class="hero-user-email" id="heroUserEmail"></span>
+        <a class="hero-signin" id="heroSignIn" href="signin.html">Sign In</a>
+        <button class="hero-signin hero-signout" id="heroSignOut" type="button">Sign Out</button>
+      </div>
       <a class="brand-link" href="./" aria-label="Go to homepage">
         <img
           src="images/logo.png"

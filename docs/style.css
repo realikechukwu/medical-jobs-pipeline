@@ -74,10 +74,32 @@ header {
   position: relative;
 }
 
-.hero-signin{
+.hero-auth{
   position: absolute;
   top: 16px;
   right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.hero-user-email{
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.85);
+  max-width: 220px;
+  text-align: right;
+  word-break: break-word;
+}
+
+@media (max-width: 600px){
+  .hero-user-email{
+    font-size: 0.75rem;
+    max-width: 180px;
+  }
+}
+
+.hero-signin{
   padding: 12px 20px;
   border-radius: 10px;
   border: 1px solid #ffffff;
@@ -86,11 +108,16 @@ header {
   font-size: 1rem;
   font-weight: 500;
   background: transparent;
+  cursor: pointer;
   transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 
 .hero-signin:hover{
   background: rgba(255,255,255,0.1);
+}
+
+.hero-signout{
+  display: none;
 }
 
 /* Brand / logo */
