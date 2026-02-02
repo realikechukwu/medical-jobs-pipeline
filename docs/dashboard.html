@@ -25,10 +25,15 @@
   <section class="hero-banner">
     <div class="hero-inner hero-inner-signin">
       <div class="hero-auth">
-        <span class="hero-user-email" id="heroUserEmail"></span>
-        <a class="hero-signin" id="heroSignIn" href="signin.html">Sign In</a>
-        <button class="hero-signin hero-signout" id="heroSignOut" type="button">Sign Out</button>
+        <nav class="hero-nav" aria-label="Primary">
+          <a class="hero-nav-link" href="./">Home</a>
+          <a class="hero-nav-link" id="heroNavDashboard" href="dashboard.html">Dashboard</a>
+          <a class="hero-nav-link" href="subscribe.html">Subscribe</a>
+          <a class="hero-nav-link" href="about.html">About Us</a>
+          <a class="hero-nav-link" href="privacy.html">Privacy Policy</a>
+        </nav>
       </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu">☰</button>
       <a class="brand-link" href="./" aria-label="Go to homepage">
         <img
           src="images/logo.png"
@@ -43,6 +48,22 @@
     </div>
   </section>
 
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <button class="mobile-menu-close" id="mobileMenuClose" type="button" aria-label="Close menu">✕</button>
+    <div class="mobile-menu-email" id="mobileMenuEmail"></div>
+    <a class="mobile-menu-link" id="mobileMenuPrimaryLink" href="index.html">Back to Jobs</a>
+    <nav class="mobile-menu-links">
+      <a class="mobile-menu-link" href="./">Home</a>
+      <a class="mobile-menu-link" href="dashboard.html">Dashboard</a>
+      <a class="mobile-menu-link" href="subscribe.html">Subscribe</a>
+      <a class="mobile-menu-link" href="about.html">About Us</a>
+      <a class="mobile-menu-link" href="privacy.html">Privacy Policy</a>
+    </nav>
+    <a class="mobile-menu-link" id="mobileMenuSignUp" href="signup.html">Sign Up</a>
+    <button class="mobile-menu-signout" id="mobileMenuSignOut" type="button">Sign Out</button>
+  </aside>
+
   <div class="page">
     <header></header>
 
@@ -56,7 +77,6 @@
           <button class="account-edit-btn" id="profileEditBtn" type="button">Edit</button>
         </div>
         <p class="account-email" id="accountEmail"></p>
-        <a class="account-link" href="index.html">← Back to jobs</a>
 
         <div class="profile-display" id="profileDisplay">
           <div class="profile-row">
@@ -122,6 +142,7 @@
           <input class="account-input account-conditional" id="stateOther" type="text" placeholder="State/Region" />
 
           <div class="account-message" id="profileMessage" role="status"></div>
+          <button class="account-save-bottom" id="profileSaveBottom" type="submit">Save profile</button>
         </form>
 
         <div class="account-divider"></div>
@@ -166,31 +187,43 @@
         return;
       }
 
-      const heroUserEmail = document.getElementById("heroUserEmail");
-      const heroSignIn = document.getElementById("heroSignIn");
-      const heroSignOut = document.getElementById("heroSignOut");
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+      const mobileMenuClose = document.getElementById("mobileMenuClose");
+      const mobileMenuEmail = document.getElementById("mobileMenuEmail");
+      const mobileMenuPrimaryLink = document.getElementById("mobileMenuPrimaryLink");
+      const mobileMenuSignOut = document.getElementById("mobileMenuSignOut");
+      const mobileMenuSignUp = document.getElementById("mobileMenuSignUp");
+      const heroNavDashboard = document.getElementById("heroNavDashboard");
 
       const updateAuthUI = (currentUser) => {
-        if (!heroUserEmail || !heroSignIn || !heroSignOut) return;
         if (currentUser && currentUser.email) {
-          heroUserEmail.textContent = currentUser.email;
-          heroSignIn.textContent = "Back to Jobs";
-          heroSignIn.setAttribute("href", "index.html");
-          heroSignIn.style.display = "inline-flex";
-          heroSignOut.style.display = "inline-flex";
+          if (mobileMenuEmail) mobileMenuEmail.textContent = currentUser.email;
+          if (mobileMenuPrimaryLink) {
+            mobileMenuPrimaryLink.textContent = "Back to Jobs";
+            mobileMenuPrimaryLink.setAttribute("href", "index.html");
+          }
+          if (heroNavDashboard) heroNavDashboard.style.display = "inline-flex";
+          if (mobileMenuSignOut) mobileMenuSignOut.style.display = "inline-flex";
+          if (mobileMenuSignUp) mobileMenuSignUp.style.display = "none";
         } else {
-          heroUserEmail.textContent = "";
-          heroSignIn.textContent = "Sign In";
-          heroSignIn.setAttribute("href", "signin.html");
-          heroSignIn.style.display = "inline-flex";
-          heroSignOut.style.display = "none";
+          if (mobileMenuEmail) mobileMenuEmail.textContent = "";
+          if (mobileMenuPrimaryLink) {
+            mobileMenuPrimaryLink.textContent = "Sign In";
+            mobileMenuPrimaryLink.setAttribute("href", "signin.html");
+          }
+          if (heroNavDashboard) heroNavDashboard.style.display = "none";
+          if (mobileMenuSignOut) mobileMenuSignOut.style.display = "none";
+          if (mobileMenuSignUp) mobileMenuSignUp.style.display = "inline-flex";
         }
       };
 
-      if (heroSignOut) {
-        heroSignOut.addEventListener("click", async () => {
+      if (mobileMenuSignOut) {
+        mobileMenuSignOut.addEventListener("click", async () => {
           await supabase.auth.signOut();
           updateAuthUI(null);
+          closeMobileMenu();
           window.location.href = "index.html";
         });
       }
@@ -200,12 +233,41 @@
         updateAuthUI(session?.user || null);
       });
 
+      function openMobileMenu() {
+        if (!mobileMenu || !mobileMenuOverlay) return;
+        mobileMenu.classList.add("open");
+        mobileMenuOverlay.classList.add("show");
+        mobileMenu.setAttribute("aria-hidden", "false");
+      }
+
+      function closeMobileMenu() {
+        if (!mobileMenu || !mobileMenuOverlay) return;
+        mobileMenu.classList.remove("open");
+        mobileMenuOverlay.classList.remove("show");
+        mobileMenu.setAttribute("aria-hidden", "true");
+      }
+
+      mobileMenuBtn?.addEventListener("click", openMobileMenu);
+      mobileMenuClose?.addEventListener("click", closeMobileMenu);
+      mobileMenuOverlay?.addEventListener("click", closeMobileMenu);
+      mobileMenu?.addEventListener("click", (e) => {
+        if (e.target.matches("a")) closeMobileMenu();
+      });
+
+      const path = window.location.pathname.split("/").pop() || "index.html";
+      mobileMenu?.querySelectorAll(".mobile-menu-link").forEach(link => {
+        const href = link.getAttribute("href") || "";
+        const isActive = href === path || (path === "index.html" && href === "./");
+        link.classList.toggle("active", isActive);
+      });
+
       const accountEmail = document.getElementById("accountEmail");
       const displayName = document.getElementById("displayName");
       const profileForm = document.getElementById("profileForm");
       const profileDisplay = document.getElementById("profileDisplay");
       const profileMessage = document.getElementById("profileMessage");
       const profileEditBtn = document.getElementById("profileEditBtn");
+      const profileSaveBottom = document.getElementById("profileSaveBottom");
       const accountSummary = document.getElementById("accountSummary");
       const occupationSelect = document.getElementById("occupationSelect");
       const occupationOther = document.getElementById("occupationOther");
@@ -313,6 +375,9 @@
         profileForm.classList.toggle("hidden", !editing);
         profileDisplay.classList.toggle("hidden", editing);
         profileForm.classList.toggle("is-editing", editing);
+        if (profileSaveBottom) {
+          profileSaveBottom.style.display = editing ? "inline-flex" : "none";
+        }
       };
 
       fillYears();

@@ -2,7 +2,7 @@ name: Weekly Job Scrape
 
 on:
   schedule:
-    - cron: '0 6 * * 1'  # Every Monday 6am UTC
+    - cron: '0 9 * * 1'  # Every Monday 9am UK time (UTC)
   workflow_dispatch:      # Manual trigger
 
 jobs:
@@ -22,17 +22,6 @@ jobs:
       
       - name: Install dependencies
         run: pip install -r requirements.txt
-      
-      - name: Create directories
-        run: mkdir -p json docs
-      
-      - name: Run scrapers
-        run: python main.py
-      
-      - name: Run extraction
-        run: python extract.py
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
       - name: Send weekly newsletter
         run: python newsletter.py
@@ -41,11 +30,3 @@ jobs:
           BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
           BREVO_SENDER_EMAIL: ${{ secrets.BREVO_SENDER_EMAIL }}
           BREVO_SENDER_NAME: ${{ secrets.BREVO_SENDER_NAME }}
-      
-      - name: Commit updated master_jobs.json
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add docs/master_jobs.json
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update jobs data $(date +'%Y-%m-%d')"
-          git push

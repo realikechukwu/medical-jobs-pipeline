@@ -15,6 +15,7 @@ const detailSaveBtn = document.getElementById("detailSaveBtn");
 const heroUserEmail = document.getElementById("heroUserEmail");
 const heroSignIn = document.getElementById("heroSignIn");
 const heroSignOut = document.getElementById("heroSignOut");
+const heroNavDashboard = document.getElementById("heroNavDashboard");
 const mobileMenuBtn = document.getElementById("mobileMenuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
@@ -423,6 +424,7 @@ function updateAuthUI(user) {
     heroSignIn.setAttribute("href", "signin.html");
     heroSignIn.style.display = "none";
     heroSignOut.style.display = "inline-flex";
+    if (heroNavDashboard) heroNavDashboard.style.display = "inline-flex";
     if (mobileMenuEmail) {
       mobileMenuEmail.textContent = user.email;
     }
@@ -442,6 +444,7 @@ function updateAuthUI(user) {
     heroSignIn.setAttribute("href", "signin.html");
     heroSignIn.style.display = "inline-flex";
     heroSignOut.style.display = "none";
+    if (heroNavDashboard) heroNavDashboard.style.display = "none";
     if (mobileMenuEmail) {
       mobileMenuEmail.textContent = "";
     }
@@ -886,18 +889,64 @@ function renderFilters() {
   }
 }
 
-function renderPagination(totalItems) {
-  const containers = [pagination, paginationTop].filter(Boolean);
-  containers.forEach(container => {
-    container.innerHTML = "";
-  });
-  const totalPages = Math.ceil(totalItems / PAGE_SIZE);
-  if (totalPages <= 1) return;
+function buildPaginationNumbers(totalPages) {
+  const wrap = document.createElement("div");
+  wrap.className = "pagination-numbers";
+  if (totalPages <= 1) return wrap;
 
+  const addPage = (page) => {
+    const btn = document.createElement("button");
+    btn.className = "pagination-num";
+    btn.textContent = String(page);
+    if (page === currentPage) {
+      btn.classList.add("active");
+      btn.disabled = true;
+    }
+    btn.addEventListener("click", () => {
+      currentPage = page;
+      renderJobs();
+    });
+    wrap.appendChild(btn);
+  };
+
+  const addDots = () => {
+    const span = document.createElement("span");
+    span.className = "pagination-dots";
+    span.textContent = "…";
+    wrap.appendChild(span);
+  };
+
+  const maxVisible = 5;
+  if (totalPages <= maxVisible) {
+    for (let i = 1; i <= totalPages; i += 1) addPage(i);
+    return wrap;
+  }
+
+  addPage(1);
+  if (currentPage > 3) addDots();
+
+  const start = Math.max(2, currentPage - 1);
+  const end = Math.min(totalPages - 1, currentPage + 1);
+  for (let i = start; i <= end; i += 1) addPage(i);
+
+  if (currentPage < totalPages - 2) addDots();
+  addPage(totalPages);
+
+  return wrap;
+}
+
+function renderPaginationFor(container, totalPages, includeNumbers) {
+  if (!container) return;
   const prevBtn = document.createElement("button");
   prevBtn.className = "pagination-btn";
   prevBtn.textContent = "Prev";
   prevBtn.disabled = currentPage <= 1;
+  prevBtn.addEventListener("click", () => {
+    if (currentPage > 1) {
+      currentPage -= 1;
+      renderJobs();
+    }
+  });
 
   const status = document.createElement("span");
   status.className = "pagination-status";
@@ -907,53 +956,29 @@ function renderPagination(totalItems) {
   nextBtn.className = "pagination-btn";
   nextBtn.textContent = "Next";
   nextBtn.disabled = currentPage >= totalPages;
-
-  containers.forEach(container => {
-    const prevClone = prevBtn.cloneNode(true);
-    const statusClone = status.cloneNode(true);
-    const nextClone = nextBtn.cloneNode(true);
-    const jumpWrap = document.createElement("div");
-    jumpWrap.className = "pagination-jump";
-    jumpWrap.innerHTML = `
-      <span class="pagination-label">Page</span>
-      <input class="pagination-input" type="number" min="1" max="${totalPages}" value="${currentPage}" aria-label="Jump to page" />
-      <button class="pagination-btn pagination-go" type="button">Go</button>
-    `;
-
-    prevClone.addEventListener("click", () => {
-      if (currentPage > 1) {
-        currentPage -= 1;
-        renderJobs();
-      }
-    });
-
-    nextClone.addEventListener("click", () => {
-      if (currentPage < totalPages) {
-        currentPage += 1;
-        renderJobs();
-      }
-    });
-
-    container.appendChild(prevClone);
-    container.appendChild(statusClone);
-    container.appendChild(nextClone);
-    container.appendChild(jumpWrap);
-
-    const jumpInput = jumpWrap.querySelector(".pagination-input");
-    const jumpBtn = jumpWrap.querySelector(".pagination-go");
-    const jumpToPage = () => {
-      const target = Math.max(1, Math.min(totalPages, parseInt(jumpInput.value, 10) || 1));
-      currentPage = target;
+  nextBtn.addEventListener("click", () => {
+    if (currentPage < totalPages) {
+      currentPage += 1;
       renderJobs();
-    };
-    jumpBtn.addEventListener("click", jumpToPage);
-    jumpInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
-        e.preventDefault();
-        jumpToPage();
-      }
-    });
+    }
   });
+
+  container.appendChild(prevBtn);
+  container.appendChild(status);
+  container.appendChild(nextBtn);
+
+  if (includeNumbers) {
+    container.appendChild(buildPaginationNumbers(totalPages));
+  }
+}
+
+function renderPagination(totalItems) {
+  const totalPages = Math.ceil(totalItems / PAGE_SIZE);
+  if (paginationTop) paginationTop.innerHTML = "";
+  if (pagination) pagination.innerHTML = "";
+  if (totalPages <= 1) return;
+  renderPaginationFor(paginationTop, totalPages, false);
+  renderPaginationFor(pagination, totalPages, true);
 }
 
 async function renderJobs() {
@@ -1162,6 +1187,19 @@ if (mobileMenu) {
     }
   });
 }
+
+function markActiveMobileLink() {
+  if (!mobileMenu) return;
+  const path = window.location.pathname.split("/").pop() || "index.html";
+  const links = mobileMenu.querySelectorAll(".mobile-menu-link");
+  links.forEach(link => {
+    const href = link.getAttribute("href") || "";
+    const isActive = href === path || (path === "index.html" && href === "./");
+    link.classList.toggle("active", isActive);
+  });
+}
+
+markActiveMobileLink();
 
 fetch("master_jobs.json")
   .then(r => r.json())

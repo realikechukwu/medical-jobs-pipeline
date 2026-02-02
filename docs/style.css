@@ -132,7 +132,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 6px;
+  gap: 8px;
 }
 
 .hero-auth-link{
@@ -224,6 +224,13 @@ header {
   font-size: 0.95rem;
 }
 
+.mobile-menu-link.active{
+  font-weight: 700;
+  background: #f0f0f0;
+  border-left: 3px solid #111111;
+  padding: 6px 8px;
+}
+
 .mobile-menu-links{
   display: grid;
   gap: 10px;
@@ -249,6 +256,12 @@ header {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media (max-width: 700px){
+  .hero-auth .hero-nav{
+    display: none;
   }
 }
 
@@ -532,31 +545,32 @@ input[type="search"]:focus{
   color: var(--muted);
 }
 
-.pagination-jump{
-  display: inline-flex;
-  align-items: center;
+.pagination-numbers{
+  display: flex;
   gap: 8px;
+  align-items: center;
 }
 
-.pagination-label{
+.pagination-num{
+  background: #f0f0f0;
+  border: 1px solid #d0d0d0;
+  border-radius: 999px;
+  padding: 6px 10px;
   font-size: 0.85rem;
-  color: var(--muted);
+  cursor: pointer;
 }
 
-.pagination-input{
-  width: 70px;
-  padding: 8px 10px;
-  border: 1px solid rgba(0,0,0,0.12);
-  border-radius: 10px;
-  font-size: 0.85rem;
-}
-
-.pagination-go{
-  padding: 8px 12px;
+.pagination-num.active{
   background: #111111;
-  border-color: #111111;
   color: #ffffff;
+  border-color: #111111;
 }
+
+.pagination-dots{
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 
 .saved-toggle{
   margin-left: 6px;
@@ -1073,6 +1087,24 @@ input[type="search"]:focus{
   height: 1px;
   background: #eeeeee;
   margin: 18px 0;
+}
+
+.account-save-bottom{
+  margin-top: 16px;
+  width: 100%;
+  background: #111111;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: none;
+}
+
+.account-save-bottom:hover{
+  background: #0f0f0f;
 }
 
 .account-link{

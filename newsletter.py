@@ -204,7 +204,6 @@ def send_campaign(html_content: str, job_count: int) -> bool:
         "recipients": {
             "listIds": [list_id],
         },
-        "scheduledAt": today.isoformat() + "Z",
     }
 
     try:
