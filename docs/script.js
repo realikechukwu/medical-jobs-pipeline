@@ -97,6 +97,7 @@ const detailCloseBtn = document.getElementById("detailCloseBtn");
 const detailBackBtn = document.getElementById("detailBackBtn");
 let currentJob = null;
 let scrollY = 0;
+let closeTimer = null;
 
 // Generate a URL-friendly slug from job
 function getJobSlug(job) {
@@ -222,6 +223,7 @@ function openDetail(job) {
 
   // Show panel
   detailPanel.classList.remove("hidden");
+  detailPanel.classList.remove("closing");
   detailPanel.classList.add("visible");
   detailPanel.setAttribute("aria-hidden", "false");
   detailOverlay.classList.add("visible");
@@ -243,13 +245,24 @@ function closeDetail() {
   history.pushState({}, "", newUrl);
 
   // Hide panel
-  detailPanel.classList.add("hidden");
+  if (closeTimer) {
+    clearTimeout(closeTimer);
+    closeTimer = null;
+  }
+
   detailPanel.classList.remove("visible");
-  detailPanel.setAttribute("aria-hidden", "true");
-  detailOverlay.classList.remove("visible");
-  document.body.classList.remove("panel-open");
-  document.body.style.top = "";
-  window.scrollTo(0, scrollY);
+  detailPanel.classList.add("closing");
+
+  closeTimer = setTimeout(() => {
+    detailPanel.classList.add("hidden");
+    detailPanel.classList.remove("closing");
+    detailPanel.setAttribute("aria-hidden", "true");
+    detailOverlay.classList.remove("visible");
+    document.body.classList.remove("panel-open");
+    document.body.style.top = "";
+    window.scrollTo(0, scrollY);
+    closeTimer = null;
+  }, 300);
 }
 
 // Check URL for job param on load

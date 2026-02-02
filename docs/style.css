@@ -655,6 +655,10 @@ input[type="search"]:focus{
   transform: translateX(0);
 }
 
+.detail-panel.closing {
+  transform: translateX(100%);
+}
+
 /* Desktop: Side Panel */
 @media (min-width: 769px) {
   .detail-panel {
