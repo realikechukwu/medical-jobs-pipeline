@@ -8,6 +8,8 @@ const locationSelect = document.getElementById("locationSelect");
 const keywordSearch = document.getElementById("keywordSearch");
 const searchClear = document.getElementById("searchClear");
 const pagination = document.getElementById("pagination");
+const savedToggle = document.getElementById("savedToggle");
+const detailSaveBtn = document.getElementById("detailSaveBtn");
 
 const CATEGORY_ORDER = [
   "All",
@@ -28,6 +30,7 @@ let keywordQuery = "";
 let allJobs = [];
 let currentPage = 1;
 const PAGE_SIZE = 12;
+let savedOnly = false;
 
 function safeText(text) {
   return (text || "").toString().trim();
@@ -142,7 +145,7 @@ function populateDetailList(container, items) {
 }
 
 // Open detail panel
-function openDetail(job) {
+async function openDetail(job) {
   if (!job) return;
   currentJob = job;
   scrollY = window.scrollY || 0;
@@ -155,8 +158,23 @@ function openDetail(job) {
 
   // Populate header
   document.getElementById("detailTitle").textContent = job.job_title || "Untitled Role";
-  document.getElementById("detailMeta").textContent =
-    [job.company, job.location].filter(Boolean).join(" • ") || "Company not listed";
+  const companyText = safeText(job.company);
+  const locationText = safeText(job.location);
+  const companyEl = document.getElementById("detailCompany");
+  const locationEl = document.getElementById("detailLocation");
+  if (companyText && locationText) {
+    companyEl.textContent = companyText;
+    locationEl.textContent = ` • ${locationText}`;
+  } else if (companyText) {
+    companyEl.textContent = companyText;
+    locationEl.textContent = "";
+  } else if (locationText) {
+    companyEl.textContent = locationText;
+    locationEl.textContent = "";
+  } else {
+    companyEl.textContent = "Company not listed";
+    locationEl.textContent = "";
+  }
   document.getElementById("detailSalary").textContent = job.salary || "Salary not listed";
 
   // Source
@@ -229,6 +247,15 @@ function openDetail(job) {
   detailOverlay.classList.add("visible");
   document.body.classList.add("panel-open");
   document.body.style.top = `-${scrollY}px`;
+
+  if (detailSaveBtn) {
+    const jobId = getJobSlug(job);
+    detailSaveBtn.dataset.jobId = jobId;
+    if (typeof isJobSaved === "function") {
+      const saved = await isJobSaved(jobId);
+      setSaveButtonState(detailSaveBtn, saved);
+    }
+  }
 
   // Scroll panel to top
   detailPanel.scrollTop = 0;
@@ -363,6 +390,89 @@ function setKeywordInUrl(keyword) {
     url.searchParams.set("q", keyword);
   }
   window.history.replaceState({}, "", url.toString());
+}
+
+async function updateSavedToggle() {
+  if (!savedToggle) return;
+  const count = await getSavedJobsCount();
+  savedToggle.textContent = `Saved Jobs (${count})`;
+  savedToggle.setAttribute("aria-pressed", savedOnly ? "true" : "false");
+  savedToggle.classList.toggle("active", savedOnly);
+}
+
+function getBookmarkIcon(isSaved) {
+  if (isSaved) {
+    return `<svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/>
+    </svg>`;
+  }
+  return `<svg viewBox="0 0 24 24" aria-hidden="true">
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/>
+  </svg>`;
+}
+
+function setSaveButtonState(button, isSaved) {
+  if (!button) return;
+  button.classList.toggle("saved", isSaved);
+  button.setAttribute("aria-pressed", isSaved ? "true" : "false");
+  const icon = button.querySelector(".save-icon");
+  if (icon) {
+    icon.innerHTML = getBookmarkIcon(isSaved);
+  }
+  const text = button.querySelector(".save-text");
+  if (text) {
+    text.textContent = isSaved ? "Saved" : "Save Job";
+  }
+}
+
+async function toggleSaveJob(event, button) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  const jobCard = button.closest("[data-job-id]");
+  const jobId = jobCard?.dataset.jobId;
+  if (!jobId) return;
+
+  const jobDetails = {
+    title: jobCard.querySelector(".job-title")?.textContent?.trim(),
+    company: jobCard.querySelector(".job-company")?.textContent?.trim(),
+    location: (jobCard.querySelector(".job-location")?.textContent || "").replace("•", "").trim(),
+  };
+
+  const isSaved = await isJobSaved(jobId);
+  if (isSaved) {
+    await unsaveJob(jobId);
+  } else {
+    await saveJob(jobId, jobDetails);
+  }
+  setSaveButtonState(button, !isSaved);
+  updateSavedToggle();
+  if (savedOnly && isSaved) {
+    renderJobs();
+  }
+}
+
+async function toggleSaveJobDetail(button) {
+  const jobId = button.dataset.jobId;
+  if (!jobId) return;
+
+  const jobDetails = {
+    title: document.querySelector(".job-detail-title")?.textContent?.trim(),
+    company: (document.querySelector(".job-detail-company")?.textContent || "").replace("•", "").trim(),
+    location: (document.querySelector(".job-detail-location")?.textContent || "").replace("•", "").trim(),
+  };
+
+  const isSaved = await isJobSaved(jobId);
+  if (isSaved) {
+    await unsaveJob(jobId);
+  } else {
+    await saveJob(jobId, jobDetails);
+  }
+  setSaveButtonState(button, !isSaved);
+  updateSavedToggle();
+  if (savedOnly && isSaved) {
+    renderJobs();
+  }
 }
 
 function updateSearchClearVisibility() {
@@ -650,6 +760,16 @@ function renderFilters() {
     });
     searchClear.dataset.bound = "1";
   }
+
+  if (savedToggle && !savedToggle.dataset.bound) {
+    savedToggle.addEventListener("click", () => {
+      savedOnly = !savedOnly;
+      currentPage = 1;
+      updateSavedToggle();
+      renderJobs();
+    });
+    savedToggle.dataset.bound = "1";
+  }
 }
 
 function renderPagination(totalItems) {
@@ -690,7 +810,7 @@ function renderPagination(totalItems) {
   pagination.appendChild(nextBtn);
 }
 
-function renderJobs() {
+async function renderJobs() {
   let list = activeCategory === "All"
     ? allJobs
     : allJobs.filter(j => normalizeCategory(j) === activeCategory);
@@ -709,10 +829,30 @@ function renderJobs() {
       return haystack.includes(keywordQuery);
     });
   }
+  if (savedOnly) {
+    const savedList = await getSavedJobs();
+    const savedIds = new Set(savedList.map(j => j.job_id || j));
+    list = list.filter(j => savedIds.has(getJobSlug(j)));
+  }
   list = list.filter(j => !isExpired(j.deadline));
   grid.innerHTML = "";
   updateStats(list);
   renderPagination(list.length);
+
+  if (list.length === 0) {
+    if (savedOnly) {
+      grid.innerHTML = `<div class="empty-state">
+        <strong>No saved jobs yet</strong>
+        <span>Click the bookmark icon on any job to save it here</span>
+      </div>`;
+    } else {
+      grid.innerHTML = `<div class="empty-state">
+        <strong>No jobs found</strong>
+        <span>Try adjusting your filters or search</span>
+      </div>`;
+    }
+    return;
+  }
 
   const start = (currentPage - 1) * PAGE_SIZE;
   const end = start + PAGE_SIZE;
@@ -720,7 +860,16 @@ function renderJobs() {
 
   pageItems.forEach(j => {
     const card = document.createElement("article");
-    card.className = "card clickable";
+    const jobId = getJobSlug(j);
+    card.className = "card clickable job-card";
+    card.dataset.jobId = jobId;
+
+    const saveBtn = document.createElement("button");
+    saveBtn.className = "save-btn";
+    saveBtn.setAttribute("aria-label", "Save job");
+    saveBtn.setAttribute("onclick", "toggleSaveJob(event, this)");
+    saveBtn.innerHTML = '<span class="save-icon" aria-hidden="true"></span>';
+    setSaveButtonState(saveBtn, false);
 
     // Make card clickable to open detail panel
     card.addEventListener("click", (e) => {
@@ -730,7 +879,7 @@ function renderJobs() {
 
     // Title
     const title = document.createElement("h3");
-    title.className = "title";
+    title.className = "title job-title";
     title.textContent = safeText(j.job_title) || "Untitled role";
 
     // Meta: Company • Location
@@ -738,7 +887,26 @@ function renderJobs() {
     meta.className = "meta";
     const company = safeText(j.company);
     const location = safeText(j.location);
-    meta.textContent = [company, location].filter(Boolean).join(" • ") || "Company not listed";
+    if (company || location) {
+      const companySpan = document.createElement("span");
+      companySpan.className = "job-company";
+      const locationSpan = document.createElement("span");
+      locationSpan.className = "job-location";
+      if (company && location) {
+        companySpan.textContent = company;
+        locationSpan.textContent = ` • ${location}`;
+      } else if (company) {
+        companySpan.textContent = company;
+        locationSpan.textContent = "";
+      } else {
+        companySpan.textContent = location;
+        locationSpan.textContent = "";
+      }
+      meta.appendChild(companySpan);
+      meta.appendChild(locationSpan);
+    } else {
+      meta.textContent = "Company not listed";
+    }
 
     // Tags (minimal: job type + deadline only)
     const tags = document.createElement("div");
@@ -797,6 +965,7 @@ function renderJobs() {
     actions.appendChild(applyBtn);
 
     // Build card (minimal structure)
+    card.appendChild(saveBtn);
     card.appendChild(title);
     card.appendChild(meta);
     card.appendChild(tags);
@@ -804,6 +973,10 @@ function renderJobs() {
 
     grid.appendChild(card);
   });
+
+  if (typeof initSaveButtons === "function") {
+    initSaveButtons();
+  }
 }
 
 fetch("master_jobs.json")
@@ -828,6 +1001,7 @@ fetch("master_jobs.json")
     }
     updateSearchClearVisibility();
     currentPage = 1;
+    updateSavedToggle();
     renderFilters();
     renderJobs();
     checkUrlForJob();

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sign Up | JobberMed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/savedJobs.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="auth-body">
+  <div class="top-strip"></div>
+
+  <a class="auth-back" href="./">← Back to Jobs</a>
+
+  <main class="auth-wrap">
+    <section class="auth-card">
+      <img src="images/signin.png" alt="Sign In" class="auth-logo" />
+      <h1 class="auth-title">Sign Up</h1>
+
+      <div id="error-message" class="auth-message auth-error" style="display:none;"></div>
+      <div id="success-message" class="auth-message auth-success" style="display:none;"></div>
+
+      <form class="auth-form" id="signup-form">
+        <label class="auth-label" for="email">Email</label>
+        <input id="email" class="auth-input" type="email" placeholder="Enter your email" autocomplete="email" required />
+
+        <label class="auth-label" for="password">Password</label>
+        <input id="password" class="auth-input" type="password" placeholder="Create a password" autocomplete="new-password" required />
+
+        <label class="auth-label" for="confirmPassword">Confirm Password</label>
+        <input id="confirmPassword" class="auth-input" type="password" placeholder="Confirm your password" autocomplete="new-password" required />
+
+        <button type="submit" class="auth-submit" id="submit-btn">Sign Up</button>
+      </form>
+
+      <p class="auth-footer">
+        Already have an account? <a href="signin.html" class="auth-link">Sign In</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer-strip" aria-label="Footer">
+    <div class="footer-inner">
+      <a href="./" class="footer-link">Home</a>
+      <a href="about.html" class="footer-link">About Us</a>
+      <a href="privacy.html" class="footer-link">Privacy Policy</a>
+      <a href="subscribe.html" class="footer-link">Subscribe to Newsletter</a>
+      <a href="signup.html" class="footer-link">Sign Up</a>
+    </div>
+  </footer>
+
+  <script>
+    function setLoading(isLoading) {
+      const btn = document.getElementById('submit-btn');
+      btn.disabled = isLoading;
+      btn.textContent = isLoading ? 'Creating account...' : 'Sign Up';
+    }
+
+    function showError(message) {
+      const errorDiv = document.getElementById('error-message');
+      errorDiv.textContent = message;
+      errorDiv.style.display = 'block';
+    }
+
+    function showSuccess(message) {
+      const successDiv = document.getElementById('success-message');
+      successDiv.textContent = `✓ ${message}`;
+      successDiv.style.display = 'block';
+    }
+
+    function clearErrors() {
+      document.getElementById('error-message').style.display = 'none';
+      document.getElementById('success-message').style.display = 'none';
+    }
+
+    document.getElementById('signup-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+
+      clearErrors();
+
+      if (password !== confirmPassword) {
+        showError('Passwords do not match');
+        return;
+      }
+
+      if (password.length < 6) {
+        showError('Password must be at least 6 characters');
+        return;
+      }
+
+      setLoading(true);
+
+      const { data, error } = await supabase.auth.signUp({
+        email: email,
+        password: password,
+      });
+
+      if (error) {
+        showError(error.message);
+        setLoading(false);
+        return;
+      }
+
+      if (data.user && data.session) {
+        await migrateLocalSavedJobs(data.user.id);
+        window.location.href = 'index.html';
+      } else {
+        showSuccess('Check your email to confirm your account');
+        setLoading(false);
+      }
+    });
+  </script>
+</body>
+</html>

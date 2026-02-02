@@ -4,7 +4,10 @@
   <meta charset="utf-8" />
   <title>JobberMed</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="JobberMed aggregates medical and healthcare jobs across Nigeria and Africa." />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/savedJobs.js"></script>
+<meta name="description" content="JobberMed aggregates medical and healthcare jobs across Nigeria and Africa." />
   <meta property="og:title" content="JobberMed" />
   <meta property="og:description" content="Live medical and healthcare jobs across Nigeria and Africa." />
   <meta property="og:type" content="website" />
@@ -20,7 +23,8 @@
 
   <!-- Hero banner -->
   <section class="hero-banner">
-    <div class="hero-inner">
+    <div class="hero-inner hero-inner-signin">
+      <a class="hero-signin" href="signin.html">Sign In</a>
       <a class="brand-link" href="./" aria-label="Go to homepage">
         <img
           src="images/logo.png"
@@ -49,6 +53,29 @@
       </div>
     </header>
 
+    <div class="filters" id="filters">
+      <!-- Mobile dropdown -->
+      <div class="filter-mobile">
+        <label class="filter-label" for="categorySelect">Category</label>
+        <div class="select-wrap">
+          <select id="categorySelect" aria-label="Filter by category"></select>
+        </div>
+      </div>
+
+      <!-- Desktop chips -->
+      <div class="filter-desktop" id="filterChips" aria-label="Category filters"></div>
+      <button class="filter-btn saved-toggle" id="savedToggle" type="button" aria-pressed="false">Saved Jobs (0)</button>
+    </div>
+
+  <div class="filters">
+      <div class="filter-location">
+        <label class="filter-label" for="locationSelect">Location</label>
+        <div class="select-wrap">
+          <select id="locationSelect" aria-label="Filter by location"></select>
+        </div>
+      </div>
+    </div>
+
     <!-- Newsletter Signup Section -->
     <section class="newsletter-section" id="newsletterSection">
       <div class="newsletter-form">
@@ -64,28 +91,6 @@
       </div>
       <button class="newsletter-dismiss" id="newsletterDismiss" aria-label="Dismiss newsletter signup">✕</button>
     </section>
-
-    <div class="filters" id="filters">
-      <!-- Mobile dropdown -->
-      <div class="filter-mobile">
-        <label class="filter-label" for="categorySelect">Category</label>
-        <div class="select-wrap">
-          <select id="categorySelect" aria-label="Filter by category"></select>
-        </div>
-      </div>
-
-      <!-- Desktop chips -->
-      <div class="filter-desktop" id="filterChips" aria-label="Category filters"></div>
-    </div>
-
-    <div class="filters">
-      <div class="filter-location">
-        <label class="filter-label" for="locationSelect">Location</label>
-        <div class="select-wrap">
-          <select id="locationSelect" aria-label="Filter by location"></select>
-        </div>
-      </div>
-    </div>
 
     <div class="filters">
       <div class="filter-search">
@@ -117,8 +122,17 @@
     <button class="detail-back-btn" id="detailBackBtn">← Back to jobs</button>
 
     <div class="detail-header">
-      <h2 class="detail-title" id="detailTitle"></h2>
-      <p class="detail-meta" id="detailMeta"></p>
+      <div class="detail-title-row">
+        <h2 class="detail-title job-detail-title" id="detailTitle"></h2>
+        <button class="save-btn-large" id="detailSaveBtn" type="button" aria-pressed="false" onclick="toggleSaveJobDetail(this)">
+          <span class="save-icon" aria-hidden="true"></span>
+          <span class="save-text">Save Job</span>
+        </button>
+      </div>
+      <p class="detail-meta" id="detailMeta">
+        <span class="job-detail-company" id="detailCompany"></span>
+        <span class="job-detail-location" id="detailLocation"></span>
+      </p>
       <div class="detail-tags" id="detailTags"></div>
       <p class="detail-salary" id="detailSalary"></p>
     </div>
@@ -147,12 +161,14 @@
     </a>
   </aside>
 
+
   <footer class="footer-strip" aria-label="Footer">
     <div class="footer-inner">
       <a href="./" class="footer-link">Home</a>
       <a href="about.html" class="footer-link">About Us</a>
       <a href="privacy.html" class="footer-link">Privacy Policy</a>
       <a href="subscribe.html" class="footer-link">Subscribe to Newsletter</a>
+      <a href="signup.html" class="footer-link">Sign Up</a>
     </div>
   </footer>
 

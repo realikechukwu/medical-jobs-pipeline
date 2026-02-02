@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sign In | JobberMed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/savedJobs.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="auth-body">
+  <div class="top-strip"></div>
+
+  <a class="auth-back" href="./">← Back to Jobs</a>
+
+  <main class="auth-wrap">
+    <section class="auth-card">
+      <img src="images/signin.png" alt="Sign In" class="auth-logo" />
+      <h1 class="auth-title">Sign In</h1>
+
+      <div id="error-message" class="auth-message auth-error" style="display:none;"></div>
+
+      <form class="auth-form" id="signin-form">
+        <label class="auth-label" for="email">Email</label>
+        <input id="email" class="auth-input" type="email" placeholder="Enter your email" autocomplete="email" required />
+
+        <label class="auth-label" for="password">Password</label>
+        <input id="password" class="auth-input" type="password" placeholder="Enter your password" autocomplete="current-password" required />
+
+        <div class="auth-forgot">
+          <a href="#" class="auth-link">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="auth-submit" id="submit-btn">Sign In</button>
+      </form>
+
+      <p class="auth-footer">
+        Don't have an account? <a href="signup.html" class="auth-link">Sign Up</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer-strip" aria-label="Footer">
+    <div class="footer-inner">
+      <a href="./" class="footer-link">Home</a>
+      <a href="about.html" class="footer-link">About Us</a>
+      <a href="privacy.html" class="footer-link">Privacy Policy</a>
+      <a href="subscribe.html" class="footer-link">Subscribe to Newsletter</a>
+      <a href="signup.html" class="footer-link">Sign Up</a>
+    </div>
+  </footer>
+
+  <script>
+    function setLoading(isLoading) {
+      const btn = document.getElementById('submit-btn');
+      btn.disabled = isLoading;
+      btn.textContent = isLoading ? 'Signing in...' : 'Sign In';
+    }
+
+    function showError(message) {
+      const errorDiv = document.getElementById('error-message');
+      errorDiv.textContent = message;
+      errorDiv.style.display = 'block';
+    }
+
+    function clearErrors() {
+      document.getElementById('error-message').style.display = 'none';
+    }
+
+    document.getElementById('signin-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      clearErrors();
+      setLoading(true);
+
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email: email,
+        password: password,
+      });
+
+      if (error) {
+        showError('Incorrect email or password');
+        setLoading(false);
+        return;
+      }
+
+      const migratedCount = await migrateLocalSavedJobs(data.user.id);
+      if (migratedCount > 0) {
+        sessionStorage.setItem('migratedJobsCount', migratedCount);
+      }
+
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>

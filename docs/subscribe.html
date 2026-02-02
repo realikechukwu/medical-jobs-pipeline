@@ -4,7 +4,10 @@
   <meta charset="utf-8" />
   <title>Subscribe | JobberMed</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/savedJobs.js"></script>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="top-strip"></div>
@@ -24,7 +27,7 @@
         Receive the latest medical and healthcare jobs delivered to your inbox every Monday. Free, simple, and no
         spam.
       </p>
-      <div class="newsletter-section" id="newsletterSection">
+      <section class="newsletter-section" id="newsletterSection">
         <div class="newsletter-form">
           <iframe
             width="540"
@@ -36,7 +39,8 @@
             title="Newsletter signup form"
           ></iframe>
         </div>
-      </div>
+        <button class="newsletter-dismiss" id="newsletterDismiss" aria-label="Dismiss newsletter signup">✕</button>
+      </section>
     </section>
   </div>
 
@@ -46,6 +50,7 @@
       <a href="about.html" class="footer-link">About Us</a>
       <a href="privacy.html" class="footer-link">Privacy Policy</a>
       <a href="subscribe.html" class="footer-link">Subscribe to Newsletter</a>
+      <a href="signup.html" class="footer-link">Sign Up</a>
     </div>
   </footer>
 </body>
