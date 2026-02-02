@@ -74,6 +74,34 @@ header {
   position: relative;
 }
 
+.hero-topbar{
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.hero-nav{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.hero-nav-link{
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.hero-nav-link:hover{
+  text-decoration: underline;
+}
+
 .hero-auth{
   position: absolute;
   top: 16px;
@@ -90,6 +118,7 @@ header {
   max-width: 220px;
   text-align: right;
   word-break: break-word;
+  font-weight: 700;
 }
 
 @media (max-width: 600px){
@@ -99,25 +128,128 @@ header {
   }
 }
 
-.hero-signin{
-  padding: 12px 20px;
-  border-radius: 10px;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
+.hero-auth{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
 }
 
-.hero-signin:hover{
-  background: rgba(255,255,255,0.1);
+.hero-auth-link{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hero-auth-link:hover{
+  text-decoration: underline;
 }
 
 .hero-signout{
   display: none;
+}
+
+.mobile-menu-btn{
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 1200;
+}
+
+.mobile-menu-overlay.show{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(320px, 90vw);
+  height: 100vh;
+  background: #ffffff;
+  transform: translateX(100%);
+  transition: transform 0.2s ease;
+  z-index: 1300;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mobile-menu.open{
+  transform: translateX(0);
+}
+
+.mobile-menu-close{
+  align-self: flex-end;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.mobile-menu-email{
+  font-size: 0.85rem;
+  color: #666666;
+  word-break: break-word;
+}
+
+.mobile-menu-link{
+  text-decoration: none;
+  color: #111111;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.mobile-menu-links{
+  display: grid;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.mobile-menu-signout{
+  margin-top: auto;
+  background: #111111;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+@media (max-width: 700px){
+  .hero-topbar{
+    display: none;
+  }
+  .mobile-menu-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* Brand / logo */
@@ -163,6 +295,14 @@ header {
   margin-top: 14px;
   border-radius: 999px;
   background: rgba(12,192,223,0.7);
+}
+
+.hero-subtitle{
+  margin: 14px 0 0;
+  font-size: clamp(1rem, 2.1vw, 1.35rem);
+  font-weight: 500;
+  color: rgba(255,255,255,0.7);
+  text-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
 
 /* Mobile adjustments */

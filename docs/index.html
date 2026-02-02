@@ -24,11 +24,21 @@
   <!-- Hero banner -->
   <section class="hero-banner">
     <div class="hero-inner hero-inner-signin">
-      <div class="hero-auth">
-        <span class="hero-user-email" id="heroUserEmail"></span>
-        <a class="hero-signin" id="heroSignIn" href="signin.html">Sign In</a>
-        <button class="hero-signin hero-signout" id="heroSignOut" type="button">Sign Out</button>
+      <div class="hero-topbar">
+        <nav class="hero-nav" aria-label="Primary">
+        <a class="hero-nav-link" href="./">Home</a>
+        <a class="hero-nav-link" href="dashboard.html">Dashboard</a>
+        <a class="hero-nav-link" href="about.html">About Us</a>
+        <a class="hero-nav-link" href="privacy.html">Privacy Policy</a>
+        <a class="hero-nav-link" href="subscribe.html">Subscribe</a>
+        </nav>
+        <div class="hero-auth">
+          <span class="hero-user-email" id="heroUserEmail"></span>
+          <a class="hero-auth-link" id="heroSignIn" href="signin.html">Sign In</a>
+          <button class="hero-auth-link hero-signout" id="heroSignOut" type="button">Sign Out</button>
+        </div>
       </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu">☰</button>
       <a class="brand-link" href="./" aria-label="Go to homepage">
         <img
           src="images/logo.png"
@@ -37,11 +47,26 @@
         />
       </a>
 
-      <h2 class="hero-title">
-        Get the latest medical and healthcare jobs across Nigeria and Africa delivered to your mail
-      </h2>
+      <h2 class="hero-title">Healthcare jobs across Nigeria and Africa.</h2>
+      <h3 class="hero-subtitle">Delivered to your email every week.</h3>
     </div>
   </section>
+
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <button class="mobile-menu-close" id="mobileMenuClose" type="button" aria-label="Close menu">✕</button>
+    <div class="mobile-menu-email" id="mobileMenuEmail"></div>
+    <a class="mobile-menu-link" id="mobileMenuPrimaryLink" href="signin.html">Sign In</a>
+    <nav class="mobile-menu-links">
+      <a class="mobile-menu-link" href="./">Home</a>
+      <a class="mobile-menu-link" href="dashboard.html">Dashboard</a>
+      <a class="mobile-menu-link" href="about.html">About Us</a>
+      <a class="mobile-menu-link" href="privacy.html">Privacy Policy</a>
+      <a class="mobile-menu-link" href="subscribe.html">Subscribe to Newsletter</a>
+      <a class="mobile-menu-link" id="mobileMenuSignUp" href="signup.html">Sign Up</a>
+    </nav>
+    <button class="mobile-menu-signout" id="mobileMenuSignOut" type="button">Sign Out</button>
+  </aside>
 
   <div class="page">
     <header>

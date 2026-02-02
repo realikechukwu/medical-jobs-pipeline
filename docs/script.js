@@ -15,6 +15,14 @@ const detailSaveBtn = document.getElementById("detailSaveBtn");
 const heroUserEmail = document.getElementById("heroUserEmail");
 const heroSignIn = document.getElementById("heroSignIn");
 const heroSignOut = document.getElementById("heroSignOut");
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+const mobileMenuClose = document.getElementById("mobileMenuClose");
+const mobileMenuEmail = document.getElementById("mobileMenuEmail");
+const mobileMenuPrimaryLink = document.getElementById("mobileMenuPrimaryLink");
+const mobileMenuSignOut = document.getElementById("mobileMenuSignOut");
+const mobileMenuSignUp = document.getElementById("mobileMenuSignUp");
 
 const CATEGORY_ORDER = [
   "All",
@@ -411,16 +419,42 @@ function updateAuthUI(user) {
   if (!heroUserEmail || !heroSignIn || !heroSignOut) return;
   if (user && user.email) {
     heroUserEmail.textContent = user.email;
-    heroSignIn.textContent = "Dashboard";
-    heroSignIn.setAttribute("href", "dashboard.html");
-    heroSignIn.style.display = "inline-flex";
+    heroSignIn.textContent = "Sign In";
+    heroSignIn.setAttribute("href", "signin.html");
+    heroSignIn.style.display = "none";
     heroSignOut.style.display = "inline-flex";
+    if (mobileMenuEmail) {
+      mobileMenuEmail.textContent = user.email;
+    }
+    if (mobileMenuPrimaryLink) {
+      mobileMenuPrimaryLink.textContent = "Dashboard";
+      mobileMenuPrimaryLink.setAttribute("href", "dashboard.html");
+    }
+    if (mobileMenuSignOut) {
+      mobileMenuSignOut.style.display = "inline-flex";
+    }
+    if (mobileMenuSignUp) {
+      mobileMenuSignUp.style.display = "none";
+    }
   } else {
     heroUserEmail.textContent = "";
     heroSignIn.textContent = "Sign In";
     heroSignIn.setAttribute("href", "signin.html");
     heroSignIn.style.display = "inline-flex";
     heroSignOut.style.display = "none";
+    if (mobileMenuEmail) {
+      mobileMenuEmail.textContent = "";
+    }
+    if (mobileMenuPrimaryLink) {
+      mobileMenuPrimaryLink.textContent = "Sign In";
+      mobileMenuPrimaryLink.setAttribute("href", "signin.html");
+    }
+    if (mobileMenuSignOut) {
+      mobileMenuSignOut.style.display = "none";
+    }
+    if (mobileMenuSignUp) {
+      mobileMenuSignUp.style.display = "inline-flex";
+    }
   }
 }
 
@@ -433,6 +467,13 @@ async function initAuthUI() {
       if (window.location.pathname.endsWith("/dashboard.html") || window.location.pathname.endsWith("dashboard.html")) {
         window.location.href = "index.html";
       }
+    });
+  }
+  if (mobileMenuSignOut) {
+    mobileMenuSignOut.addEventListener("click", async () => {
+      await supabase.auth.signOut();
+      updateAuthUI(null);
+      closeMobileMenu();
     });
   }
   try {
@@ -1062,6 +1103,37 @@ async function renderJobs() {
 }
 
 initAuthUI();
+
+function openMobileMenu() {
+  if (!mobileMenu || !mobileMenuOverlay) return;
+  mobileMenu.classList.add("open");
+  mobileMenuOverlay.classList.add("show");
+  mobileMenu.setAttribute("aria-hidden", "false");
+}
+
+function closeMobileMenu() {
+  if (!mobileMenu || !mobileMenuOverlay) return;
+  mobileMenu.classList.remove("open");
+  mobileMenuOverlay.classList.remove("show");
+  mobileMenu.setAttribute("aria-hidden", "true");
+}
+
+if (mobileMenuBtn) {
+  mobileMenuBtn.addEventListener("click", openMobileMenu);
+}
+if (mobileMenuClose) {
+  mobileMenuClose.addEventListener("click", closeMobileMenu);
+}
+if (mobileMenuOverlay) {
+  mobileMenuOverlay.addEventListener("click", closeMobileMenu);
+}
+if (mobileMenu) {
+  mobileMenu.addEventListener("click", (e) => {
+    if (e.target.matches("a")) {
+      closeMobileMenu();
+    }
+  });
+}
 
 fetch("master_jobs.json")
   .then(r => r.json())

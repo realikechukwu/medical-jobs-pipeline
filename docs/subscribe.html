@@ -13,6 +13,20 @@
   <div class="top-strip"></div>
   <section class="hero-banner">
     <div class="hero-inner">
+      <div class="hero-topbar">
+        <nav class="hero-nav" aria-label="Primary">
+          <a class="hero-nav-link" href="./">Home</a>
+          <a class="hero-nav-link" href="dashboard.html">Dashboard</a>
+          <a class="hero-nav-link" href="about.html">About Us</a>
+          <a class="hero-nav-link" href="privacy.html">Privacy Policy</a>
+          <a class="hero-nav-link" href="subscribe.html">Subscribe</a>
+        </nav>
+        <div class="hero-auth">
+          <span class="hero-user-email" id="heroUserEmail"></span>
+          <a class="hero-auth-link" id="heroSignIn" href="signin.html">Sign In</a>
+          <button class="hero-auth-link hero-signout" id="heroSignOut" type="button">Sign Out</button>
+        </div>
+      </div>
       <a class="brand-link" href="./" aria-label="Go to homepage">
         <img src="images/logo.png" alt="JobberMed" class="brand-logo" />
       </a>
@@ -53,5 +67,37 @@
       <a href="signup.html" class="footer-link">Sign Up</a>
     </div>
   </footer>
+  <script>
+    (async () => {
+      if (typeof supabase === "undefined") return;
+      const heroUserEmail = document.getElementById("heroUserEmail");
+      const heroSignIn = document.getElementById("heroSignIn");
+      const heroSignOut = document.getElementById("heroSignOut");
+
+      const updateAuthUI = (user) => {
+        if (!heroUserEmail || !heroSignIn || !heroSignOut) return;
+        if (user && user.email) {
+          heroUserEmail.textContent = user.email;
+          heroSignIn.style.display = "none";
+          heroSignOut.style.display = "inline-flex";
+        } else {
+          heroUserEmail.textContent = "";
+          heroSignIn.style.display = "inline-flex";
+          heroSignOut.style.display = "none";
+        }
+      };
+
+      heroSignOut?.addEventListener("click", async () => {
+        await supabase.auth.signOut();
+        updateAuthUI(null);
+      });
+
+      const { data } = await supabase.auth.getUser();
+      updateAuthUI(data?.user || null);
+      supabase.auth.onAuthStateChange((_event, session) => {
+        updateAuthUI(session?.user || null);
+      });
+    })();
+  </script>
 </body>
 </html>
