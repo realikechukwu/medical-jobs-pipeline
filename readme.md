@@ -2,7 +2,7 @@
 
 ## Overview
 
-This pipeline automatically scrapes medical/healthcare job postings from three Nigerian job boards, normalizes the data using AI, and outputs a clean JSON file that can power a static website.
+JobberMed is a medical jobs aggregator. It scrapes jobs from multiple sources, normalizes the data with AI, and publishes a static site that supports search, filters, job details, saved jobs, and user accounts.
 
 ---
 
@@ -11,11 +11,13 @@ This pipeline automatically scrapes medical/healthcare job postings from three N
 The website lives in the `docs/` folder and is served via GitHub Pages or a custom domain.
 
 **Key files:**
-- `docs/index.html` — Main UI (cards, filters, detail panel, pagination)
-- `docs/style.css` — Styles
-- `docs/script.js` — Client-side logic (filters, search, panel, pagination)
-- `docs/master_jobs.json` — Data source for the UI
-- `docs/about.html`, `docs/privacy.html`, `docs/subscribe.html` — Static info pages
+- `docs/index.html` — Main UI (filters, cards, detail panel, pagination)
+- `docs/style.css` — Styling
+- `docs/script.js` — Client logic (filters, search, pagination, detail panel)
+- `docs/master_jobs.json` — Jobs data
+- `docs/dashboard.html` — Profile + saved jobs preview
+- `docs/change-password.html`, `docs/signin.html`, `docs/signup.html`, `docs/confirmation.html`
+- `docs/about.html`, `docs/privacy.html`, `docs/subscribe.html`
 
 **Local preview (recommended):**
 ```
@@ -25,6 +27,16 @@ Then open:
 ```
 http://localhost:8000/docs/index.html
 ```
+
+---
+
+## Auth + Profiles (Supabase)
+
+Authentication is handled by Supabase. User email is stored in `auth.users`, and profile fields are stored in a `profiles` table (see `medpipeline.md` for SQL + RLS policies). The dashboard page allows users to edit profile fields and view saved jobs.
+
+Saved jobs:
+- Guests: localStorage
+- Logged in: Supabase `saved_jobs` table
 
 ---
 
@@ -50,9 +62,9 @@ This writes `docs/newsletter_preview.html`.
 
 ---
 
-## How It Works (Step by Step)
+## How It Works (High Level)
 
-### Step 1: Configuration (`config.py`)
+### 1) Configuration (`config.py`)
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -77,7 +89,7 @@ This writes `docs/newsletter_preview.html`.
 
 ---
 
-### Step 2: Shared Utilities (`utils/`)
+### 2) Shared Utilities (`utils/`)
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -114,7 +126,7 @@ This writes `docs/newsletter_preview.html`.
 
 ---
 
-### Step 3: Scrapers (`scrapers/`)
+### 3) Scrapers (`scrapers/`)
 
 Each scraper follows this pattern:
 

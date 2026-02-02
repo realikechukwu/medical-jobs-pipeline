@@ -19,9 +19,6 @@
       <img src="images/signin.png" alt="Sign In" class="auth-logo" />
       <h1 class="auth-title">Sign Up</h1>
 
-      <div id="error-message" class="auth-message auth-error" style="display:none;"></div>
-      <div id="success-message" class="auth-message auth-success" style="display:none;"></div>
-
       <form class="auth-form" id="signup-form">
         <label class="auth-label" for="email">Email</label>
         <input id="email" class="auth-input" type="email" placeholder="Enter your email" autocomplete="email" required />
@@ -33,6 +30,8 @@
         <input id="confirmPassword" class="auth-input" type="password" placeholder="Confirm your password" autocomplete="new-password" required />
 
         <button type="submit" class="auth-submit" id="submit-btn">Sign Up</button>
+
+        <div id="error-message" class="auth-message auth-error" style="display:none;"></div>
       </form>
 
       <p class="auth-footer">
@@ -64,15 +63,8 @@
       errorDiv.style.display = 'block';
     }
 
-    function showSuccess(message) {
-      const successDiv = document.getElementById('success-message');
-      successDiv.textContent = `✓ ${message}`;
-      successDiv.style.display = 'block';
-    }
-
     function clearErrors() {
       document.getElementById('error-message').style.display = 'none';
-      document.getElementById('success-message').style.display = 'none';
     }
 
     document.getElementById('signup-form').addEventListener('submit', async (e) => {
@@ -111,8 +103,8 @@
         await migrateLocalSavedJobs(data.user.id);
         window.location.href = 'index.html';
       } else {
-        showSuccess('Check your email to confirm your account');
-        setLoading(false);
+        sessionStorage.setItem('pendingSignupEmail', email);
+        window.location.href = 'confirmation.html';
       }
     });
   </script>

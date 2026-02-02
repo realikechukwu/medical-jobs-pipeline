@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard | JobberMed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/savedJobs.js"></script>
+<meta name="description" content="JobberMed aggregates medical and healthcare jobs across Nigeria and Africa." />
+  <meta property="og:title" content="JobberMed" />
+  <meta property="og:description" content="Live medical and healthcare jobs across Nigeria and Africa." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jobbermed.com/" />
+  <meta property="og:image" content="https://jobbermed.com/images/banner.jpg" />
+  <meta property="og:site_name" content="JobberMed" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top strip -->
+  <div class="top-strip"></div>
+
+  <!-- Hero banner -->
+  <section class="hero-banner">
+    <div class="hero-inner hero-inner-signin">
+      <div class="hero-auth">
+        <span class="hero-user-email" id="heroUserEmail"></span>
+        <a class="hero-signin" id="heroSignIn" href="signin.html">Sign In</a>
+        <button class="hero-signin hero-signout" id="heroSignOut" type="button">Sign Out</button>
+      </div>
+      <a class="brand-link" href="./" aria-label="Go to homepage">
+        <img
+          src="images/logo.png"
+          alt="JobberMed"
+          class="brand-logo"
+        />
+      </a>
+
+      <h2 class="hero-title">
+        Get the latest medical and healthcare jobs across Nigeria and Africa delivered to your mail
+      </h2>
+    </div>
+  </section>
+
+  <div class="page">
+    <header></header>
+
+    <section class="account-section" aria-label="Account settings">
+      <div class="account-card">
+        <div class="account-header">
+          <div>
+            <h3 class="account-title">Profile</h3>
+            <p class="account-summary" id="accountSummary"></p>
+          </div>
+          <button class="account-edit-btn" id="profileEditBtn" type="button">Edit</button>
+        </div>
+        <p class="account-email" id="accountEmail"></p>
+        <a class="account-link" href="index.html">← Back to jobs</a>
+
+        <div class="profile-display" id="profileDisplay">
+          <div class="profile-row">
+            <span class="profile-label">Full name</span>
+            <span class="profile-value" id="displayNameText">—</span>
+          </div>
+          <div class="profile-row">
+            <span class="profile-label">Occupation</span>
+            <span class="profile-value" id="occupationText">—</span>
+          </div>
+          <div class="profile-row">
+            <span class="profile-label">Year of graduation</span>
+            <span class="profile-value" id="gradYearText">—</span>
+          </div>
+          <div class="profile-row">
+            <span class="profile-label">Country of practice</span>
+            <span class="profile-value" id="countryText">—</span>
+          </div>
+          <div class="profile-row">
+            <span class="profile-label">State/Region of practice</span>
+            <span class="profile-value" id="stateText">—</span>
+          </div>
+        </div>
+
+        <form class="account-form account-fields hidden" id="profileForm">
+          <label class="account-label" for="displayName">Full name</label>
+          <input class="account-input" id="displayName" type="text" placeholder="Your name" />
+
+          <label class="account-label" for="occupationSelect">Occupation</label>
+          <select class="account-input" id="occupationSelect">
+            <option value="">Select occupation</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Nurse/Midwife">Nurse/Midwife</option>
+            <option value="Pharmacist">Pharmacist</option>
+            <option value="Medical Laboratory Scientist">Medical Laboratory Scientist</option>
+            <option value="Dentist">Dentist</option>
+            <option value="Public Health">Public Health</option>
+            <option value="Healthcare Management">Healthcare Management</option>
+            <option value="Allied Health">Allied Health</option>
+            <option value="Others">Others</option>
+          </select>
+          <input class="account-input account-conditional" id="occupationOther" type="text" placeholder="Specify occupation" />
+
+          <label class="account-label" for="gradYear">Year of graduation</label>
+          <select class="account-input" id="gradYear"></select>
+
+          <label class="account-label" for="countrySelect">Country of practice</label>
+          <select class="account-input" id="countrySelect">
+            <option value="">Select country</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Kenya">Kenya</option>
+            <option value="South Africa">South Africa</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="Other">Other</option>
+          </select>
+          <input class="account-input account-conditional" id="countryOther" type="text" placeholder="Specify country" />
+
+          <label class="account-label" for="stateSelect">State/Region of practice</label>
+          <select class="account-input account-conditional" id="stateSelect"></select>
+          <input class="account-input account-conditional" id="stateOther" type="text" placeholder="State/Region" />
+
+          <div class="account-message" id="profileMessage" role="status"></div>
+        </form>
+
+        <div class="account-divider"></div>
+        <a class="account-link" href="change-password.html">Change password →</a>
+      </div>
+    </section>
+
+    <section class="account-section" id="saved-jobs" aria-label="Saved jobs">
+      <div class="account-card">
+        <div class="account-header">
+          <div>
+            <h3 class="account-title">Saved Jobs</h3>
+            <p class="account-summary" id="savedSummary">Your latest saved jobs</p>
+          </div>
+          <a class="account-link" href="index.html?saved=1">View all saved jobs</a>
+        </div>
+        <div class="saved-jobs-list" id="savedJobsList"></div>
+        <div class="account-message" id="savedJobsMessage"></div>
+      </div>
+    </section>
+
+  </div>
+
+
+  <footer class="footer-strip" aria-label="Footer">
+    <div class="footer-inner">
+      <a href="./" class="footer-link">Home</a>
+      <a href="dashboard.html" class="footer-link">Dashboard</a>
+      <a href="about.html" class="footer-link">About Us</a>
+      <a href="privacy.html" class="footer-link">Privacy Policy</a>
+      <a href="subscribe.html" class="footer-link">Subscribe to Newsletter</a>
+      <a href="signup.html" class="footer-link">Sign Up</a>
+    </div>
+  </footer>
+
+  <script>
+    (async () => {
+      if (typeof supabase === "undefined") return;
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) {
+        window.location.href = "signin.html";
+        return;
+      }
+
+      const heroUserEmail = document.getElementById("heroUserEmail");
+      const heroSignIn = document.getElementById("heroSignIn");
+      const heroSignOut = document.getElementById("heroSignOut");
+
+      const updateAuthUI = (currentUser) => {
+        if (!heroUserEmail || !heroSignIn || !heroSignOut) return;
+        if (currentUser && currentUser.email) {
+          heroUserEmail.textContent = currentUser.email;
+          heroSignIn.textContent = "Back to Jobs";
+          heroSignIn.setAttribute("href", "index.html");
+          heroSignIn.style.display = "inline-flex";
+          heroSignOut.style.display = "inline-flex";
+        } else {
+          heroUserEmail.textContent = "";
+          heroSignIn.textContent = "Sign In";
+          heroSignIn.setAttribute("href", "signin.html");
+          heroSignIn.style.display = "inline-flex";
+          heroSignOut.style.display = "none";
+        }
+      };
+
+      if (heroSignOut) {
+        heroSignOut.addEventListener("click", async () => {
+          await supabase.auth.signOut();
+          updateAuthUI(null);
+          window.location.href = "index.html";
+        });
+      }
+
+      updateAuthUI(user);
+      supabase.auth.onAuthStateChange((_event, session) => {
+        updateAuthUI(session?.user || null);
+      });
+
+      const accountEmail = document.getElementById("accountEmail");
+      const displayName = document.getElementById("displayName");
+      const profileForm = document.getElementById("profileForm");
+      const profileDisplay = document.getElementById("profileDisplay");
+      const profileMessage = document.getElementById("profileMessage");
+      const profileEditBtn = document.getElementById("profileEditBtn");
+      const accountSummary = document.getElementById("accountSummary");
+      const occupationSelect = document.getElementById("occupationSelect");
+      const occupationOther = document.getElementById("occupationOther");
+      const gradYear = document.getElementById("gradYear");
+      const countrySelect = document.getElementById("countrySelect");
+      const countryOther = document.getElementById("countryOther");
+      const stateSelect = document.getElementById("stateSelect");
+      const stateOther = document.getElementById("stateOther");
+      const displayNameText = document.getElementById("displayNameText");
+      const occupationText = document.getElementById("occupationText");
+      const gradYearText = document.getElementById("gradYearText");
+      const countryText = document.getElementById("countryText");
+      const stateText = document.getElementById("stateText");
+      const savedJobsList = document.getElementById("savedJobsList");
+      const savedJobsMessage = document.getElementById("savedJobsMessage");
+
+      accountEmail.textContent = user.email || "";
+      const nigeriaStates = [
+        "Abia","Adamawa","Akwa Ibom","Anambra","Bauchi","Bayelsa","Benue","Borno",
+        "Cross River","Delta","Ebonyi","Edo","Ekiti","Enugu","Gombe","Imo","Jigawa",
+        "Kaduna","Kano","Katsina","Kebbi","Kogi","Kwara","Lagos","Nasarawa","Niger",
+        "Ogun","Ondo","Osun","Oyo","Plateau","Rivers","Sokoto","Taraba","Yobe","Zamfara",
+        "FCT"
+      ];
+
+      const fillYears = () => {
+        const currentYear = new Date().getFullYear();
+        gradYear.innerHTML = `<option value="">Select year</option>`;
+        for (let y = currentYear; y >= 1980; y -= 1) {
+          const opt = document.createElement("option");
+          opt.value = String(y);
+          opt.textContent = String(y);
+          gradYear.appendChild(opt);
+        }
+      };
+
+      const fillStates = (useNigeria) => {
+        stateSelect.innerHTML = `<option value="">Select state/region</option>`;
+        if (useNigeria) {
+          nigeriaStates.forEach(state => {
+            const opt = document.createElement("option");
+            opt.value = state;
+            opt.textContent = state;
+            stateSelect.appendChild(opt);
+          });
+        }
+      };
+
+      const toggleConditional = (selectEl, otherEl, matchValue) => {
+        if (selectEl.value === matchValue) {
+          otherEl.classList.add("show");
+        } else {
+          otherEl.classList.remove("show");
+          otherEl.value = "";
+        }
+      };
+
+      const toggleStateInput = () => {
+        if (countrySelect.value === "Nigeria") {
+          stateSelect.classList.add("show");
+          stateOther.classList.remove("show");
+          stateOther.value = "";
+          fillStates(true);
+        } else {
+          stateSelect.classList.remove("show");
+          stateOther.classList.add("show");
+          stateSelect.innerHTML = `<option value="">Select state/region</option>`;
+        }
+      };
+
+      const showMessage = (el, text, isError = false) => {
+        el.textContent = text;
+        el.classList.toggle("error", isError);
+        el.classList.toggle("success", !isError);
+      };
+
+      const getOccupationLabel = () => {
+        return occupationSelect.value === "Others"
+          ? (occupationOther.value.trim() || "Other")
+          : (occupationSelect.value || "No occupation");
+      };
+
+      const setSummary = () => {
+        const name = displayName.value.trim() || "No name";
+        const occupation = getOccupationLabel();
+        accountSummary.textContent = `${name} — ${occupation}`;
+      };
+
+      const setDisplay = () => {
+        displayNameText.textContent = displayName.value.trim() || "—";
+        occupationText.textContent = getOccupationLabel() || "—";
+        gradYearText.textContent = gradYear.value || "—";
+        const countryLabel = countrySelect.value === "Other"
+          ? (countryOther.value.trim() || "Other")
+          : (countrySelect.value || "—");
+        countryText.textContent = countryLabel || "—";
+        const stateLabel = countrySelect.value === "Nigeria"
+          ? (stateSelect.value || "—")
+          : (stateOther.value.trim() || "—");
+        stateText.textContent = stateLabel || "—";
+      };
+
+      const setEditing = (editing) => {
+        profileEditBtn.textContent = editing ? "Save" : "Edit";
+        profileForm.classList.toggle("hidden", !editing);
+        profileDisplay.classList.toggle("hidden", editing);
+        profileForm.classList.toggle("is-editing", editing);
+      };
+
+      fillYears();
+      fillStates(false);
+      occupationOther.classList.remove("show");
+      countryOther.classList.remove("show");
+      stateSelect.classList.remove("show");
+      stateOther.classList.add("show");
+
+      const { data: profileData } = await supabase
+        .from("profiles")
+        .select("*")
+        .eq("user_id", user.id)
+        .maybeSingle();
+
+      displayName.value = profileData?.full_name || user.user_metadata?.full_name || "";
+      occupationSelect.value = profileData?.occupation || "";
+      occupationOther.value = profileData?.occupation_other || "";
+      gradYear.value = profileData?.grad_year ? String(profileData.grad_year) : "";
+      countrySelect.value = profileData?.country || "";
+      countryOther.value = profileData?.country_other || "";
+      if (countrySelect.value === "Nigeria") {
+        toggleStateInput();
+        stateSelect.value = profileData?.state || "";
+      } else {
+        toggleStateInput();
+        stateOther.value = profileData?.state || "";
+      }
+
+      toggleConditional(occupationSelect, occupationOther, "Others");
+      toggleConditional(countrySelect, countryOther, "Other");
+      setSummary();
+      setDisplay();
+      setEditing(false);
+
+      occupationSelect.addEventListener("change", () => {
+        toggleConditional(occupationSelect, occupationOther, "Others");
+        setSummary();
+        setDisplay();
+      });
+      countrySelect.addEventListener("change", () => {
+        toggleConditional(countrySelect, countryOther, "Other");
+        toggleStateInput();
+        setDisplay();
+      });
+
+      profileEditBtn.addEventListener("click", async () => {
+        const isEditing = profileForm.classList.contains("is-editing");
+        if (!isEditing) {
+          setEditing(true);
+          return;
+        }
+        profileForm.requestSubmit();
+      });
+
+      profileForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const name = displayName.value.trim();
+        const occupation = occupationSelect.value;
+        const occupationOtherVal = occupationSelect.value === "Others" ? occupationOther.value.trim() : "";
+        const yearVal = gradYear.value ? Number(gradYear.value) : null;
+        const countryVal = countrySelect.value;
+        const countryOtherVal = countrySelect.value === "Other" ? countryOther.value.trim() : "";
+        const stateVal = countrySelect.value === "Nigeria" ? stateSelect.value : stateOther.value.trim();
+
+        const { error } = await supabase
+          .from("profiles")
+          .upsert({
+            user_id: user.id,
+            full_name: name,
+            occupation: occupation || null,
+            occupation_other: occupationOtherVal || null,
+            grad_year: yearVal,
+            country: countryVal || null,
+            country_other: countryOtherVal || null,
+            state: stateVal || null,
+          }, { onConflict: "user_id" });
+        if (error) {
+          showMessage(profileMessage, error.message, true);
+          return;
+        }
+        showMessage(profileMessage, "Profile updated");
+        setSummary();
+        setDisplay();
+        setEditing(false);
+      });
+
+      const normalizeApplyUrl = (url) => {
+        if (!url) return "";
+        try {
+          const parsed = new URL(url);
+          parsed.search = "";
+          parsed.hash = "";
+          return parsed.toString();
+        } catch {
+          return url.split("?")[0].split("#")[0];
+        }
+      };
+
+      const getJobId = (job) => {
+        const normalizedUrl = normalizeApplyUrl(job.apply_url);
+        if (normalizedUrl) return normalizedUrl;
+        const raw = (job.job_title || "job").toLowerCase();
+        return raw.replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").substring(0, 60);
+      };
+
+      const getJobSlug = (job) => {
+        if (job.apply_url) {
+          const match = job.apply_url.match(/[^/]+$/);
+          if (match) return match[0];
+        }
+        return (job.job_title || "job")
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/^-+|-+$/g, "")
+          .substring(0, 60);
+      };
+
+      const fetchJobsMap = async () => {
+        try {
+          const res = await fetch("master_jobs.json");
+          const data = await res.json();
+          const jobs = Array.isArray(data) ? data : (data.jobs || []);
+          const map = new Map();
+          jobs.forEach(job => {
+            const id = getJobId(job);
+            map.set(id, job);
+            map.set(getJobSlug(job), job);
+            if (job.apply_url) {
+              map.set(job.apply_url, job);
+              map.set(normalizeApplyUrl(job.apply_url), job);
+            }
+          });
+          return map;
+        } catch {
+          return new Map();
+        }
+      };
+
+      const loadSavedJobs = async () => {
+        if (!savedJobsList) return;
+        savedJobsList.innerHTML = "";
+        const jobsMap = await fetchJobsMap();
+        const saved = await getSavedJobs();
+        if (!saved || saved.length === 0) {
+          savedJobsMessage.textContent = "No saved jobs yet.";
+          return;
+        }
+        savedJobsMessage.textContent = "";
+        const preview = saved.slice(0, 5);
+        preview.forEach(item => {
+          const row = document.createElement("div");
+          row.className = "saved-job-row";
+          const jobMatch = jobsMap.get(item.job_id) || null;
+          const title = document.createElement("div");
+          title.className = "saved-job-title";
+          title.textContent = item.job_title || jobMatch?.job_title || item.job_id || "Saved job";
+          const meta = document.createElement("div");
+          meta.className = "saved-job-meta";
+          const metaParts = [item.company || jobMatch?.company, item.location || jobMatch?.location]
+            .filter(Boolean)
+            .join(" • ");
+          meta.textContent = metaParts || "Details not available";
+          const apply = document.createElement("a");
+          apply.className = "saved-job-apply";
+          const applyUrl = item.apply_url || jobMatch?.apply_url || "";
+          apply.href = applyUrl || "#";
+          apply.target = "_blank";
+          apply.rel = "noopener noreferrer";
+          apply.textContent = "Apply Now";
+          if (!applyUrl) {
+            apply.classList.add("disabled");
+            apply.textContent = "No link";
+            apply.removeAttribute("href");
+          }
+          row.appendChild(title);
+          row.appendChild(meta);
+          row.appendChild(apply);
+          savedJobsList.appendChild(row);
+        });
+      };
+
+      loadSavedJobs();
+
+    })();
+  </script>
+</body>
+</html>

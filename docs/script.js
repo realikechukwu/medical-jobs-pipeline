@@ -8,6 +8,8 @@ const locationSelect = document.getElementById("locationSelect");
 const keywordSearch = document.getElementById("keywordSearch");
 const searchClear = document.getElementById("searchClear");
 const pagination = document.getElementById("pagination");
+const paginationTop = document.getElementById("paginationTop");
+const scrollTopBtn = document.getElementById("scrollTopBtn");
 const savedToggle = document.getElementById("savedToggle");
 const detailSaveBtn = document.getElementById("detailSaveBtn");
 const heroUserEmail = document.getElementById("heroUserEmail");
@@ -39,12 +41,6 @@ function safeText(text) {
   return (text || "").toString().trim();
 }
 
-function getOrdinal(n) {
-  const s = ["th", "st", "nd", "rd"];
-  const v = n % 100;
-  return n + (s[(v - 20) % 10] || s[v] || s[0]);
-}
-
 function formatDate(dateStr) {
   if (!dateStr) return null;
   const d = new Date(dateStr);
@@ -68,34 +64,6 @@ function isExpired(deadline) {
   return deadlineDate < today;
 }
 
-function addList(target, items, maxItems = 4) {
-  if (!Array.isArray(items) || items.length === 0) {
-    const p = document.createElement("p");
-    p.className = "empty";
-    p.textContent = "Not specified";
-    target.appendChild(p);
-    return;
-  }
-  const ul = document.createElement("ul");
-  const displayItems = items.slice(0, maxItems);
-  displayItems.forEach(item => {
-    const text = safeText(item);
-    if (text) {
-      const li = document.createElement("li");
-      li.textContent = text;
-      ul.appendChild(li);
-    }
-  });
-  target.appendChild(ul);
-
-  if (items.length > maxItems) {
-    const more = document.createElement("p");
-    more.className = "empty";
-    more.textContent = `+ ${items.length - maxItems} more — click Apply Now for full details`;
-    target.appendChild(more);
-  }
-}
-
 // ===== DETAIL PANEL FUNCTIONALITY =====
 const detailPanel = document.getElementById("detailPanel");
 const detailOverlay = document.getElementById("detailOverlay");
@@ -116,6 +84,23 @@ function getJobSlug(job) {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "")
     .substring(0, 60);
+}
+
+function normalizeApplyUrl(url) {
+  if (!url) return "";
+  try {
+    const parsed = new URL(url);
+    parsed.search = "";
+    parsed.hash = "";
+    return parsed.toString();
+  } catch {
+    return url.split("?")[0].split("#")[0];
+  }
+}
+
+function getJobId(job) {
+  const normalizedUrl = normalizeApplyUrl(job.apply_url);
+  return normalizedUrl || getJobSlug(job);
 }
 
 // Find job by slug
@@ -252,7 +237,7 @@ async function openDetail(job) {
   document.body.style.top = `-${scrollY}px`;
 
   if (detailSaveBtn) {
-    const jobId = getJobSlug(job);
+    const jobId = getJobId(job);
     detailSaveBtn.dataset.jobId = jobId;
     if (typeof isJobSaved === "function") {
       const saved = await isJobSaved(jobId);
@@ -268,8 +253,17 @@ async function openDetail(job) {
 function closeDetail() {
   currentJob = null;
 
-  // Update URL - remove job param
   const url = new URL(window.location);
+  const ref = url.searchParams.get("ref");
+  const returnToDashboard = sessionStorage.getItem("returnToDashboard") === "1";
+
+  if (ref === "dashboard" || returnToDashboard) {
+    sessionStorage.removeItem("returnToDashboard");
+    window.location.href = "dashboard.html#saved-jobs";
+    return;
+  }
+
+  // Update URL - remove job param
   url.searchParams.delete("job");
   const newUrl = url.searchParams.toString() ? `${url.pathname}?${url.searchParams}` : url.pathname;
   history.pushState({}, "", newUrl);
@@ -299,6 +293,9 @@ function closeDetail() {
 function checkUrlForJob() {
   const params = new URLSearchParams(window.location.search);
   const jobSlug = params.get("job");
+  if (params.get("ref") === "dashboard") {
+    sessionStorage.setItem("returnToDashboard", "1");
+  }
   if (jobSlug) {
     const job = findJobBySlug(jobSlug);
     if (job) {
@@ -401,16 +398,27 @@ async function updateSavedToggle() {
   savedToggle.textContent = `Saved Jobs (${count})`;
   savedToggle.setAttribute("aria-pressed", savedOnly ? "true" : "false");
   savedToggle.classList.toggle("active", savedOnly);
+  const url = new URL(window.location);
+  if (savedOnly) {
+    url.searchParams.set("saved", "1");
+  } else {
+    url.searchParams.delete("saved");
+  }
+  history.replaceState({}, "", url);
 }
 
 function updateAuthUI(user) {
   if (!heroUserEmail || !heroSignIn || !heroSignOut) return;
   if (user && user.email) {
     heroUserEmail.textContent = user.email;
-    heroSignIn.style.display = "none";
+    heroSignIn.textContent = "Dashboard";
+    heroSignIn.setAttribute("href", "dashboard.html");
+    heroSignIn.style.display = "inline-flex";
     heroSignOut.style.display = "inline-flex";
   } else {
     heroUserEmail.textContent = "";
+    heroSignIn.textContent = "Sign In";
+    heroSignIn.setAttribute("href", "signin.html");
     heroSignIn.style.display = "inline-flex";
     heroSignOut.style.display = "none";
   }
@@ -422,6 +430,9 @@ async function initAuthUI() {
     heroSignOut.addEventListener("click", async () => {
       await supabase.auth.signOut();
       updateAuthUI(null);
+      if (window.location.pathname.endsWith("/dashboard.html") || window.location.pathname.endsWith("dashboard.html")) {
+        window.location.href = "index.html";
+      }
     });
   }
   try {
@@ -808,7 +819,10 @@ function renderFilters() {
 }
 
 function renderPagination(totalItems) {
-  pagination.innerHTML = "";
+  const containers = [pagination, paginationTop].filter(Boolean);
+  containers.forEach(container => {
+    container.innerHTML = "";
+  });
   const totalPages = Math.ceil(totalItems / PAGE_SIZE);
   if (totalPages <= 1) return;
 
@@ -816,13 +830,6 @@ function renderPagination(totalItems) {
   prevBtn.className = "pagination-btn";
   prevBtn.textContent = "Prev";
   prevBtn.disabled = currentPage <= 1;
-  prevBtn.addEventListener("click", () => {
-    if (currentPage > 1) {
-      currentPage -= 1;
-      renderJobs();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  });
 
   const status = document.createElement("span");
   status.className = "pagination-status";
@@ -832,17 +839,53 @@ function renderPagination(totalItems) {
   nextBtn.className = "pagination-btn";
   nextBtn.textContent = "Next";
   nextBtn.disabled = currentPage >= totalPages;
-  nextBtn.addEventListener("click", () => {
-    if (currentPage < totalPages) {
-      currentPage += 1;
-      renderJobs();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  });
 
-  pagination.appendChild(prevBtn);
-  pagination.appendChild(status);
-  pagination.appendChild(nextBtn);
+  containers.forEach(container => {
+    const prevClone = prevBtn.cloneNode(true);
+    const statusClone = status.cloneNode(true);
+    const nextClone = nextBtn.cloneNode(true);
+    const jumpWrap = document.createElement("div");
+    jumpWrap.className = "pagination-jump";
+    jumpWrap.innerHTML = `
+      <span class="pagination-label">Page</span>
+      <input class="pagination-input" type="number" min="1" max="${totalPages}" value="${currentPage}" aria-label="Jump to page" />
+      <button class="pagination-btn pagination-go" type="button">Go</button>
+    `;
+
+    prevClone.addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage -= 1;
+        renderJobs();
+      }
+    });
+
+    nextClone.addEventListener("click", () => {
+      if (currentPage < totalPages) {
+        currentPage += 1;
+        renderJobs();
+      }
+    });
+
+    container.appendChild(prevClone);
+    container.appendChild(statusClone);
+    container.appendChild(nextClone);
+    container.appendChild(jumpWrap);
+
+    const jumpInput = jumpWrap.querySelector(".pagination-input");
+    const jumpBtn = jumpWrap.querySelector(".pagination-go");
+    const jumpToPage = () => {
+      const target = Math.max(1, Math.min(totalPages, parseInt(jumpInput.value, 10) || 1));
+      currentPage = target;
+      renderJobs();
+    };
+    jumpBtn.addEventListener("click", jumpToPage);
+    jumpInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        jumpToPage();
+      }
+    });
+  });
 }
 
 async function renderJobs() {
@@ -867,7 +910,11 @@ async function renderJobs() {
   if (savedOnly) {
     const savedList = await getSavedJobs();
     const savedIds = new Set(savedList.map(j => j.job_id || j));
-    list = list.filter(j => savedIds.has(getJobSlug(j)));
+    list = list.filter(j => {
+      const stableId = getJobId(j);
+      const slugId = getJobSlug(j);
+      return savedIds.has(stableId) || savedIds.has(slugId);
+    });
   }
   list = list.filter(j => !isExpired(j.deadline));
   grid.innerHTML = "";
@@ -895,7 +942,7 @@ async function renderJobs() {
 
   pageItems.forEach(j => {
     const card = document.createElement("article");
-    const jobId = getJobSlug(j);
+    const jobId = getJobId(j);
     card.className = "card clickable job-card";
     card.dataset.jobId = jobId;
 
@@ -1033,6 +1080,7 @@ fetch("master_jobs.json")
     activeCategory = getCategoryFromUrl();
     const params = new URLSearchParams(window.location.search);
     keywordQuery = safeText(params.get("q")).toLowerCase();
+    savedOnly = params.get("saved") === "1";
     if (keywordQuery) {
       keywordSearch.value = keywordQuery;
     }
@@ -1050,3 +1098,16 @@ fetch("master_jobs.json")
     </p>`;
     console.error(err);
   });
+
+if (scrollTopBtn) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 500) {
+      scrollTopBtn.classList.add("show");
+    } else {
+      scrollTopBtn.classList.remove("show");
+    }
+  });
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}

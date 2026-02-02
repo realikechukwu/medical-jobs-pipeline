@@ -180,28 +180,6 @@ header {
   }
 }
 
-.hero {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  padding: 26px;
-  box-shadow: var(--shadow);
-}
-
-.hero h1 {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: clamp(2rem, 3vw, 2.8rem);
-  font-weight: 700;
-  margin: 0 0 8px;
-  letter-spacing: -0.5px;
-}
-
-.hero p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 1rem;
-  line-height: 1.5;
-}
 
 .stats-wrap{
   margin-top: -34px;
@@ -389,8 +367,8 @@ input[type="search"]:focus{
 }
 
 .pagination-btn {
-  background: var(--card);
-  border: 1px solid var(--line);
+  background: #f0f0f0;
+  border: 1px solid #d0d0d0;
   border-radius: 999px;
   padding: 8px 16px;
   font-size: 0.9rem;
@@ -412,6 +390,32 @@ input[type="search"]:focus{
 .pagination-status {
   font-size: 0.9rem;
   color: var(--muted);
+}
+
+.pagination-jump{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination-label{
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.pagination-input{
+  width: 70px;
+  padding: 8px 10px;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+
+.pagination-go{
+  padding: 8px 12px;
+  background: #111111;
+  border-color: #111111;
+  color: #ffffff;
 }
 
 .saved-toggle{
@@ -588,6 +592,33 @@ input[type="search"]:focus{
   font-size: 0.9rem;
 }
 
+.scroll-top{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #111111;
+  color: #ffffff;
+  border: 1px solid #111111;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 1200;
+}
+
+.scroll-top.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.scroll-top:hover{
+  background: #0f0f0f;
+}
+
 .footer-link:hover {
   color: #ffffff;
   text-decoration: underline;
@@ -637,6 +668,13 @@ input[type="search"]:focus{
   font-size: 1.4rem;
   font-weight: 700;
   color: #111111;
+}
+
+.auth-note{
+  margin: 0 0 20px;
+  font-size: 0.92rem;
+  color: #444444;
+  line-height: 1.5;
 }
 
 .auth-form{
@@ -689,10 +727,17 @@ input[type="search"]:focus{
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
+  margin-top: 24px;
 }
 
 .auth-submit:hover{
   background: #0f0f0f;
+}
+
+.auth-submit-link{
+  display: inline-flex;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .auth-footer{
@@ -701,23 +746,222 @@ input[type="search"]:focus{
   color: #333333;
 }
 
+.account-section{
+  margin: 24px 0 28px;
+}
+
+.account-card{
+  background: var(--card);
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.account-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.account-summary{
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+.account-edit-btn{
+  background: transparent;
+  border: 1px solid #d0d0d0;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.account-edit-btn:hover{
+  border-color: #999999;
+}
+
+.account-title{
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111111;
+}
+
+.account-email{
+  margin: 0 0 18px;
+  font-size: 0.9rem;
+  color: #666666;
+  word-break: break-word;
+}
+
+.account-form{
+  text-align: left;
+}
+
+.hidden{
+  display: none;
+}
+
+.account-label{
+  display: block;
+  font-size: 0.85rem;
+  color: #666666;
+  margin: 0 0 6px;
+}
+
+.account-input{
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+  background: #ffffff;
+}
+
+.account-input:disabled{
+  background: #f7f7f7;
+  color: #666666;
+}
+
+.profile-display{
+  margin: 18px 0 8px;
+  display: grid;
+  gap: 10px;
+}
+
+.profile-row{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.profile-row:last-child{
+  border-bottom: none;
+}
+
+.profile-label{
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+.profile-value{
+  font-size: 0.9rem;
+  color: #111111;
+  text-align: right;
+  max-width: 60%;
+}
+
+.saved-jobs-list{
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.saved-job-row{
+  padding: 12px;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.saved-job-title{
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 4px;
+}
+
+.saved-job-meta{
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+.saved-job-apply{
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 10px;
+  background: #111111;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.saved-job-apply:hover{
+  background: #0f0f0f;
+}
+
+.saved-job-apply.disabled{
+  background: #d9d9d9;
+  color: #666666;
+  pointer-events: none;
+}
+
+.account-conditional{
+  display: none;
+}
+
+.account-conditional.show{
+  display: block;
+}
+
+
+.account-message{
+  margin: 14px 0 0;
+  font-size: 0.88rem;
+  color: #666666;
+}
+
+.account-message.error{
+  color: #e39a3b;
+}
+
+.account-message.success{
+  color: #66b77a;
+}
+
+.account-divider{
+  height: 1px;
+  background: #eeeeee;
+  margin: 18px 0;
+}
+
+.account-link{
+  display: inline-block;
+  color: #111111;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.account-link:hover{
+  text-decoration: underline;
+}
+
 .auth-message{
   text-align: left;
-  border-radius: 12px;
-  padding: 10px 12px;
-  margin: 0 0 12px;
-  border: 1px solid #e0e0e0;
-  background: #f5f5f5;
-  color: #111111;
+  margin: 24px 0 0;
+  padding: 0;
+  border: none;
+  background: transparent;
   font-size: 0.88rem;
 }
 
 .auth-error{
-  border-color: #d0d0d0;
+  color: #e39a3b;
 }
 
 .auth-success{
-  border-color: #d0d0d0;
+  color: #66b77a;
 }
 
 /* ===== SIMPLIFIED CARD STYLES ===== */
@@ -920,15 +1164,6 @@ input[type="search"]:focus{
 }
 
 /* Scope list styles to detail panel */
-.detail-panel .section-title {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--muted);
-  margin: 10px 0 6px;
-  font-weight: 500;
-}
-
 .detail-panel ul,
 .detail-panel ol {
   margin: 0 0 4px 18px;
