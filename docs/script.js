@@ -213,7 +213,7 @@ function openDetail(job) {
   const cta = document.getElementById("detailCTA");
   if (job.apply_url) {
     cta.href = job.apply_url;
-    cta.textContent = "View Original Posting →";
+    cta.textContent = "View Original Posting";
     cta.classList.remove("disabled");
   } else {
     cta.href = "#";
@@ -262,7 +262,7 @@ function closeDetail() {
     document.body.style.top = "";
     window.scrollTo(0, scrollY);
     closeTimer = null;
-  }, 300);
+  }, 450);
 }
 
 // Check URL for job param on load
@@ -766,13 +766,6 @@ function renderJobs() {
     }
 
     // Salary
-    let salary;
-    if (safeText(j.salary)) {
-      salary = document.createElement("div");
-      salary.className = "salary";
-      salary.textContent = safeText(j.salary);
-    }
-
     // Action buttons row
     const actions = document.createElement("div");
     actions.className = "card-actions";
@@ -794,7 +787,7 @@ function renderJobs() {
       applyBtn.href = applyUrl;
       applyBtn.target = "_blank";
       applyBtn.rel = "noopener noreferrer";
-      applyBtn.textContent = "Apply Now →";
+      applyBtn.textContent = "Apply Now";
     } else {
       applyBtn.className = "apply-btn disabled";
       applyBtn.textContent = "No link";
@@ -807,9 +800,6 @@ function renderJobs() {
     card.appendChild(title);
     card.appendChild(meta);
     card.appendChild(tags);
-    if (salary) {
-      card.appendChild(salary);
-    }
     card.appendChild(actions);
 
     grid.appendChild(card);

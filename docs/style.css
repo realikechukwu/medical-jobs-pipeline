@@ -49,9 +49,9 @@ header {
   align-items: center;
   background:
     linear-gradient(90deg,
-      rgba(24,0,173,0.78) 0%,
-      rgba(24,0,173,0.55) 45%,
-      rgba(24,0,173,0.25) 100%
+      rgba(0,0,0,0.85) 0%,
+      rgba(0,0,0,0.65) 45%,
+      rgba(0,0,0,0.35) 100%
     ),
     url("images/banner.jpg");
   background-size: cover;
@@ -192,8 +192,8 @@ header {
 
 .filter-btn{
   background: rgba(255,255,255,0.92);
-  border: 1px solid rgba(24,0,173,0.15);
-  color: rgba(15,23,42,0.75);
+  border: 1px solid #d0d0d0;
+  color: #333333;
   padding: 8px 12px;
   border-radius: 999px;
   font-size: 0.88rem;
@@ -202,15 +202,15 @@ header {
 }
 
 .filter-btn:hover{
-  border-color: rgba(12,192,223,0.9);
-  color: var(--med);
+  border-color: #999999;
+  color: #111111;
 }
 
 .filter-btn.active{
-  background: var(--med);
-  border-color: var(--med);
+  background: #111111;
+  border-color: #111111;
   color: #fff;
-  box-shadow: 0 10px 22px rgba(24,0,173,0.18);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
 }
 
 .filter-mobile { display: none; width: 100%; }
@@ -307,8 +307,8 @@ header {
 .select-wrap select:focus,
 input[type="text"]:focus,
 input[type="search"]:focus{
-  border-color: rgba(12,192,223,0.9);
-  box-shadow: 0 0 0 4px rgba(12,192,223,0.18);
+  border-color: #9a9a9a;
+  box-shadow: 0 0 0 4px rgba(0,0,0,0.08);
 }
 
 @media (max-width: 640px) {
@@ -365,8 +365,8 @@ input[type="search"]:focus{
   padding: 22px 20px;
   background:
     linear-gradient(
-      rgba(24, 0, 173, 0.72),
-      rgba(24, 0, 173, 0.72)
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.85)
     ),
     url("images/banner.jpg");
   background-size: cover;
@@ -445,21 +445,23 @@ input[type="search"]:focus{
   border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 500;
+  background: #f0f0f0;
+  color: #111111;
 }
 
 .card .tag.posted {
-  background: rgba(16, 185, 129, 0.18);
-  color: #0f766e;
+  background: #f0f0f0;
+  color: #111111;
 }
 
 .card .tag.job-type {
-  background: rgba(251, 191, 36, 0.2);
-  color: #b45309;
+  background: #f0f0f0;
+  color: #111111;
 }
 
 .card .tag.deadline {
-  background: rgba(239, 68, 68, 0.18);
-  color: #b91c1c;
+  background: #f0f0f0;
+  color: #111111;
 }
 
 .card .salary {
@@ -480,9 +482,9 @@ input[type="search"]:focus{
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgba(12, 192, 223, 0.18);
-  color: #1800ad;
-  border: 1px solid rgba(12, 192, 223, 0.45);
+  background: transparent;
+  color: #111111;
+  border: 1px solid #d0d0d0;
   border-radius: 10px;
   padding: 10px 14px;
   font-size: 0.88rem;
@@ -492,8 +494,8 @@ input[type="search"]:focus{
 }
 
 .view-btn:hover {
-  background: rgba(12, 192, 223, 0.28);
-  border-color: rgba(12, 192, 223, 0.7);
+  background: #f5f5f5;
+  border-color: #bdbdbd;
 }
 
 .apply-btn {
@@ -501,7 +503,7 @@ input[type="search"]:focus{
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #1800ad;
+  background: #111111;
   color: white;
   border: none;
   border-radius: 10px;
@@ -514,7 +516,7 @@ input[type="search"]:focus{
 }
 
 .apply-btn:hover {
-  background: #12007f;
+  background: #000000;
 }
 
 .apply-btn.disabled {
@@ -644,7 +646,7 @@ input[type="search"]:focus{
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
-  transition: transform 0.3s ease;
+  transition: transform 0.45s ease;
 }
 
 .detail-panel.hidden {
@@ -795,8 +797,8 @@ input[type="search"]:focus{
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(16, 185, 129, 0.18);
-  color: #0f766e;
+  background: #f0f0f0;
+  color: #111111;
   border-radius: 999px;
   padding: 4px 10px;
   font-size: 0.82rem;
@@ -804,23 +806,23 @@ input[type="search"]:focus{
 }
 
 .detail-panel .tag.category {
-  background: rgba(12, 192, 223, 0.2);
-  color: #1800ad;
+  background: #f0f0f0;
+  color: #111111;
 }
 
 .detail-panel .tag.job-type {
-  background: rgba(251, 191, 36, 0.2);
-  color: #b45309;
+  background: #f0f0f0;
+  color: #111111;
 }
 
 .detail-panel .tag.deadline {
-  background: rgba(239, 68, 68, 0.18);
-  color: #b91c1c;
+  background: #f0f0f0;
+  color: #111111;
 }
 
 .detail-salary {
   font-weight: 500;
-  color: #1800ad;
+  color: #111111;
   font-size: 1rem;
   margin: 8px 0;
 }
@@ -858,8 +860,8 @@ input[type="search"]:focus{
 
 /* Aggregator notice - IMPORTANT for honesty */
 .aggregator-notice {
-  background: rgba(12, 192, 223, 0.18);
-  border: 1px solid rgba(12, 192, 223, 0.35);
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
   border-radius: 12px;
   padding: 14px 16px;
   margin: 24px 0;
@@ -869,14 +871,14 @@ input[type="search"]:focus{
 
 .aggregator-notice strong {
   display: block;
-  color: #1800ad;
+  color: #111111;
   margin-bottom: 4px;
   font-size: 0.85rem;
 }
 
 .aggregator-notice p {
   margin: 0;
-  color: #1800ad;
+  color: #111111;
 }
 
 /* Source label */
@@ -887,10 +889,11 @@ input[type="search"]:focus{
 }
 
 .detail-source span {
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: transparent;
+  color: #111111;
   padding: 2px 8px;
-  border-radius: 4px;
+  border-radius: 999px;
+  border: 1px solid #d0d0d0;
   font-weight: 500;
 }
 
@@ -898,7 +901,7 @@ input[type="search"]:focus{
 .detail-cta {
   display: block;
   width: 100%;
-  background: #1800ad;
+  background: #111111;
   color: white;
   text-align: center;
   padding: 16px 24px;
@@ -911,5 +914,5 @@ input[type="search"]:focus{
 }
 
 .detail-cta:hover {
-  background: #12007f;
+  background: #000000;
 }
