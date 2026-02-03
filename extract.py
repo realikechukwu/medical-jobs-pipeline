@@ -141,6 +141,24 @@ def load_cache(cache_path: Path) -> dict:
         return {}
 
 
+def load_previous_master_jobs(path: Path) -> dict:
+    """Return dict indexed by apply_url from previous master_jobs.json."""
+    if not path.exists():
+        return {}
+    try:
+        with open(path, "r", encoding="utf-8") as handle:
+            data = json.load(handle)
+        jobs = data.get("jobs", []) if isinstance(data, dict) else []
+        index = {}
+        for job in jobs:
+            url = (job.get("apply_url") or "").strip()
+            if url:
+                index[url] = job
+        return index
+    except (OSError, json.JSONDecodeError, AttributeError):
+        return {}
+
+
 def save_cache(cache_path: Path, cache: dict) -> None:
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     with open(cache_path, "w", encoding="utf-8") as handle:
@@ -349,6 +367,7 @@ def main():
     skipped_empty = 0
     errors = 0
     cache_hits = 0
+    openai_calls = 0
 
     print("=" * 65)
     print("  JOB DATA EXTRACTION (OpenAI)")
@@ -359,6 +378,8 @@ def main():
     jobs_list = list(iter_jobs(args.json_dir))
     cache_path = OUTPUT_DIR / "extraction_cache.json"
     cache = load_cache(cache_path)
+    seen_urls = set(cache.get("seen_urls", [])) if isinstance(cache, dict) else set()
+    prev_by_url = load_previous_master_jobs(args.out)
 
 # Sort by date (newest first) so --max gets most recent jobs
     def get_date(item):
@@ -381,13 +402,12 @@ def main():
             continue
 
         apply_url = job.get("link") or job.get("job_url") or job.get("apply_url") or ""
-        if apply_url and apply_url in cache:
-            cached = cache.get(apply_url, {})
-            cached_data = cached.get("data")
-            if isinstance(cached_data, dict):
-                cached_data = dict(cached_data)
-                cached_data["_source"] = job.get("_source", source_name)
-                extracted.append(cached_data)
+        if apply_url and apply_url in seen_urls:
+            prev = prev_by_url.get(apply_url)
+            if isinstance(prev, dict):
+                reused = dict(prev)
+                reused["_source"] = job.get("_source", source_name)
+                extracted.append(reused)
                 processed += 1
                 cache_hits += 1
                 if processed % 10 == 0:
@@ -405,6 +425,7 @@ def main():
             continue
 
         try:
+            openai_calls += 1
             response = client.responses.create(
                 model=args.model,
                 input=[
@@ -487,7 +508,7 @@ def main():
             extracted.append(data)
             processed += 1
             if data.get("apply_url"):
-                cache[data["apply_url"]] = {"data": data}
+                seen_urls.add(data["apply_url"])
             
             if processed % 10 == 0:
                 print(f"  Processed: {processed} jobs...")
@@ -513,7 +534,7 @@ def main():
 
     # Save output
     args.out.parent.mkdir(parents=True, exist_ok=True)
-    save_cache(cache_path, cache)
+    save_cache(cache_path, {"seen_urls": sorted(seen_urls)})
 
     output_data = {
         "metadata": {
@@ -524,6 +545,7 @@ def main():
             "skipped_old": skipped_date,
             "skipped_empty": skipped_empty,
             "errors": errors,
+            "openai_calls": openai_calls,
         },
         "jobs": extracted,
     }
@@ -537,6 +559,7 @@ def main():
     print(f"{'=' * 65}")
     print(f"  ✅ Processed: {processed}")
     print(f"  💾 Cache hits: {cache_hits}")
+    print(f"  🤖 OpenAI calls: {openai_calls}")
     print(f"  ⏭️  Skipped (old): {skipped_date}")
     print(f"  ⏭️  Skipped (empty): {skipped_empty}")
     print(f"  ❌ Errors: {errors}")
