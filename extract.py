@@ -33,6 +33,39 @@ DATE_FORMATS = [
     "%d %b %Y",        # 27 Jan 2026
 ]
 
+RELATIVE_DEADLINE_UNITS = {
+    "day": 1,
+    "days": 1,
+    "week": 7,
+    "weeks": 7,
+    "month": 30,
+    "months": 30,
+}
+
+NUMBER_WORDS = {
+    "one": 1,
+    "two": 2,
+    "three": 3,
+    "four": 4,
+    "five": 5,
+    "six": 6,
+    "seven": 7,
+    "eight": 8,
+    "nine": 9,
+    "ten": 10,
+    "eleven": 11,
+    "twelve": 12,
+    "thirteen": 13,
+    "fourteen": 14,
+    "fifteen": 15,
+    "sixteen": 16,
+    "seventeen": 17,
+    "eighteen": 18,
+    "nineteen": 19,
+    "twenty": 20,
+    "thirty": 30,
+}
+
 
 def parse_date(s: str):
     if not s:
@@ -55,6 +88,32 @@ def parse_date(s: str):
         except ValueError:
             pass
     return None
+
+
+def _normalize_relative_deadline_text(text: str) -> str:
+    cleaned = text.strip().lower()
+    cleaned = re.sub(r"(\d+)(st|nd|rd|th)\\b", r"\\1", cleaned)
+    cleaned = cleaned.replace(",", " ").replace(".", " ")
+    cleaned = re.sub(r"\\s+", " ", cleaned).strip()
+    cleaned = re.sub(r"\\b(\\w+)\\s*\\((\\d+)\\)\\b", r"\\2", cleaned)
+    for word, num in NUMBER_WORDS.items():
+        cleaned = re.sub(rf"\\b{word}\\b", str(num), cleaned)
+    return cleaned
+
+
+def parse_relative_deadline(text: str, anchor_date):
+    if not text or not anchor_date:
+        return None
+    cleaned = _normalize_relative_deadline_text(text)
+    match = re.search(r"\\b(\\d+)\\s*(day|days|week|weeks|month|months)\\b", cleaned)
+    if not match:
+        return None
+    amount = int(match.group(1))
+    unit = match.group(2)
+    days = amount * RELATIVE_DEADLINE_UNITS.get(unit, 0)
+    if days <= 0:
+        return None
+    return anchor_date + timedelta(days=days)
 
 
 def pick_date(job: dict):
@@ -344,6 +403,13 @@ def main():
             deadline_date = parse_date(data.get("deadline") or "")
             if deadline_date:
                 data["deadline"] = deadline_date.isoformat()
+            else:
+                relative_deadline = parse_relative_deadline(
+                    data.get("deadline") or "",
+                    d or parse_date(job.get("_scraped_at") or "") or parse_date(job.get("scraped_at") or ""),
+                )
+                if relative_deadline:
+                    data["deadline"] = relative_deadline.isoformat()
             title_category = classify_job_category(data.get("job_title") or "")
             if title_category:
                 data["job_category"] = title_category
