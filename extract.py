@@ -71,8 +71,9 @@ def parse_date(s: str):
     if not s:
         return None
     s = s.strip()
-    s = re.sub(r"(\d+)(st|nd|rd|th)\\b", r"\\1", s, flags=re.I)
+    s = re.sub(r"(\d+)(st|nd|rd|th)\b", r"\1", s, flags=re.I)
     s = s.replace(",", "").strip().rstrip(".")
+    s = re.sub(r"\s+", " ", s)
     for fmt in DATE_FORMATS:
         try:
             return datetime.strptime(s, fmt).date()
@@ -91,28 +92,41 @@ def parse_date(s: str):
 
 
 def _normalize_relative_deadline_text(text: str) -> str:
-    cleaned = text.strip().lower()
-    cleaned = re.sub(r"(\d+)(st|nd|rd|th)\\b", r"\\1", cleaned)
+    cleaned = (text or "").strip().lower()
+
+    # convert (6) -> 6
+    cleaned = re.sub(r"\((\d+)\)", r"\1", cleaned)
+
+    # punctuation + whitespace
     cleaned = cleaned.replace(",", " ").replace(".", " ")
-    cleaned = re.sub(r"\\s+", " ", cleaned).strip()
-    cleaned = re.sub(r"\\b(\\w+)\\s*\\((\\d+)\\)\\b", r"\\2", cleaned)
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+
+    # number words -> digits
     for word, num in NUMBER_WORDS.items():
-        cleaned = re.sub(rf"\\b{word}\\b", str(num), cleaned)
+        cleaned = re.sub(rf"\b{re.escape(word)}\b", str(num), cleaned)
+
+    # collapse duplicated numbers: "6 6 weeks" -> "6 weeks"
+    cleaned = re.sub(r"\b(\d+)\s+\1\b", r"\1", cleaned)
+
     return cleaned
 
 
 def parse_relative_deadline(text: str, anchor_date):
     if not text or not anchor_date:
         return None
+
     cleaned = _normalize_relative_deadline_text(text)
-    match = re.search(r"\\b(\\d+)\\s*(day|days|week|weeks|month|months)\\b", cleaned)
+
+    match = re.search(r"\b(\d+)\s*(day|days|week|weeks|month|months)\b", cleaned)
     if not match:
         return None
+
     amount = int(match.group(1))
     unit = match.group(2)
     days = amount * RELATIVE_DEADLINE_UNITS.get(unit, 0)
     if days <= 0:
         return None
+
     return anchor_date + timedelta(days=days)
 
 
