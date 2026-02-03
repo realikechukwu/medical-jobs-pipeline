@@ -116,6 +116,23 @@ def parse_relative_deadline(text: str, anchor_date):
     return anchor_date + timedelta(days=days)
 
 
+def load_cache(cache_path: Path) -> dict:
+    if not cache_path.exists():
+        return {}
+    try:
+        with open(cache_path, "r", encoding="utf-8") as handle:
+            data = json.load(handle)
+            return data if isinstance(data, dict) else {}
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def save_cache(cache_path: Path, cache: dict) -> None:
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(cache_path, "w", encoding="utf-8") as handle:
+        json.dump(cache, handle, ensure_ascii=False, indent=2)
+
+
 def pick_date(job: dict):
     for key in ("date_posted", "posted_date", "date", "scraped_at", "_scraped_at"):
         d = parse_date(job.get(key) or "")
@@ -317,6 +334,7 @@ def main():
     skipped_date = 0
     skipped_empty = 0
     errors = 0
+    cache_hits = 0
 
     print("=" * 65)
     print("  JOB DATA EXTRACTION (OpenAI)")
@@ -325,6 +343,8 @@ def main():
     print("=" * 65)
 
     jobs_list = list(iter_jobs(args.json_dir))
+    cache_path = OUTPUT_DIR / "extraction_cache.json"
+    cache = load_cache(cache_path)
 
 # Sort by date (newest first) so --max gets most recent jobs
     def get_date(item):
@@ -345,6 +365,25 @@ def main():
         if d and d < cutoff:
             skipped_date += 1
             continue
+
+        apply_url = job.get("link") or job.get("job_url") or job.get("apply_url") or ""
+        if apply_url and apply_url in cache:
+            cached = cache.get(apply_url, {})
+            cached_data = cached.get("data")
+            if isinstance(cached_data, dict):
+                cached_data = dict(cached_data)
+                cached_data["_source"] = job.get("_source", source_name)
+                extracted.append(cached_data)
+                processed += 1
+                cache_hits += 1
+                if processed % 10 == 0:
+                    print(f"  Processed: {processed} jobs...")
+                if args.max and processed >= args.max:
+                    print(f"\n  Reached max limit: {args.max}")
+                    break
+                if args.sleep:
+                    time.sleep(args.sleep)
+                continue
 
         text = build_text(job)
         if not text.strip():
@@ -416,7 +455,7 @@ def main():
             if not data.get("salary") and job.get("salary"):
                 data["salary"] = str(job.get("salary"))
             if not data.get("apply_url"):
-                data["apply_url"] = job.get("link") or job.get("job_url") or ""
+                data["apply_url"] = apply_url
 
             protected = has_protected_email(job.get("raw_content") or "")
             if protected:
@@ -433,6 +472,8 @@ def main():
 
             extracted.append(data)
             processed += 1
+            if data.get("apply_url"):
+                cache[data["apply_url"]] = {"data": data}
             
             if processed % 10 == 0:
                 print(f"  Processed: {processed} jobs...")
@@ -458,6 +499,7 @@ def main():
 
     # Save output
     args.out.parent.mkdir(parents=True, exist_ok=True)
+    save_cache(cache_path, cache)
 
     output_data = {
         "metadata": {
@@ -480,6 +522,7 @@ def main():
     print("  EXTRACTION COMPLETE")
     print(f"{'=' * 65}")
     print(f"  ✅ Processed: {processed}")
+    print(f"  💾 Cache hits: {cache_hits}")
     print(f"  ⏭️  Skipped (old): {skipped_date}")
     print(f"  ⏭️  Skipped (empty): {skipped_empty}")
     print(f"  ❌ Errors: {errors}")
