@@ -29,6 +29,8 @@ DATE_FORMATS = [
     "%d-%m-%Y - %a",   # 23-01-2026 - Fri
     "%d-%m-%Y - %A",   # 23-01-2026 - Friday
     "%Y-%m-%d",        # 2026-01-23
+    "%d %B %Y",        # 27 January 2026
+    "%d %b %Y",        # 27 Jan 2026
 ]
 
 
@@ -36,6 +38,8 @@ def parse_date(s: str):
     if not s:
         return None
     s = s.strip()
+    s = re.sub(r"(\d+)(st|nd|rd|th)\\b", r"\\1", s, flags=re.I)
+    s = s.replace(",", "").strip().rstrip(".")
     for fmt in DATE_FORMATS:
         try:
             return datetime.strptime(s, fmt).date()
@@ -337,6 +341,9 @@ def main():
             # Preserve/enhance certain fields
             if d:
                 data["date_posted"] = d.isoformat()
+            deadline_date = parse_date(data.get("deadline") or "")
+            if deadline_date:
+                data["deadline"] = deadline_date.isoformat()
             title_category = classify_job_category(data.get("job_title") or "")
             if title_category:
                 data["job_category"] = title_category
