@@ -1,15 +1,6 @@
 {
-  "metadata": {
-    "extracted_at": "2026-02-03T19:38:28.359687",
-    "model": "gpt-4o-mini",
-    "total_processed": 244,
-    "duplicates_removed": 27,
-    "skipped_old": 0,
-    "skipped_empty": 0,
-    "errors": 0
-  },
-  "jobs": [
-    {
+  "https://medlocumjobs.com/jobs/big-catch-up-consultant-strategic-planning-and-programme-management-monitoring-evaluation-and-learning-mel-dose-reconciliation-knowledge-management-pg-healthimmunization-remote-req-590755-228": {
+    "data": {
       "job_title": "Big Catch Up Consultant - Strategic Planning and Programme Management",
       "company": "UNICEF",
       "location": "New York, United States",
@@ -43,8 +34,45 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/big-catch-up-consultant-strategic-planning-and-programme-management-monitoring-evaluation-and-learning-mel-dose-reconciliation-knowledge-management-pg-healthimmunization-remote-req-590755-228",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/big-catch-up-consultant-strategic-planning-and-programme-management-esaro-pg-health-immunization-remote-req-590753-227": {
+    "data": {
+      "job_title": "Big Catch Up Consultant - Strategic Planning and Programme Management",
+      "company": "UNICEF",
+      "location": "New York, United States",
+      "job_type": "Contract",
+      "job_category": "Public Health",
+      "salary": "",
+      "experience": "Minimum of eight (8) years of progressively responsible experience in international public health programme management, including at least three (3) years of substantive experience in immunization programmes",
+      "qualification": "Masters Degree Advanced university degree in Medicine, Public Health, Health Policy and Management, Social or Behavioural Science, other related fields",
+      "requirements": [
+        "Minimum of eight (8) years of progressively responsible experience in international public health programme management",
+        "At least three (3) years of substantive experience in immunization programmes",
+        "Demonstrated expertise in immunization programme strategic planning, coordination, implementation, monitoring and evaluation",
+        "Proven experience engaging and coordinating with national ministries of health and a broad range of immunization stakeholders",
+        "Strong communication and presentation skills",
+        "Demonstrated ability to work effectively in multicultural and multidisciplinary environments",
+        "Fluency in spoken and written English is a requirement"
+      ],
+      "responsibilities": [
+        "Support final acceleration of BCU implementation by coordinating and documenting support to country acceleration plans",
+        "Support BCU accountability and close-out processes, including completion and validation of BCU dose reconciliation",
+        "Support structured close-out and transition of BCU activities into routine immunization programming"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-03",
+      "deadline": "2026-02-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/big-catch-up-consultant-strategic-planning-and-programme-management-esaro-pg-health-immunization-remote-req-590753-227",
+      "_source": "medlocum"
+    }
+  },
+  "https://medlocumjobs.com/jobs/animal-health-advisor-226": {
+    "data": {
       "job_title": "Animal Health Advisor",
       "company": "FHI 360",
       "location": "Bujumbura, Burundi",
@@ -93,8 +121,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/animal-health-advisor-226",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/laboratory-scientist-molecular-genetics-laboratory-225": {
+    "data": {
       "job_title": "Laboratory Scientist - Molecular Genetics Laboratory",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja, Nigeria",
@@ -135,8 +165,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/laboratory-scientist-molecular-genetics-laboratory-225",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/clinical-pharmacist-oncology-224": {
+    "data": {
       "job_title": "Clinical Pharmacist (Oncology)",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja, Nigeria",
@@ -200,8 +232,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/clinical-pharmacist-oncology-224",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/haematology-nurse-223": {
+    "data": {
       "job_title": "Haematology Nurse",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja, Nigeria",
@@ -232,8 +266,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/haematology-nurse-223",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/clinical-assistant-haematologist-222": {
+    "data": {
       "job_title": "Clinical Assistant Haematologist",
       "company": "The African Medical Centre of Excellence (AMCE)",
       "location": "Abuja, Nigeria",
@@ -274,8 +310,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/clinical-assistant-haematologist-222",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/blood-bank-donor-clinic-scientist-221": {
+    "data": {
       "job_title": "Blood Bank / Donor Clinic Scientist",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja, Nigeria",
@@ -317,8 +355,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/blood-bank-donor-clinic-scientist-221",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Gastrointestinal-Surgeon-and-Endoscopist-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77181": {
+    "data": {
       "job_title": "Gastrointestinal Surgeon and Endoscopist",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -362,8 +402,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Gastrointestinal-Surgeon-and-Endoscopist-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77181",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Internal-Medicine-Physician-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77151": {
+    "data": {
       "job_title": "Internal Medicine Physician",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -410,8 +452,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Internal-Medicine-Physician-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77151",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Palliative-Care-Nurse-at-African-Medical-Centre-of-Excellence-AMCE?pid=77193": {
+    "data": {
       "job_title": "Palliative Care Nurse",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -459,8 +503,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Palliative-Care-Nurse-at-African-Medical-Centre-of-Excellence-AMCE?pid=77193",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/ICU-CCU-Nurse-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77191": {
+    "data": {
       "job_title": "ICU / CCU Nurse",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -505,8 +551,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/ICU-CCU-Nurse-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77191",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/OR-Peri-operative-Nurse-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77187": {
+    "data": {
       "job_title": "OR / Peri-operative Nurse",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -545,8 +593,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/OR-Peri-operative-Nurse-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77187",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Senior-Nurse-Infection-Prevention-Control-at-African-Medical-Centre-of-Excellence-AMCE?pid=77185": {
+    "data": {
       "job_title": "Senior Nurse, Infection Prevention Control",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -593,8 +643,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Senior-Nurse-Infection-Prevention-Control-at-African-Medical-Centre-of-Excellence-AMCE?pid=77185",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/OR-PACU-Nurse-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77183": {
+    "data": {
       "job_title": "OR / PACU Nurse",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -643,8 +695,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/OR-PACU-Nurse-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77183",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Oncology-Nurse-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77178": {
+    "data": {
       "job_title": "Oncology Nurse",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -689,8 +743,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Oncology-Nurse-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77178",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Senior-Nurse-Outpatient-at-African-Medical-Centre-of-Excellence-AMCE?pid=77177": {
+    "data": {
       "job_title": "Senior Nurse, Outpatient",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -736,8 +792,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Senior-Nurse-Outpatient-at-African-Medical-Centre-of-Excellence-AMCE?pid=77177",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Rotational-Nurse-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77172": {
+    "data": {
       "job_title": "Rotational Nurse",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -787,8 +845,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Rotational-Nurse-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77172",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Diagnostic-Nurse-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77167": {
+    "data": {
       "job_title": "Diagnostic Nurse",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -833,8 +893,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Diagnostic-Nurse-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77167",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Nurse-Stem-Cell-at-African-Medical-Centre-of-Excellence-AMCE?pid=77157": {
+    "data": {
       "job_title": "Nurse (Stem Cell)",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -881,8 +943,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Nurse-Stem-Cell-at-African-Medical-Centre-of-Excellence-AMCE?pid=77157",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Ward-Nurse-at-African-Medical-Centre-of-Excellence-AMCE?pid=77138": {
+    "data": {
       "job_title": "Ward Nurse",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -926,8 +990,59 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Ward-Nurse-at-African-Medical-Centre-of-Excellence-AMCE?pid=77138",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Haematology-Nurse-at-African-Medical-Centre-of-Excellence-AMCE?pid=77134": {
+    "data": {
+      "job_title": "Haematology Nurse",
+      "company": "African Medical Centre of Excellence (AMCE)",
+      "location": "Abuja",
+      "job_type": "",
+      "job_category": "Nurse",
+      "salary": "n,",
+      "experience": "1 year",
+      "qualification": "BSc",
+      "requirements": [
+        "Registered Nurse (RN) qualification with a valid practicing license from the Nursing and Midwifery Council of Nigeria (NMCN)",
+        "Post-basic certification or diploma in Oncology Nursing, Haematology Nursing, or a related specialty is highly desirable",
+        "Minimum of 3 years of clinical nursing experience, with at least 1 year in haematology, oncology, or a specialized medical unit",
+        "Demonstrated competency in chemotherapy administration and safe handling of cytotoxic drugs",
+        "Experience in managing patients with blood disorders, including transfusion therapy and central line care",
+        "Strong clinical assessment, critical thinking, and emergency response skills",
+        "Ability to provide empathetic, patient-centered care in emotionally challenging situations",
+        "Excellent teamwork, communication, and documentation abilities",
+        "Proficiency in using electronic medical records and clinical information systems"
+      ],
+      "responsibilities": [
+        "Provide comprehensive nursing care to patients with haematological disorders such as leukaemia, lymphoma, myeloma, anaemia, and clotting disorders",
+        "Administer chemotherapy, immunotherapy, and other systemic therapies as prescribed, adhering to strict safety protocols",
+        "Manage complex transfusion therapies, including blood and blood product administration, and monitor for transfusion reactions",
+        "Perform specialised procedures such as central venous access device care, bone marrow biopsy assistance, and apheresis support",
+        "Assess and manage treatment-related side effects and disease symptoms, including fatigue, bleeding risks, infections, and pain",
+        "Implement infection prevention and control measures for immunocompromised patients",
+        "Provide nutritional support, hydration management, and palliative care interventions as needed",
+        "Offer psychological and emotional support to patients and families coping with chronic or life-threatening blood disorders",
+        "Coordinate patient care throughout the treatment pathway, from diagnosis through follow-up",
+        "Monitor patients for signs of complications, such as neutropenic sepsis, tumour lysis syndrome, or bleeding episodes, and initiate prompt interventions",
+        "Maintain accurate and detailed records of treatments, responses, and patient assessments",
+        "Ensure seamless communication within the multidisciplinary haematology team",
+        "Educate patients and caregivers on disease processes, treatment plans, medication management, and self-care strategies",
+        "Teach infection prevention techniques, signs of complications, and when to seek medical help"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-02-03",
+      "deadline": "2026-02-05",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Haematology-Nurse-at-African-Medical-Centre-of-Excellence-AMCE?pid=77134",
+      "_source": "medicalworldnigeria"
+    }
+  },
+  "https://medicalworldnigeria.com/post/Head-Nurse-ICU-and-Theatre-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77131": {
+    "data": {
       "job_title": "Head Nurse, ICU & Theatre",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -960,8 +1075,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Head-Nurse-ICU-and-Theatre-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77131",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Nurse-Haematology-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77129": {
+    "data": {
       "job_title": "Nurse (Haematology)",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -1005,8 +1122,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Nurse-Haematology-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77129",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/jpo-emergency-officer-p-2-220": {
+    "data": {
       "job_title": "JPO Emergency Officer, P-2",
       "company": "UNICEF",
       "location": "Addis Ababa, Ethiopia",
@@ -1040,8 +1159,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/jpo-emergency-officer-p-2-220",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/senegal-project-director-strides-219": {
+    "data": {
       "job_title": "Senegal Project Director, STRIDES",
       "company": "FHI 360",
       "location": "Dakar, Senegal",
@@ -1073,8 +1194,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/senegal-project-director-strides-219",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/assistant-technical-officer-nutrition-cmam-218": {
+    "data": {
       "job_title": "Assistant Technical Officer, Nutrition - CMAM",
       "company": "FHI 360",
       "location": "Gamboru Ngala, Nigeria",
@@ -1114,8 +1237,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/assistant-technical-officer-nutrition-cmam-218",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/public-health-officer-217": {
+    "data": {
       "job_title": "Public Health Officer",
       "company": "Clinora Health Group",
       "location": "Osogbo, Osun, Nigeria",
@@ -1147,8 +1272,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/public-health-officer-217",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/epidemiologist-216": {
+    "data": {
       "job_title": "Epidemiologist",
       "company": "Medecins Sans Frontiers Switzerland",
       "location": "Bauchi, Nigeria",
@@ -1185,8 +1312,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/epidemiologist-216",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/pharmacist-215": {
+    "data": {
       "job_title": "Pharmacist",
       "company": "A Reputable Organization in the Pharmaceutical Company - Elizabeth Maddeux Limited",
       "location": "Egbeda, Lagos, Nigeria",
@@ -1231,8 +1360,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/pharmacist-215",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/technical-advisor-lab-ipc-supply-chain-214": {
+    "data": {
       "job_title": "Technical Advisor - Lab, IPC, Supply Chain",
       "company": "Jhpiego Nigeria",
       "location": "Abuja, Nigeria",
@@ -1267,8 +1398,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/technical-advisor-lab-ipc-supply-chain-214",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/technical-lead-crown-213": {
+    "data": {
       "job_title": "Technical Lead (CRoWN)",
       "company": "Solina Centre for International Development and Research (SCIDaR)",
       "location": "Nigeria, Afghanistan",
@@ -1320,8 +1453,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/technical-lead-crown-213",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/technical-advisor-medical-oxygen-respiratory-care-therapeutics-212": {
+    "data": {
       "job_title": "Technical Advisor - Medical Oxygen, Respiratory Care & Therapeutics",
       "company": "Jhpiego Nigeria",
       "location": "Abuja, Nigeria",
@@ -1353,8 +1488,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/technical-advisor-medical-oxygen-respiratory-care-therapeutics-212",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/medical-officer-211": {
+    "data": {
       "job_title": "Medical Officer",
       "company": "MSI Nigeria Reproductive Choices",
       "location": "Lagos, Nigeria",
@@ -1387,8 +1524,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/medical-officer-211",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/epidemiologist-medecins-sans-frontiers-switzerland/": {
+    "data": {
       "job_title": "Epidemiologist",
       "company": "Medecins Sans Frontiers, Switzerland",
       "location": "Bauchi, Nigeria",
@@ -1425,8 +1564,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/epidemiologist-medecins-sans-frontiers-switzerland/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/registered-midwife-talent-pool-resources-international-limited/": {
+    "data": {
       "job_title": "Registered Midwife",
       "company": "Talent Pool Resources International Limited",
       "location": "Ejigbo & Orile Iganmu Axis, Lagos, Nigeria",
@@ -1459,8 +1600,10 @@
       "contact_phone": "08156392799",
       "apply_url": "https://jobsinnigeria.careers/jobs/registered-midwife-talent-pool-resources-international-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/medical-sales-representative-kaduna-divine-ag-solutions-limited/": {
+    "data": {
       "job_title": "Medical Sales Representative",
       "company": "Divine AG Solutions Limited",
       "location": "Kaduna, Nigeria",
@@ -1503,8 +1646,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-sales-representative-kaduna-divine-ag-solutions-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacy-manager-kiyix-recruitment-hub/": {
+    "data": {
       "job_title": "Pharmacy Manager",
       "company": "Kiyix Recruitment Hub",
       "location": "Randle, Surulere – Lagos, Nigeria",
@@ -1540,8 +1685,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacy-manager-kiyix-recruitment-hub/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Federal-Medical-Centre-Keffi-Opens-High-Level-Vacancy-Who-Will-Become-the-Next-Medical-Director?pid=77118": {
+    "data": {
       "job_title": "Medical Director Chief Executive",
       "company": "Federal Medical Centre Keffi",
       "location": "Ibadan, Imo, Nasarawa",
@@ -1576,8 +1723,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Federal-Medical-Centre-Keffi-Opens-High-Level-Vacancy-Who-Will-Become-the-Next-Medical-Director?pid=77118",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/nursing-head-alfred-victoria-associates-2/": {
+    "data": {
       "job_title": "Nursing Head",
       "company": "Alfred and Victoria Associates",
       "location": "Abuja, Nigeria",
@@ -1628,8 +1777,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/nursing-head-alfred-victoria-associates-2/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/adhoc-consultant-210": {
+    "data": {
       "job_title": "Adhoc Consultant",
       "company": "Jhpiego Nigeria",
       "location": "Ebonyi, Kwara, Kano, Katsina and Kebbi, Nigeria",
@@ -1664,8 +1815,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/adhoc-consultant-210",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/senior-delft-light-case-finding-associate-209": {
+    "data": {
       "job_title": "Senior Delft Light Case Finding Associate",
       "company": "KNCV Tuberculosis Foundation",
       "location": "Anambra, Nigeria",
@@ -1713,8 +1866,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/senior-delft-light-case-finding-associate-209",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/temporary-appointment-immunization-epi-officer-coordination-and-vaccine-management-nob-ta-position-208": {
+    "data": {
       "job_title": "Temporary Appointment: Immunization (EPI) Officer (Coordination and Vaccine Management)",
       "company": "UNICEF",
       "location": "Dakar, Senegal",
@@ -1746,8 +1901,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/temporary-appointment-immunization-epi-officer-coordination-and-vaccine-management-nob-ta-position-208",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/maternal-health-clinical-mentor-207": {
+    "data": {
       "job_title": "Maternal Health Clinical Mentor",
       "company": "Project Hope",
       "location": "Abuja (FCT), Nigeria",
@@ -1781,8 +1938,45 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/maternal-health-clinical-mentor-207",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/public-health-officer-206": {
+    "data": {
+      "job_title": "Public Health Officer",
+      "company": "Clinora Health Group",
+      "location": "Ogba - Lagos and Ogun, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Public Health",
+      "salary": "NGN150,000 - NGN200,000 / monthly",
+      "experience": "1–3 years",
+      "qualification": "Degree in Public Health or related field",
+      "requirements": [
+        "Degree in Public Health or related field",
+        "1–3 years’ experience (entry-level considered)",
+        "Strong communication and reporting skills."
+      ],
+      "responsibilities": [
+        "Implement and monitor public health programs",
+        "Conduct community health assessments and outreach",
+        "Deliver health education and awareness activities",
+        "Collect, analyze, and report public health data",
+        "Support surveillance, immunization, and screening programs",
+        "Collaborate with healthcare providers and stakeholders",
+        "Ensure compliance with public health policies"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-01-30",
+      "deadline": "2026-02-28",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/public-health-officer-206",
+      "_source": "medlocum"
+    }
+  },
+  "https://medlocumjobs.com/jobs/early-career-postdoctoral-research-fellow-immunology-virology-205": {
+    "data": {
       "job_title": "Early-Career Postdoctoral Research Fellow (Immunology / Virology)",
       "company": "Institute of Genomics and Global Health (IGH)",
       "location": "Ede, Osun, Nigeria",
@@ -1815,8 +2009,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/early-career-postdoctoral-research-fellow-immunology-virology-205",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/pharmacy-technician-204": {
+    "data": {
       "job_title": "Pharmacy Technician",
       "company": "Lagos Executive Cardiovascular Centre (LECC)",
       "location": "Lagos, Nigeria",
@@ -1852,8 +2048,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/pharmacy-technician-204",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/production-pharmacist-203": {
+    "data": {
       "job_title": "Production Pharmacist",
       "company": "Shalina Healthcare",
       "location": "Ogun, Ogun State, Nigeria",
@@ -1880,8 +2078,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/production-pharmacist-203",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/medical-officer-202": {
+    "data": {
       "job_title": "Medical Officer",
       "company": "First Cardiology Consultants (FCC)",
       "location": "Lagos, Nigeria",
@@ -1921,8 +2121,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/medical-officer-202",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/institute-directors-health-education-institutes-athena-centre-policy-leadership/": {
+    "data": {
       "job_title": "Institute Directors – Health & Education Institutes",
       "company": "Athena Centre for Policy & Leadership",
       "location": "Abuja, Nigeria",
@@ -1958,8 +2160,54 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/institute-directors-health-education-institutes-athena-centre-policy-leadership/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/medical-officer-first-cardiology-consultants-fcc/": {
+    "data": {
+      "job_title": "Medical Officer",
+      "company": "First Cardiology Consultants (FCC)",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "3",
+      "qualification": "bsc",
+      "requirements": [
+        "Degree in medicine from an accredited University.",
+        "Candidate should posses an MBSS qualification with 1-3 years experience.",
+        "Compulsory completion of NYSC.",
+        "The candidate should have Up-to-date registration and license to practice medicine from the MDCN (Nigerian Medical and Dental Council Associations).",
+        "Knowledge of general medicine.",
+        "Computer literacy.",
+        "Excellent communication skills.",
+        "Fantastic counseling and listening skills.",
+        "Good organizational and time management skills."
+      ],
+      "responsibilities": [
+        "Respond to patient’s medical problems by referring to their history.",
+        "Participate in all treatment and preventative health care services as delegated and agreed upon the supervising medical Director.",
+        "Maintaining accurate documentation using EMR.",
+        "Interview Patients , take medical histories, perform physical examination, analyze, diagnose, and explain medical problems during consultation, interpret results under the supervision of the medical Director and referral, where necessary.",
+        "Maintaining confidentiality and impartiality at all times.",
+        "Explaining procedures or prescribed treatment to patients.",
+        "Liaising with other medical professionals in the hospital.",
+        "Formulate and diagnosed treatment plans, in consultation with or referring to supervising Doctors as appropriate.",
+        "Give clinical instruction to other clinical teams as required."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-30",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/medical-officer-first-cardiology-consultants-fcc/",
+      "_source": "jobsinnigeria"
+    }
+  },
+  "https://medlocumjobs.com/jobs/aesthetic-dermatology-nurse-201": {
+    "data": {
       "job_title": "Aesthetic / Dermatology Nurse",
       "company": "Woodgate Structure Limited",
       "location": "Wuse 2, Abuja, Nigeria",
@@ -1983,8 +2231,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/aesthetic-dermatology-nurse-201",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/experienced-nurse-200": {
+    "data": {
       "job_title": "Experienced Nurse",
       "company": "A Steel and Mills Company - Bretty Consultancy Services",
       "location": "Sabon Wuse, Niger, Nigeria",
@@ -2010,8 +2260,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/experienced-nurse-200",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/state-clinical-training-officer-scto-199": {
+    "data": {
       "job_title": "State Clinical Training Officer (SCTO)",
       "company": "MSI Nigeria Reproductive Choices",
       "location": "Benue, Benue State, Nigeria",
@@ -2053,8 +2305,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/state-clinical-training-officer-scto-199",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/optometrist-198": {
+    "data": {
       "job_title": "Optometrist",
       "company": "Clinix Healthcare Nigeria",
       "location": "Lagos, Nigeria",
@@ -2092,8 +2346,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/optometrist-198",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/histopathologist-197": {
+    "data": {
       "job_title": "Histopathologist",
       "company": "Clinix Healthcare Nigeria",
       "location": "Lagos, Nigeria",
@@ -2127,8 +2383,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/histopathologist-197",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/medical-quality-officer-196": {
+    "data": {
       "job_title": "Medical Quality Officer",
       "company": "Lagos Executive Cardiovascular Centre (LECC)",
       "location": "Lagos, Nigeria",
@@ -2156,8 +2414,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/medical-quality-officer-196",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/chief-financial-officer-cfo-195": {
+    "data": {
       "job_title": "Chief Financial Officer (CFO)",
       "company": "Manufacturing / Agribusiness",
       "location": "Anambra State, Nigeria",
@@ -2197,8 +2457,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/chief-financial-officer-cfo-195",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Experienced-Nurse-at-a-Steel-and-Mills-Company-Bretty-Consultancy-Services?pid=77112": {
+    "data": {
       "job_title": "Experienced Nurse",
       "company": "Bretty Consultancy Services",
       "location": "Sabon Wuse, Niger",
@@ -2225,8 +2487,39 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Experienced-Nurse-at-a-Steel-and-Mills-Company-Bretty-Consultancy-Services?pid=77112",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Aesthetic-Dermatology-Nurse-at-Woodgate-Structure-Limited?pid=77111": {
+    "data": {
+      "job_title": "Aesthetic / Dermatology Nurse",
+      "company": "Woodgate Structure Limited",
+      "location": "Wuse 2, Abuja",
+      "job_type": "Full-time",
+      "job_category": "Nurse",
+      "salary": "N120,000 - N150,000 / month",
+      "experience": "5",
+      "qualification": "bsc",
+      "requirements": [
+        "Bachelor's Degree",
+        "2 - 5 years experience"
+      ],
+      "responsibilities": [
+        "Provide safe, high quality nursing care in an aesthetic and dermatology clinical setting."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-29",
+      "deadline": "2026-02-27",
+      "contact_email": "",
+      "contact_phone": "07036448202",
+      "apply_url": "https://medicalworldnigeria.com/post/Aesthetic-Dermatology-Nurse-at-Woodgate-Structure-Limited?pid=77111",
+      "_source": "medicalworldnigeria"
+    }
+  },
+  "https://medlocumjobs.com/jobs/laboratory-diagnostics-officer-194": {
+    "data": {
       "job_title": "Laboratory & Diagnostics Officer",
       "company": "FHI 360",
       "location": "Lusaka, Zambia",
@@ -2263,8 +2556,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/laboratory-diagnostics-officer-194",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/epidemiology-surveillance-officer-193": {
+    "data": {
       "job_title": "Epidemiology & Surveillance Officer",
       "company": "FHI 360",
       "location": "Lusaka, Zambia",
@@ -2296,8 +2591,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/epidemiology-surveillance-officer-193",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/laboratory-strengthening-project-manager-reaching-the-last-mile-fund-192": {
+    "data": {
       "job_title": "Laboratory Strengthening Project Manager - Reaching the Last Mile Fund",
       "company": "Sightsavers",
       "location": "UK remote and/or Haywards Heath",
@@ -2335,8 +2632,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/laboratory-strengthening-project-manager-reaching-the-last-mile-fund-192",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/medical-laboratory-scientist-haematology-191": {
+    "data": {
       "job_title": "Medical Laboratory Scientist (Haematology)",
       "company": "Lily Hospitals Limited",
       "location": "Warri, Delta, Nigeria",
@@ -2370,8 +2669,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-scientist-haematology-191",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/medical-laboratory-scientist-190": {
+    "data": {
       "job_title": "Medical Laboratory Scientist",
       "company": "EHA Clinics",
       "location": "Abuja, Nigeria",
@@ -2410,8 +2711,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-scientist-190",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/senior-laboratory-associate-189": {
+    "data": {
       "job_title": "Senior Laboratory Associate",
       "company": "KNCV Tuberculosis Foundation",
       "location": "Bauchi, Nigeria",
@@ -2449,8 +2752,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/senior-laboratory-associate-189",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/deputy-provost-188": {
+    "data": {
       "job_title": "Deputy Provost",
       "company": "Lily College of Nursing Sciences at Lily Hospitals Limited",
       "location": "Warri, Delta, Nigeria",
@@ -2480,8 +2785,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/deputy-provost-188",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/head-of-department-hod-midwifery-187": {
+    "data": {
       "job_title": "Head of Department (HOD), Midwifery",
       "company": "Lily Hospitals Limited",
       "location": "Warri, Delta, Nigeria",
@@ -2513,8 +2820,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/head-of-department-hod-midwifery-187",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/medical-laboratory-scientist-186": {
+    "data": {
       "job_title": "Medical Laboratory Scientist",
       "company": "Body Affairs Diagnostics",
       "location": "Garki 2, Abuja (FCT), Nigeria",
@@ -2537,8 +2846,40 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-scientist-186",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Quality-Officer-at-Lagos-Executive-Cardiovascular-Centre-LECC?pid=77106": {
+    "data": {
+      "job_title": "Medical Quality Officer",
+      "company": "Lagos Executive Cardiovascular Centre (LECC)",
+      "location": "Lagos",
+      "job_type": "Full-time",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "in quality assurance or healthcare improvement",
+      "qualification": "bsc",
+      "requirements": [
+        "Bachelor's Degree in Medicine, Nursing, Pharmacy, or related field",
+        "Proven experience in quality assurance or healthcare improvement",
+        "Strong analytical and problem-solving skills",
+        "Excellent communication and interpersonal skills",
+        "Knowledge of quality management systems and accreditation standards"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-28",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Medical-Quality-Officer-at-Lagos-Executive-Cardiovascular-Centre-LECC?pid=77106",
+      "_source": "medicalworldnigeria"
+    }
+  },
+  "https://medicalworldnigeria.com/post/Call-Centre-Nurse-HMO-at-Mediplan-Healthcare-Limited?pid=77110": {
+    "data": {
       "job_title": "Call Centre Nurse (HMO)",
       "company": "Mediplan Healthcare Limited",
       "location": "Maryland, Lagos",
@@ -2564,8 +2905,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Call-Centre-Nurse-HMO-at-Mediplan-Healthcare-Limited?pid=77110",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Registered-Nurse-RN-at-Aspire-HMO?pid=77109": {
+    "data": {
       "job_title": "Registered Nurse (RN)",
       "company": "Aspire HMO",
       "location": "Lagos, Nigeria",
@@ -2590,8 +2933,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-RN-at-Aspire-HMO?pid=77109",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/program-officer-185": {
+    "data": {
       "job_title": "Program Officer",
       "company": "Positive Care and Development Foundation (PCDF)",
       "location": "Calabar, Cross River, Cross River State, Nigeria",
@@ -2623,8 +2968,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/program-officer-185",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/public-health-officer-noa-special-service-agreement-2600282-184": {
+    "data": {
       "job_title": "Public Health Officer NOA",
       "company": "WHO",
       "location": "Cairo, Egypt",
@@ -2654,8 +3001,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/public-health-officer-noa-special-service-agreement-2600282-184",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/program-officer-183": {
+    "data": {
       "job_title": "Program Officer",
       "company": "FHI 360",
       "location": "Lusaka, Zambia",
@@ -2696,8 +3045,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/program-officer-183",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/skilled-medical-doctor-in-obstetrics-and-gynaecology-182": {
+    "data": {
       "job_title": "Skilled Medical Doctor in Obstetrics and Gynaecology",
       "company": "Christian Miracle hospital",
       "location": "Enugu, Enugu State, Nigeria",
@@ -2728,8 +3079,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/skilled-medical-doctor-in-obstetrics-and-gynaecology-182",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/skilled-and-experienced-hospital-midwife-181": {
+    "data": {
       "job_title": "Skilled and Experienced Hospital Midwife",
       "company": "Christian Miracle Hospital",
       "location": "Enugu, Enugu State, Nigeria",
@@ -2771,8 +3124,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/skilled-and-experienced-hospital-midwife-181",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/regulatory-pharmacist-180": {
+    "data": {
       "job_title": "Regulatory Pharmacist",
       "company": "Shalina Healthcare",
       "location": "Ogun, Ogun State, Nigeria",
@@ -2801,8 +3156,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/regulatory-pharmacist-180",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/physiotherapist-2-openings-179": {
+    "data": {
       "job_title": "Physiotherapist",
       "company": "IfeanHealth Nigeria Limited",
       "location": "Lagos and Sokoto, Nigeria",
@@ -2834,8 +3191,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/physiotherapist-2-openings-179",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/full-time-academic-vacancies-in-kano-178": {
+    "data": {
       "job_title": "Full-Time Faculty Positions",
       "company": "Skyline University Nigeria",
       "location": "Kano, Kano State, Nigeria",
@@ -2863,8 +3222,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/full-time-academic-vacancies-in-kano-178",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/medical-officer-general-practitioner-177": {
+    "data": {
       "job_title": "Medical officer / General practitioner",
       "company": "Oasis Reproductive Health Services",
       "location": "Lagos and Abuja, Nigeria",
@@ -2891,8 +3252,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/medical-officer-general-practitioner-177",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Deputy-Provost-Lily-College-of-Nursing-Sciences-at-Lily-Hospitals-Limited?pid=77098": {
+    "data": {
       "job_title": "Deputy Provost – Lily College of Nursing Sciences",
       "company": "Lily Hospitals Limited",
       "location": "Warri, Delta",
@@ -2923,8 +3286,46 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Deputy-Provost-Lily-College-of-Nursing-Sciences-at-Lily-Hospitals-Limited?pid=77098",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Head-of-Department-HOD-Midwifery-at-Lily-Hospitals-Limited?pid=77097": {
+    "data": {
+      "job_title": "Head of Department (HOD), Midwifery",
+      "company": "Lily Hospitals Limited",
+      "location": "Warri, Delta",
+      "job_type": "Full-time",
+      "job_category": "Nurse",
+      "salary": "Package",
+      "experience": "2",
+      "qualification": "bsc",
+      "requirements": [
+        "Minimum of Bachelor’s Degree in Nursing Sciences.",
+        "Minimum of 4 years’ experience in midwifery education or clinical practice, with at least 2 years in leadership.",
+        "PGD in Education is required.",
+        "Proven experience in curriculum development, program evaluation, and faculty development.",
+        "Excellent communication and interpersonal skills."
+      ],
+      "responsibilities": [
+        "Lead the design, implementation, and evaluation of the midwifery curriculum.",
+        "Provide mentorship and guidance to faculty and administrative staff.",
+        "Promote evidence-based and innovative teaching methodologies.",
+        "Ensure compliance with regulatory and accreditation requirements.",
+        "Foster a collaborative environment that drives professional and student growth."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-27",
+      "deadline": "2026-02-02",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Head-of-Department-HOD-Midwifery-at-Lily-Hospitals-Limited?pid=77097",
+      "_source": "medicalworldnigeria"
+    }
+  },
+  "https://medicalworldnigeria.com/post/Hospital-Matron-at-a-Brand-New-Hospital-Facility-Sales-Force-Consulting?pid=77093": {
+    "data": {
       "job_title": "Hospital Matron",
       "company": "Sales Force Consulting",
       "location": "Abakaliki, Ebonyi",
@@ -2957,8 +3358,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Hospital-Matron-at-a-Brand-New-Hospital-Facility-Sales-Force-Consulting?pid=77093",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/pharmacy-technician-176": {
+    "data": {
       "job_title": "Pharmacy Technician",
       "company": "Castville Solutions",
       "location": "Yaba, Lagos, Nigeria",
@@ -2987,8 +3390,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/pharmacy-technician-176",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/project-officer-inclusive-eye-health-project-maternity-cover-175": {
+    "data": {
       "job_title": "Project Officer, Inclusive Eye Health Project - Maternity Cover",
       "company": "Sightsavers",
       "location": "Bulawayo, Zimbabwe",
@@ -3029,8 +3434,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/project-officer-inclusive-eye-health-project-maternity-cover-175",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/director-global-health-security-management-174": {
+    "data": {
       "job_title": "Director, Global Health Security Management",
       "company": "FHI 360",
       "location": "Maputo, Maputo Province, Mozambique",
@@ -3071,8 +3478,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/director-global-health-security-management-174",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/medical-laboratory-scientist-173": {
+    "data": {
       "job_title": "Medical Laboratory Scientist",
       "company": "Echolab Laboratory & Radiology Services",
       "location": "Ikeja, Lagos, Nigeria",
@@ -3124,8 +3533,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-scientist-173",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/senior-health-systems-strengthening-program-specialists-172": {
+    "data": {
       "job_title": "Senior Health Systems Strengthening Program Specialists",
       "company": "Jhpiego Nigeria",
       "location": "Gombe and Jigawa, Nigeria",
@@ -3169,8 +3580,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/senior-health-systems-strengthening-program-specialists-172",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/medical-director-internal-and-external-171": {
+    "data": {
       "job_title": "Medical Director (Internal and External)",
       "company": "Federal Neuro-Psychiatric Hospital",
       "location": "Calabar, Cross River State, Nigeria",
@@ -3204,8 +3617,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/medical-director-internal-and-external-171",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/medical-laboratory-scientist-haematologist-170": {
+    "data": {
       "job_title": "Medical Laboratory Scientist (Haematologist)",
       "company": "Lily Hospitals Limited",
       "location": "Warri, Delta, Nigeria",
@@ -3243,8 +3658,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-scientist-haematologist-170",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/pharmacist-169": {
+    "data": {
       "job_title": "Pharmacist",
       "company": "Elizabeth Maddeux Limited",
       "location": "Egbeda, Lagos, Nigeria",
@@ -3279,8 +3696,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/pharmacist-169",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/program-lead-clinical-care-short-term-consultancy-168": {
+    "data": {
       "job_title": "Program Lead (Clinical Care) - Short Term Consultancy",
       "company": "Excellence Community Education Welfare Scheme (ECEWS)",
       "location": "Enugu, Enugu State, Nigeria",
@@ -3321,8 +3740,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/program-lead-clinical-care-short-term-consultancy-168",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/full-time-pharmacist-charther-pharmacy-limited/": {
+    "data": {
       "job_title": "Full-Time Pharmacist",
       "company": "Charther Pharmacy Limited",
       "location": "Nigeria",
@@ -3356,8 +3777,42 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/full-time-pharmacist-charther-pharmacy-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Skilled-Medical-Doctor-in-Obstetrics-and-Gynaecology?pid=77088": {
+    "data": {
+      "job_title": "Skilled Medical Doctor in Obstetrics and Gynaecology",
+      "company": "Christian Miracle Hospital",
+      "location": "Ibadan, Imo, Nigeria",
+      "job_type": "full-time",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "Proven interest in Obstetrics and Gynaecology is mandatory.",
+      "qualification": "Bachelor of Medicine, Bachelor of Surgery (MBBS) from an accredited institution.",
+      "requirements": [
+        "Full registration with the Medical and Dental Council of Nigeria (MDCN) with a current practicing license."
+      ],
+      "responsibilities": [
+        "Conduct comprehensive outpatient consultations, manage antenatal and fertility clinics, and provide specialized care for obstetric and gynaecological cases.",
+        "Independently perform or assist in obstetric and gynaecological surgeries, including Caesarean Sections, fibroid, ovarian cyst, appendectomies, and other gynaecological procedures.",
+        "Lead daily ward rounds, manage pre- and post-operative care, and ensure the delivery of high-quality, patient-centric services.",
+        "Provide 24/7 on-site medical support during scheduled shifts and handle obstetric emergencies with precision and speed.",
+        "Maintain accurate medical records, participate in clinical audits, and collaborate with the nursing and lab teams to optimize patient outcomes."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-26",
+      "deadline": "2026-01-26",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Skilled-Medical-Doctor-in-Obstetrics-and-Gynaecology?pid=77088",
+      "_source": "medicalworldnigeria"
+    }
+  },
+  "https://medicalworldnigeria.com/post/Aesthetic-Nurse-at-Med-Spa?pid=77089": {
+    "data": {
       "job_title": "Aesthetic Nurse",
       "company": "Kelina Hospital",
       "location": "Abuja",
@@ -3403,8 +3858,56 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Aesthetic-Nurse-at-Med-Spa?pid=77089",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Skilled-and-Experienced-Hospital-Midwife-Vacancy?pid=77087": {
+    "data": {
+      "job_title": "Skilled and Experienced Hospital Midwife",
+      "company": "Christian Miracle Hospital",
+      "location": "Enugu North, Nigeria",
+      "job_type": "full-time",
+      "job_category": "Nurse",
+      "salary": "n,",
+      "experience": "3+ years in a busy maternity hospital",
+      "qualification": "bsc",
+      "requirements": [
+        "Patient care, Medication Administration, and Health Monitoring skills",
+        "Experience in assisting in medical procedures and surgeries",
+        "Strong communication and interpersonal skills",
+        "Attention to detail and ability to maintain accurate medical records",
+        "Ability to work in a fast-paced healthcare environment",
+        "Current Rm/RN license in Enugu State",
+        "Previous experience in obstetrics and gynecology is a plus",
+        "Basic Life Support (BLS) certification"
+      ],
+      "responsibilities": [
+        "Provide holistic antenatal, intrapartum, and postnatal care to mothers and their newborns",
+        "Awareness on pregnancy, delivery, and their complications, related health promotion, hygiene, nutrition and immunization",
+        "Monitor fetal and maternal well-being during labor and delivery using evidence-based protocols",
+        "Confidently and safely 'catch babies' — assist in spontaneous vaginal deliveries, including management of normal and complicated births",
+        "Identify and respond promptly to obstetric emergencies",
+        "Assist in health education and counseling for mothers and families",
+        "Collaborate with doctors, nurses, and other healthcare professionals to coordinate patient care",
+        "Maintain detailed, accurate, and timely clinical documentation",
+        "Provide faith-sensitive emotional and psychological support to patients and their families",
+        "Participate in clinical training sessions, outreach programs, and community maternal health advocacy",
+        "Adhere strictly to infection prevention and patient safety standards",
+        "Uphold the Christian values and mission of CMH in all patient interactions"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-26",
+      "deadline": "2026-01-26",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Skilled-and-Experienced-Hospital-Midwife-Vacancy?pid=77087",
+      "_source": "medicalworldnigeria"
+    }
+  },
+  "https://medlocumjobs.com/jobs/pharmacy-interns-167": {
+    "data": {
       "job_title": "Pharmacy Interns",
       "company": "Widdi Pharmacy",
       "location": "Marwa, Lekki - Lagos, Nigeria",
@@ -3424,8 +3927,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/pharmacy-interns-167",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/deputy-medical-coordinator-premiere-urgence-internationale-pui-3/": {
+    "data": {
       "job_title": "Deputy Medical Coordinator",
       "company": "Premiere Urgence Internationale (PUI)",
       "location": "Maiduguri, Borno, Nigeria",
@@ -3466,8 +3971,41 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/deputy-medical-coordinator-premiere-urgence-internationale-pui-3/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Oasis-Reproductive-Health-Services-is-expanding-and-currently-seeking-a-Medical-officer-General-practitioner?pid=77079": {
+    "data": {
+      "job_title": "Medical officer / General practitioner",
+      "company": "Oasis Reproductive Health Services",
+      "location": "Lagos and Abuja",
+      "job_type": "Full time",
+      "job_category": "Doctor",
+      "salary": "350,000 to 400,000",
+      "experience": "4",
+      "qualification": "bsc",
+      "requirements": [
+        "Relevant professional qualifications and valid practicing license",
+        "Experience in reproductive health/IVF services is an added advantage",
+        "Ultrasound scanning skill will be an added advantage",
+        "Good communication and interpersonal skills",
+        "Compassionate, patient-centered, and team-oriented attitude",
+        "2-4 years experience is a must"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-24",
+      "deadline": "2026-01-31",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Oasis-Reproductive-Health-Services-is-expanding-and-currently-seeking-a-Medical-officer-General-practitioner?pid=77079",
+      "_source": "medicalworldnigeria"
+    }
+  },
+  "https://medlocumjobs.com/jobs/midwife-supervisor-fixed-term-166": {
+    "data": {
       "job_title": "Midwife Supervisor",
       "company": "Medecins Sans Frontieres (MSF) - Belgium",
       "location": "Akwa, Anambra, Nigeria",
@@ -3500,8 +4038,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/midwife-supervisor-fixed-term-166",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/radiology-community-health-extension-worker-165": {
+    "data": {
       "job_title": "Radiology Community Health Extension Worker",
       "company": "Lily Hospitals Limited",
       "location": "Warri, Delta, Nigeria",
@@ -3537,8 +4077,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/radiology-community-health-extension-worker-165",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/chief-medical-director-164": {
+    "data": {
       "job_title": "Chief Medical Director",
       "company": "Usmanu Danfodiyo University Teaching Hospital, (UDUTH)",
       "location": "Sokoto, Sokoto, Nigeria",
@@ -3573,8 +4115,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/chief-medical-director-164",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/medical-officer-general-practitioner-163": {
+    "data": {
       "job_title": "Medical Officer / General Practitioner",
       "company": "Fortics Lifecare Limited",
       "location": "Ibadan, Oyo, Oyo State, Nigeria",
@@ -3602,8 +4146,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/medical-officer-general-practitioner-163",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/medical-officer-oncology-162": {
+    "data": {
       "job_title": "Medical Officer (Oncology)",
       "company": "Ascentech Services Limited",
       "location": "Benin, Edo, Edo State, Nigeria",
@@ -3637,8 +4183,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/medical-officer-oncology-162",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/pharmacist-production-161": {
+    "data": {
       "job_title": "Pharmacist (Production)",
       "company": "Dana Group of Companies",
       "location": "Shiroro Dam Road, Niger, Niger State, Nigeria",
@@ -3672,8 +4220,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/pharmacist-production-161",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/optometrist-160": {
+    "data": {
       "job_title": "Optometrist",
       "company": "The Lamb Hospital",
       "location": "Mowe / Shimawa - Ogun, Ogun State, Nigeria",
@@ -3711,8 +4261,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/optometrist-160",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/dentist-159": {
+    "data": {
       "job_title": "Dentist",
       "company": "The Lamb Hospital",
       "location": "Mowe / Shimawa, Ogun, Ogun State, Nigeria",
@@ -3755,8 +4307,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/dentist-159",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/lecturer-ii-medical-laboratory-science-158": {
+    "data": {
       "job_title": "Lecturer II (Medical Laboratory Science)",
       "company": "University of Agriculture, Science, and Technology (UAST)",
       "location": "Ihugh, Benue State, Nigeria",
@@ -3788,8 +4342,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/lecturer-ii-medical-laboratory-science-158",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/assistant-lecturer-public-health-157": {
+    "data": {
       "job_title": "Assistant Lecturer (Public Health)",
       "company": "University of Agriculture, Science, and Technology (UAST)",
       "location": "Ihugh, Benue, Benue State, Nigeria",
@@ -3818,8 +4374,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/assistant-lecturer-public-health-157",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/health-safety-environment-hse-manager-transtell-ventures-nigeria-limited/": {
+    "data": {
       "job_title": "Health, Safety & Environment (HSE) Manager",
       "company": "Transtell Ventures Nigeria Limited",
       "location": "Lagos, Nigeria",
@@ -3859,8 +4417,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/health-safety-environment-hse-manager-transtell-ventures-nigeria-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Federal-Neuro-Psychiatric-Hospital-Vacancy-for-Medical-Director-Internal-and-External?pid=77072": {
+    "data": {
       "job_title": "Medical Director",
       "company": "Federal Neuro-Psychiatric Hospital",
       "location": "Calabar, Cross Rivers State",
@@ -3894,8 +4454,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Federal-Neuro-Psychiatric-Hospital-Vacancy-for-Medical-Director-Internal-and-External?pid=77072",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Clinical-Research-Associate-at-Avocado-Virtual-Solutions?pid=77077": {
+    "data": {
       "job_title": "Clinical Research Associate",
       "company": "Avocado Virtual Solutions",
       "location": "Abuja",
@@ -3929,8 +4491,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Clinical-Research-Associate-at-Avocado-Virtual-Solutions?pid=77077",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Nursing-Matron-at-Zhongxin-Network-Technology-Company-Limited?pid=77076": {
+    "data": {
       "job_title": "Nursing Matron",
       "company": "Zhongxin Network Technology Company Limited",
       "location": "Lagos",
@@ -3965,8 +4529,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Nursing-Matron-at-Zhongxin-Network-Technology-Company-Limited?pid=77076",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/assistant-lecturer-biochemistry-156": {
+    "data": {
       "job_title": "Assistant Lecturer (Biochemistry)",
       "company": "University of Agriculture, Science, and Technology (UAST)",
       "location": "Ihugh, Benue, Benue State, Nigeria",
@@ -3998,8 +4564,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/assistant-lecturer-biochemistry-156",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/assistant-lecturer-nursing-science-155": {
+    "data": {
       "job_title": "Assistant Lecturer (Nursing Science)",
       "company": "University of Agriculture, Science, and Technology (UAST)",
       "location": "Ihugh, Benue, Benue State, Nigeria",
@@ -4030,8 +4598,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/assistant-lecturer-nursing-science-155",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/temporary-appointment-for-remote-work-of-medical-specialist-p-3-international-professional-154": {
+    "data": {
       "job_title": "Medical Specialist",
       "company": "UNICEF Global Shared Services Centre",
       "location": "Budapest, Hungary",
@@ -4062,8 +4632,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/temporary-appointment-for-remote-work-of-medical-specialist-p-3-international-professional-154",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/lecturer-i-nursing-science-153": {
+    "data": {
       "job_title": "Lecturer I (Nursing Science)",
       "company": "University of Agriculture, Science, and Technology (UAST)",
       "location": "Ihugh, Benue, Benue State, Nigeria",
@@ -4098,8 +4670,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/lecturer-i-nursing-science-153",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/nysc-medical-doctor-152": {
+    "data": {
       "job_title": "NYSC Medical Doctor",
       "company": "Tractrac MSL",
       "location": "Keffi, Nasarawa, Nasarawa State, Nigeria",
@@ -4135,8 +4709,45 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/nysc-medical-doctor-152",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/pharmacy-technician-151": {
+    "data": {
+      "job_title": "Pharmacy Technician",
+      "company": "Castville Solutions",
+      "location": "Transamadi, Port Harcourt - Rivers, Rivers State, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Pharmacist",
+      "salary": "NGN100,000 / monthly",
+      "experience": "",
+      "qualification": "Diploma or certification as a Pharmacy Technician from a recognized institution.",
+      "requirements": [
+        "Diploma or certification as a Pharmacy Technician from a recognized institution.",
+        "Valid registration with the Pharmacy Council or relevant regulatory body.",
+        "Prior experience working in a retail or hospital pharmacy (an advantage).",
+        "Good understanding of pharmaceutical terminology and dosage forms.",
+        "Proficient in using pharmacy software and systems."
+      ],
+      "responsibilities": [
+        "Assist the pharmacist in preparing and dispensing medications to patients accurately.",
+        "Receive and verify prescription orders.",
+        "Label and package medications for patients.",
+        "Manage inventory, including ordering, receiving, and restocking supplies and medications.",
+        "Maintain accurate patient records and prescription files."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-01-22",
+      "deadline": "2026-02-15",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/pharmacy-technician-151",
+      "_source": "medlocum"
+    }
+  },
+  "https://medlocumjobs.com/jobs/superintendent-pharmacist-150": {
+    "data": {
       "job_title": "Superintendent Pharmacist",
       "company": "Apex Pharmalab",
       "location": "Egbeda, Lagos, Nigeria",
@@ -4176,8 +4787,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/superintendent-pharmacist-150",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medlocumjobs.com/jobs/dialysis-support-technician-149": {
+    "data": {
       "job_title": "Dialysis Support Technician",
       "company": "Ascentech Services Limited",
       "location": "Lagos, Nigeria",
@@ -4213,8 +4826,10 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/dialysis-support-technician-149",
       "_source": "medlocum"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-and-Dental-Council-of-Nigeria-Housemanship-Engagement?pid=77068": {
+    "data": {
       "job_title": "Housemanship Engagement",
       "company": "Medical and Dental Council of Nigeria",
       "location": "Ibadan, Port Harcourt, Nigeria",
@@ -4234,8 +4849,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-and-Dental-Council-of-Nigeria-Housemanship-Engagement?pid=77068",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Usmanu-Danfodiyo-University-Teaching-Hospital-Sokoto-Advertisement-for-the-Post-of-Chief-Medical-Director-of-Usmanu-Danfodiyo-University-Teaching-Hospital-UDUTH-Sokoto?pid=77061": {
+    "data": {
       "job_title": "Chief Medical Director",
       "company": "Usmanu Danfodiyo University Teaching Hospital",
       "location": "Sokoto, Nigeria",
@@ -4268,8 +4885,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Usmanu-Danfodiyo-University-Teaching-Hospital-Sokoto-Advertisement-for-the-Post-of-Chief-Medical-Director-of-Usmanu-Danfodiyo-University-Teaching-Hospital-UDUTH-Sokoto?pid=77061",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Midwife-Supervisor-Fixed-Term-at-Medecins-Sans-Frontieres-MSF-Belgium?pid=77066": {
+    "data": {
       "job_title": "Midwife Supervisor (Fixed Term)",
       "company": "Médecins Sans Frontières (MSF)",
       "location": "Akwa, Anambra",
@@ -4301,8 +4920,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Midwife-Supervisor-Fixed-Term-at-Medecins-Sans-Frontieres-MSF-Belgium?pid=77066",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/registered-nurse-aesthetics-clinic-future-moves-recruitment-agency/": {
+    "data": {
       "job_title": "Registered Nurse (Aesthetics Clinic)",
       "company": "Future Moves Recruitment Agency",
       "location": "Lekki, Lagos, Nigeria",
@@ -4343,8 +4964,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/registered-nurse-aesthetics-clinic-future-moves-recruitment-agency/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/dentist-clinix-healthcare/": {
+    "data": {
       "job_title": "Dentist",
       "company": "Clinix Healthcare",
       "location": "Awka, Anambra, Nigeria",
@@ -4371,8 +4994,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/dentist-clinix-healthcare/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/optometrist-clinix-healthcare/": {
+    "data": {
       "job_title": "Optometrist",
       "company": "Clinix Healthcare",
       "location": "Awka, Anambra, Nigeria",
@@ -4398,8 +5023,58 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/optometrist-clinix-healthcare/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/dentist-lamb-hospital/": {
+    "data": {
+      "job_title": "Dentist",
+      "company": "The Lamb Hospital",
+      "location": "Mowe, Ogun, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Dentist",
+      "salary": "",
+      "experience": "(fresh graduates may apply)",
+      "qualification": "bsc",
+      "requirements": [
+        "Bachelor of Dental Surgery (BDS) or Doctor of Dental Surgery (DDS/DMD)",
+        "Valid practicing license with the relevant Dental Council",
+        "Minimum of [1–3] years clinical experience (fresh graduates may apply)",
+        "Strong clinical and diagnostic skills",
+        "Good communication and patient-management skills",
+        "Ability to work independently and as part of a healthcare team",
+        "Clinical dental procedures proficiency",
+        "Patient care and empathy",
+        "Attention to detail and manual dexterity",
+        "Time management and organizational skills",
+        "Knowledge of infection control and dental ethics"
+      ],
+      "responsibilities": [
+        "Examine patients’ teeth, gums, and oral tissues to diagnose dental conditions",
+        "Perform dental procedures such as fillings, extractions, scaling and polishing, and root canal treatments (as qualified)",
+        "Diagnose and manage dental caries, gum diseases, infections, and oral pain",
+        "Prescribe medications such as antibiotics and pain relief when necessary",
+        "Interpret dental X-rays and other diagnostic tests",
+        "Educate patients on oral hygiene, preventive care, and dietary habits affecting dental health",
+        "Maintain accurate dental records and treatment plans",
+        "Ensure proper sterilization and infection control procedures are followed",
+        "Refer patients to specialists (e.g., orthodontists, oral surgeons) when required",
+        "Work collaboratively with dental nurses, hygienists, and other healthcare staff",
+        "Adhere to professional ethics, safety standards, and clinic policies"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-21",
+      "deadline": "2026-02-28",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/dentist-lamb-hospital/",
+      "_source": "jobsinnigeria"
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/optometrist-lamb-hospital/": {
+    "data": {
       "job_title": "Optometrist",
       "company": "Lamb Hospital",
       "location": "Mowe / Shimawa, Ogun, Nigeria",
@@ -4440,8 +5115,81 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/optometrist-lamb-hospital/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Officer-General-Practitioner-at-Fortics-Lifecare-Limited?pid=77060": {
+    "data": {
+      "job_title": "Medical Officer / General Practitioner",
+      "company": "Fortics Lifecare Limited",
+      "location": "Ibadan, Oyo",
+      "job_type": "Full-time",
+      "job_category": "Doctor",
+      "salary": "N350,000 - N400,00 per month",
+      "experience": "5",
+      "qualification": "bsc",
+      "requirements": [
+        "MBBS or equivalent qualification",
+        "3–5 years post-qualification experience",
+        "Possession of a current practicing licence",
+        "Business-oriented mindset with sound clinical judgment",
+        "Excellent communication and interpersonal skills",
+        "Ability to work independently and within a team",
+        "Must be proactive, dependable, and patient-focused."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-21",
+      "deadline": "2026-02-06",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-General-Practitioner-at-Fortics-Lifecare-Limited?pid=77060",
+      "_source": "medicalworldnigeria"
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Officer-Oncology-at-Ascentech-Services-Limited?pid=77059": {
+    "data": {
+      "job_title": "Medical Officer (Oncology)",
+      "company": "Ascentech Services Limited",
+      "location": "Benin, Edo",
+      "job_type": "Full-time",
+      "job_category": "Doctor",
+      "salary": "N400,000 / Month",
+      "experience": "5",
+      "qualification": "MD or DO",
+      "requirements": [
+        "MD or DO from a recognized medical institution with 3–5 years of experience in oncology.",
+        "Strong understanding of oncology protocols and quality standards.",
+        "Excellent communication and teamwork skills."
+      ],
+      "responsibilities": [
+        "Contouring target volumes and organs for radiotherapy treatment.",
+        "Ensure accurate CT simulations for treatment planning.",
+        "Conduct follow-up consultations for radiotherapy patients.",
+        "Assist Clinical Oncologists in patient treatment and procedures.",
+        "Review diagnostic reports and support clinical management plans.",
+        "Counsel patients on treatment plans, side effects, lifestyle, and diet.",
+        "Participate in tumor boards, clinical audits, and multidisciplinary meetings.",
+        "Support quality improvement initiatives and infection control standards.",
+        "Contribute to protocol development, training, research, and educational activities.",
+        "Collaborate with operations and other teams to enhance patient experience."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-21",
+      "deadline": "2026-01-27",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-Oncology-at-Ascentech-Services-Limited?pid=77059",
+      "_source": "medicalworldnigeria"
+    }
+  },
+  "https://medicalworldnigeria.com/post/Dialysis-Nurse-at-Clinix-Healthcare?pid=77052": {
+    "data": {
       "job_title": "Dialysis Nurse",
       "company": "Clinix Healthcare",
       "location": "Awka, Anambra",
@@ -4465,8 +5213,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Dialysis-Nurse-at-Clinix-Healthcare?pid=77052",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Registered-Nurse-Aesthetics-Clinic-at-Future-Moves-Recruitment-Agency?pid=77051": {
+    "data": {
       "job_title": "Registered Nurse (Aesthetics Clinic)",
       "company": "Kelina Hospital",
       "location": "Lekki, Lagos",
@@ -4507,8 +5257,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-Aesthetics-Clinic-at-Future-Moves-Recruitment-Agency?pid=77051",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/nysc-nurse-tractrac-msl/": {
+    "data": {
       "job_title": "NYSC Nurse",
       "company": "Tractrac MSL",
       "location": "Keffi, Nasarawa, Nigeria",
@@ -4545,8 +5297,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/nysc-nurse-tractrac-msl/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/medical-laboratory-scientist-change-room-2/": {
+    "data": {
       "job_title": "Medical Laboratory Scientist",
       "company": "The Change Room",
       "location": "Lagos, Nigeria",
@@ -4588,8 +5342,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-laboratory-scientist-change-room-2/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-officer?pid=77050": {
+    "data": {
       "job_title": "Medical officer",
       "company": "Ibadan Announces Major Vacancy for Director of Administration",
       "location": "Abuja, Ibadan, Imo",
@@ -4609,8 +5365,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-officer?pid=77050",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/NYSC-Medical-Doctor-at-Tractrac-MSL?pid=77044": {
+    "data": {
       "job_title": "NYSC Medical Doctor",
       "company": "Kelina Hospital",
       "location": "Keffi, Nasarawa",
@@ -4647,8 +5405,90 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/NYSC-Medical-Doctor-at-Tractrac-MSL?pid=77044",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Assistant-Lecturer-Nursing-Science-at-University-of-Agriculture-Science-and-Technology-UAST?pid=77046": {
+    "data": {
+      "job_title": "Assistant Lecturer (Nursing Science)",
+      "company": "University of Agriculture, Science, and Technology (UAST)",
+      "location": "Ihugh, Benue",
+      "job_type": "",
+      "job_category": "Nurse",
+      "salary": "CONUASS 2",
+      "experience": "3 years post-qualification",
+      "qualification": "B.NSc. (Nursing Science) and M.Sc. in Nursing (any recognised specialty)",
+      "requirements": [
+        "B.NSc. (Nursing Science) from a recognised university and M.Sc. in Nursing (any recognised specialty)",
+        "Current registration and valid practising licence with NMCN",
+        "Minimum 3 years post-qualification experience (clinical, academic, or blended)",
+        "Teaching assistantship/clinical preceptorship is an advantage"
+      ],
+      "responsibilities": [
+        "Assist in delivering undergraduate Nursing courses (theory, skills-lab, clinical postings)",
+        "Support OSCEs, simulations, tutorials, and continuous assessment in line with C-CMAS and NMCN standards",
+        "Assist in examination administration, grading, and results processing",
+        "Participate in skills-lab instruction (fundamentals, medical-surgical, maternal & child health, mental health)",
+        "Support supervised clinical postings in accredited teaching hospitals/health facilities",
+        "Participate in departmental research, data collection, audits, and co-authored publications",
+        "Assist in grant proposals, quality-improvement studies, and community health research",
+        "Support community health outreaches, primary health initiatives, and public-health education",
+        "Participate in digital health, patient-safety, and quality-of-care initiatives",
+        "Enrol and make satisfactory progress toward a PhD (Nursing or closely related)",
+        "Assist in departmental administration and committees as assigned"
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-20",
+      "deadline": "2026-02-01",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Assistant-Lecturer-Nursing-Science-at-University-of-Agriculture-Science-and-Technology-UAST?pid=77046",
+      "_source": "medicalworldnigeria"
+    }
+  },
+  "https://medicalworldnigeria.com/post/Lecturer-I-Nursing-Science-at-University-of-Agriculture-Science-and-Technology-UAST?pid=77045": {
+    "data": {
+      "job_title": "Lecturer I (Nursing Science)",
+      "company": "University of Agriculture, Science, and Technology (UAST)",
+      "location": "Ihugh, Benue",
+      "job_type": "",
+      "job_category": "Nurse",
+      "salary": "CONUASS 4",
+      "experience": "At least three (3) years as Lecturer II (or equivalent)",
+      "qualification": "PhD in Nursing Science or Senate-approved cognate",
+      "requirements": [
+        "Valid NMCN practising licence",
+        "A minimum of four (4) publications in reputable peer-reviewed journals",
+        "Evidence of clinical guidelines, educational innovations or community health impact is an advantage",
+        "Active membership of recognised national or international nursing professional bodies"
+      ],
+      "responsibilities": [
+        "Coordinate core Nursing Science courses and clinical modules",
+        "Lead OSCEs, simulations and clinical assessments",
+        "Supervise undergraduate research and professional development activities",
+        "Lead or co-lead nursing research and quality-improvement initiatives",
+        "Publish in reputable peer-reviewed journals and present at conferences",
+        "Develop innovations in nursing education, patient care or community health",
+        "Mentor Assistant Lecturers and Lecturer II academics",
+        "Serve on School and University committees, accreditation teams and policy groups",
+        "Uphold and promote professional standards of nursing education and practice"
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-20",
+      "deadline": "2026-02-01",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Lecturer-I-Nursing-Science-at-University-of-Agriculture-Science-and-Technology-UAST?pid=77045",
+      "_source": "medicalworldnigeria"
+    }
+  },
+  "https://medicalworldnigeria.com/post/NYSC-Nurse-at-Tractrac-MSL?pid=77036": {
+    "data": {
       "job_title": "NYSC Nurse",
       "company": "Kelina Hospital",
       "location": "Keffi, Nasarawa",
@@ -4685,8 +5525,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/NYSC-Nurse-at-Tractrac-MSL?pid=77036",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/laboratory-diagnostics-advisor-family-health-international-fhi-360/": {
+    "data": {
       "job_title": "Laboratory and Diagnostics Advisor",
       "company": "Family Health International (FHI 360)",
       "location": "Abuja, Nigeria",
@@ -4716,8 +5558,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/laboratory-diagnostics-advisor-family-health-international-fhi-360/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/laboratory-technician-eha-clinics/": {
+    "data": {
       "job_title": "Laboratory Technician",
       "company": "EHA Clinics",
       "location": "Sangotedo, Lagos, Nigeria",
@@ -4758,8 +5602,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/laboratory-technician-eha-clinics/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/medical-laboratory-technician-eha-clinics-2/": {
+    "data": {
       "job_title": "Medical Laboratory Technician",
       "company": "EHA Clinics",
       "location": "Lugbe, Abuja",
@@ -4797,8 +5643,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-laboratory-technician-eha-clinics-2/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmaceutical-sales-representative-eha-clinics-3/": {
+    "data": {
       "job_title": "Pharmaceutical Sales Representative",
       "company": "EHA Clinics",
       "location": "Jigawa, Nigeria",
@@ -4830,8 +5678,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmaceutical-sales-representative-eha-clinics-3/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/nursing-assistant-castville-solutions-3/": {
+    "data": {
       "job_title": "Nursing Assistant",
       "company": "Castville Solutions",
       "location": "Surulere, Lagos, Nigeria",
@@ -4864,8 +5714,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/nursing-assistant-castville-solutions-3/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacist-castville-solutions/": {
+    "data": {
       "job_title": "Pharmacist",
       "company": "Castville Solutions",
       "location": "Gbagada, Lagos, Nigeria",
@@ -4897,8 +5749,46 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacist-castville-solutions/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacy-technician-castville-solutions-2/": {
+    "data": {
+      "job_title": "Pharmacy Technician",
+      "company": "Castville Solutions",
+      "location": "Gbagada, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Pharmacist",
+      "salary": "N100,000 / month",
+      "experience": "working in a retail or hospital pharmacy (an advantage)",
+      "qualification": "bsc",
+      "requirements": [
+        "Diploma or certification as a Pharmacy Technician from a recognized institution.",
+        "Valid registration with the Pharmacy Council or relevant regulatory body.",
+        "Prior experience working in a retail or hospital pharmacy (an advantage).",
+        "Good understanding of pharmaceutical terminology and dosage forms.",
+        "Proficient in using pharmacy software and systems."
+      ],
+      "responsibilities": [
+        "Assist the pharmacist in preparing and dispensing medications to patients accurately.",
+        "Receive and verify prescription orders.",
+        "Label and package medications for patients.",
+        "Manage inventory, including ordering, receiving, and restocking supplies and medications.",
+        "Maintain accurate patient records and prescription files."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-17",
+      "deadline": "2026-02-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/pharmacy-technician-castville-solutions-2/",
+      "_source": "jobsinnigeria"
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/inventory-warehouse-lead-healthcare-castville-solutions/": {
+    "data": {
       "job_title": "Inventory and Warehouse Lead (Healthcare)",
       "company": "Castville Solutions",
       "location": "Gbagada, Lagos, Nigeria",
@@ -4935,8 +5825,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/inventory-warehouse-lead-healthcare-castville-solutions/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacy-sales-assistant-castville-solutions-4-openings/": {
+    "data": {
       "job_title": "Pharmacy Sales Assistant",
       "company": "Castville Solutions",
       "location": "Nigeria",
@@ -4965,8 +5857,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacy-sales-assistant-castville-solutions-4-openings/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacy-technician-pharmacist-pharmacy-assistant-nursing-assistant-castville-solutions/": {
+    "data": {
       "job_title": "Pharmacy Technician, Pharmacist, Pharmacy Assistant, and Nursing Assistant",
       "company": "Castville Solutions",
       "location": "Bode Thomas, Lawanson, Ojuelegba, Surulere, Lagos, Nigeria",
@@ -4999,8 +5893,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacy-technician-pharmacist-pharmacy-assistant-nursing-assistant-castville-solutions/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/school-therapist-special-needs-royal-resource-management-rrm-4-openings/": {
+    "data": {
       "job_title": "School Therapist (Special Needs)",
       "company": "Royal Resource Management (RRM)",
       "location": "Wuse Zone 5, Abuja, Nigeria",
@@ -5034,8 +5930,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/school-therapist-special-needs-royal-resource-management-rrm-4-openings/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/consultant-obstetrician-gynaecologist-st-ives-specialist-hospital/": {
+    "data": {
       "job_title": "Consultant Obstetrician and Gynaecologist",
       "company": "St. Ives Specialist Hospital",
       "location": "Lagos, Nigeria",
@@ -5071,8 +5969,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/consultant-obstetrician-gynaecologist-st-ives-specialist-hospital/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Academic-Staff-Nursing-at-Niger-Delta-University-NDU?pid=77022": {
+    "data": {
       "job_title": "Lecturer II (Nursing)",
       "company": "Niger Delta University (NDU)",
       "location": "Wilberforce Island, Bayelsa",
@@ -5096,8 +5996,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Academic-Staff-Nursing-at-Niger-Delta-University-NDU?pid=77022",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Nursing-Officer-at-Niger-Delta-University-NDU?pid=77021": {
+    "data": {
       "job_title": "Nursing Officer",
       "company": "Niger Delta University (NDU)",
       "location": "Wilberforce Island, Bayelsa",
@@ -5120,8 +6022,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Nursing-Officer-at-Niger-Delta-University-NDU?pid=77021",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Massive-Recruitment-Opens-At-Glorious-Vision-University-Apply-Now-For-Senior-Lecturer-And-Lecturer-Positions-In-Nursing-Science?pid=77011": {
+    "data": {
       "job_title": "Senior Lecturer and Lecturer Positions in Nursing Science",
       "company": "Glorious Vision University",
       "location": "Kano, Edo, Nationwide",
@@ -5151,8 +6055,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Massive-Recruitment-Opens-At-Glorious-Vision-University-Apply-Now-For-Senior-Lecturer-And-Lecturer-Positions-In-Nursing-Science?pid=77011",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacy-technician-lily-hospitals-limited-3/": {
+    "data": {
       "job_title": "Pharmacy Technician",
       "company": "Lily Hospitals Limited",
       "location": "Warri, Delta, Nigeria",
@@ -5195,8 +6101,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacy-technician-lily-hospitals-limited-3/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/registered-nurse-midwife-lily-hospitals-limited/": {
+    "data": {
       "job_title": "Registered Nurse / Midwife",
       "company": "Lily Hospitals Limited",
       "location": "Port Harcourt, Rivers, Nigeria",
@@ -5238,8 +6146,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/registered-nurse-midwife-lily-hospitals-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/community-health-extension-worker-chew-lily-hospitals-limited-4/": {
+    "data": {
       "job_title": "Community Health Extension Worker (CHEW)",
       "company": "Lily Hospitals Limited",
       "location": "Ugheli, Delta, Nigeria",
@@ -5279,8 +6189,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/community-health-extension-worker-chew-lily-hospitals-limited-4/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/dentist-lily-hospitals-limited/": {
+    "data": {
       "job_title": "Dentist",
       "company": "Lily Hospitals Limited",
       "location": "Warri, Delta, Nigeria",
@@ -5312,8 +6224,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/dentist-lily-hospitals-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/optician-lily-hospitals-limited-2/": {
+    "data": {
       "job_title": "Optician",
       "company": "Lily Hospitals Limited",
       "location": "Port Harcourt, Rivers, Nigeria",
@@ -5350,8 +6264,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/optician-lily-hospitals-limited-2/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Officer-HIFU-at-Nordica-Fertility-Clinic?pid=76995": {
+    "data": {
       "job_title": "Medical Officer – HIFU",
       "company": "Kelina Hospital",
       "location": "Lekki, Lagos",
@@ -5394,8 +6310,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-HIFU-at-Nordica-Fertility-Clinic?pid=76995",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/School-Nurse-at-Rainbow-Educational-Service-Limited?pid=77010": {
+    "data": {
       "job_title": "School Nurse",
       "company": "Rainbow Educational Service Limited",
       "location": "Surulere, Lagos, Nigeria",
@@ -5432,8 +6350,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/School-Nurse-at-Rainbow-Educational-Service-Limited?pid=77010",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Registered-Nurse-Midwife-at-Medicus-Specialist-Hospital?pid=77001": {
+    "data": {
       "job_title": "Registered Nurse / Midwife",
       "company": "Medicus Specialist Hospital",
       "location": "Mowe, Ogun",
@@ -5457,8 +6377,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-Midwife-at-Medicus-Specialist-Hospital?pid=77001",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Registered-Nurse-Midwife-at-The-Lamb-Hospital-2-Openings?pid=76997": {
+    "data": {
       "job_title": "Registered Nurse / Midwife",
       "company": "The Lamb Hospital",
       "location": "Mowe, Ogun, Lagos",
@@ -5501,8 +6423,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-Midwife-at-The-Lamb-Hospital-2-Openings?pid=76997",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Factory-Nurse-at-Med-In-Pharmaceutical-Limited?pid=76990": {
+    "data": {
       "job_title": "Factory Nurse",
       "company": "Med-In Pharmaceutical Limited",
       "location": "Nigeria",
@@ -5535,8 +6459,55 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Factory-Nurse-at-Med-In-Pharmaceutical-Limited?pid=76990",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Registered-Nurse-Midwife-at-Lily-Hospitals-Limited?pid=76989": {
+    "data": {
+      "job_title": "Registered Nurse / Midwife",
+      "company": "Lily Hospitals Limited",
+      "location": "Port Harcourt, Rivers, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Nurse",
+      "salary": "Competitive salary and benefits package, with a comprehensive health insurance plan.",
+      "experience": "Minimum of 2 years of nursing practice in a hospital or clinical setting.",
+      "qualification": "bsc",
+      "requirements": [
+        "Must be a Registered Nurse (RN) with a valid practicing license from the Nursing and Midwifery Council of Nigeria (NMCN).",
+        "Strong clinical and critical thinking skills.",
+        "Excellent communication and interpersonal skills.",
+        "Proficiency in patient monitoring equipment and electronic medical record systems.",
+        "Ability to work in a fast-paced environment and handle emergencies.",
+        "Compassionate and empathetic demeanor."
+      ],
+      "responsibilities": [
+        "Assess, plan, implement, and evaluate individualized patient care plans.",
+        "Administer medications, treatments, and procedures as prescribed by the physician.",
+        "Monitor and record patients' vital signs and progress.",
+        "Provide pre-operative and post-operative care.",
+        "Collaborate with multidisciplinary teams to develop and execute care plans.",
+        "Supervise and mentor junior nurses, aides, and student nurses.",
+        "Educate patients and their families on health maintenance, disease prevention, and discharge plans.",
+        "Provide emotional support and counseling to patients and families.",
+        "Adhere to hospital policies, standard operating procedures (SOPs), and best practices in infection control.",
+        "Ensure compliance with all regulatory and accreditation standards.",
+        "Identify and report patient safety risks or adverse events promptly.",
+        "Maintain accurate and detailed patient records in line with hospital protocols.",
+        "Prepare and submit nursing reports as required."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-15",
+      "deadline": "2026-01-19",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-Midwife-at-Lily-Hospitals-Limited?pid=76989",
+      "_source": "medicalworldnigeria"
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/patient-care-coordinator-remote-fast-growing-psychiatric-practice/": {
+    "data": {
       "job_title": "Patient Care Coordinator",
       "company": "a Fast-growing Psychiatric Practice",
       "location": "Nigeria",
@@ -5580,8 +6551,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/patient-care-coordinator-remote-fast-growing-psychiatric-practice/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Registered-Nurse-at-Alfred-and-Victoria-Associates?pid=76983": {
+    "data": {
       "job_title": "Registered Nurse",
       "company": "Alfred and Victoria Associates",
       "location": "Abuja (FCT)",
@@ -5630,8 +6603,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-at-Alfred-and-Victoria-Associates?pid=76983",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacist-stretch-concepts/": {
+    "data": {
       "job_title": "Pharmacist",
       "company": "Stretch-it Concepts",
       "location": "Lagos, Nigeria",
@@ -5670,8 +6645,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacist-stretch-concepts/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/health-safety-environment-hse-officer-neveah-limited/": {
+    "data": {
       "job_title": "Health, Safety, and Environment (HSE) Officer",
       "company": "Neveah Limited",
       "location": "Ogun, Nigeria",
@@ -5715,8 +6692,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/health-safety-environment-hse-officer-neveah-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacovigilance-pv-executive-chanrai-health-care-limited/": {
+    "data": {
       "job_title": "Pharmacovigilance (PV) Executive",
       "company": "Chanrai Health Care Limited",
       "location": "Isolo, Lagos, Nigeria",
@@ -5750,8 +6729,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacovigilance-pv-executive-chanrai-health-care-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/medical-sales-representative-first-kbz-nigeria-limited-2-openings/": {
+    "data": {
       "job_title": "Medical Sales Representative",
       "company": "First KBZ Nigeria Limited",
       "location": "Nigeria",
@@ -5788,8 +6769,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-sales-representative-first-kbz-nigeria-limited-2-openings/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Director-of-Medical-Services-Vacancy-Opens-at-Nnamdi-Azikiwe-University-Apply-Now?pid=76979": {
+    "data": {
       "job_title": "Director of Medical Services",
       "company": "Nnamdi Azikiwe University",
       "location": "Kano, Awka, Anambra",
@@ -5818,8 +6801,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Director-of-Medical-Services-Vacancy-Opens-at-Nnamdi-Azikiwe-University-Apply-Now?pid=76979",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Officer-at-St-Ives-Specialist-Hospital?pid=76975": {
+    "data": {
       "job_title": "Medical Officer",
       "company": "St. Ives Specialist Hospital",
       "location": "Abeokuta, Ogun",
@@ -5853,8 +6838,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-St-Ives-Specialist-Hospital?pid=76975",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/laboratory-specialist-natural-girl-wigs/": {
+    "data": {
       "job_title": "Laboratory Specialist",
       "company": "Natural Girl Wigs",
       "location": "Yaba, Lagos, Nigeria",
@@ -5891,8 +6878,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/laboratory-specialist-natural-girl-wigs/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacologist-kaplo-africa/": {
+    "data": {
       "job_title": "Pharmacologist",
       "company": "Kaplo Africa",
       "location": "Ikeja, Lagos, Nigeria",
@@ -5924,8 +6913,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacologist-kaplo-africa/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacy-manager-elizabeth-maddeux-limited/": {
+    "data": {
       "job_title": "Pharmacy Manager",
       "company": "Elizabeth Maddeux Limited",
       "location": "Egbeda, Lagos, Nigeria",
@@ -5958,8 +6949,49 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacy-manager-elizabeth-maddeux-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacy-sales-assistants-castville-solutions-8-openings/": {
+    "data": {
+      "job_title": "Pharmacy Sales Assistant",
+      "company": "Castville Solutions",
+      "location": "Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Pharmacist",
+      "salary": "N70,000 – N120,000 Monthly",
+      "experience": "in a pharmacy or retail environment is an advantage",
+      "qualification": "bsc",
+      "requirements": [
+        "Minimum of SSCE / OND qualification",
+        "Previous experience in a pharmacy or retail environment is an advantage",
+        "Good communication and customer service skills",
+        "Basic computer literacy",
+        "Ability to work flexible shifts, including weekends",
+        "Honesty, reliability, and attention to detail."
+      ],
+      "responsibilities": [
+        "Attend to customers professionally and assist with product selection",
+        "Process sales transactions accurately using POS systems",
+        "Arrange and restock pharmaceutical products and medical supplies",
+        "Maintain cleanliness and proper organization of the pharmacy",
+        "Monitor stock levels and report shortages or expiries",
+        "Ensure products are stored according to safety and quality standards",
+        "Provide basic information on over-the-counter products (as permitted)"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-08",
+      "deadline": "2026-01-25",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/pharmacy-sales-assistants-castville-solutions-8-openings/",
+      "_source": "jobsinnigeria"
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/full-time-pharmacists-castville-solutions-7-openings/": {
+    "data": {
       "job_title": "Full-time Pharmacist",
       "company": "Castville Solutions",
       "location": "Nigeria",
@@ -5993,8 +7025,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/full-time-pharmacists-castville-solutions-7-openings/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Consultant-at-the-Nigerian-Army-DSSC-29-2026?pid=76947": {
+    "data": {
       "job_title": "Medical Vacancies",
       "company": "Nigerian Army",
       "location": "Nigeria",
@@ -6020,8 +7054,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Consultant-at-the-Nigerian-Army-DSSC-29-2026?pid=76947",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacist-newgate-medical-services-limited/": {
+    "data": {
       "job_title": "Pharmacist",
       "company": "Newgate Medical Services Limited",
       "location": "Ikorodu, Lagos, Nigeria",
@@ -6060,8 +7096,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacist-newgate-medical-services-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/laboratory-scientist-newgate-medical-services-limited/": {
+    "data": {
       "job_title": "Laboratory Scientist",
       "company": "Newgate Medical Services Limited",
       "location": "Ikorodu, Lagos, Nigeria",
@@ -6094,8 +7132,51 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/laboratory-scientist-newgate-medical-services-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacist-elizabeth-maddeux-limited-2/": {
+    "data": {
+      "job_title": "Pharmacist",
+      "company": "Elizabeth Maddeux Limited",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Pharmacist",
+      "salary": "N200,000 – N300,000 per month",
+      "experience": "Minimum of 3 years post-NYSC experience in a retail or hospital pharmacy",
+      "qualification": "bsc",
+      "requirements": [
+        "Strong leadership",
+        "Excellent communication",
+        "Passion for patient care",
+        "Fully registered with the Pharmacists Council of Nigeria with a valid practicing license"
+      ],
+      "responsibilities": [
+        "Dispense prescription and non-prescription medications accurately.",
+        "Counsel patients on proper medication use, possible side effects, and interactions.",
+        "Maintain up-to-date patient medication records.",
+        "Supervise and train pharmacy technicians or interns as needed.",
+        "Ensure proper storage, security, and handling of all pharmaceutical products.",
+        "Monitor stock levels and place orders for replenishment as required.",
+        "Conduct regular checks to ensure drugs are within expiry and properly labeled.",
+        "Comply with all relevant laws and ethical standards of pharmacy practice.",
+        "Collaborate with healthcare professionals to optimize patient treatment outcomes.",
+        "Participate in inventory audits and documentation.",
+        "Promote health and wellness awareness through patient education."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-07",
+      "deadline": "2026-01-15",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/pharmacist-elizabeth-maddeux-limited-2/",
+      "_source": "jobsinnigeria"
+    }
+  },
+  "https://medicalworldnigeria.com/post/Locum-Quality-Assurance-Officer-at-Integrated-Health-Care-Limited?pid=76934": {
+    "data": {
       "job_title": "Locum Quality Assurance Officer",
       "company": "Integrated Health Care Limited",
       "location": "Abuja (FCT)",
@@ -6120,8 +7201,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Locum-Quality-Assurance-Officer-at-Integrated-Health-Care-Limited?pid=76934",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Skilled-Medical-Officer-Obstetrics-and-Gynaecology-at-Christian-Miracle-Hospital?pid=76926": {
+    "data": {
       "job_title": "Skilled Medical Officer (Obstetrics and Gynaecology)",
       "company": "Christian Miracle Hospital",
       "location": "Independence Layout, Enugu, Nigeria",
@@ -6152,8 +7235,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Skilled-Medical-Officer-Obstetrics-and-Gynaecology-at-Christian-Miracle-Hospital?pid=76926",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/hmo-associate-lily-hospitals-limited/": {
+    "data": {
       "job_title": "HMO Associate",
       "company": "Lily Hospitals Limited",
       "location": "Benin City, Edo, Nigeria",
@@ -6191,8 +7276,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/hmo-associate-lily-hospitals-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/registered-nurse-apex-pharmalab-2/": {
+    "data": {
       "job_title": "Registered Nurse",
       "company": "Apex Pharmalab",
       "location": "Egbeda, Lagos, Nigeria",
@@ -6226,8 +7313,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/registered-nurse-apex-pharmalab-2/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/nurse-graduate-trainee-international-health-management-services-ihms/": {
+    "data": {
       "job_title": "Nurse Graduate Trainee",
       "company": "International Health Management Services (IHMS)",
       "location": "Ikeja, Lagos, Nigeria",
@@ -6262,8 +7351,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/nurse-graduate-trainee-international-health-management-services-ihms/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/midwife-supervisor-fixed-term-medecins-sans-frontieres-msf/": {
+    "data": {
       "job_title": "Midwife Supervisor (Fixed Term)",
       "company": "Medecins Sans Frontieres (MSF)",
       "location": "Kebbi, Nigeria",
@@ -6294,8 +7385,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/midwife-supervisor-fixed-term-medecins-sans-frontieres-msf/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/medical-activity-manager-medecins-sans-frontieres-msf/": {
+    "data": {
       "job_title": "Medical Activity Manager",
       "company": "Medecins Sans Frontieres (MSF)",
       "location": "Kebbi, Nigeria",
@@ -6325,8 +7418,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-activity-manager-medecins-sans-frontieres-msf/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Officer-Vacancy-at-a-Private-Hospital-Ishefun-Ayobo?pid=76902": {
+    "data": {
       "job_title": "Medical Officer",
       "company": "Private Hospital",
       "location": "Lagos",
@@ -6355,8 +7450,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-Vacancy-at-a-Private-Hospital-Ishefun-Ayobo?pid=76902",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacy-technician-perfect-health-pharmacy-2-openings/": {
+    "data": {
       "job_title": "Pharmacy Technician",
       "company": "Perfect Health Pharmacy",
       "location": "Lagos, Nigeria",
@@ -6395,8 +7492,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacy-technician-perfect-health-pharmacy-2-openings/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacist-waaxaa-foundation/": {
+    "data": {
       "job_title": "Pharmacist",
       "company": "Waaxaa Foundation",
       "location": "Abuja, Nigeria",
@@ -6427,8 +7526,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacist-waaxaa-foundation/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/nurses-waaxaa-foundation/": {
+    "data": {
       "job_title": "Nurse",
       "company": "Waaxaa Foundation",
       "location": "Abuja, Nigeria",
@@ -6460,8 +7561,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/nurses-waaxaa-foundation/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/medical-doctors-waaxaa-foundation/": {
+    "data": {
       "job_title": "Medical Doctor",
       "company": "Waaxaa Foundation",
       "location": "Abuja, Nigeria",
@@ -6492,8 +7595,117 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-doctors-waaxaa-foundation/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/physiotherapist-ifeanhealth-nigeria-limited/": {
+    "data": {
+      "job_title": "Physiotherapist",
+      "company": "IfeanHealth Nigeria Limited",
+      "location": "Sokoto, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Allied Health",
+      "salary": "N250,000 – N300,000 monthly",
+      "experience": "(fresh graduates may be considered)",
+      "qualification": "bsc",
+      "requirements": [
+        "Bachelor’s Degree in Physiotherapy (B.Sc. / BPT)",
+        "Valid professional license/registration with relevant regulatory body",
+        "Minimum of 1–3 years clinical experience (fresh graduates may be considered)",
+        "Experience in rehabilitation, orthopaedics, neurological or prosthetic care is an advantage",
+        "Strong communication and interpersonal skills",
+        "Ability to work independently and as part of a multidisciplinary team",
+        "Compassionate, patient-centered, and professional approach."
+      ],
+      "responsibilities": [
+        "Conduct thorough patient assessments to identify physical conditions and rehabilitation needs",
+        "Develop and implement individualized physiotherapy treatment plans",
+        "Provide hands-on therapy, exercises, and rehabilitation programs",
+        "Educate patients and caregivers on treatment plans, home exercises, and injury prevention",
+        "Monitor, evaluate, and document patient progress and outcomes",
+        "Collaborate with doctors, prosthetists, orthotists, and other healthcare professionals",
+        "Ensure compliance with professional standards, ethics, and clinical protocols",
+        "Maintain accurate patient records and reports",
+        "Participate in continuous professional development and training",
+        "Support outreach, community health programs, and patient awareness initiatives when required."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-01",
+      "deadline": "2026-01-20",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/physiotherapist-ifeanhealth-nigeria-limited/",
+      "_source": "jobsinnigeria"
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Personnel?pid=76887": {
+    "data": {
+      "job_title": "Medical Officer",
+      "company": "Ibadan Announces Major Vacancy for Director of Administration",
+      "location": "Lagos, Nigeria",
+      "job_type": "full-time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "",
+      "qualification": "bsc",
+      "requirements": [
+        "Post NYSC Medical Officer",
+        "Experienced RN and RM Nurses",
+        "Experienced Medical Records Officer with current practicing license"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2025-12-31",
+      "deadline": "2025-12-31",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Medical-Personnel?pid=76887",
+      "_source": "medicalworldnigeria"
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/registered-nurse-apex-pharmalab/": {
+    "data": {
+      "job_title": "Registered Nurse",
+      "company": "Apex Pharmalab",
+      "location": "Bodija, Ibadan, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "N120,000 / Month (Net)",
+      "experience": "1–2 years in clinical, community, or public health nursing",
+      "qualification": "bsc",
+      "requirements": [
+        "Registered Nurse (RN) with current license",
+        "Must have 1–2 years’ experience in clinical, community, or public health nursing",
+        "Strong communication and patient care skills",
+        "Computer and documentation skills."
+      ],
+      "responsibilities": [
+        "Administer injections, and first aid treatments",
+        "Conduct vital checks: blood pressure, blood sugar, cholesterol, weight, BMI",
+        "Offer wound care, family planning, and health education services",
+        "Support chronic disease management",
+        "Provide counseling on medication use and adherence",
+        "Maintain accurate patient records",
+        "Collaborate with the pharmacist on public health outreach and campaigns."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2025-12-30",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/registered-nurse-apex-pharmalab/",
+      "_source": "jobsinnigeria"
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/boarding-school-nurse-noble-hall-leadership-academy-girls/": {
+    "data": {
       "job_title": "Boarding School Nurse",
       "company": "Noble Hall Leadership Academy for Girls",
       "location": "Abuja, Nigeria",
@@ -6525,8 +7737,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/boarding-school-nurse-noble-hall-leadership-academy-girls/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/MDCN-Releases-New-Housemanship-Update-for-2026-Fresh-Doctors-Urged-to-Check-Federal-Vacancies?pid=76882": {
+    "data": {
       "job_title": "Housemanship Opportunities",
       "company": "MDCN",
       "location": "Ibadan, Port Harcourt, Nationwide",
@@ -6546,8 +7760,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/MDCN-Releases-New-Housemanship-Update-for-2026-Fresh-Doctors-Urged-to-Check-Federal-Vacancies?pid=76882",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/laboratory-chemist-recare-limited/": {
+    "data": {
       "job_title": "Laboratory Chemist",
       "company": "Recare Limited",
       "location": "Isolo, Lagos, Nigeria",
@@ -6578,8 +7794,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/laboratory-chemist-recare-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/intern-optometrist-ladkem-eye-hospital/": {
+    "data": {
       "job_title": "Intern Optometrist",
       "company": "Ladkem Eye Hospital",
       "location": "Surulere, Lagos, Nigeria",
@@ -6606,8 +7824,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/intern-optometrist-ladkem-eye-hospital/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/nursing-officer-aniso-specialist-medical-centre-2/": {
+    "data": {
       "job_title": "Nursing Officer",
       "company": "Aniso Specialist Medical Centre",
       "location": "Benin City, Edo, Nigeria",
@@ -6646,8 +7866,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/nursing-officer-aniso-specialist-medical-centre-2/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/healthcare-brand-representative-agewell-healthcare-limited/": {
+    "data": {
       "job_title": "Healthcare Brand Representative",
       "company": "AGEWELL Healthcare Limited",
       "location": "Anthony, Lagos, Nigeria",
@@ -6681,8 +7903,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/healthcare-brand-representative-agewell-healthcare-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/medical-laboratory-scientist-pephla-global-nigeria-limited/": {
+    "data": {
       "job_title": "Medical Laboratory Scientist",
       "company": "PEPHLA Global Nigeria Limited",
       "location": "Nigeria",
@@ -6721,8 +7945,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-laboratory-scientist-pephla-global-nigeria-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/radiographer-st-lukes-hospital-asaba/": {
+    "data": {
       "job_title": "Radiographer",
       "company": "St Luke’s Hospital Asaba",
       "location": "Asaba, Nigeria",
@@ -6766,8 +7992,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/radiographer-st-lukes-hospital-asaba/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/ophthalmic-resident-eye-foundation-hospital/": {
+    "data": {
       "job_title": "Ophthalmic Resident",
       "company": "Eye Foundation Hospital",
       "location": "Apo, Abuja (FCT), Ikeja – Lagos and Ijebu-Imushin – Ogun, Nigeria",
@@ -6792,8 +8020,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/ophthalmic-resident-eye-foundation-hospital/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/health-promoter-action-hunger-acf-international/": {
+    "data": {
       "job_title": "Health Promoter",
       "company": "Action Against Hunger | ACF-International",
       "location": "Nigeria",
@@ -6843,8 +8073,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/health-promoter-action-hunger-acf-international/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/medical-physics-intern-nsia-luth-cancer-center-nlcc/": {
+    "data": {
       "job_title": "Medical Physics Intern",
       "company": "NSIA-LUTH Cancer Center (NLCC)",
       "location": "Lagos, Nigeria",
@@ -6873,8 +8105,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-physics-intern-nsia-luth-cancer-center-nlcc/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacy-technician-aniso-specialist-medical-centre/": {
+    "data": {
       "job_title": "Pharmacy Technician",
       "company": "Aniso Specialist Medical Centre",
       "location": "Uselu, Benin city, Nigeria",
@@ -6914,8 +8148,51 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacy-technician-aniso-specialist-medical-centre/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/nursing-officer-aniso-specialist-medical-centre/": {
+    "data": {
+      "job_title": "Nursing Officer",
+      "company": "Aniso Specialist Medical Centre",
+      "location": "Benin City, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "preferred",
+      "qualification": "bsc",
+      "requirements": [
+        "RN certification with a valid license from the Nursing and Midwifery Council of Nigeria.",
+        "Previous actual clinical experience preferred.",
+        "Excellent communication and interpersonal skills.",
+        "Strong attention to detail and ability to work in a fast-paced environment.",
+        "Must be respectful, reliable, and policy-compliant.",
+        "Proficiency in using medical equipment and software for patient records.",
+        "Nurses who are professional, reliable, and committed to patient-centered care.",
+        "Must live in Benin City."
+      ],
+      "responsibilities": [
+        "Monitor, assess, and document patient care.",
+        "Administer medications and assist with medical procedures.",
+        "Collaborate with doctors and healthcare staff.",
+        "Educate patients and their families on care plans.",
+        "Document patient information accurately and maintain confidentiality.",
+        "Maintain professionalism and follow hospital procedures.",
+        "Comply with ethical standards."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2025-12-26",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/nursing-officer-aniso-specialist-medical-centre/",
+      "_source": "jobsinnigeria"
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/medical-officer-annunciation-specialist-hospital-emene/": {
+    "data": {
       "job_title": "Medical Officer",
       "company": "Annunciation Specialist Hospital",
       "location": "Emene, Enugu, Nigeria",
@@ -6952,8 +8229,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-officer-annunciation-specialist-hospital-emene/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/resident-officer-family-medicine-annunciation-specialist-hospital-emene/": {
+    "data": {
       "job_title": "Resident Officer (Family Medicine)",
       "company": "Annunciation Specialist Hospital, Emene",
       "location": "Emene, Enugu, Nigeria",
@@ -6984,8 +8263,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/resident-officer-family-medicine-annunciation-specialist-hospital-emene/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/physiotherapist-annunciation-specialist-hospital-emene/": {
+    "data": {
       "job_title": "Physiotherapist",
       "company": "Annunciation Specialist Hospital, Emene",
       "location": "Enugu, Nigeria",
@@ -7015,8 +8296,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/physiotherapist-annunciation-specialist-hospital-emene/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/medical-laboratory-technician-annunciation-specialist-hospital-emene/": {
+    "data": {
       "job_title": "Medical Laboratory Technician",
       "company": "Annunciation Specialist Hospital, Emene",
       "location": "Emene, Enugu, Nigeria",
@@ -7046,8 +8329,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-laboratory-technician-annunciation-specialist-hospital-emene/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/medical-health-records-officer-annunciation-specialist-hospital/": {
+    "data": {
       "job_title": "Medical Health Records Officer",
       "company": "Annunciation Specialist Hospital",
       "location": "Emene, Enugu, Nigeria",
@@ -7074,8 +8359,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-health-records-officer-annunciation-specialist-hospital/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/optometrist-st-lukes-hospital-asaba/": {
+    "data": {
       "job_title": "Optometrist",
       "company": "St. Luke’s Hospital Asaba",
       "location": "Asaba, Delta, Nigeria",
@@ -7112,8 +8399,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/optometrist-st-lukes-hospital-asaba/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/registered-nurse-king-solomon-hospital/": {
+    "data": {
       "job_title": "Registered Nurse",
       "company": "King Solomon Hospital",
       "location": "Anthony Village, Lagos, Nigeria",
@@ -7138,8 +8427,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/registered-nurse-king-solomon-hospital/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/yoga-instructor-srs-collection/": {
+    "data": {
       "job_title": "Yoga Instructor",
       "company": "SRS Collection",
       "location": "Victoria Island, Lagos, Nigeria",
@@ -7175,8 +8466,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/yoga-instructor-srs-collection/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/medical-sales-trainee-tyonex-nigeria-limited/": {
+    "data": {
       "job_title": "Medical Sales Trainee",
       "company": "Tyonex Nigeria Limited",
       "location": "Nigeria",
@@ -7209,8 +8502,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-sales-trainee-tyonex-nigeria-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/pharmacy-technician-first-rivers-hospital-limited/": {
+    "data": {
       "job_title": "Pharmacy Technician",
       "company": "First Rivers Hospital Limited",
       "location": "Port Harcourt, Rivers, Nigeria",
@@ -7246,8 +8541,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacy-technician-first-rivers-hospital-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/production-pharmacist-global-organics-limited/": {
+    "data": {
       "job_title": "Production Pharmacist",
       "company": "Global Organics Limited",
       "location": "Nigeria",
@@ -7280,8 +8577,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/production-pharmacist-global-organics-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/intern-optometrists-nysc-optometrists-accomodation-available-icare-centre/": {
+    "data": {
       "job_title": "Intern Optometrists/NYSC Optometrists (Accomodation Available)",
       "company": "aN ICARE Centre",
       "location": "Nigeria",
@@ -7311,8 +8610,10 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/intern-optometrists-nysc-optometrists-accomodation-available-icare-centre/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/registered-nurse-mascot-healthcare-clinic-limited/": {
+    "data": {
       "job_title": "Registered Nurse",
       "company": "Mascot Healthcare Clinic Limited",
       "location": "Akoka, Lagos, Nigeria",
@@ -7337,8 +8638,53 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/registered-nurse-mascot-healthcare-clinic-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
+    }
+  },
+  "https://jobsinnigeria.careers/jobs/community-health-extension-worker-chew-lily-hospitals-limited-3/": {
+    "data": {
+      "job_title": "Community Health Extension Worker (CHEW)",
+      "company": "Lily Hospitals Limited",
+      "location": "Warri, Delta, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Public Health",
+      "salary": "and benefits package",
+      "experience": "1",
+      "qualification": "bsc",
+      "requirements": [
+        "Diploma in Community Health from a recognized institution.",
+        "Certified CHEW with a valid license from the Community Health Practitioners Registration Board of Nigeria.",
+        "Minimum of 1 year of experience in a primary healthcare or community setting.",
+        "Strong communication and interpersonal skills.",
+        "Ability to work independently and within a team.",
+        "Knowledge of public health practices and protocols.",
+        "Compassionate and culturally sensitive.",
+        "Proficiency in basic medical procedures and use of healthcare tools."
+      ],
+      "responsibilities": [
+        "Check and record patients’ vital signs such as, weight, height, blood pressure, temperature and respiration rate",
+        "Assist to improve patient adherence to treatment regimens.",
+        "Assist the Nursing officer in providing basic medical and preventive care.",
+        "Assist in providing care for patients requiring nutrition, mental health, and prenatal care.",
+        "Maintain highest standard of health education of client.",
+        "Ensure compliance to clinical governance in Radiology.",
+        "Efficient in chaperon of patients to various consulting rooms.",
+        "Record patient information in computerized logs.",
+        "Ensure all activities carried out in Radiology are documented."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2025-12-19",
+      "deadline": "2025-12-22",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/community-health-extension-worker-chew-lily-hospitals-limited-3/",
+      "_source": "jobsinnigeria"
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Recruitment-at-the-Police-Service-Commission-PSC?pid=76855": {
+    "data": {
       "job_title": "Chief Medical Director",
       "company": "Usmanu Danfodiyo University Teaching Hospital (UDUTH)",
       "location": "Sokoto, Nigeria",
@@ -7362,8 +8708,10 @@
       "contact_phone": "09060483893, 09135006008, 09135006009",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Recruitment-at-the-Police-Service-Commission-PSC?pid=76855",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Stabilization-Center-Medical-Doctor-at-International-Rescue-Committee-IRC?pid=76837": {
+    "data": {
       "job_title": "Stabilization Center Medical Doctor",
       "company": "International Rescue Committee (IRC)",
       "location": "Gusau, Zamfara",
@@ -7399,8 +8747,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Stabilization-Center-Medical-Doctor-at-International-Rescue-Committee-IRC?pid=76837",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Officer-at-Careline-City-Hospital?pid=76836": {
+    "data": {
       "job_title": "Medical Officer",
       "company": "Careline City Hospital",
       "location": "Akute, Ogun",
@@ -7427,8 +8777,10 @@
       "contact_phone": "0802 313 4148",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Careline-City-Hospital?pid=76836",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Officer-at-Lily-Hospitals-Limited?pid=76782": {
+    "data": {
       "job_title": "Medical Officer",
       "company": "Lily Hospitals Limited",
       "location": "Ugheli, Delta",
@@ -7464,8 +8816,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Lily-Hospitals-Limited?pid=76782",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Consultant-at-Enugu-State-University-of-Science-and-Technology-Teaching-Hospital-ESUTTH?pid=76776": {
+    "data": {
       "job_title": "Consultant (Obstetrics and Gynecology)",
       "company": "Enugu State University of Science and Technology Teaching Hospital (ESUTTH)",
       "location": "Parklane, Enugu",
@@ -7490,8 +8844,56 @@
       "contact_phone": "08059238136",
       "apply_url": "https://medicalworldnigeria.com/post/Consultant-at-Enugu-State-University-of-Science-and-Technology-Teaching-Hospital-ESUTTH?pid=76776",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Officer-General-Practitioner-at-Fortics-Lifecare-Limited?pid=76772": {
+    "data": {
+      "job_title": "Medical Officer / General Practitioner",
+      "company": "Fortics Lifecare Limited",
+      "location": "Ososami Area - Ibadan, Oyo",
+      "job_type": "Full-time",
+      "job_category": "Doctor",
+      "salary": "N300,000 - N350,000 / Month",
+      "experience": "2-4 years",
+      "qualification": "Bachelor's Degree in Medicine and Surgery",
+      "requirements": [
+        "Bachelor's Degree in Medicine and Surgery",
+        "2-4 years' clinical experience",
+        "Completion of NYSC",
+        "Reside around Stadium Road, Ososami Area, and Apata all in Ibadan",
+        "Willing to run both morning and night shifts",
+        "Willing to cover at least 24 to 48 hours shifts",
+        "Knowledgeable in health administration",
+        "Clinical risk management experience",
+        "Knowledge of medical research methodology and ethics",
+        "Knowledge of medical recordkeeping practices",
+        "Ability to ensure the highest standards in patient care and compliance with healthcare regulations",
+        "Ability to use Electronic Medical Record (EMR)",
+        "Excellent interpersonal, communication, and leadership skills",
+        "Provision of practicing licence (current)"
+      ],
+      "responsibilities": [
+        "Contributing clinical expertise to patient care",
+        "Ensuring quality standards in patient care are maintained",
+        "Verifying complex diagnoses and facilitating treatment plans",
+        "Keeping informed on advancements in the field and contributing to medical research programs",
+        "Ensuring compliance with healthcare regulations and safety standards",
+        "Ensuring consistent and accurate medical record keeping practices"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2025-12-03",
+      "deadline": "2025-12-15",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-General-Practitioner-at-Fortics-Lifecare-Limited?pid=76772",
+      "_source": "medicalworldnigeria"
+    }
+  },
+  "https://medicalworldnigeria.com/post/Massive-Recruitment-Alert-Federal-University-Gashua-Announces-Vacant-Positions-Apply-Now?pid=76767": {
+    "data": {
       "job_title": "Senior Medical Officer",
       "company": "Federal University Gashua",
       "location": "Gashua, Yobe State",
@@ -7514,8 +8916,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Massive-Recruitment-Alert-Federal-University-Gashua-Announces-Vacant-Positions-Apply-Now?pid=76767",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Officer-at-IGPES-Group?pid=76764": {
+    "data": {
       "job_title": "Medical Officer",
       "company": "IGPES Group",
       "location": "Ikoyi, Lagos",
@@ -7560,8 +8964,55 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-IGPES-Group?pid=76764",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Officer-at-Lily-Hospitals-Limited?pid=76754": {
+    "data": {
+      "job_title": "Medical Officer",
+      "company": "Lily Hospitals Limited",
+      "location": "Ughelli, Delta",
+      "job_type": "Full-time",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "1",
+      "qualification": "bsc",
+      "requirements": [
+        "Medical Degree from a recognized institution.",
+        "At least 1 year Post NYSC working experience.",
+        "Ability to diagnose and treat medical conditions.",
+        "Excellent patient care skills including strong bedside manner.",
+        "Experience in training and working with other physicians.",
+        "Demonstrated surgical skills and experience.",
+        "Ability to collaborate effectively with other medical professionals.",
+        "Knowledge of and adherence to best medical practices, laws and regulations.",
+        "Strong organizational and time management skills.",
+        "Ability to work under pressure to meet deadlines.",
+        "Good written and verbal communication skills.",
+        "Prior experience in a hospital or medical setting is an asset."
+      ],
+      "responsibilities": [
+        "Managing patient care",
+        "Training and working alongside physicians",
+        "Performing surgeries",
+        "Providing excellent medical care to patients",
+        "Maintaining accurate patient records",
+        "Reviewing and interpreting medical test results",
+        "Collaborating with other medical professionals to provide the best possible care."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2025-11-28",
+      "deadline": "2025-12-15",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Lily-Hospitals-Limited?pid=76754",
+      "_source": "medicalworldnigeria"
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Officer-at-Caring-Habitat-Global-Limited?pid=76733": {
+    "data": {
       "job_title": "Medical Officer",
       "company": "Caring Habitat Global Limited",
       "location": "Abraham Adesanya, Lekki - Lagos",
@@ -7608,8 +9059,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Caring-Habitat-Global-Limited?pid=76733",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Family-Physician-at-Cedarcrest-Hospitals-Limited?pid=76677": {
+    "data": {
       "job_title": "Family Physician",
       "company": "Cedarcrest Hospitals Limited",
       "location": "Lagos",
@@ -7639,8 +9092,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Family-Physician-at-Cedarcrest-Hospitals-Limited?pid=76677",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Clinical-Supervisor-Doctor-at-Life-at-Best-Development-Initiative-LABDI?pid=76675": {
+    "data": {
       "job_title": "Clinical Supervisor / Doctor",
       "company": "Life at Best Development Initiative (LABDI)",
       "location": "Ngala LGA, Borno",
@@ -7677,8 +9132,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Clinical-Supervisor-Doctor-at-Life-at-Best-Development-Initiative-LABDI?pid=76675",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Officer-at-Dukes-Neurosurgery-and-Specialist-Hospital?pid=76673": {
+    "data": {
       "job_title": "Medical Officer",
       "company": "Dukes Neurosurgery and Specialist Hospital",
       "location": "Lagos, Nigeria",
@@ -7708,8 +9165,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Dukes-Neurosurgery-and-Specialist-Hospital?pid=76673",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Doctor-at-Prestigious-Consulting-Group?pid=76659": {
+    "data": {
       "job_title": "Medical Doctor",
       "company": "Kelina Hospital",
       "location": "Agungi, Lekki - Lagos",
@@ -7743,8 +9202,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Doctor-at-Prestigious-Consulting-Group?pid=76659",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Doctor-at-Jireh-Doo-Foundation-2-Openings?pid=76657": {
+    "data": {
       "job_title": "Medical Doctor",
       "company": "Jireh Doo Foundation",
       "location": "Abuja, Borno",
@@ -7775,8 +9236,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Doctor-at-Jireh-Doo-Foundation-2-Openings?pid=76657",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Junior-Doctor-at-Smart-Partners-Consulting-Limited-SPCL?pid=76628": {
+    "data": {
       "job_title": "Junior Doctor",
       "company": "Smart Partners Consulting Limited (SPCL)",
       "location": "Island, Lagos",
@@ -7816,8 +9279,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Junior-Doctor-at-Smart-Partners-Consulting-Limited-SPCL?pid=76628",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Officer-at-Equity-Specialist-Hospitals-and-Diagnostic-Centre?pid=76623": {
+    "data": {
       "job_title": "Medical Officer",
       "company": "Equity Specialist Hospitals & Diagnostic Centre",
       "location": "Lekki, Lagos",
@@ -7859,8 +9324,10 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Equity-Specialist-Hospitals-and-Diagnostic-Centre?pid=76623",
       "_source": "medicalworldnigeria"
-    },
-    {
+    }
+  },
+  "https://medicalworldnigeria.com/post/Medical-Doctor-at-First-Cardiology-Consultants-FCC?pid=76606": {
+    "data": {
       "job_title": "Medical Doctor",
       "company": "First Cardiology Consultants (FCC)",
       "location": "Lagos",
@@ -7902,5 +9369,5 @@
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Doctor-at-First-Cardiology-Consultants-FCC?pid=76606",
       "_source": "medicalworldnigeria"
     }
-  ]
+  }
 }
