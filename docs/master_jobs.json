@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "extracted_at": "2026-02-03T21:37:19.443978",
+    "extracted_at": "2026-02-04T04:25:31.215015",
     "model": "gpt-4o-mini",
-    "total_processed": 238,
-    "duplicates_removed": 24,
+    "total_processed": 244,
+    "duplicates_removed": 23,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 238
+    "openai_calls": 30
   },
   "jobs": [
     {
@@ -2978,6 +2978,40 @@
       "_source": "medicalworldnigeria"
     },
     {
+      "job_title": "Head of Department (HOD), Midwifery",
+      "company": "Kelina Hospital",
+      "location": "Warri, Delta",
+      "job_type": "Full-time",
+      "job_category": "Nurse",
+      "salary": "Package",
+      "experience": "2",
+      "qualification": "bsc",
+      "requirements": [
+        "Minimum of Bachelor’s Degree in Nursing Sciences.",
+        "Minimum of 4 years’ experience in midwifery education or clinical practice, with at least 2 years in leadership.",
+        "PGD in Education is required.",
+        "Proven experience in curriculum development, program evaluation, and faculty development.",
+        "Excellent communication and interpersonal skills."
+      ],
+      "responsibilities": [
+        "Lead the design, implementation, and evaluation of the midwifery curriculum.",
+        "Provide mentorship and guidance to faculty and administrative staff.",
+        "Promote evidence-based and innovative teaching methodologies.",
+        "Ensure compliance with regulatory and accreditation requirements.",
+        "Foster a collaborative environment that drives professional and student growth."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-27",
+      "deadline": "2026-02-02",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Head-of-Department-HOD-Midwifery-at-Lily-Hospitals-Limited?pid=77097",
+      "_source": "medicalworldnigeria"
+    },
+    {
       "job_title": "Hospital Matron",
       "company": "Sales Force Consulting",
       "location": "Abakaliki, Ebonyi",
@@ -3409,6 +3443,36 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/full-time-pharmacist-charther-pharmacy-limited/",
       "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Skilled Medical Doctor in Obstetrics and Gynaecology",
+      "company": "private maternity, Obstetrics and Gynecology hospital",
+      "location": "Ibadan, Imo, Nigeria",
+      "job_type": "full-time",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "Proven interest in Obstetrics and Gynaecology is mandatory",
+      "qualification": "Bachelor of Medicine, Bachelor of Surgery (MBBS)",
+      "requirements": [
+        "Full registration with the Medical and Dental Council of Nigeria (MDCN) with a current practicing license."
+      ],
+      "responsibilities": [
+        "Conduct comprehensive outpatient consultations, manage antenatal and fertility clinics, and provide specialized care for obstetric and gynaecological cases.",
+        "Independently perform or assist in obstetric and gynaecological surgeries, including Caesarean Sections (C-S), fibroid, ovarian cyst, appendectomies, and other gynaecological procedures.",
+        "Lead daily ward rounds, manage pre- and post-operative care, and ensure the delivery of high-quality, patient-centric services.",
+        "Provide 24/7 on-site medical support during scheduled shifts and handle obstetric emergencies with precision and speed.",
+        "Maintain accurate medical records, participate in clinical audits, and collaborate with the nursing and lab teams to optimize patient outcomes."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-26",
+      "deadline": "2026-01-26",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Skilled-Medical-Doctor-in-Obstetrics-and-Gynaecology?pid=77088",
+      "_source": "medicalworldnigeria"
     },
     {
       "job_title": "Aesthetic Nurse",
@@ -7399,6 +7463,40 @@
       "_source": "jobsinnigeria"
     },
     {
+      "job_title": "Chief Medical Director",
+      "company": "Usmanu Danfodiyo University Teaching Hospital (UDUTH)",
+      "location": "Sokoto, Nigeria",
+      "job_type": "",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "Minimum of three (3) years experience",
+      "qualification": "BSc",
+      "requirements": [
+        "Must be a Nigerian Citizen by birth",
+        "Must be physically and mentally fit",
+        "Must be free from financial embarrassment",
+        "Must be of good character",
+        "Must not have been convicted of any criminal offences",
+        "Must present two (2) character referees",
+        "General Duty Applicants must be aged between 18 to 25 years",
+        "Specialist Applicants should not be more than 28 years",
+        "Female applicants must not be pregnant at the time of entry and throughout the duration of training",
+        "Applicants should be free from certain physical conditions",
+        "General Duty Applicants must meet height requirements"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2025-12-11",
+      "deadline": "2025-12-15",
+      "contact_email": "",
+      "contact_phone": "09060483893, 09135006008, 09135006009",
+      "apply_url": "https://medicalworldnigeria.com/post/Medical-Recruitment-at-the-Police-Service-Commission-PSC?pid=76855",
+      "_source": "medicalworldnigeria"
+    },
+    {
       "job_title": "Stabilization Center Medical Doctor",
       "company": "International Rescue Committee (IRC)",
       "location": "Gusau, Zamfara",
@@ -7497,6 +7595,152 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Lily-Hospitals-Limited?pid=76782",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Consultant (Obstetrics and Gynecology)",
+      "company": "Enugu State University of Science and Technology Teaching Hospital (ESUTTH)",
+      "location": "Parklane, Enugu",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "Bachelor of Medicine and Bachelor of Surgery (MBBS)",
+      "requirements": [
+        "Basic Certificate in Bachelor of Medicine and Bachelor of Surgery (MBBS)",
+        "NYSC",
+        "Fellowship of the National Postgraduate Medical College of Nigeria or its equivalent",
+        "Current practicing licence for 2025"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2025-12-03",
+      "deadline": "2025-12-10",
+      "contact_email": "",
+      "contact_phone": "08059238136",
+      "apply_url": "https://medicalworldnigeria.com/post/Consultant-at-Enugu-State-University-of-Science-and-Technology-Teaching-Hospital-ESUTTH?pid=76776",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Senior Medical Officer",
+      "company": "Federal University Gashua",
+      "location": "Gashua, Yobe State",
+      "job_type": "Permanent",
+      "job_category": "Doctor",
+      "salary": "and Employer",
+      "experience": "",
+      "qualification": "bsc",
+      "requirements": [
+        "Details of the requirement for non-teaching positions can be accessed from the University's website."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2025-12-01",
+      "deadline": "2025-12-15",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.career.fugashua.edu.ng",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Medical Officer",
+      "company": "IGPES Group",
+      "location": "Ikoyi, Lagos",
+      "job_type": "Contract",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "7-12 years",
+      "qualification": "Medical Degree from an accredited institution",
+      "requirements": [
+        "Valid license to practice as a medical Doctor",
+        "Proven experience working as a medical officer or in a similar role",
+        "Ability to work independently",
+        "Experience in managing patients with chronic medical conditions independently with minimal supervision",
+        "Strong clinical skills and knowledge of medical procedures",
+        "Excellent communication and interpersonal skills",
+        "Attention to detail and a commitment to patient safety",
+        "Ability to work effectively in a fast-paced and dynamic environment",
+        "Proficiency in using pharmacy management software and tools",
+        "Candidates must reside within Lekki and environs"
+      ],
+      "responsibilities": [
+        "Clerking new patients for admission",
+        "Managing the outpatient department",
+        "Conducting thorough medical assessment and examination of patients; requesting ordered medical investigations for patients, collecting samples and following up with results of investigations",
+        "Attend daily ward rounds of patients and prescribe ordered medications following rounds",
+        "Prompt documentation of patients' medical records on the EMR",
+        "Preparing discharge reports for patients",
+        "Preparing other clinical documentation",
+        "Educating patients and families about their ongoing medical conditions and treatment",
+        "Collaborating with multidisciplinary healthcare teams to coordinate patient care",
+        "Staying informed about advancements in medical practice and treatments",
+        "Adhering to medical protocols, standards and regulations",
+        "Other clinical tasks as assigned by the relevant authorities."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2025-12-01",
+      "deadline": "2025-12-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-IGPES-Group?pid=76764",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Medical Officer",
+      "company": "Caring Habitat Global Limited",
+      "location": "Abraham Adesanya, Lekki - Lagos",
+      "job_type": "Permanent",
+      "job_category": "Doctor",
+      "salary": "N450,000",
+      "experience": "3-5 years",
+      "qualification": "bsc",
+      "requirements": [
+        "Medical Degree from an accredited institution",
+        "Valid license to practice as a medical Doctor",
+        "Proven experience working as a medical officer or in a similar role",
+        "Ability to work independently",
+        "Experience in managing patients with chronic medical conditions independently with minimal supervision",
+        "Strong clinical skills and knowledge of medical procedures",
+        "Excellent communication and interpersonal skills",
+        "Attention to detail and a commitment to patient safety",
+        "Ability to work effectively in a fast-paced and dynamic environment",
+        "Proficiency in using pharmacy management software and tools",
+        "Candidates must reside within Lekki and environs"
+      ],
+      "responsibilities": [
+        "Clerking new patients for admission",
+        "Managing the outpatient department",
+        "Conducting thorough medical assessment and examination of patients",
+        "Requesting ordered medical investigations for patients",
+        "Collecting samples and following up with results of investigations",
+        "Attend daily ward rounds of patients and prescribe ordered medications following rounds",
+        "Prompt documentation of patients' medical records on the EMR",
+        "Preparing discharge reports for patients",
+        "Preparing other clinical documentation",
+        "Educating patients and families about their ongoing medical conditions and treatment",
+        "Collaborating with multidisciplinary healthcare teams to coordinate patient care",
+        "Staying informed about advancements in medical practice and treatments",
+        "Adhering to medical protocols, standards and regulations",
+        "Other clinical tasks as assigned by the relevant authorities"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2025-11-25",
+      "deadline": "2025-12-15",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Caring-Habitat-Global-Limited?pid=76733",
       "_source": "medicalworldnigeria"
     },
     {
