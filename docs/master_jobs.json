@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "extracted_at": "2026-02-07T04:22:14.637931",
+    "extracted_at": "2026-02-08T04:46:46.422672",
     "model": "gpt-4o-mini",
     "total_processed": 244,
-    "duplicates_removed": 24,
+    "duplicates_removed": 23,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 40
+    "openai_calls": 24
   },
   "jobs": [
     {
@@ -1095,6 +1095,39 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Qualified-and-Skilled-Midwife-at-Christian-Miracle-Hospital?pid=77229",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Head of Department for Midwifery",
+      "company": "Lily Hospitals Limited",
+      "location": "Warri, Delta, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Nurse",
+      "salary": "& Benefits",
+      "experience": "2",
+      "qualification": "bsc",
+      "requirements": [
+        "Registered Midwife (RM) with a Master's Degree in Midwifery or a related field",
+        "Minimum of 4 years' experience in midwifery education or clinical practice, with at least 2 years in a leadership or managerial role",
+        "PGD in Education is required",
+        "Proven experience in curriculum development, program assessment, and faculty development within a midwifery education context",
+        "Excellent communication and interpersonal skills, with the ability to engage effectively with diverse stakeholders"
+      ],
+      "responsibilities": [
+        "Lead the development, implementation, and evaluation of the midwifery curriculum in alignment with regulatory and accreditation standards",
+        "Provide leadership and support to faculty members and administrative staff within the Midwifery department",
+        "Ensure the integration of evidence-based practices and innovative teaching methodologies in midwifery education",
+        "Foster a collaborative and supportive environment that promotes professional growth and student success"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-02-05",
+      "deadline": "2026-02-14",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Head-of-Department-for-Midwifery-at-Lily-College-of-Nursing-Sciences?pid=77224",
       "_source": "medicalworldnigeria"
     },
     {
