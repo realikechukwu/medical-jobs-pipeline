@@ -1,15 +1,174 @@
 {
   "metadata": {
-    "extracted_at": "2026-02-08T04:46:46.422672",
+    "extracted_at": "2026-02-09T04:40:49.752007",
     "model": "gpt-4o-mini",
     "total_processed": 244,
     "duplicates_removed": 23,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 24
+    "openai_calls": 28
   },
   "jobs": [
+    {
+      "job_title": "Hospital administrator",
+      "company": "Bluirays hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Healthcare Management",
+      "salary": "NGN150,000 - NGN200,000 / monthly",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [
+        "Managing budgets and finances",
+        "Overseeing staff and patient care",
+        "Making strategic decisions for the hospital",
+        "Ensuring compliance with government regulations and laws",
+        "Improving patient satisfaction and experience",
+        "Making sure the hospital provides quality care while keeping everything on track",
+        "Staff recruitment and disengagement"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-08",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/hospital-administrator-263",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Hmo officers",
+      "company": "Bluirays hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Healthcare Management",
+      "salary": "NGN100,000 - NGN200,000 / monthly",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [
+        "Verifying patient eligibility and benefits",
+        "Processing claims and authorizing treatments",
+        "Coordinating with healthcare providers and insurance companies",
+        "Handling patient inquiries and resolving issues",
+        "Ensuring compliance with regulations and policies",
+        "Recruiting and attracting HMO to the organisation",
+        "Rendering monthly accounts and reports to the management"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-08",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/hmo-officers-262",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical officer",
+      "company": "Bluirays hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "NGN300,000 - NGN500,000 / monthly",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [
+        "Clinical duties: examining patients, taking histories, ordering investigations",
+        "Treatment plans: prescribing medications, performing procedures",
+        "Patient care: explaining conditions, discussing treatment options",
+        "Collaboration: working with nurses, specialists, other healthcare professionals",
+        "Admin tasks: record-keeping, reporting, compliance tasks",
+        "Ensuring compliance with EMR and maintenance of good relationships with patients",
+        "Involved in patient education at all levels"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-08",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-officer-261",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Officer",
+      "company": "MSI Nigeria Reproductive Choices",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "NGN850,000 - NGN980,000 / monthly",
+      "experience": "Minimum of 2–3 years post-qualification clinical experience",
+      "qualification": "MBBS or equivalent medical degree from a recognised institution. Full registration with MDCN and valid practicing license.",
+      "requirements": [
+        "MBBS or equivalent medical degree from a recognised institution",
+        "Full registration with MDCN and valid practicing license",
+        "Minimum of 2–3 years post-qualification clinical experience",
+        "Experience in sexual and reproductive health, family planning, or public health is an advantage",
+        "Previous experience working with NGOs or donor-funded health programs is desirable"
+      ],
+      "responsibilities": [
+        "Provide comprehensive sexual and reproductive health services, including family planning (short-acting, long-acting, and permanent methods)",
+        "Safe abortion care and post-abortion care (where legally permitted)",
+        "Management of reproductive tract infections (RTIs/STIs)",
+        "Cervical cancer screening and treatment (where applicable)",
+        "Ensure all clinical services meet MSI Nigeria’s quality assurance and infection prevention standards",
+        "Conduct client counselling, informed consent, and follow-up care with respect and confidentiality."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-08",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-officer-260",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Healthcare Assistant",
+      "company": "Tofaans Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Part-Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "",
+      "qualification": "Minimum of SSCE or equivalent qualification",
+      "requirements": [
+        "Certificate or training as a Health Care Assistant",
+        "Previous experience in a hospital or healthcare facility is preferred",
+        "Basic knowledge of patient care and hospital hygiene standards",
+        "Ability to work shifts, including nights and weekends",
+        "Good communication and interpersonal skills",
+        "Compassionate, patient, and respectful attitude",
+        "Physically fit and able to assist with patient movement"
+      ],
+      "responsibilities": [
+        "Assist patients with daily living activities such as bathing, dressing, feeding, and mobility",
+        "Support nurses in monitoring patients’ vital signs (temperature, pulse, respiration, blood pressure)",
+        "Help in preparing patients for medical examinations and procedures",
+        "Maintain cleanliness and hygiene of wards, patient beds, and equipment",
+        "Assist in transferring and repositioning patients safely",
+        "Observe patients and promptly report any changes in condition to the nursing staff",
+        "Assist with stocking and organising medical supplies",
+        "Carry out any other duties assigned by the nursing or hospital management"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-08",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/healthcare-assistant-259",
+      "_source": "medlocum"
+    },
     {
       "job_title": "Head of Department for Midwifery",
       "company": "Lily College of Nursing Sciences",
@@ -2755,38 +2914,6 @@
       "_source": "medlocum"
     },
     {
-      "job_title": "Medical Officer",
-      "company": "MSI Nigeria Reproductive Choices",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "NGN850,000 - NGN980,000 / monthly",
-      "experience": "2–3 years post-qualification clinical experience",
-      "qualification": "MBBS or equivalent medical degree from a recognised institution",
-      "requirements": [
-        "Full registration with MDCN and valid practicing license",
-        "Experience in sexual and reproductive health, family planning, or public health is an advantage",
-        "Previous experience working with NGOs or donor-funded health programs is desirable"
-      ],
-      "responsibilities": [
-        "Provide comprehensive sexual and reproductive health services, including: Family planning (short-acting, long-acting, and permanent methods)",
-        "Safe abortion care and post-abortion care (where legally permitted)",
-        "Management of reproductive tract infections (RTIs/STIs)",
-        "Cervical cancer screening and treatment (where applicable)",
-        "Ensure all clinical services meet MSI Nigeria’s quality assurance and infection prevention standards",
-        "Conduct client counselling, informed consent, and follow-up care with respect and confidentiality."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/medical-officer-211",
-      "_source": "medlocum"
-    },
-    {
       "job_title": "Epidemiologist",
       "company": "Medecins Sans Frontiers, Switzerland",
       "location": "Bauchi, Nigeria",
@@ -4039,194 +4166,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/public-health-officer-noa-special-service-agreement-2600282-184",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Program Officer",
-      "company": "FHI 360",
-      "location": "Lusaka, Zambia",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "2+ years",
-      "qualification": "Bachelor's degree or its international equivalent in Civil Society, Communication and, Law, Economic Development, Education, Health, Research, Technology, and Youth or a related field",
-      "requirements": [
-        "Basic knowledge of concepts, practices, and procedures with project design.",
-        "Strong oral and written communication skills.",
-        "Demonstrated proficiency with Microsoft Office suite software.",
-        "Ability to problem solve and recommend corrective action as needed.",
-        "Strong organizational skills and attention to detail needed to adhere to project deadlines.",
-        "Articulate, professional and able to communicate in a clear, positive manner with clients and staff.",
-        "Must be able to read, write, and speak fluent English."
-      ],
-      "responsibilities": [
-        "Collaborates with the STRIDES project management team to assist in ensuring project needs and requirements are met.",
-        "Provides support to project management, such as planning for and arranging meetings and conference room setup, supporting travel requests, and taking on sub-task assignments.",
-        "Collects existing information for use in reports, reaching out to subcontractors and partners for external information.",
-        "Maintains distribution list for project reports.",
-        "Facilitates communication by answering partner inquiries and ensures internal project websites are current.",
-        "Coordinates assigned project activities and may conduct research to achieve project goals.",
-        "Assists in the management of the project calendar to ensure project deadlines are being achieved.",
-        "Sets up and maintains electronic and physical project files.",
-        "Sends reminders to keep team on track with reporting deadlines and technical deliverables.",
-        "Provides administrative support to projects as needed by writing and reviewing reports on a quarterly basis.",
-        "May support the project team administratively to provide high quality deliverables to the donor.",
-        "Fulfills other administrative and special project duties as assigned.",
-        "Assists with the coordination and tracking of performance against Financial Cost Objective (FCO) ID, project timelines, budget, objectives, and deliverables.",
-        "Assists the project team with the coordination of budgets.",
-        "Collects, compiles, and analyzes cost information relevant to the STRIDES project.",
-        "Serves as the project liaison to internal units such as finance, contracts, centers, etc."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-27",
-      "deadline": "2026-02-02",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/program-officer-183",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Skilled Medical Doctor in Obstetrics and Gynaecology",
-      "company": "Christian Miracle hospital",
-      "location": "Enugu, Enugu State, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "Proven interest in Obstetrics and Gynaecology is mandatory.",
-      "qualification": "Bachelor of Medicine, Bachelor of Surgery (MBBS) from an accredited institution; Full registration with the Medical and Dental Council of Nigeria (MDCN) with a current practicing license.",
-      "requirements": [
-        "Bachelor of Medicine, Bachelor of Surgery (MBBS) from an accredited institution.",
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN) with a current practicing license.",
-        "Proven interest in Obstetrics and Gynaecology is mandatory.",
-        "Committed, born-again Christian reflecting Christ-like compassion in patient care.",
-        "High level of integrity and excellent communication skills.",
-        "Willingness to participate in staff devotions."
-      ],
-      "responsibilities": [
-        "Conduct comprehensive outpatient consultations.",
-        "Manage antenatal and fertility clinics.",
-        "Provide specialized care for obstetric and gynaecological cases.",
-        "Independently perform or assist in obstetric and gynaecological surgeries.",
-        "Lead daily ward rounds and manage pre- and post-operative care.",
-        "Provide 24/7 on-site medical support during scheduled shifts.",
-        "Maintain accurate medical records and participate in clinical audits."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-27",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/skilled-medical-doctor-in-obstetrics-and-gynaecology-182",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Skilled and Experienced Hospital Midwife",
-      "company": "Christian Miracle Hospital",
-      "location": "Enugu, Enugu State, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "3+ years",
-      "qualification": "Current Rm/RN license in Enugu State",
-      "requirements": [
-        "Patient care, Medication Administration, and Health Monitoring skills",
-        "Experience in assisting in medical procedures and surgeries",
-        "Strong communication and interpersonal skills",
-        "Attention to detail and ability to maintain accurate medical records",
-        "Ability to work in a fast-paced healthcare environment",
-        "Previous experience in obstetrics and gynecology is a plus",
-        "Basic Life Support (BLS) certification",
-        "Additional certifications in Maternal and Newborn Health, Neonatal Resuscitation, or Emergency Obstetric Care are highly desirable",
-        "Willingness to work shifts, including nights and weekends",
-        "Commitment to the mission of Christian Miracle Hospital"
-      ],
-      "responsibilities": [
-        "Provide holistic antenatal, intrapartum, and postnatal care to mothers and their newborns",
-        "Monitor fetal and maternal well-being during labor and delivery using evidence-based protocols",
-        "Confidently and safely assist in spontaneous vaginal deliveries, including management of normal and complicated births",
-        "Identify and respond promptly to obstetric emergencies",
-        "Assist in health education and counseling for mothers and families",
-        "Collaborate with doctors, nurses, and other healthcare professionals to coordinate patient care",
-        "Maintain detailed, accurate, and timely clinical documentation",
-        "Provide faith-sensitive emotional and psychological support to patients and their families",
-        "Participate in clinical training sessions, outreach programs, and community maternal health advocacy",
-        "Adhere strictly to infection prevention and patient safety standards"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-27",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/skilled-and-experienced-hospital-midwife-181",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Regulatory Pharmacist",
-      "company": "Shalina Healthcare",
-      "location": "Ogun, Ogun State, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Pharmacist",
-      "salary": "",
-      "experience": "",
-      "qualification": "",
-      "requirements": [],
-      "responsibilities": [
-        "Ensure all manufactured products comply with current regulatory requirements, guidelines, and pharmacopeial standards.",
-        "Monitor changes in regulatory laws, guidelines, and policies and communicate implications to management.",
-        "Support implementation of regulatory updates into manufacturing, quality, and documentation systems.",
-        "Ensure compliance with GMP, GDP, and regulatory inspection requirements.",
-        "Serve as the primary contact between the company and regulatory agencies.",
-        "Coordinate and support regulatory inspections, audits, and facility assessments.",
-        "Respond promptly to regulatory queries, deficiency letters, and compliance observations.",
-        "Follow up on pending approvals and regulatory correspondences."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-27",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/regulatory-pharmacist-180",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Physiotherapist",
-      "company": "IfeanHealth Nigeria Limited",
-      "location": "Lagos and Sokoto, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "",
-      "qualification": "Bachelor’s degree in Physiotherapy",
-      "requirements": [
-        "Experience working with prosthetic or orthopedic patients is an advantage",
-        "Strong communication, empathy, and patient-centered care skills",
-        "Ability to work effectively in a multidisciplinary team."
-      ],
-      "responsibilities": [
-        "Assess patients’ functional mobility and physical needs related to prosthetic use",
-        "Provide gait training and mobility rehabilitation for prosthetic users",
-        "Support patients during and after prosthetic fitting and alignment",
-        "Educate patients on safe prosthetic use, posture, and movement techniques",
-        "Monitor patient progress and provide feedback to the prosthetics team",
-        "Maintain accurate clinical documentation",
-        "Collaborate with prosthetists and other healthcare professionals"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-27",
-      "deadline": "2026-02-14",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/physiotherapist-2-openings-179",
       "_source": "medlocum"
     },
     {
@@ -6972,6 +6911,47 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-doctors-waaxaa-foundation/",
+      "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Physiotherapist",
+      "company": "IfeanHealth Nigeria Limited",
+      "location": "Sokoto, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Allied Health",
+      "salary": "N250,000 – N300,000 monthly",
+      "experience": "(fresh graduates may be considered)",
+      "qualification": "bsc",
+      "requirements": [
+        "Bachelor’s Degree in Physiotherapy (B.Sc. / BPT)",
+        "Valid professional license/registration with relevant regulatory body",
+        "Minimum of 1–3 years clinical experience (fresh graduates may be considered)",
+        "Experience in rehabilitation, orthopaedics, neurological or prosthetic care is an advantage",
+        "Strong communication and interpersonal skills",
+        "Ability to work independently and as part of a multidisciplinary team",
+        "Compassionate, patient-centered, and professional approach."
+      ],
+      "responsibilities": [
+        "Conduct thorough patient assessments to identify physical conditions and rehabilitation needs",
+        "Develop and implement individualized physiotherapy treatment plans",
+        "Provide hands-on therapy, exercises, and rehabilitation programs",
+        "Educate patients and caregivers on treatment plans, home exercises, and injury prevention",
+        "Monitor, evaluate, and document patient progress and outcomes",
+        "Collaborate with doctors, prosthetists, orthotists, and other healthcare professionals",
+        "Ensure compliance with professional standards, ethics, and clinical protocols",
+        "Maintain accurate patient records and reports",
+        "Participate in continuous professional development and training",
+        "Support outreach, community health programs, and patient awareness initiatives when required."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-01-01",
+      "deadline": "2026-01-20",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/physiotherapist-ifeanhealth-nigeria-limited/",
       "_source": "jobsinnigeria"
     },
     {
