@@ -1,15 +1,447 @@
 {
   "metadata": {
-    "extracted_at": "2026-02-09T04:40:49.752007",
+    "extracted_at": "2026-02-10T04:47:04.661438",
     "model": "gpt-4o-mini",
     "total_processed": 244,
-    "duplicates_removed": 23,
+    "duplicates_removed": 24,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 28
+    "openai_calls": 35
   },
   "jobs": [
+    {
+      "job_title": "Nutrition Intern (Programme Management and Partner Coordination)",
+      "company": "UNICEF",
+      "location": "Lusaka, Zambia",
+      "job_type": "Full-Time",
+      "job_category": "Public Health",
+      "salary": "",
+      "experience": "",
+      "qualification": "Final Year student or graduated with an undergraduate degree qualification within the last two years, in any relevant Human Development field (e.g. Social Sciences, Nutrition, Public Health)",
+      "requirements": [
+        "Strong academic performance as demonstrated by recent university or institution records is required",
+        "A qualification in Nutrition, Food Sciences or Public Health is an added advantage",
+        "Demonstrable experience in effectively planning and organizing meetings and events for different stakeholders is required (does not have to be workplace related experience)",
+        "Demonstrable experience in data extraction and analysis is required (does not have to be workplace related experience)",
+        "Strong writing skills (samples may be requested)",
+        "Technological proficiency, including the use of PowerPoint, Word and Excel, is required",
+        "Proficiency in English and at least one other local language"
+      ],
+      "responsibilities": [
+        "Provide secretariat services to the Nutrition Cluster",
+        "Support the Chief Nutrition at UNICEF in preparations and follow-ups to the Nutrition Cooperating Partners meeting",
+        "Provide secretariat services for nutrition section meetings",
+        "Analyse and summarize routine and publicly available nutrition data as guided to inform advocacy and decision-making"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-09",
+      "deadline": "2026-02-18",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/nutrition-intern-programme-management-and-partner-coordination-275",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Prevention Advisor",
+      "company": "FHI 360",
+      "location": "Bujumbura, Burundi",
+      "job_type": "Full-Time",
+      "job_category": "Public Health",
+      "salary": "",
+      "experience": "At least 8–10 years",
+      "qualification": "Master’s degree in public health, Health Promotion, Epidemiology, Nursing, Environmental Health, or a related field; or bachelor’s degree with additional experience",
+      "requirements": [
+        "Master’s degree in public health, Health Promotion, Epidemiology, Nursing, Environmental Health, or a related field; or bachelor’s degree with additional experience",
+        "At least 8–10 years of experience in RCCE, IPC, POE, outbreak prevention, or public health emergency preparedness and response",
+        "Demonstrated experience with RCCE program management, communication strategy development, SBC, or community engagement methodologies",
+        "Facility-based or national IPC programs, including training, supervision, SOP development, and assessments",
+        "Implementation of POE public health protocols, border health systems, or IHR core capacities",
+        "Proven understanding of JEE, NAPHS, GHSA frameworks, and One Health approaches",
+        "Experience supporting national public health systems, government stakeholders, or emergency response structures",
+        "Strong interpersonal, communication, and coordination skills",
+        "Demonstrated ability to deliver high-quality capacity-building activities and develop technical tools or guidelines",
+        "Excellent analytical, writing, and documentation skills",
+        "Fluency in French and English required; knowledge of Kirundi is an asset",
+        "Must be legally authorized to work in Burundi"
+      ],
+      "responsibilities": [
+        "Provide technical assistance to strengthen national and subnational RCCE systems aligned with health regulations, JEE, and GHSA guidance",
+        "Support the development, revision, and dissemination of RCCE strategies, SOPs, operational plans, and communication guidelines for priority diseases",
+        "Coordinate and facilitate community engagement activities, including rumor tracking, infodemic management, public communication, and community feedback mechanisms",
+        "Assist in designing and implementing RCCE training, simulation exercises, and capacity-building programs for government and community partners",
+        "Support the development of RCCE communication materials, messaging, media engagement tools, and response communication protocols",
+        "Document challenges, lessons learned, success stories, and best practices for program improvement and accountability",
+        "Provide technical guidance to improve IPC programs at facility, district, and national levels",
+        "Support national stakeholders in updating IPC policies, guidelines, and facility-level SOPs for priority pathogens",
+        "Conduct IPC assessments, mentorship, supportive supervision, and follow-up at health facilities",
+        "Strengthen surveillance of healthcare-associated infections and support quality improvement initiatives",
+        "Oversee IPC surveillance activities to detect and prevent healthcare-associated infections",
+        "Investigate infection outbreaks, identify sources, and activate containment measures",
+        "Offer technical supervision in key areas such as water/sanitation, waste management, vector control, and sterilization processes",
+        "Assess capacities and coordinate with national systems to align with health surveillance and emergency preparedness",
+        "Support the enhancement of POE surveillance, screening procedures, and public health protocols in alignment with IHR requirements",
+        "Assist national authorities with developing or strengthening POE SOPs, emergency response plans, and cross-border coordination systems",
+        "Support training and capacity building for border officials, port health teams, and multisectoral stakeholders",
+        "Contribute to simulation exercises and after-action reviews focusing on POE public health functions"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-09",
+      "deadline": "2026-02-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/prevention-advisor-274",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Animal Health Advisor",
+      "company": "FHI 360",
+      "location": "Bujumbura, Burundi",
+      "job_type": "Full-Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Minimum of eight (8) years of relevant experience",
+      "qualification": "Doctor of Veterinary Medicine (DVM) or equivalent degree in Veterinary Medicine, Veterinary Science, or related field; master’s degree in public health, Epidemiology, One Health, or related discipline preferred",
+      "requirements": [
+        "Demonstrated experience strengthening veterinary laboratory systems, including biosafety/biosecurity, QMS, diagnostics, and surveillance",
+        "Experience with zoonotic diseases, emerging and re-emerging pathogens, and outbreak investigation and response",
+        "Knowledge of JEE, PVS Pathway, NAPHS, GHSA, and other global health security frameworks",
+        "Previous experience working with government ministries, national laboratories, development partners, and multisectoral platforms",
+        "Strong technical writing skills and experience in drafting guidelines, SOPs, protocols, training materials, and reports",
+        "Ability to provide effective training and capacity building to laboratory and field animal health staff",
+        "Strong interpersonal, communication, and organizational skills",
+        "Fluency in English and French required",
+        "Authorization to work in Burundi"
+      ],
+      "responsibilities": [
+        "Provide technical assistance to national stakeholders to strengthen surveillance, detection, reporting, and response for priority zoonotic diseases",
+        "Lead planning, implementing, and monitoring animal health programs to ensure disease prevention, control, and treatment across all operations",
+        "Support strengthening of veterinary laboratory systems, including diagnostic capacity, quality management systems, biosafety, biosecurity, sample transport, laboratory networking, and proficiency testing",
+        "Guide development or revision of zoonotic disease technical guidelines, SOPs, diagnostic algorithms, and protocols, ensuring alignment with JEE, NAPHS, and One Health recommendations",
+        "Support multisectoral coordination mechanisms, including the One Health platform, in preparedness, surveillance, laboratory, and response activities",
+        "Lead and participate in training programs for veterinary laboratory scientists, field veterinarians, and animal health officers on zoonotic diseases, IPC, biosafety, biosecurity, and laboratory best practices",
+        "Provide technical support for zoonotic disease surveillance integration across human, animal, and environmental health sectors",
+        "Oversee emergency response for outbreaks and ensure proper resource allocation",
+        "Support development and implementation of animal health emergency preparedness and outbreak response plans",
+        "Assist national laboratories in strengthening laboratory information systems, results reporting, and data quality improvement",
+        "Contributes to developing operational plans, tools, and strategies to improve detection and response to emerging and re-emerging zoonoses",
+        "Support implementation of One Health field investigations, assessments, and simulation exercises",
+        "Contribute to the preparation of technical reports, success stories, briefs, and other documentation",
+        "Provide administrative, logistical, and coordination support for project activities as needed",
+        "Contribute to annual work planning, budgeting, and monitoring of animal health and One Health activities as well as the development of semi-annual and annual reports",
+        "Perform other duties as assigned"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-09",
+      "deadline": "2026-02-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/animal-health-advisor-273",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Radiology Officer",
+      "company": "Purple Consult",
+      "location": "Nigeria, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "4–6 years relevant experience",
+      "qualification": "Bachelor’s Degree in Radiography",
+      "requirements": [
+        "Bachelor’s Degree in Radiography",
+        "4–6 years relevant experience",
+        "Must live within close proximity to Victoria Island, Lagos"
+      ],
+      "responsibilities": [
+        "Perform diagnostic imaging procedures in line with clinical requests",
+        "Operate and maintain radiology equipment safely and efficiently",
+        "Ensure radiation safety and compliance with regulatory standards",
+        "Produce clear, accurate images and preliminary documentation",
+        "Maintain patient records and imaging data confidentiality",
+        "Collaborate with clinicians for imaging interpretation and follow-up",
+        "Ensure proper equipment calibration, care, and reporting"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-09",
+      "deadline": "2026-03-05",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/radiology-officer-272",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Production Pharmacist",
+      "company": "Med-in Pharmaceutical Limited",
+      "location": "Sagamu Interchange, Ogun, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Pharmacist",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [
+        "Production of high quality pharmaceutical products in accordance with GMP principles",
+        "Assist the Production Manager in planning and initiation of employment of qualified personnel, procurement of production equipment and establishment of investment budgets for producing the required production volumes",
+        "Update and enforce GMP, compliance, Safety, security and ecological regulations",
+        "Control correctness/ completeness of batch documentation and production records",
+        "Review at prescribed intervals data entries of production documents",
+        "Seeking continuous improvements of productivity, working environment and awareness of responsibilities of production personnel towards market needs",
+        "Initiate and carry out process and cleaning validations of production relevant processes and equipment",
+        "Aid efforts in calibration and qualification of facility and equipment",
+        "Maintain good relationship with subordinates, peer organizational units and external units",
+        "And any other task to be assigned from time to time"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-09",
+      "deadline": "2026-03-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/production-pharmacist-271",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Officer",
+      "company": "Cosmoderm Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "NGN400,000 - NGN500,000 / monthly",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [
+        "Resident doctor",
+        "Must be able to do simple surgeries",
+        "Provide medical advice"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-09",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-officer-270",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Registered Nurse/Midwife",
+      "company": "Cosmoderm Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "NGN200,000 - NGN250,000 / monthly",
+      "experience": "1-2 years",
+      "qualification": "",
+      "requirements": [
+        "Must have a valid licence",
+        "Must be compassionate and caring"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-09",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/registered-nursemidwife-269",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Dentist",
+      "company": "JV Management Consulting",
+      "location": "Ikorodu, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Dentist",
+      "salary": "NGN380,000 - NGN420,000 / monthly",
+      "experience": "Minimum of 3 years post-NYSC clinical experience",
+      "qualification": "",
+      "requirements": [
+        "Licensed and in good standing with the appropriate regulatory body",
+        "Strong clinical, communication, and patient-care skills"
+      ],
+      "responsibilities": [
+        "Conduct dental examinations and clinical diagnoses",
+        "Perform tooth extractions and routine dental procedures",
+        "Carry out Root Canal Treatment (RCT) procedures",
+        "Provide general oral health education and preventive care",
+        "Manage primary dental care cases and treatment plans"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-09",
+      "deadline": "2026-02-16",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/dentist-268",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Doctors",
+      "company": "Ahmad Sani Yariman Bakura Specialist Hospital",
+      "location": "Gusau, Zamfara State, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Fellowship certificate from a recognized institution",
+        "MBBS Degree from a recognized University",
+        "Full MDCN registration",
+        "Specialization in Family Medicine and surgery are most needed",
+        "Evidence of completion of internship training",
+        "Evidence of completion of NYSC"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-09",
+      "deadline": "2026-02-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-doctors-267",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Physiotherapist Supervisor",
+      "company": "Medecins Sans Frontieres (MSF)",
+      "location": "Katsina, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [
+        "Lead and supervise the implementation of specialized rehabilitation interventions.",
+        "Conduct and oversee patient assessments to develop and adjust treatment plans.",
+        "Guide and support the rehabilitation team in daily patient care.",
+        "Manage patient continuity of care, including transitions and follow-ups.",
+        "Organize, monitor and evaluate rehabilitation activities.",
+        "Supervise the rehabilitation team and manage workload distribution.",
+        "Ensure proper use and maintenance of rehabilitation equipment."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-09",
+      "deadline": "2026-02-09",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/physiotherapist-supervisor-266",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Laboratory Technician",
+      "company": "Medecins Sans Frontieres",
+      "location": "Katsina, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [
+        "Preparing and performing clinical exams/tests according to medical prescriptions and MSF protocols.",
+        "Taking blood, vaginal and urethral samples.",
+        "Centrifuging blood and urine samples.",
+        "Performing laboratory exams including serology, haematology, biochemistry, and bacteriology.",
+        "Reporting and registering sample results while ensuring confidentiality.",
+        "Managing laboratory material/equipment and performing minor maintenance.",
+        "Applying hygiene and safety protocols and maintaining cleanliness of laboratory areas.",
+        "Ensuring proper sample waste disposal according to MSF standards.",
+        "Keeping organized data collection system of laboratory results.",
+        "Reporting any loss, robbery, or damage of laboratory equipment or medicines.",
+        "Maintaining blood stock status at the blood bank and assisting in organizing blood drives."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-09",
+      "deadline": "2026-02-13",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/laboratory-technician-265",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Dentist",
+      "company": "Lily Hospitals Limited",
+      "location": "Warri, Delta, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Dentist",
+      "salary": "",
+      "experience": "2 - 4 years post-NYSC clinical experience",
+      "qualification": "Bachelor of Dental Surgery (BDS) from a recognized institution",
+      "requirements": [
+        "Bachelor of Dental Surgery (BDS) from a recognized institution.",
+        "2 - 4 years post-NYSC clinical experience.",
+        "Valid MDCN license.",
+        "Strong interpersonal and communication skills."
+      ],
+      "responsibilities": [
+        "Conduct routine check-ups and procedures (e.g., fillings, extractions, root canals).",
+        "Provide oral hygiene education and preventive care.",
+        "Keep accurate records and treatment plans.",
+        "Collaborate across departments for holistic care.",
+        "Ensure best practices in infection control."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-09",
+      "deadline": "2026-02-14",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/dentist-264",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Pharmacy Assistant",
+      "company": "Castville Solutions",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Pharmacist",
+      "salary": "N70,000 – N120,000 monthly",
+      "experience": "in a retail or hospital pharmacy (an advantage)",
+      "qualification": "bsc",
+      "requirements": [
+        "Minimum of a High School Diploma or equivalent: additional training in pharmacy support is a plus",
+        "Previous experience in a retail or hospital pharmacy (an advantage)",
+        "Good communication and customer service skills",
+        "Basic knowledge of medications and pharmaceutical terminology."
+      ],
+      "responsibilities": [
+        "Assist the pharmacist with dispensing medications",
+        "Inventory management",
+        "Daily pharmacy operations."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-02-09",
+      "deadline": "2026-02-20",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/pharmacy-assistant-castville-solutions-3-openings/",
+      "_source": "jobsinnigeria"
+    },
     {
       "job_title": "Hospital administrator",
       "company": "Bluirays hospital",
@@ -1889,54 +2321,6 @@
       "_source": "medlocum"
     },
     {
-      "job_title": "Animal Health Advisor",
-      "company": "FHI 360",
-      "location": "Bujumbura, Burundi",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "Minimum of eight (8) years of relevant experience in animal health, zoonotic disease surveillance, veterinary laboratory systems, or One Health programming.",
-      "qualification": "Doctor of Veterinary Medicine (DVM) or equivalent degree in Veterinary Medicine, Veterinary Science, or related field; master’s degree in public health, Epidemiology, One Health, or related discipline preferred.",
-      "requirements": [
-        "Demonstrated experience strengthening veterinary laboratory systems, including biosafety/biosecurity, QMS, diagnostics, and surveillance.",
-        "Experience with zoonotic diseases, emerging and re-emerging pathogens, and outbreak investigation and response.",
-        "Knowledge of JEE, PVS Pathway, NAPHS, GHSA, and other global health security frameworks.",
-        "Previous experience working with government ministries, national laboratories, development partners, and multisectoral platforms.",
-        "Strong technical writing skills and experience in drafting guidelines, SOPs, protocols, training materials, and reports.",
-        "Ability to provide effective training and capacity building to laboratory and field animal health staff.",
-        "Strong interpersonal, communication, and organizational skills.",
-        "Fluency in English and French required.",
-        "Authorization to work in Burundi."
-      ],
-      "responsibilities": [
-        "Provide technical assistance to national stakeholders to strengthen surveillance, detection, reporting, and response for priority zoonotic diseases.",
-        "Lead planning, implementing, and monitoring animal health programs to ensure disease prevention, control, and treatment across all operations.",
-        "Support strengthening of veterinary laboratory systems, including diagnostic capacity, quality management systems, biosafety, biosecurity, sample transport, laboratory networking, and proficiency testing.",
-        "Guide development or revision of zoonotic disease technical guidelines, SOPs, diagnostic algorithms, and protocols, ensuring alignment with JEE, NAPHS, and One Health recommendations.",
-        "Support multisectoral coordination mechanisms, including the One Health platform, in preparedness, surveillance, laboratory, and response activities.",
-        "Lead and participate in training programs for veterinary laboratory scientists, field veterinarians, and animal health officers on zoonotic diseases, IPC, biosafety, biosecurity, and laboratory best practices.",
-        "Provide technical support for zoonotic disease surveillance integration across human, animal, and environmental health sectors.",
-        "Oversee emergency response for outbreaks and ensure proper resource allocation.",
-        "Support development and implementation of animal health emergency preparedness and outbreak response plans.",
-        "Assist national laboratories in strengthening laboratory information systems, results reporting, and data quality improvement.",
-        "Contributes to developing operational plans, tools, and strategies to improve detection and response to emerging and re-emerging zoonoses.",
-        "Support implementation of One Health field investigations, assessments, and simulation exercises.",
-        "Contribute to the preparation of technical reports, success stories, briefs, and other documentation.",
-        "Provide administrative, logistical, and coordination support for project activities as needed.",
-        "Contribute to annual work planning, budgeting, and monitoring of animal health and One Health activities as well as the development of semi-annual and annual reports.",
-        "Perform other duties as assigned."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-03",
-      "deadline": "2026-02-14",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/animal-health-advisor-226",
-      "_source": "medlocum"
-    },
-    {
       "job_title": "Laboratory Scientist - Molecular Genetics Laboratory",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja, Nigeria",
@@ -3668,47 +4052,6 @@
       "_source": "medlocum"
     },
     {
-      "job_title": "Chief Financial Officer (CFO)",
-      "company": "Manufacturing / Agribusiness",
-      "location": "Anambra State, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "Minimum of 10 years’ experience in senior financial leadership roles",
-      "qualification": "Bachelor’s degree in Accounting, Finance, Economics, or related field; Master’s degree (MBA/Finance) is strongly preferred; Professional certification: ICAN, ACCA, CFA (required)",
-      "requirements": [
-        "Bachelor’s degree in Accounting, Finance, Economics, or related field",
-        "Master’s degree (MBA/Finance) is strongly preferred",
-        "Professional certification: ICAN, ACCA, CFA (required)",
-        "Minimum of 10 years’ experience in senior financial leadership roles",
-        "Proven experience in Agribusiness, FMCG, Manufacturing, or related industry",
-        "Strong background in financial strategy, corporate finance, investment management, and internal controls",
-        "Solid experience with regulatory compliance, taxation, and risk management",
-        "Demonstrated success in cost reduction, revenue optimization, and financial restructuring",
-        "Must be Anambra-based or willing to relocate to Anambra",
-        "Lagos-based candidates must be willing to travel periodically to Anambra"
-      ],
-      "responsibilities": [
-        "Lead financial strategy, planning, budgeting, and forecasting",
-        "Oversee financial reporting, controls, and regulatory compliance",
-        "Manage cash flow, treasury, and capital allocation",
-        "Drive cost optimization, profitability, and financial efficiency",
-        "Lead investment analysis, capital expenditure, and funding decisions",
-        "Manage relationships with banks, investors, auditors, and regulators",
-        "Identify and mitigate financial and operational risks",
-        "Provide financial insights and reports to the MD/CEO and Board"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-29",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/chief-financial-officer-cfo-195",
-      "_source": "medlocum"
-    },
-    {
       "job_title": "Experienced Nurse",
       "company": "Bretty Consultancy Services",
       "location": "Sabon Wuse, Niger",
@@ -3735,292 +4078,6 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Experienced-Nurse-at-a-Steel-and-Mills-Company-Bretty-Consultancy-Services?pid=77112",
       "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Laboratory & Diagnostics Officer",
-      "company": "FHI 360",
-      "location": "Lusaka, Zambia",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "Typically requires 4+ years of relevant experience",
-      "qualification": "Bachelor's degree in microbiology or its international equivalent in biological sciences within a clinical or medical laboratory diagnostic discipline or specialty",
-      "requirements": [
-        "Proficiency with database management software and online search tools",
-        "Development of scope of work and deliverables for partners, consultants, etc.",
-        "Sensitivity to cultural diversity and understanding of political and ethical issues",
-        "Excellent oral and written communication skills",
-        "Excellent organizational and analytical skills",
-        "Demonstrated proficiency with Microsoft Office Suite",
-        "Ability to analyze data, identify errors, and prepare reports",
-        "Ability to solve problems and implement corrective actions",
-        "Fluency in English"
-      ],
-      "responsibilities": [
-        "Provides project staff with overall technical direction and guidance on epidemiological surveillance",
-        "Supports the design and implementation of activities to strengthen surveillance for priority pathogens",
-        "Coordinates with the global surveillance team for experience sharing",
-        "Provides technical assistance to expand surveillance systems",
-        "Conducts analysis of project implementation to identify areas for improvement",
-        "Delivers training to epidemiologists and project staff",
-        "Monitors and maintains project protocols, instruments, and reports"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-28",
-      "deadline": "2026-02-03",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/laboratory-diagnostics-officer-194",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Epidemiology & Surveillance Officer",
-      "company": "FHI 360",
-      "location": "Lusaka, Zambia",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "Typically requires 4+ years of relevant experience",
-      "qualification": "Bachelor's degree or its international equivalent in epidemiology, Public Health, or related field",
-      "requirements": [
-        "Proficiency with database management software and on-line search tools required.",
-        "Development of scope of work and deliverables for partners, consultants, etc.",
-        "Has sensitivity to cultural diversity and understanding of the political, contextual, and ethical issues in assigned areas.",
-        "Articulate, professional, and able to communicate in a clear, positive manner with clients and staff.",
-        "Basic working knowledge of concepts, practices, and procedures with providing technical support for technical research studies.",
-        "Excellent oral and written communication skills.",
-        "Excellent organizational and analytical skills.",
-        "Demonstrated proficiency with using Microsoft Office Suite required.",
-        "Ability to analyze and interpret data, identify errors, and prepare reports.",
-        "Ability to solve problems and implement corrective action as needed.",
-        "Must be able to read, write, and speak fluent English."
-      ],
-      "responsibilities": [
-        "Provides project staff with overall technical direction and guidance on epidemiological surveillance in line with the project’s expected outcomes.",
-        "Provides strategic leadership and guidance to the epidemiology and public health surveillance component of the project in coordination with other project technical areas.",
-        "Supports the design and implementation of technical activities to establish or strengthen event - and indicator-based surveillance, and community-based surveillance for priority pathogens and antimicrobial resistance.",
-        "Coordinates closely with the global surveillance team to ensure synergies and experience sharing within and across global health security countries.",
-        "Provides technical assistance to develop and implement plans to expand passive surveillance systems into active surveillance for priority diseases and to serve as an enhanced early warning surveillance system.",
-        "Conducts analysis of project implementation to identify areas for improvement and propose appropriate technical strategies and guidelines.",
-        "Provides technical expertise in preparing training materials, standard operating procedures, and job aids and delivers training to epidemiologists, disease surveillance officers, project staff and partners."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-28",
-      "deadline": "2026-02-03",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/epidemiology-surveillance-officer-193",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Laboratory Strengthening Project Manager - Reaching the Last Mile Fund",
-      "company": "Sightsavers",
-      "location": "UK remote and/or Haywards Heath based, United Kingdom",
-      "job_type": "Contract",
-      "job_category": "Healthcare Management",
-      "salary": "GBP34,529 - GBP40,622 / monthly",
-      "experience": "",
-      "qualification": "Educated to degree level or equivalent in a relevant discipline",
-      "requirements": [
-        "Extensive demonstrable experience managing multi-organisational projects within International Development, Public Health or similar.",
-        "Experience of communicating with and reporting to internal and external stakeholders",
-        "Excellent analytical and IT skills",
-        "Strong analytical, writing, editing and verbal skills for communicating with broad and diverse stakeholders",
-        "Effective as a collaborator in complex internal and external organizations",
-        "Excellent organisational and time management skills",
-        "Good inter-personal and relationship management skills",
-        "Knowledge and behaviours that support equality, diversity and inclusive practice",
-        "Able to prioritise and manage competing tasks and deadlines across workstreams and countries",
-        "Able to work largely without supervision (but within a team)",
-        "Willingness to undertake periodic travel for meeting attendance",
-        "Fluency in English",
-        "Project management qualification(s) (desirable)",
-        "Experience with onchocerciasis, NTDs, or work with African Health Systems (desirable)",
-        "Experience of working as part of a multi-organisational team (desirable)",
-        "French language skills (desirable)",
-        "Understanding of research governance and ethical principles (desirable)"
-      ],
-      "responsibilities": [
-        "Oversee and coordinate the RLMF laboratory capacity building work package",
-        "Provide all aspects of project management support and coordination for the laboratory capacity strengthening workplan",
-        "Work closely with the Laboratory Technical Advisor for RLMF",
-        "Ensure all tasks and activities progress and provide reports to colleagues, donors, and the RLMF Systems Strengthening Committee"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-28",
-      "deadline": "2026-01-01",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/laboratory-strengthening-project-manager-reaching-the-last-mile-fund-192",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Medical Laboratory Scientist (Haematology)",
-      "company": "Lily Hospitals Limited",
-      "location": "Warri, Delta, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "Minimum of 2 years relevant experience",
-      "qualification": "BSc/BMLS with specialization in Haematology; Valid MLSCN practicing license",
-      "requirements": [
-        "BSc/BMLS with specialization in Haematology",
-        "Valid MLSCN practicing license",
-        "Minimum of 2 years relevant experience",
-        "Strong analytical and communication skills",
-        "Attention to detail and commitment to quality care"
-      ],
-      "responsibilities": [
-        "Perform routine and specialized haematology tests",
-        "Analyze and interpret test results accurately",
-        "Operate and maintain laboratory equipment",
-        "Collect and process blood samples",
-        "Ensure compliance with safety and quality standards",
-        "Maintain accurate laboratory records",
-        "Work closely with clinical teams"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-28",
-      "deadline": "2026-02-03",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-scientist-haematology-191",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Senior Laboratory Associate",
-      "company": "KNCV Tuberculosis Foundation",
-      "location": "Bauchi, Nigeria",
-      "job_type": "Contract",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "2-4 years",
-      "qualification": "Bachelor’s or Master’s Degree in Medical Laboratory or any other laboratory-related discipline or any other related field",
-      "requirements": [
-        "Bachelor’s or Master’s Degree in Medical Laboratory or any other laboratory-related discipline or any other related field",
-        "At least 2-4 years of experience in public health projects",
-        "Experience in working in the fields of TB/HIV, community TB, and MDR TB, with extensive field experience in Nigeria",
-        "Experience in managing a team",
-        "Experience in coordinating multiple party stakeholders",
-        "Experience in wide scale community-based intervention",
-        "Experience in community mobilization efforts",
-        "Experience managing complex health data"
-      ],
-      "responsibilities": [
-        "Provide support and technical assistance to sample transport network to ensure prompt transportation of samples, redistribution of samples where necessary and timely retrieval of results",
-        "Provide technical oversight to GeneXpert laboratories to facilitate quick resolution of faulty Xpert machines through prompt escalations of faults, collection of mandatory documents and performing minor troubleshooting with Cepheid guidance",
-        "Provide Technical oversight to Truenat laboratories to ensure uninterrupted testing, regular supply of reagents and other consumables as well as timely reporting of data",
-        "Interface with lab focal persons and data entry clerk to facilitate timely processing of samples, retrieval of all results and timely upload unto Commcare device to improve and sustain high evaluation rate across testing facilities",
-        "Collate and validate weekly and monthly data reports from Xpert labs for routine performance evaluation of the project",
-        "Conduct routine surveillance of GXAlert functionality and data upload for all Xpert and Truenat machines in the state and report gaps to the GXAlert focal person for immediate resolution",
-        "Supervise Xpert optimization related jobs (eg A/C repairs, inverter and battery replacement, etc.) to ensure timely execution of quality jobs",
-        "Any other duties that may be assigned by the cluster Lab advisor"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/senior-laboratory-associate-189",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Deputy Provost",
-      "company": "Lily College of Nursing Sciences at Lily Hospitals Limited",
-      "location": "Warri, Delta, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Healthcare Management",
-      "salary": "",
-      "experience": "At least 5 years of progressive leadership experience in higher education",
-      "qualification": "Minimum of Master’s Degree in Nursing and must be a Registered Nurse Educator",
-      "requirements": [
-        "Minimum of Master’s Degree in Nursing and must be a Registered Nurse Educator.",
-        "At least 5 years of progressive leadership experience in higher education.",
-        "Proven track record in curriculum design, faculty management, accreditation, and policy implementation.",
-        "Strong leadership, communication, and interpersonal skills.",
-        "Integrity, professional ethics, and a passion for student-centered education."
-      ],
-      "responsibilities": [
-        "Provide strategic leadership in curriculum development, faculty performance, and quality assurance.",
-        "Ensure compliance with academic standards and promote student success.",
-        "Foster innovation, institutional effectiveness, and stakeholder collaboration."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-28",
-      "deadline": "2026-02-02",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/deputy-provost-188",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Head of Department (HOD), Midwifery",
-      "company": "Lily Hospitals Limited",
-      "location": "Warri, Delta, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "Minimum of 4 years’ experience in midwifery education or clinical practice, with at least 2 years in leadership.",
-      "qualification": "Minimum of Bachelor’s Degree in Nursing Sciences; PGD in Education is required.",
-      "requirements": [
-        "Minimum of Bachelor’s Degree in Nursing Sciences.",
-        "Minimum of 4 years’ experience in midwifery education or clinical practice, with at least 2 years in leadership.",
-        "PGD in Education is required.",
-        "Proven experience in curriculum development, program evaluation, and faculty development.",
-        "Excellent communication and interpersonal skills."
-      ],
-      "responsibilities": [
-        "Lead the design, implementation, and evaluation of the midwifery curriculum.",
-        "Provide mentorship and guidance to faculty and administrative staff.",
-        "Promote evidence-based and innovative teaching methodologies.",
-        "Ensure compliance with regulatory and accreditation requirements.",
-        "Foster a collaborative environment that drives professional and student growth."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-28",
-      "deadline": "2026-02-02",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/head-of-department-hod-midwifery-187",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Medical Laboratory Scientist",
-      "company": "Body Affairs Diagnostics",
-      "location": "Garki 2, Abuja (FCT), Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "2 years",
-      "qualification": "Bachelor's Degree",
-      "requirements": [
-        "Bachelor's Degree",
-        "at least 2 years experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-28",
-      "deadline": "2026-01-29",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-scientist-186",
-      "_source": "medlocum"
     },
     {
       "job_title": "Medical Quality Officer",
@@ -4102,71 +4159,6 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-RN-at-Aspire-HMO?pid=77109",
       "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Program Officer",
-      "company": "Positive Care and Development Foundation (PCDF)",
-      "location": "Calabar, Cross River, Cross River State, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "2-3 years",
-      "qualification": "",
-      "requirements": [
-        "At least 2-3 years’ experience working on TB, HIV, or other public health projects.",
-        "Good knowledge of Nigeria’s TB control program and national TB guidelines is an added advantage.",
-        "Experience working within the state is preferred."
-      ],
-      "responsibilities": [
-        "Support the implementation of TB project activities in line with approved work plans, budgets, and timelines.",
-        "Coordinate facility- and community-based TB interventions, including case finding, treatment support, contact tracing, and TB preventive therapy.",
-        "Liaise with State/LGA TB and Leprosy Control Program officers, health facilities, CSOs, and community structures.",
-        "Provide on-the-job support and mentoring to health workers and community volunteers on TB service delivery and reporting.",
-        "Support coordination meetings, trainings, and review sessions with relevant stakeholders.",
-        "Ensure adherence to national TB guidelines, policies, and standard operating procedures. Collate daily, weekly, and monthly state-level reports."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-27",
-      "deadline": "2026-01-31",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/program-officer-185",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Public Health Officer NOA (Special Service Agreement)",
-      "company": "WHO",
-      "location": "Cairo, Egypt",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "At least 1 year of experience required in health sector coordination at national or international level.",
-      "qualification": "First level university degree in medicine; Master’s degree in public health (desirable)",
-      "requirements": [
-        "First level university degree in medicine",
-        "Master’s degree in public health (desirable)",
-        "At least 1 year of experience in health sector coordination at national or international level",
-        "Experience with donor reporting",
-        "Fluent in English and Arabic"
-      ],
-      "responsibilities": [
-        "Coordinates data collection and data management activities including analysis and interpretation of data",
-        "Manages information systems and timely disseminates WHO updated information",
-        "Designs and maintains databases of indicators relating to public health activities",
-        "Implements programme activities in the community in coordination with the MoH",
-        "Provides technical assistance in preparedness, response and recovery to emergencies"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-27",
-      "deadline": "2026-02-10",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/public-health-officer-noa-special-service-agreement-2600282-184",
-      "_source": "medlocum"
     },
     {
       "job_title": "Deputy Provost – Lily College of Nursing Sciences",
@@ -5848,39 +5840,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Dentist",
-      "company": "Lily Hospitals Limited",
-      "location": "Warri, Delta, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Dentist",
-      "salary": "package",
-      "experience": "1 – 3 years post-NYSC clinical experience",
-      "qualification": "Bachelor of Dental Surgery (BDS) Degree",
-      "requirements": [
-        "Bachelor of Dental Surgery (BDS) Degree from a recognized institution.",
-        "1 – 3 years post-NYSC clinical experience.",
-        "Valid MDCN license.",
-        "Strong interpersonal and communication skills."
-      ],
-      "responsibilities": [
-        "Conduct routine check-ups and procedures (e.g., fillings, extractions, root canals).",
-        "Provide oral hygiene education and preventive care.",
-        "Keep accurate records and treatment plans.",
-        "Collaborate across departments for holistic care.",
-        "Ensure best practices in infection control."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-01-15",
-      "deadline": "2026-01-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/dentist-lily-hospitals-limited/",
-      "_source": "jobsinnigeria"
-    },
-    {
       "job_title": "Optician",
       "company": "Lily Hospitals Limited",
       "location": "Port Harcourt, Rivers, Nigeria",
@@ -7553,44 +7512,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-health-records-officer-annunciation-specialist-hospital/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Optometrist",
-      "company": "St. Luke’s Hospital Asaba",
-      "location": "Asaba, Delta, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "Minimum of 2 years’ post-NYSC clinical experience",
-      "qualification": "Doctor of Optometry degree (O.D)",
-      "requirements": [
-        "Doctor of Optometry degree (O.D) from a recognized institution",
-        "Certification – Optometrists and Dispensing Opticians Registration Board of Nigeria; Certificate of Practicing License",
-        "Proficiency with the use of the computer",
-        "Candidates must possess NYSC discharge Certificate or Exemption letter",
-        "Excellent problem-solving and clinical decision-making skills",
-        "Good time management and organizational skills",
-        "Attention to detail and a patient-centred approach to care",
-        "Candidate must reside in Asaba or willing to relocate",
-        "Highly motivated team player willing to go the extra mile"
-      ],
-      "responsibilities": [
-        "Conduct full eye health and vision examinations using advanced diagnostic tools",
-        "Experience in prescribing and fitting corrective lenses",
-        "Educate patients on proper eye care and visual hygiene",
-        "Knowledge of vision therapy techniques",
-        "Maintain accurate patient records in line with regulatory requirements"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2025-12-24",
-      "deadline": "2026-01-23",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/optometrist-st-lukes-hospital-asaba/",
       "_source": "jobsinnigeria"
     },
     {
