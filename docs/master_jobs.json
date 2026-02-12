@@ -1,15 +1,404 @@
 {
   "metadata": {
-    "extracted_at": "2026-02-11T04:46:45.675694",
+    "extracted_at": "2026-02-12T04:40:57.327137",
     "model": "gpt-4o-mini",
     "total_processed": 244,
-    "duplicates_removed": 22,
+    "duplicates_removed": 21,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 42
+    "openai_calls": 31
   },
   "jobs": [
+    {
+      "job_title": "Marketer",
+      "company": "Rockages Diagnostic Center",
+      "location": "Ibafo, Ogun State, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Other",
+      "salary": "NGN120,000 - NGN200,000 / monthly",
+      "experience": "",
+      "qualification": "Minimum of OND/HND/BSc",
+      "requirements": [
+        "Proven experience in marketing (healthcare experience is an advantage)",
+        "Strong communication and negotiation skills",
+        "Good networking and relationship-building ability",
+        "Self-motivated and target-driven",
+        "Professional appearance and conduct"
+      ],
+      "responsibilities": [
+        "Develop and implement marketing strategies",
+        "Enhance the hospital’s visibility",
+        "Attract new patients",
+        "Maintain strong referral networks"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-11",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/marketer-294",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Programme Specialist - Strategic Planning, Partnership Integration, and Impact Delivery",
+      "company": "UNICEF",
+      "location": "New York, United States",
+      "job_type": "Full-Time",
+      "job_category": "Public Health",
+      "salary": "",
+      "experience": "8 years",
+      "qualification": "An advanced university degree (Master’s or higher) in public policy, public health, environmental policy, international development, or a related field",
+      "requirements": [
+        "Strong programme coordination skills, with experience supporting implementation of multi-partner strategies and workplans",
+        "Sound technical and analytical skills related to lead exposure, environmental health, and child and maternal health policy",
+        "Ability to analyze programme and performance data and translate findings into practical recommendations",
+        "Proven ability to work collaboratively with diverse partners across sectors and regions",
+        "Experience supporting results-based planning, monitoring, and reporting processes",
+        "Strong written and verbal communication skills, including preparation of briefs, reports, and presentations",
+        "Fluency in English is required"
+      ],
+      "responsibilities": [
+        "Coordination and Integration of the PLF Strategy",
+        "Partnership and Ecosystem Alignment",
+        "Data, Monitoring and Learning",
+        "Advocacy and Communications Coordination",
+        "Secretariat Coordination",
+        "Support to Leadership"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-11",
+      "deadline": "2026-02-18",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/programme-specialist-strategic-planning-partnership-integration-and-impact-delivery-p4-ta-00136325-gpd-plf-nyq-remote-293",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Public Health Emergency Management Officer/PoE Officer (SSA-NO-A)",
+      "company": "WHO",
+      "location": "Ethiopia, Ethiopia",
+      "job_type": "Full-Time",
+      "job_category": "Public Health",
+      "salary": "USD2,973 / monthly",
+      "experience": "Minimum of one year",
+      "qualification": "First level university degree in health sciences; advanced degrees MD or MSc preferred",
+      "requirements": [
+        "First level university degree in health sciences from a recognized institute",
+        "Minimum of one year work experience in public health emergency preparedness and response",
+        "Excellent knowledge of Amharic and English",
+        "Working knowledge of Microsoft Office applications"
+      ],
+      "responsibilities": [
+        "Conduct passenger’s health screening activities per existing working protocols at point of entry",
+        "Coordinate rapid response team at points of entry",
+        "Fill traveler’s health declaration form",
+        "Conduct inspection on outgoing and incoming human remains/ashes",
+        "Conduct conveyance/vehicles inspection and produce disinfection certificate",
+        "Request and receive disinfection certificate for arriving conveyances",
+        "Conduct further assessment for suspect passengers",
+        "Prepare weekly work and duty schedules for health workforce"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-11",
+      "deadline": "2026-02-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/public-health-emergency-management-officerpoe-officer-ssa-no-a-2600410-292",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Laboratory & Diagnostics Officer",
+      "company": "FHI 360",
+      "location": "Lilongwe, Malawi",
+      "job_type": "Full-Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Typically requires 4+ years of relevant experience working with infectious disease diagnostics and/or in laboratory systems strengthening",
+      "qualification": "Bachelor's degree in microbiology or its international equivalent in biological sciences within a clinical or medical laboratory diagnostic discipline or specialty or related field.",
+      "requirements": [
+        "Proficiency with database management software and online search tools required.",
+        "Excellent oral and written communication skills.",
+        "Demonstrated proficiency with using Microsoft Office Suite required.",
+        "Ability to analyze and interpret data, identify errors, and prepare reports.",
+        "Must be able to read, write, and speak fluent English."
+      ],
+      "responsibilities": [
+        "Provides overall technical leadership and strategic guidance to project staff for the laboratory and diagnostic services component of STRIDES project.",
+        "Monitors and maintains project protocols, instruments, data sets, manuals, training materials, and reports related to diagnostic services and laboratory technical areas.",
+        "Works in close collaboration with national, regional, and local counterparts to provide technical assistance required to fulfill project objectives and targets, primarily related to strengthening laboratory systems and diagnostic services."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-11",
+      "deadline": "2026-02-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/laboratory-diagnostics-officer-291",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Production Manager",
+      "company": "Elizabeth Maddeux Limited",
+      "location": "Abuja (FCT), Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Healthcare Management",
+      "salary": "NGN400,000 - NGN600,000 / monthly",
+      "experience": "Minimum of 4 years’ experience in FMCG manufacturing, with at least 2–3 years in a supervisory or managerial role",
+      "qualification": "Bachelor’s degree or HND in Microbiology, Biochemistry, Food Science & Technology, Chemical Engineering or related field",
+      "requirements": [
+        "Strong knowledge of production planning, process optimization, and shop floor management.",
+        "Experience working with automated or semi-automated production lines.",
+        "Knowledge of GMP, HSE standards, and Nigerian regulatory requirements (NAFDAC/SON).",
+        "Strong leadership and people management skills.",
+        "Excellent problem-solving and decision-making ability.",
+        "Good analytical and reporting skills.",
+        "Ability to work under pressure and meet tight deadlines.",
+        "Strong communication and coordination skills.",
+        "Proficiency in MS Excel and basic ERP systems."
+      ],
+      "responsibilities": [
+        "Plan, organize, and control daily, weekly, and monthly production schedules in line with demand forecasts.",
+        "Ensure uninterrupted production flow while meeting volume, quality, and cost targets.",
+        "Optimize machine utilization, manpower deployment, and material usage.",
+        "Monitor production output and take corrective actions to address deviations.",
+        "Ensure adherence to quality standards, SOPs, and GMP requirements.",
+        "Maintain compliance with regulatory bodies such as NAFDAC, SON, and other applicable standards.",
+        "Enforce health, safety, and environmental (HSE) policies on the shop floor.",
+        "Drive continuous improvement initiatives to reduce defects, waste, and rework.",
+        "Supervise and lead production supervisors, line leaders, and operators.",
+        "Prepare and submit daily, weekly, and monthly production reports."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-11",
+      "deadline": "2026-03-30",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/production-manager-290",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Senior Medical Officer / Clinical Director",
+      "company": "Harley and Wall Healthcare and Business Consulting",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "NGN500,000 - NGN750,000 / monthly",
+      "experience": "Minimum of 5 years post-qualification experience",
+      "qualification": "MBBS (or equivalent) with full registration and valid practicing license",
+      "requirements": [
+        "MBBS (or equivalent) with full registration and valid practicing license",
+        "Minimum of 5 years post-qualification experience (higher experience is an advantage)",
+        "Proven experience supervising clinical staff and managing clinical operations",
+        "Strong knowledge of clinical governance, quality improvement, and patient safety",
+        "Excellent communication, leadership, and decision-making skills",
+        "Ability to build systems, enforce standards, and maintain calm leadership under pressure"
+      ],
+      "responsibilities": [
+        "Provide clinical oversight and ensure high-quality, patient-centered care",
+        "Supervise clinical workflows, documentation, and adherence to protocols",
+        "Lead clinical governance activities: audits, risk management, incident review, and quality improvement",
+        "Support team performance through mentoring, training, and clear clinical supervision",
+        "Collaborate with management to align clinical goals with operational performance",
+        "Ensure compliance with regulatory standards and ethical practice",
+        "Drive continuous improvement in patient experience, safety, and clinical outcomes"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-11",
+      "deadline": "2026-02-28",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/senior-medical-officer-clinical-director-289",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Optician",
+      "company": "Skipper Eye-Q Hospitals Nigeria Limited",
+      "location": "Victoria Island, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "",
+      "qualification": "Diploma in Dispensing Opticianry",
+      "requirements": [],
+      "responsibilities": [
+        "Interpreting the results of eye examinations, using prescriptions written by Optometrists and Ophthalmologists",
+        "Advising patients on frame weights, materials, styles and colors",
+        "Recommending lenses, coatings and frames to suit customers’ needs",
+        "Measuring customers to determine suitable types and styles of frames",
+        "Adjusting frames so they fit properly",
+        "Preparing orders for glasses and contact lenses by checking prescriptions, lens thickness and other specifications",
+        "Making sure that orders for glasses and contact lenses have been processed accurately."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-11",
+      "deadline": "2026-03-31",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/optician-288",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Registered Nurse",
+      "company": "Montaigne AH Limited (Montaigne Place)",
+      "location": "Ajah, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "NGN150,000 / monthly",
+      "experience": "1–2 years clinical experience",
+      "qualification": "Registered Nurse (RN)",
+      "requirements": [
+        "Valid practicing license",
+        "Strong communication and interpersonal skills",
+        "Ability to work independently and as part of a team",
+        "Professional, compassionate, and detail-oriented."
+      ],
+      "responsibilities": [
+        "Provide direct patient care and nursing support",
+        "Administer medications and treatments as prescribed",
+        "Monitor and record patients’ vital signs and medical information",
+        "Assist doctors during procedures",
+        "Maintain accurate patient records",
+        "Ensure compliance with healthcare regulations and safety standards",
+        "Educate patients and their families on health management"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-11",
+      "deadline": "2026-03-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/registered-nurse-287",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Laboratory Scientist (Oncology Diagnostics)",
+      "company": "Katchey Company Limited",
+      "location": "Ikeja, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "NGN400,000 / monthly",
+      "experience": "2–5 years",
+      "qualification": "Bachelor of Medical Laboratory Science ( B.MLS )",
+      "requirements": [
+        "Valid MLSCN practicing license",
+        "Certification in PCR, qPCR, or NGS is an added advantage",
+        "Experience working in an ISO 15189-accredited laboratory is preferred"
+      ],
+      "responsibilities": [
+        "Perform oncology molecular tests including PCR/qPCR, NGS workflows, DNA/RNA extraction, and tumor biomarker analysis",
+        "Support immunohistochemistry (IHC), cytology, and fluorescence-based assays",
+        "Process and accession samples while maintaining proper documentation and chain-of-custody",
+        "Ensure contamination control and follow unidirectional laboratory workflows",
+        "Analyze, interpret, and accurately document test results",
+        "Support method validation and performance evaluation activities",
+        "Ensure compliance with MLSCN guidelines and ISO 15189 standards",
+        "Participate in internal quality control (IQC), external quality assessment (EQA), and proficiency testing",
+        "Maintain equipment calibration, servicing, and troubleshooting records",
+        "Follow SOPs and maintain accurate laboratory documentation",
+        "Manage inventory of reagents and laboratory consumables",
+        "Participate in laboratory audits and inspections",
+        "Ensure biosafety and biosecurity standards are strictly followed",
+        "Train and mentor junior staff and interns",
+        "Handle data entry, reporting, and use of Laboratory Information Systems (LIS)"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-11",
+      "deadline": "2026-02-22",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-scientist-oncology-diagnostics-286",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Practice & Quality Assurance Coordinator (REACH)",
+      "company": "EHA Clinics",
+      "location": "Kuje, Abuja, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Healthcare Management",
+      "salary": "NGN450,000 / monthly",
+      "experience": "Minimum of 2 years post NYSC",
+      "qualification": "Degree In Medicine - MBBS, MbChB, MD, DO",
+      "requirements": [
+        "Completion of compulsory internship",
+        "Up-to-date registration and license from the MDCN",
+        "Completion of BLS, ACLS"
+      ],
+      "responsibilities": [
+        "Coordinate and oversee daily administrative activities of the clinic",
+        "Supervise employed support staff",
+        "Develop medical policies and procedures and monitor adherence",
+        "Review medical KPIs and OKRs regularly",
+        "Conduct face-to-face medical consultations"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-11",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/practice-quality-assurance-coordinator-reach-285",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Lead Nurse - Executive Unit",
+      "company": "Lily Hospitals Limited",
+      "location": "Benin City, Edo",
+      "job_type": "Full-time",
+      "job_category": "Nurse",
+      "salary": "n,",
+      "experience": "Minimum of three to five years of clinical experience",
+      "qualification": "bsc",
+      "requirements": [
+        "Registered Nurse (RN) and/or Registered Midwife (RM) with a valid practising license from NMCN",
+        "Bachelor's degree (B.NSc) is an added advantage",
+        "Must possess a BLS and ACLS training certificate",
+        "Knowledge of the Nurse Practice Act",
+        "Strong proficiency in simulation-based learning, clinical assessments, and student mentorship",
+        "Excellent leadership, communication, and problem-solving skills",
+        "Proficiency in the Microsoft Office Package."
+      ],
+      "responsibilities": [
+        "Deliver and oversee high-quality patient care, including admission assessments, care planning, emergency procedures, and the use of medical devices and life-support systems.",
+        "Ensure compliance with patient safety, privacy, and nursing standards, while guiding staff nurses in executing care plans using approved nursing processes.",
+        "Lead, supervise, and support nursing staff to ensure consistent, quality care.",
+        "Assign duties, manage schedules and rotations, conduct performance evaluations, and set SMART KPIs.",
+        "Recruit, orient, train, and develop nursing staff, fostering continuous professional growth.",
+        "Ensure adequate stock levels, functional equipment, and well-maintained wards.",
+        "Oversee daily equipment checks and ensure smooth unit operations aligned with hospital objectives and protocols.",
+        "Prepare patients for consultations, procedures, and surgeries; administer medications as prescribed.",
+        "Collaborate with physicians on treatment plans, explain procedures and results, and provide emotional support to patients and families.",
+        "Maintain a safe, clean, and infection-controlled environment.",
+        "Ensure adherence to regulatory, accreditation, and quality standards, including ISO, COHSASA, Kaizen, and Nigeria Data Protection Regulation (NDPR 2019)."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-02-11",
+      "deadline": "2026-02-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Lead-Nurse-Executive-Unit-at-Lily-Hospitals-Limited?pid=77269",
+      "_source": "medicalworldnigeria"
+    },
     {
       "job_title": "Associate Director, Technical",
       "company": "FHI 360",
@@ -491,43 +880,6 @@
       "contact_email": "",
       "contact_phone": "+234 806 292 4537",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Officers-at-St-Camillus-Catholic-Hospital-and-College-of-Nursing-Sciences?pid=77264",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Senior Medical Officer / Clinical Director",
-      "company": "Harley and Wall Healthcare and Business Consulting",
-      "location": "Lagos",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "N500,000 - N750,000 / Month",
-      "experience": "5",
-      "qualification": "bsc",
-      "requirements": [
-        "MBBS (or equivalent) with full registration and valid practicing license",
-        "Minimum of 5 years post-qualification experience (higher experience is an advantage)",
-        "Proven experience supervising clinical staff and managing clinical operations",
-        "Strong knowledge of clinical governance, quality improvement, and patient safety",
-        "Excellent communication, leadership, and decision-making skills",
-        "Ability to build systems, enforce standards, and maintain calm leadership under pressure"
-      ],
-      "responsibilities": [
-        "Provide clinical oversight and ensure high-quality, patient-centered care",
-        "Supervise clinical workflows, documentation, and adherence to protocols",
-        "Lead clinical governance activities: audits, risk management, incident review, and quality improvement",
-        "Support team performance through mentoring, training, and clear clinical supervision",
-        "Collaborate with management to align clinical goals with operational performance",
-        "Ensure compliance with regulatory standards and ethical practice",
-        "Drive continuous improvement in patient experience, safety, and clinical outcomes"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-10",
-      "deadline": "2026-02-28",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Senior-Medical-Officer-Clinical-Director-at-Harley-and-Wall-Healthcare-and-Business-Consulting?pid=77258",
       "_source": "medicalworldnigeria"
     },
     {
@@ -3827,110 +4179,6 @@
       "_source": "medlocum"
     },
     {
-      "job_title": "Technical Advisor - Lab, IPC, Supply Chain",
-      "company": "Jhpiego Nigeria",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "Minimum of 8–10 years’ experience",
-      "qualification": "Advanced degree in Medical Laboratory Sciences, Microbiology, Public Health, Epidemiology, or a related field.",
-      "requirements": [
-        "Minimum of 8–10 years’ experience in laboratory systems strengthening, diagnostics, or IPC within health systems.",
-        "Demonstrated experience with molecular diagnostics and/or rapid diagnostic testing programs.",
-        "Laboratory quality management systems and accreditation processes.",
-        "IPC programming in health facilities or laboratory settings.",
-        "Strong familiarity with Global Fund C19RM investments related to laboratory systems, diagnostics, and IPC.",
-        "Experience working with national laboratory networks, Ministries of Health, and development partners.",
-        "Prior involvement in assessments, evaluations, or technical reviews is highly desirable."
-      ],
-      "responsibilities": [
-        "Provide expert input into evaluation questions and indicators related to molecular and rapid diagnostic testing capacity.",
-        "Review and validate quantitative findings related to testing capacity and coverage.",
-        "Assess the extent to which C19RM investments strengthened laboratory systems.",
-        "Contribute concise technical inputs for synthesis sections related to laboratory and diagnostics impact."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/technical-advisor-lab-ipc-supply-chain-214",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Technical Lead (CRoWN)",
-      "company": "Solina Centre for International Development and Research (SCIDaR)",
-      "location": "Nigeria, Afghanistan",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "7-10 years",
-      "qualification": "Bachelor's Degree in Public Health, Medicine, Health Administration, or related fields. Master's degree preferred",
-      "requirements": [
-        "Minimum of 7-10 years of experience in health systems strengthening",
-        "Significant experience working on primary healthcare or community-level interventions",
-        "Demonstrated experience in capacity building, quality improvement, or program implementation in resource-limited settings",
-        "Prior experience working within or closely with government systems is required"
-      ],
-      "responsibilities": [
-        "Lead CRoWN adoption approaches for new geographies",
-        "Serve as the primary liaison with state and national governments, development partners, and other stakeholders",
-        "Oversee end-to-end implementation of the CRoWN initiative in each state and country",
-        "Provide technical assistance and advisory support to SECs and the Board Secretariat",
-        "Support the establishment, strengthening, and functioning of SECs as state-level coordination platforms",
-        "Coordinate data collection, validation, and use across geographies to monitor progress",
-        "Facilitate the identification of bottlenecks and drive the implementation of necessary reforms",
-        "Maintain strong, collaborative relationships with government MDAs, implementing partners, and donor stakeholders",
-        "Guide strategic thinking and problem-solving for state teams",
-        "Provide mentorship and leadership to state-level CRoWN teams",
-        "Advocate for the implementation of requisite reforms in coordination, linkages with partners, and government stakeholders"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/technical-lead-crown-213",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Technical Advisor - Medical Oxygen, Respiratory Care & Therapeutics",
-      "company": "Jhpiego Nigeria",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "Minimum of 8–10 years’ experience",
-      "qualification": "Advanced degree in Medical Laboratory Sciences, Microbiology, Public Health, Epidemiology, or a related field.",
-      "requirements": [
-        "Demonstrated experience with molecular diagnostics and/or rapid diagnostic testing programs",
-        "Experience working with national laboratory networks, Ministries of Health, and development partners",
-        "Prior involvement in assessments, evaluations, or technical reviews is highly desirable.",
-        "Strong familiarity with Global Fund C19RM investments related to laboratory systems, diagnostics, and IPC."
-      ],
-      "responsibilities": [
-        "Provide expert input into evaluation questions and indicators",
-        "Review and validate quantitative findings related to testing capacity and coverage",
-        "Assess the extent to which C19RM investments strengthened laboratory systems",
-        "Provide concise technical inputs for synthesis sections related to laboratory impact",
-        "Contribute technical content related to laboratory systems, diagnostics, and IPC strengthening."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/technical-advisor-medical-oxygen-respiratory-care-therapeutics-212",
-      "_source": "medlocum"
-    },
-    {
       "job_title": "Epidemiologist",
       "company": "Medecins Sans Frontiers, Switzerland",
       "location": "Bauchi, Nigeria",
@@ -4165,208 +4413,6 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/nursing-head-alfred-victoria-associates-2/",
       "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Adhoc Consultant",
-      "company": "Jhpiego Nigeria",
-      "location": "Ebonyi, Kwara, Kano, Katsina and Kebbi, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "Seventy thousand Naira (N70,000) per day",
-      "experience": "5 years post-fellowship",
-      "qualification": "Fellowship in Pediatrics; Advanced degree in Paediatrics/Neonatology",
-      "requirements": [
-        "Fellowship in Pediatrics",
-        "Advanced degree in Paediatrics/Neonatology",
-        "Fellowship in Paediatrics from recognized postgraduate medical training institutions",
-        "5 years post-fellowship experience",
-        "Working knowledge of Hausa language is an added advantage",
-        "Ability to travel 70%",
-        "Up-to-date annual practicing license with Medical and Dental Council of Nigeria",
-        "Strong coaching, mentoring and facilitation skills",
-        "Strong analytical and communication skills"
-      ],
-      "responsibilities": [
-        "Conduct preliminary orientation of healthcare providers to the lifesaving equipment supplied to the health facilities.",
-        "Setup newborn corners in each of the health facilities.",
-        "Conduct in-depth training of the health care workers at the facilities on how to use and troubleshoot the equipment supplied.",
-        "Conduct post-training competency assessment of the previously trained and mentored health care workers.",
-        "Report writing on the exercise."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-30",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/adhoc-consultant-210",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Senior Delft Light Case Finding Associate",
-      "company": "KNCV Tuberculosis Foundation",
-      "location": "Anambra, Nigeria",
-      "job_type": "Contract",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "At least 2-4 years",
-      "qualification": "Holds a Science Degree or a university graduate of medical radiology or an X-ray technologist",
-      "requirements": [
-        "A current X-Ray Technology certificate or license from a program approved in Nigeria will be an added advantage.",
-        "Experience in working in the fields of TB/HIV, community TB, and MDR TB, with extensive field experience in Nigeria.",
-        "Experience in managing a team.",
-        "Experience in coordinating multiple party stakeholders.",
-        "Experience in wide scale community-based intervention.",
-        "Experience in community mobilization efforts.",
-        "Proven experience in coaching and training.",
-        "Experience managing complex health data."
-      ],
-      "responsibilities": [
-        "Participates in community engagement and mobilization activities for TB ACF.",
-        "Conducts screening of clients to identify presumptive TB for digital x-ray examination when applicable.",
-        "Will ensure sputum collection from identified presumptive and transportation in ice cold boxes for GeneXpert or TB LAM diagnostic evaluation.",
-        "Prepares the client for radiological procedures.",
-        "Takes measures to protect clients, oneself and other staff from radiation exposure according to best practices and manufacturer’s guidelines.",
-        "Takes quality diagnostic radiographs of clients according to established procedures for patient care and safety.",
-        "Ensures a maximum of two and half minutes is spent per client for x-ray, while maintaining a repeat rate of two percent or less.",
-        "Accurately documents completed radiological procedures, completely and promptly.",
-        "Stores all radiographs in an easily retrievable manner.",
-        "Ensures that all equipment is in good working condition and in compliance with applicable laws and regulations.",
-        "Reports immediately any equipment malfunctions to the Cluster Laboratory Advisor where available /Senior Program Officer.",
-        "Maintains mobile x-ray unit, stock necessary radiological supplies.",
-        "Makes suggestions to improve work methods.",
-        "Serves as the Radiation Safety Officer (RSO).",
-        "Keeps record of the dosimetry readings.",
-        "Trains new employees.",
-        "Works closely with the other team members for the purposes of prompt diagnosis and treatment of patients.",
-        "Performs any other tasks as directed by the Cluster Laboratory Advisor where available /Senior Program Officer."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-30",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/senior-delft-light-case-finding-associate-209",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Immunization (EPI) Officer (Coordination and Vaccine Management)",
-      "company": "UNICEF",
-      "location": "Dakar, Senegal",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "Minimum Two (2) years of relevant professional work experience.",
-      "qualification": "University degree in Social Sciences, Medicine, Health, Public Health, Family Health, Child Development, Nursing, or related fields.",
-      "requirements": [
-        "Field work experience.",
-        "Experience in knowledge management.",
-        "Training and experience in social welfare, Immunization/health care or vaccine management.",
-        "Fluency in French is required.",
-        "Knowledge of another official UN language (English) or local language is an asset."
-      ],
-      "responsibilities": [
-        "Accurate and complete programme/project management information is available for effective budget preparation.",
-        "Project efficiency and vaccination coverage are enhanced through effective implementation follow-on.",
-        "Contributions to the development and implementation of immunization strategies and approaches through collaboration with partners.",
-        "Timely progress reports and project work plans are prepared.",
-        "Adherence to established financial and supply documentation.",
-        "Effective vaccine logistics systems are in place and functioning.",
-        "Timely and accurate vaccine stock reports and forecasts are produced.",
-        "Strengthening the capacities of Country Office staff through capacity building activities.",
-        "Effective communication and networking with internal and external partners.",
-        "Emergency preparedness is maintained and coordinated responses are provided."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-30",
-      "deadline": "2026-02-05",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/temporary-appointment-immunization-epi-officer-coordination-and-vaccine-management-nob-ta-position-208",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Maternal Health Clinical Mentor",
-      "company": "Project Hope",
-      "location": "Abuja (FCT), Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "5 – 7 years",
-      "qualification": "Bachelor’s degree required; postgraduate qualification in Public Health, Maternal Health, or a related field is an added advantage",
-      "requirements": [
-        "Registered Nurse/Midwife or Medical Doctor with valid professional licensure in Nigeria",
-        "Minimum of 5 – 7 years of progressive experience in maternal health service delivery, clinical training, or mentorship",
-        "Strong understanding of Nigeria’s RMNCAEH policies, guidelines, and health system structures",
-        "Proven experience in project management, including planning, coordination, and reporting",
-        "Solid experience in monitoring and evaluation, data use for quality improvement, and familiarity with DHIS2 or similar platforms",
-        "Strong clinical expertise in maternal health and emergency obstetric care",
-        "Excellent mentorship, coaching, and facilitation skills",
-        "Strong project management and organizational abilities",
-        "Advanced analytical and problem-solving skills",
-        "Excellent written and verbal communication skills",
-        "Ability to work effectively with government counterparts and multidisciplinary teams",
-        "High level of professionalism, integrity, and cultural sensitivity"
-      ],
-      "responsibilities": [
-        "Provide on-site and remote clinical mentorship to nurses, midwives, doctors, managers, and facility teams on priority maternal health interventions",
-        "Support the translation of national maternal health guidelines and protocols into routine clinical practice through coaching",
-        "Identify clinical performance gaps and tailor mentorship plans to address individual and facility-level needs",
-        "Support facility-based quality improvement processes, including plan–do–study–act (PDSA) cycles",
-        "Work with facility teams to interpret routine service data, identify trends, and use data for decision-making",
-        "Contribute to the development and execution of detailed mentorship and implementation plans aligned with project objectives",
-        "Work closely with State and LGA health authorities and facility leadership to ensure alignment with government priorities",
-        "Support the design and use of mentorship monitoring tools to track provider performance"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-30",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/maternal-health-clinical-mentor-207",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Early-Career Postdoctoral Research Fellow (Immunology / Virology)",
-      "company": "Institute of Genomics and Global Health (IGH)",
-      "location": "Ede, Osun, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "",
-      "qualification": "PhD in Immunology, Virology, Molecular Biology, Bioinformatics, or related field",
-      "requirements": [
-        "PhD in Immunology, Virology, Molecular Biology, Bioinformatics, or related field",
-        "Strong dry-lab research background",
-        "Working knowledge of wet-lab techniques",
-        "Evidence of publications or manuscripts in preparation",
-        "Experience supervising or co-supervising students."
-      ],
-      "responsibilities": [
-        "Lead dry-lab data analysis, visualization & interpretation",
-        "Support wet-lab immunological & molecular assays",
-        "Integrate dry- and wet-lab research outputs",
-        "Supervise & mentor undergraduate and postgraduate students",
-        "Contribute to manuscripts, grant writing & reports",
-        "Participate in lab meetings, collaborations & project reviews",
-        "Support capacity building and research development in Nigeria"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-01-30",
-      "deadline": "2026-02-28",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/early-career-postdoctoral-research-fellow-immunology-virology-205",
-      "_source": "medlocum"
     },
     {
       "job_title": "Institute Directors – Health & Education Institutes",
@@ -5564,37 +5610,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/NYSC-Medical-Doctor-at-Tractrac-MSL?pid=77044",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Assistant Lecturer (Nursing Science)",
-      "company": "JV Management Consulting",
-      "location": "Ihugh, Benue",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "CONUASS 2",
-      "experience": "3 years",
-      "qualification": "B.NSc. in Nursing Science and M.Sc. in Nursing",
-      "requirements": [
-        "B.NSc. (Nursing Science) from a recognised university",
-        "M.Sc. in Nursing (any recognised specialty)",
-        "Current registration and valid practising licence with NMCN",
-        "3 years post-qualification experience"
-      ],
-      "responsibilities": [
-        "Assist in delivering undergraduate Nursing courses",
-        "Participate in skills-lab instruction",
-        "Participate in departmental research"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-01-20",
-      "deadline": "2026-02-01",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Assistant-Lecturer-Nursing-Science-at-University-of-Agriculture-Science-and-Technology-UAST?pid=77046",
       "_source": "medicalworldnigeria"
     },
     {
