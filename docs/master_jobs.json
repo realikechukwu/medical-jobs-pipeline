@@ -1,15 +1,519 @@
 {
   "metadata": {
-    "extracted_at": "2026-02-12T04:40:57.327137",
+    "extracted_at": "2026-02-13T04:37:46.761284",
     "model": "gpt-4o-mini",
     "total_processed": 244,
-    "duplicates_removed": 21,
+    "duplicates_removed": 23,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 31
+    "openai_calls": 34
   },
   "jobs": [
+    {
+      "job_title": "Gynecologist",
+      "company": "Emel Hospitals Limited",
+      "location": "Festac, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "3 – 5 years post-fellowship experience",
+      "qualification": "MBBS or equivalent medical degree",
+      "requirements": [
+        "Valid license to practice medicine and obstetrics/gynecology in Nigeria",
+        "Residency training in Obstetrics & Gynecology (e.g., FWACS, FMCOG, or equivalent)",
+        "Proven experience in surgical procedures and management of complex gynecological conditions",
+        "Proficiency in the use of EMR systems and ultrasound equipment is an advantage"
+      ],
+      "responsibilities": [
+        "Provide comprehensive gynecological and obstetric care to patients",
+        "Diagnose and treat conditions related to the female reproductive system",
+        "Manage antenatal, intrapartum, and postnatal care for pregnant women",
+        "Conduct and interpret relevant investigations including ultrasound scans and laboratory tests",
+        "Perform minor and major gynecological surgeries including C-sections, fibroid removals, hysterectomies, etc.",
+        "Counsel patients on family planning, fertility treatments, menopause, and other women’s health issues",
+        "Collaborate with other medical professionals including pediatricians, anesthetists, and surgeons for multidisciplinary care",
+        "Participate in on-call duties for obstetric and gynecological emergencies",
+        "Maintain accurate medical records and ensure proper documentation in line with hospital policy",
+        "Ensure patient confidentiality, dignity, and a high standard of patient-centered care",
+        "Participate in clinical audits, case reviews, continuous medical education (CME), and quality improvement initiatives"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-12",
+      "deadline": "2026-02-28",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/gynecologist-307",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Pharmacist",
+      "company": "Future Moves Recruitment (FMR) Agency Limited",
+      "location": "Gbagada, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Pharmacist",
+      "salary": "NGN250,000 - NGN350,000 / monthly",
+      "experience": "2-5 years",
+      "qualification": "Bachelor of Pharmacy (B.Pharm) or Doctor of Pharmacy (Pharm.D)",
+      "requirements": [
+        "Current license to practice as a Pharmacist in Nigeria (PCN registration)",
+        "Minimum of 2-5 years post-NYSC experience in community or retail pharmacy practice",
+        "Strong knowledge of drugs, pharmaceutical care, and regulatory compliance",
+        "Excellent communication, counselling, and customer service skills",
+        "Ability to supervise and motivate staff",
+        "Proficiency in pharmacy software and basic IT tools is an added advantage."
+      ],
+      "responsibilities": [
+        "Dispense prescription and over-the-counter (OTC) medications accurately and efficiently.",
+        "Provide medication counselling, drug information, and health advice to patients.",
+        "Providing medical services, such as taking blood pressure, temperature measurements, and checking blood sugar levels.",
+        "Ensure compliance with all regulatory requirements of the Pharmacists Council of Nigeria (PCN), NAFDAC, and other relevant authorities.",
+        "Maintain accurate patient medication records and pharmacy documentation.",
+        "Supervise and train pharmacy technicians, interns, and other support staff.",
+        "Monitor inventory levels, check for expiries, and ensure proper storage of drugs.",
+        "Participate in community health outreach, patient education, and wellness programs.",
+        "Support business operations by promoting pharmaceutical services and ensuring excellent customer experience.",
+        "Prepare and submit periodic reports as required by regulatory bodies and management.",
+        "Patient clerking and recommendations",
+        "Monitoring customers’ drug therapies, advising interventions, and counseling on any potential side effects.",
+        "Completing operational requirements of the pharmacy, including verifying order entries, maintaining records of controlled substances, charges, and removing expired and/or damaged drugs from the pharmacy’s inventory.",
+        "Adhering to applicable legal rules, regulations, and procedures governing pharmaceutical practice.",
+        "Additional duties as needed from a pharmacist."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-12",
+      "deadline": "2026-02-28",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/pharmacist-306",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Laboratory Scientist (Haematologist)",
+      "company": "Lily Hospitals Limited",
+      "location": "Warri, Delta, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "Minimum of 2 years relevant experience",
+      "qualification": "BSc / BMLS with specialization in Haematology, Valid MLSCN practicing license",
+      "requirements": [
+        "BSc / BMLS with specialization in Haematology",
+        "Valid MLSCN practicing license",
+        "Minimum of 2 years relevant experience",
+        "Strong analytical and communication skills",
+        "Attention to detail and commitment to quality care"
+      ],
+      "responsibilities": [
+        "Perform routine and specialized haematology tests",
+        "Analyze and interpret test results accurately",
+        "Operate and maintain laboratory equipment",
+        "Collect and process blood samples",
+        "Ensure compliance with safety and quality standards",
+        "Maintain accurate laboratory records",
+        "Work closely with clinical teams"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-12",
+      "deadline": "2026-02-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-scientist-haematologist-305",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Optician",
+      "company": "Lily Hospitals Limited",
+      "location": "Port Harcourt, Rivers, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "1 to 3 years",
+      "qualification": "Ordinary Diploma (OND) or Higher National Diploma (HND) in Dispensing Opticianry or related science Degree",
+      "requirements": [
+        "Minimum academic qualification of an Ordinary Diploma (OND) or a Higher National Diploma (HND) in Dispensing Opticianry or any related science Degree.",
+        "Minimum of 1 to 3 years relevant work experience preferably in the health or Service sector.",
+        "Membership of a relevant professional body such as Association of Nigeria Dispensing Opticians (ANDO) or Optometry and Dispensing Optician Board of Nigeria (O.D.O.B.N).",
+        "Knowledge of the Microsoft office package.",
+        "Outstanding communication (oral and written), interpersonal and people MANAGEMENT skills.",
+        "Possess high degree of accuracy and attention to details."
+      ],
+      "responsibilities": [
+        "Interpret prescriptions and assist patients in selecting appropriate eyeglasses or contact lenses.",
+        "Guide patients in frame selection based on face shape, color, and style preferences.",
+        "Perform fittings and adjustments to ensure proper alignment, comfort, and vision correction.",
+        "Collaborate with optical labs to ensure timely delivery and address order concerns.",
+        "Fabricate, grind, and polish lenses to precise specifications.",
+        "Measure and verify lenses to ensure they meet prescription requirements and are defect-free.",
+        "Maintain accurate patient records, prescriptions, and transactions.",
+        "Stay updated on optical technology, lens materials, and industry trends."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-12",
+      "deadline": "2026-02-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/optician-304",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Laboratory Technician",
+      "company": "Lily Hospitals Limited",
+      "location": "Benin City, Edo, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [
+        "Collect, sort, and label patient specimens, including various types.",
+        "Carry out basic laboratory procedures, including slide preparation, staining, and routine tests.",
+        "Maintain a clean and organized laboratory environment, including cleaning test tubes, apparatus, and worktops.",
+        "Operate autoclaves to sterilize glassware and instruments.",
+        "Prepare, pack, and dispatch referral samples, ensuring compliance with health and safety regulations.",
+        "Transport specimens from collection sites to the laboratory.",
+        "Respond to inquiries from patients and health professionals, acting as the primary contact for result and specimen-related queries.",
+        "Print, sort, and distribute laboratory reports.",
+        "Enter patient details into the laboratory database and maintain records of equipment temperatures.",
+        "Explain laboratory procedures to patients clearly and concisely.",
+        "Organize and clean the reception area to ensure sterility and readiness.",
+        "Any other task as assigned to you by Senior Leadership."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-12",
+      "deadline": "2026-02-18",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-technician-303",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "General Dentist",
+      "company": "My-HRpro Consulting",
+      "location": "Lekki Phase 1, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Dentist",
+      "salary": "",
+      "experience": "Minimum of 1 year of relevant experience",
+      "qualification": "BDS qualification with current practicing license",
+      "requirements": [
+        "BDS qualification with current practicing license",
+        "Minimum of 1 year of relevant experience",
+        "Strong clinical and communication skills",
+        "Ability to work effectively in a team-oriented environment."
+      ],
+      "responsibilities": [
+        "Restorative treatments",
+        "Crown preparation and prosthetics",
+        "Orthodontic procedures",
+        "Surgical procedures",
+        "Root canal treatments"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-12",
+      "deadline": "2026-03-31",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/general-dentist-302",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Lead Nurse - Executive Unit",
+      "company": "Lily Hospitals Limited",
+      "location": "Benin City, Edo, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "Minimum of three to five years of clinical experience",
+      "qualification": "Registered Nurse (RN) and/or Registered Midwife (RM) with a valid practising license from NMCN; Bachelor's degree (B.NSc) is an added advantage",
+      "requirements": [
+        "Registered Nurse (RN) and/or Registered Midwife (RM) with a valid practising license from NMCN",
+        "Bachelor's degree (B.NSc) is an added advantage",
+        "Minimum of three to five years of clinical experience",
+        "Must possess a BLS and ACLS training certificate",
+        "Knowledge of the Nurse Practice Act",
+        "Strong proficiency in simulation-based learning, clinical assessments, and student mentorship",
+        "Excellent leadership, communication, and problem-solving skills",
+        "Proficiency in the Microsoft Office Package"
+      ],
+      "responsibilities": [
+        "Deliver and oversee high-quality patient care, including admission assessments, care planning, emergency procedures, and the use of medical devices and life-support systems",
+        "Ensure compliance with patient safety, privacy, and nursing standards, while guiding staff nurses in executing care plans using approved nursing processes",
+        "Lead, supervise, and support nursing staff to ensure consistent, quality care",
+        "Assign duties, manage schedules and rotations, conduct performance evaluations, and set SMART KPIs",
+        "Recruit, orient, train, and develop nursing staff, fostering continuous professional growth",
+        "Ensure adequate stock levels, functional equipment, and well-maintained wards",
+        "Oversee daily equipment checks and ensure smooth unit operations aligned with hospital objectives and protocols",
+        "Prepare patients for consultations, procedures, and surgeries; administer medications as prescribed",
+        "Collaborate with physicians on treatment plans, explain procedures and results, and provide emotional support to patients and families",
+        "Maintain a safe, clean, and infection-controlled environment",
+        "Ensure adherence to regulatory, accreditation, and quality standards, including ISO, COHSASA, Kaizen, and Nigeria Data Protection Regulation (NDPR 2019)"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-12",
+      "deadline": "2026-02-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/lead-nurse-executive-unit-301",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Officer",
+      "company": "St. Camillus Catholic Hospital & College of Nursing Sciences",
+      "location": "Uromi, Edo, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "",
+      "qualification": "MBBS / MBChB degree from a recognized university; Full Registration with the Medical and Dental Council of Nigeria (MDCN) with a current practicing license.",
+      "requirements": [
+        "MBBS / MBChB degree from a recognized university.",
+        "Full Registration with the Medical and Dental Council of Nigeria (MDCN) with a current practicing license.",
+        "Good post-NYSC experience in a hospital setting.",
+        "Strong clinical skills in diagnosis, treatment, and emergency care.",
+        "Proficiency in medical documentation and healthcare software.",
+        "Strong communication and teamwork skills will be an added advantage."
+      ],
+      "responsibilities": [
+        "Providing clinical care to patients in out-patient and in-patient departments.",
+        "Collaborating with the healthcare team to ensure high-quality patient management.",
+        "Supervising clinical staff and ensuring adherence to medical ethics and protocols.",
+        "Managing medical emergencies and performing minor surgical procedures where necessary.",
+        "Ensuring compliance with hospital and national healthcare standards."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-12",
+      "deadline": "2026-02-20",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-officers-300",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Sonographer, Radiographer, Pharmacist, Laboratory Manager",
+      "company": "Arkounting",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Pharmacist",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-12",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/clinical-roles-sonographer-radiographer-pharmacist-laboratory-manager-299",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Registered Nurse ( Temporary – Maternity Cover)",
+      "company": "Tofaans Hospital",
+      "location": "Ayobo, Lagos, Nigeria",
+      "job_type": "Temporary",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "1–2 years",
+      "qualification": "Qualified and certified/registered Nurse",
+      "requirements": [
+        "Valid practicing license (where applicable)",
+        "Minimum 1–2 years nursing experience preferred",
+        "Strong communication and interpersonal skills",
+        "Compassionate, patient-focused, and professional",
+        "Ability to work independently and as part of a team",
+        "Must be available to start immediately"
+      ],
+      "responsibilities": [
+        "Provide high-quality nursing care to patients",
+        "Monitor and record patients’ vital signs and medical information",
+        "Administer medications and treatments as prescribed",
+        "Maintain accurate patient records and documentation",
+        "Ensure proper hygiene, infection control, and safety standards",
+        "Educate patients and families on treatment plans and aftercare",
+        "Respond promptly to medical emergencies",
+        "Maintain confidentiality and professional conduct at all times"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-12",
+      "deadline": "2026-02-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/registered-nurse-temporary-maternity-cover-295",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Provider Manager – Nurse",
+      "company": "International Health Management Services (IHMS)",
+      "location": "Ogui, Enugu, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "N200,000 – N300,000 per month",
+      "experience": "5",
+      "qualification": "bsc",
+      "requirements": [
+        "Strong knowledge of healthcare regulations, policies, and clinical best practices.",
+        "Excellent communication and interpersonal skills.",
+        "Strong analytical and problem-solving abilities.",
+        "Ability to work collaboratively across departments."
+      ],
+      "responsibilities": [
+        "Manage and maintain relationships with healthcare providers in the network.",
+        "Monitor provider performance and ensure compliance with healthcare standards and regulatory requirements.",
+        "Work closely with the Claims Department to review and validate medical claims.",
+        "Support the Call Center team in resolving provider-related inquiries and complaints.",
+        "Ensure adherence to healthcare regulations and internal policy guidelines.",
+        "Participate in the onboarding and credentialing of new providers."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-02-12",
+      "deadline": "2026-02-19",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/provider-manager-nurse-international-health-management-services-ihms-2/",
+      "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Medical Officer",
+      "company": "University of Agriculture, Science, and Technology (UAST)",
+      "location": "Ihugh, Benue, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "3",
+      "qualification": "bsc",
+      "requirements": [
+        "MBBS / MBChB from a recognised university",
+        "Completion of Housemanship and NYSC (or exemption)",
+        "Full registration and current practising licence with MDCN",
+        "0-3 years post-qualification clinical experience"
+      ],
+      "responsibilities": [
+        "Conduct outpatient consultations, diagnosis and treatment of common illnesses",
+        "Provide first aid and manage medical emergencies prior to referral",
+        "Conduct medical screenings, fitness-to-study/work assessments and surveillance",
+        "Support immunisation, communicable disease control and health education programmes",
+        "Maintain accurate medical records",
+        "Ensure confidentiality, informed consent and ethical medical practice",
+        "Collaborate with nurses, laboratory staff and allied health professionals"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-02-12",
+      "deadline": "2026-03-25",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/medical-officers-university-agriculture-science-technology-uast-2-openings/",
+      "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Nutritionist / Dietitian",
+      "company": "Falcon Peak Solutions Limited",
+      "location": "Egbeda, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Allied Health",
+      "salary": "n,",
+      "experience": "Minimum of 2–3 years in clinical or wellness nutrition practice",
+      "qualification": "Bachelor’s Degree in Nutrition, Dietetics, or related field",
+      "requirements": [
+        "Relevant professional certification and registration (where applicable)",
+        "Strong communication and interpersonal skills",
+        "Ability to interpret medical data and apply evidence-based nutritional guidelines",
+        "Proficiency in using basic computer applications and health record systems",
+        "Strong ethical standards and commitment to client confidentiality",
+        "Proximity to the job location is essential (candidates living nearby will be strongly preferred)",
+        "Excellent analytical and problem-solving skills",
+        "Empathy and strong client engagement skills",
+        "Ability to work independently and within a multidisciplinary team",
+        "Strong organisational and time management skills"
+      ],
+      "responsibilities": [
+        "Conduct comprehensive nutritional assessments for clients/patients",
+        "Develop personalised meal plans and dietary programs based on medical history, lifestyle, and health goals",
+        "Provide nutrition counselling and ongoing support to clients",
+        "Monitor and evaluate clients’ progress, adjusting plans where necessary",
+        "Educate clients on healthy eating habits, portion control, and lifestyle modifications",
+        "Collaborate with healthcare professionals to ensure integrated patient care",
+        "Stay updated with current research and best practices in nutrition and dietetics",
+        "Maintain accurate records and documentation of consultations and treatment plans",
+        "Participate in health promotion programs, workshops, and outreach initiatives where required"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-02-12",
+      "deadline": "2026-02-27",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/nutritionist-dietitian-falcon-peak-solutions-limited/",
+      "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Registered Nurse",
+      "company": "Harvest Feed and Agro Processing Limited",
+      "location": "Ajura–Siun, Obafemi Owode LGA, Ogun",
+      "job_type": "Full-time",
+      "job_category": "Nurse",
+      "salary": "n,",
+      "experience": "3 – 5 years of relevant working experience.",
+      "qualification": "bsc",
+      "requirements": [
+        "Must be a Registered Nurse (RN) with a valid Nursing and Midwifery Council of Nigeria (NMCN) license.",
+        "Experience in industrial, occupational health, or clinic settings is an advantage.",
+        "Good communication, interpersonal, and record-keeping skills.",
+        "Ability to work independently and under pressure.",
+        "Strong sense of responsibility and professionalism."
+      ],
+      "responsibilities": [
+        "Provide first aid and basic medical care to staff and visitors.",
+        "Assess, treat, and manage minor injuries and illnesses.",
+        "Maintain accurate medical records and reports.",
+        "Administer medications as prescribed.",
+        "Monitor staff health and fitness for duty.",
+        "Support occupational health and safety programs.",
+        "Coordinate medical referrals and emergency response when necessary.",
+        "Conduct routine health checks and health awareness programs.",
+        "Ensure cleanliness and proper management of the clinic and medical supplies."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-02-12",
+      "deadline": "2026-02-16",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-at-Harvest-Feed-and-Agro-Processing-Limited?pid=77283",
+      "_source": "medicalworldnigeria"
+    },
     {
       "job_title": "Marketer",
       "company": "Rockages Diagnostic Center",
@@ -356,48 +860,6 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/practice-quality-assurance-coordinator-reach-285",
       "_source": "medlocum"
-    },
-    {
-      "job_title": "Lead Nurse - Executive Unit",
-      "company": "Lily Hospitals Limited",
-      "location": "Benin City, Edo",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "Minimum of three to five years of clinical experience",
-      "qualification": "bsc",
-      "requirements": [
-        "Registered Nurse (RN) and/or Registered Midwife (RM) with a valid practising license from NMCN",
-        "Bachelor's degree (B.NSc) is an added advantage",
-        "Must possess a BLS and ACLS training certificate",
-        "Knowledge of the Nurse Practice Act",
-        "Strong proficiency in simulation-based learning, clinical assessments, and student mentorship",
-        "Excellent leadership, communication, and problem-solving skills",
-        "Proficiency in the Microsoft Office Package."
-      ],
-      "responsibilities": [
-        "Deliver and oversee high-quality patient care, including admission assessments, care planning, emergency procedures, and the use of medical devices and life-support systems.",
-        "Ensure compliance with patient safety, privacy, and nursing standards, while guiding staff nurses in executing care plans using approved nursing processes.",
-        "Lead, supervise, and support nursing staff to ensure consistent, quality care.",
-        "Assign duties, manage schedules and rotations, conduct performance evaluations, and set SMART KPIs.",
-        "Recruit, orient, train, and develop nursing staff, fostering continuous professional growth.",
-        "Ensure adequate stock levels, functional equipment, and well-maintained wards.",
-        "Oversee daily equipment checks and ensure smooth unit operations aligned with hospital objectives and protocols.",
-        "Prepare patients for consultations, procedures, and surgeries; administer medications as prescribed.",
-        "Collaborate with physicians on treatment plans, explain procedures and results, and provide emotional support to patients and families.",
-        "Maintain a safe, clean, and infection-controlled environment.",
-        "Ensure adherence to regulatory, accreditation, and quality standards, including ISO, COHSASA, Kaizen, and Nigeria Data Protection Regulation (NDPR 2019)."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-11",
-      "deadline": "2026-02-17",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Lead-Nurse-Executive-Unit-at-Lily-Hospitals-Limited?pid=77269",
-      "_source": "medicalworldnigeria"
     },
     {
       "job_title": "Associate Director, Technical",
@@ -763,41 +1225,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Medical Laboratory Scientist (Haematologist)",
-      "company": "Lily Hospitals Limited",
-      "location": "Warri, Delta, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "and benefits",
-      "experience": "Minimum of 2 years relevant experience",
-      "qualification": "BSc / BMLS with specialization in Haematology",
-      "requirements": [
-        "BSc / BMLS with specialization in Haematology",
-        "Valid MLSCN practicing license",
-        "Strong analytical and communication skills",
-        "Attention to detail and commitment to quality care."
-      ],
-      "responsibilities": [
-        "Perform routine and specialized haematology tests",
-        "Analyze and interpret test results accurately",
-        "Operate and maintain laboratory equipment",
-        "Collect and process blood samples",
-        "Ensure compliance with safety and quality standards",
-        "Maintain accurate laboratory records",
-        "Work closely with clinical teams"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-10",
-      "deadline": "2026-02-17",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/medical-laboratory-scientist-haematologist-lily-hospitals-limited/",
-      "_source": "jobsinnigeria"
-    },
-    {
       "job_title": "Medical Sales Representatives",
       "company": "an Indigenous Pharmaceutical Company",
       "location": "Nigeria",
@@ -845,41 +1272,6 @@
       "contact_email": "",
       "contact_phone": "08067857731",
       "apply_url": "https://medicalworldnigeria.com/post/NYSC-Medical-Officer-at-a-Private-Specialist-Hospital?pid=77267",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Medical Officer",
-      "company": "St. Camillus Catholic Hospital & College of Nursing Sciences",
-      "location": "Uromi, Edo",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "Christmas bonus",
-      "experience": "in a hospital setting.",
-      "qualification": "bsc",
-      "requirements": [
-        "MBBS / MBChB degree from a recognized university.",
-        "Full Registration with the Medical and Dental Council of Nigeria (MDCN) with a current practicing license.",
-        "Good post-NYSC experience in a hospital setting.",
-        "Strong clinical skills in diagnosis, treatment, and emergency care.",
-        "Proficiency in medical documentation and healthcare software.",
-        "Strong communication and teamwork skills will be an added advantage."
-      ],
-      "responsibilities": [
-        "Providing clinical care to patients in out-patient and in-patient departments.",
-        "Collaborating with the healthcare team to ensure high-quality patient management.",
-        "Supervising clinical staff and ensuring adherence to medical ethics and protocols.",
-        "Managing medical emergencies and performing minor surgical procedures where necessary.",
-        "Ensuring compliance with hospital and national healthcare standards."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-10",
-      "deadline": "2026-02-20",
-      "contact_email": "",
-      "contact_phone": "+234 806 292 4537",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officers-at-St-Camillus-Catholic-Hospital-and-College-of-Nursing-Sciences?pid=77264",
       "_source": "medicalworldnigeria"
     },
     {
@@ -3348,197 +3740,6 @@
       "_source": "medlocum"
     },
     {
-      "job_title": "Clinical Pharmacist (Oncology)",
-      "company": "African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Pharmacist",
-      "salary": "",
-      "experience": "Minimum of 2 years’ experience as a Clinical Pharmacist, preferably in an oncology setting.",
-      "qualification": "Bachelor of Pharmacy (BPharm) or Doctor of Pharmacy (PharmD) from an accredited institution.",
-      "requirements": [
-        "Valid license/registration to practice",
-        "Postgraduate certification or residency training in Oncology Pharmacy (preferred)",
-        "Board Certification in Oncology Pharmacy or equivalent (Desirable)",
-        "Master’s degree in Clinical Pharmacy, Pharmacology, or Oncology (Desirable)",
-        "Additional certifications (e.g., Chemotherapy Compounding Certification, Hazardous Drug Management)",
-        "In-depth knowledge of chemotherapy, immunotherapy, targeted therapy, and supportive care medications",
-        "Good understanding of cancer biology, tumor markers, and pharmacogenomics in oncology treatment",
-        "Familiarity with clinical trial protocols and investigational oncology drugs",
-        "Experience drug interaction screening, therapeutic drug monitoring (TDM), and pharmacokinetics",
-        "Ability to interpret lab results for dose adjustments",
-        "Experience in medication reconciliation, polypharmacy management, and deprescribing in cancer patients",
-        "Proficiency in oncology EHR modules, chemotherapy order entry systems, and clinical decision support tools",
-        "Experience with pharmacy automation (e.g., robotic dispensing, barcode scanning)",
-        "Ability to analyze drug utilization and adverse event data for quality improvement",
-        "Ability to troubleshoot complex drug-related issues (e.g., managing toxicities, drug shortages)"
-      ],
-      "responsibilities": [
-        "Dispense and verify chemotherapy, immunotherapy, and supportive care medications.",
-        "Conduct comprehensive medication reviews for oncology patients to assess appropriateness and safety.",
-        "Monitor for drug interactions, contraindications, and adverse effects specific to cancer therapies.",
-        "Manage high-risk medications (e.g., cytotoxic drugs) following institutional and international safety protocols.",
-        "Ensure proper storage, handling, and disposal of hazardous oncology medications.",
-        "Maintain accurate documentation of all oncology-related prescriptions and interventions.",
-        "Participate in oncology ward rounds and tumor boards to provide pharmacological expertise.",
-        "Collaborate with oncologists to develop individualized treatment plans for patients.",
-        "Recommend evidence-based alternatives for refractory or high-toxicity cases.",
-        "Conduct medication reconciliation during transitions of care (admission, transfer, discharge).",
-        "Provide pharmacokinetic monitoring for drugs with narrow therapeutic indices (e.g., methotrexate).",
-        "Support palliative care teams in pain and symptom management.",
-        "Counsel patients and caregivers on chemotherapy regimens, side effects, and self-management strategies.",
-        "Develop and distribute educational materials tailored to oncology patients (e.g., oral chemotherapy guides).",
-        "Address medication adherence barriers and provide culturally sensitive education.",
-        "Conduct follow-up calls or virtual consultations for high-risk patients post-discharge.",
-        "Educate on infection prevention and neutropenia precautions.",
-        "Facilitate support group sessions or workshops for cancer patients.",
-        "Implement and audit compliance with applicable/ relevant standards for hazardous drug handling.",
-        "Report and analyze adverse drug reactions (ADRs) and near misses in oncology treatments.",
-        "Lead root-cause analyses for medication errors and develop corrective actions.",
-        "Ensure 100% compliance with institutional and international oncology protocols.",
-        "Train staff on safe handling and administration of oncology medications.",
-        "Maintain up-to-date protocols for emergency management of extravasation or hypersensitivity reactions.",
-        "Participate in oncology clinical trials and research projects.",
-        "Evaluate emerging cancer therapies and contribute to formulary reviews.",
-        "Collaborate with oncology teams to develop treatment guidelines and pathways."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-03",
-      "deadline": "2026-02-05",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/clinical-pharmacist-oncology-224",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Haematology Nurse",
-      "company": "African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "Minimum of 3 years of clinical nursing experience, with at least 1 year in haematology",
-      "qualification": "Registered Nurse (RN) qualification with a valid practicing license from the Nursing and Midwifery Council of Nigeria (NMCN)",
-      "requirements": [
-        "Post-basic certification or diploma in Oncology Nursing, Haematology Nursing, or a related specialty is highly desirable.",
-        "Demonstrated competency in chemotherapy administration and safe handling of cytotoxic drugs.",
-        "Experience in managing patients with blood disorders, including transfusion therapy and central line care.",
-        "Strong clinical assessment, critical thinking, and emergency response skills.",
-        "Ability to provide empathetic, patient-centered care in emotionally challenging situations.",
-        "Excellent teamwork, communication, and documentation abilities.",
-        "Proficiency in using electronic medical records and clinical information systems."
-      ],
-      "responsibilities": [
-        "Provide comprehensive nursing care to patients with haematological disorders such as leukaemia, lymphoma, myeloma, anaemia, and clotting disorders.",
-        "Administer chemotherapy, immunotherapy, and other systemic therapies as prescribed, adhering to strict safety protocols.",
-        "Manage complex transfusion therapies, including blood and blood product administration, and monitor for transfusion reactions.",
-        "Perform specialised procedures such as central venous access device care, bone marrow biopsy assistance, and apheresis support.",
-        "Assess and manage treatment-related side effects and disease symptoms, including fatigue, bleeding risks, infections, and pain.",
-        "Implement infection prevention and control measures for immunocompromised patients.",
-        "Provide nutritional support, hydration management, and palliative care interventions as needed.",
-        "Offer psychological and emotional support to patients and families coping with chronic or life-threatening blood disorders.",
-        "Coordinate patient care throughout the treatment pathway, from diagnosis through follow-up.",
-        "Monitor patients for signs of complications, such as neutropenic sepsis, tumour lysis syndrome, or bleeding episodes, and initiate prompt interventions.",
-        "Maintain accurate and detailed records of treatments, responses, and patient assessments.",
-        "Educate patients and caregivers on disease processes, treatment plans, medication management, and self-care strategies.",
-        "Teach infection prevention techniques, signs of complications, and when to seek medical help.",
-        "Provide counselling on lifestyle adjustments, fertility preservation, and long-term survivorship issues.",
-        "Adhere to established clinical guidelines, protocols, and safety standards for haematology nursing.",
-        "Participate in clinical audits, incident reporting, and quality improvement initiatives.",
-        "Stay updated on advancements in haematology treatments, nursing practices, and supportive care."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-03",
-      "deadline": "2026-02-05",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/haematology-nurse-223",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Clinical Assistant Haematologist",
-      "company": "The African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "At least 2 years’ experience in a clinical healthcare environment.",
-      "qualification": "Diploma in a relevant clinical or biomedical science field.",
-      "requirements": [
-        "Proven familiarity with patient safety standards and healthcare regulations.",
-        "Demonstrated proficiency in using Electronic Health Records (EHR) systems."
-      ],
-      "responsibilities": [
-        "Prepare patients for haematological procedures, ensuring informed consent and completing all necessary documentation.",
-        "Provide direct support to clinicians during patient assessments, treatments, and follow-up consultations.",
-        "Accurately monitor and record patient vital signs, laboratory results, and other critical clinical data.",
-        "Assist with the collection, labelling, and transportation of specimens for haematological diagnostics.",
-        "Coordinate and maintain meticulous, up-to-date electronic patient records.",
-        "Efficiently schedule and manage patient appointments, consultations, and follow-up visits.",
-        "Maintain detailed and confidential records of patient histories, treatment plans, and clinical progress notes.",
-        "Handle departmental correspondence, including processing referrals and disseminating lab results.",
-        "Manage the inventory of specialised medical supplies and equipment for the haematology unit.",
-        "Assist with data entry and contribute to the tracking of patient outcomes.",
-        "Ensure all clinical activities adhere to international hospital standards and haematology best practices.",
-        "Strictly comply with infection control protocols to maintain a safe environment for patients and staff.",
-        "Proactively identify and report any discrepancies, participating in audits and quality improvement initiatives.",
-        "Uphold patient safety by recognising potential risks and supporting the implementation of corrective actions.",
-        "Act as a knowledgeable and compassionate point of contact for patients and their families, providing clear information and emotional support.",
-        "Educate patients on their treatment plans and protocols, addressing questions and concerns to promote understanding and adherence.",
-        "Collaborate effectively with interdisciplinary teams to ensure seamless, comprehensive patient care."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-03",
-      "deadline": "2026-02-05",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/clinical-assistant-haematologist-222",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Blood Bank / Donor Clinic Scientist",
-      "company": "African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "3-5 years",
-      "qualification": "Bachelor of Science (B.Sc.) or Master's Degree (M.Sc.) in Medical Laboratory Science, Hematology, Immunohematology, or a related field",
-      "requirements": [
-        "Valid professional license/certification to practice as a Medical Laboratory Scientist",
-        "Specialist certification in Blood Banking (SBB) or equivalent is highly desirable"
-      ],
-      "responsibilities": [
-        "Perform and interpret complex blood bank procedures including ABO/Rh typing, antibody screening and identification, and crossmatching",
-        "Issue compatible blood and blood products for transfusion in emergency and routine situations",
-        "Investigate and resolve serological problems and transfusion reactions",
-        "Operate and maintain specialized laboratory equipment and the Blood Bank Information Management System",
-        "Manage the daily operations of the donor clinic, including whole blood, apheresis, and therapeutic donor procedures",
-        "Screen potential donors for suitability based on medical history and vital signs",
-        "Perform phlebotomy and apheresis procedures with expertise and care",
-        "Ensure a positive, professional, and reassuring experience for all blood donors",
-        "Strictly adhere to standard operating procedures (SOPs) and protocols for all technical and donor-related activities",
-        "Implement and monitor quality control, quality assurance, and proficiency testing programs",
-        "Ensure meticulous record-keeping for full traceability of all blood products from donor to recipient",
-        "Collaborate closely with physicians, nurses, and other healthcare professionals to provide expert advice on transfusion therapy and product selection"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-03",
-      "deadline": "2026-02-05",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/blood-bank-donor-clinic-scientist-221",
-      "_source": "medlocum"
-    },
-    {
       "job_title": "Gastrointestinal Surgeon and Endoscopist",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -3858,6 +4059,54 @@
       "_source": "medicalworldnigeria"
     },
     {
+      "job_title": "Haematology Nurse",
+      "company": "African Medical Centre of Excellence (AMCE)",
+      "location": "Abuja",
+      "job_type": "",
+      "job_category": "Nurse",
+      "salary": "n,",
+      "experience": "1",
+      "qualification": "bsc",
+      "requirements": [
+        "Registered Nurse (RN) qualification with a valid practicing license from the Nursing and Midwifery Council of Nigeria (NMCN).",
+        "Post-basic certification or diploma in Oncology Nursing, Haematology Nursing, or a related specialty is highly desirable.",
+        "Minimum of 3 years of clinical nursing experience, with at least 1 year in haematology, oncology, or a specialized medical unit.",
+        "Demonstrated competency in chemotherapy administration and safe handling of cytotoxic drugs.",
+        "Experience in managing patients with blood disorders, including transfusion therapy and central line care.",
+        "Strong clinical assessment, critical thinking, and emergency response skills.",
+        "Ability to provide empathetic, patient-centered care in emotionally challenging situations.",
+        "Excellent teamwork, communication, and documentation abilities.",
+        "Proficiency in using electronic medical records and clinical information systems."
+      ],
+      "responsibilities": [
+        "Provide comprehensive nursing care to patients with haematological disorders such as leukaemia, lymphoma, myeloma, anaemia, and clotting disorders.",
+        "Administer chemotherapy, immunotherapy, and other systemic therapies as prescribed, adhering to strict safety protocols.",
+        "Manage complex transfusion therapies, including blood and blood product administration, and monitor for transfusion reactions.",
+        "Perform specialised procedures such as central venous access device care, bone marrow biopsy assistance, and apheresis support.",
+        "Assess and manage treatment-related side effects and disease symptoms, including fatigue, bleeding risks, infections, and pain.",
+        "Implement infection prevention and control measures for immunocompromised patients.",
+        "Provide nutritional support, hydration management, and palliative care interventions as needed.",
+        "Offer psychological and emotional support to patients and families coping with chronic or life-threatening blood disorders.",
+        "Coordinate patient care throughout the treatment pathway, from diagnosis through follow-up.",
+        "Monitor patients for signs of complications, such as neutropenic sepsis, tumour lysis syndrome, or bleeding episodes, and initiate prompt interventions.",
+        "Maintain accurate and detailed records of treatments, responses, and patient assessments.",
+        "Ensure seamless communication within the multidisciplinary haematology team.",
+        "Educate patients and caregivers on disease processes, treatment plans, medication management, and self-care strategies.",
+        "Teach infection prevention techniques, signs of complications, and when to seek medical help.",
+        "Provide counselling on lifestyle adjustments, fertility preservation, and long-term survivorship issues."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-02-03",
+      "deadline": "2026-02-05",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Haematology-Nurse-at-African-Medical-Centre-of-Excellence-AMCE?pid=77134",
+      "_source": "medicalworldnigeria"
+    },
+    {
       "job_title": "Head Nurse, ICU & Theatre",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja",
@@ -3955,228 +4204,6 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Nurse-Haematology-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77129",
       "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "JPO Emergency Officer, P-2",
-      "company": "UNICEF",
-      "location": "Addis Ababa, Ethiopia",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "A minimum of 2 years relevant working experience with a Master’s degree, or a minimum of 4 years with a Bachelor’s degree",
-      "qualification": "Master’s degree or equivalent in public health or related field, international relations or humanitarian affairs, disaster management, social sciences, or another related field. Candidates with a Bachelor’s degree plus relevant experience may be considered.",
-      "requirements": [
-        "Experience in humanitarian or emergency management",
-        "Experience in emergency setting and interagency coordination",
-        "Experience working with humanitarian actors",
-        "Experience should be obtained in developing countries"
-      ],
-      "responsibilities": [
-        "Support the development and implementation of public health emergency preparedness plans at national and subnational levels.",
-        "Conduct risk assessments, including disease outbreaks, to anticipate future health crises and develop contingency plans.",
-        "Collaborate with government health authorities and partners to ensure that health systems are ready to respond to public health emergencies, focusing on vulnerable children and women.",
-        "Coordinate UNICEF’s response to public health emergencies in collaboration with other sections and partners, including government ministries, WHO, and NGOs.",
-        "Ensure that public health emergency interventions are aligned with broader emergency response efforts, avoiding duplication and maximizing impact.",
-        "Lead and participate in joint assessments and response teams for timely and effective delivery of life-saving interventions such as immunizations and disease control."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-02",
-      "deadline": "2026-03-02",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/jpo-emergency-officer-p-2-220",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Senegal Project Director, STRIDES",
-      "company": "FHI 360",
-      "location": "Dakar, Senegal",
-      "job_type": "Full-Time",
-      "job_category": "Healthcare Management",
-      "salary": "",
-      "experience": "10+ years of relevant experience with project management principles and practices, including 5+ years of managing staff.",
-      "qualification": "Bachelor’s degree or its international equivalent in public health or other health-related fields; Master’s degree or its international equivalent preferred.",
-      "requirements": [
-        "Comprehensive knowledge of project management and process development.",
-        "Excellent project management skills and experience leading teams.",
-        "Strong communication and negotiation skills.",
-        "Experience developing partnerships and managing stakeholder relationships.",
-        "Ability to manage complex projects and teams."
-      ],
-      "responsibilities": [
-        "Plans, directs, and coordinates implementation of Activity to meet goals and objectives.",
-        "Establishes work plans and teams to ensure compliance with policies.",
-        "Directly manages technical, financial, and operational staff.",
-        "Manages relationships with government counterparts and partners.",
-        "Leads in-country team to define and implement technical work plans."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-02",
-      "deadline": "2026-02-17",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/senegal-project-director-strides-219",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Assistant Technical Officer, Nutrition - CMAM",
-      "company": "FHI 360",
-      "location": "Gamboru Ngala, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "1-3 years',' 1 year post NYSC",
-      "qualification": "B.Sc in Nursing or MBBS",
-      "requirements": [
-        "Ability and willingness to stay at the LGA is required.",
-        "Willingness and capacity to be flexible and accommodating when faced with difficult working conditions.",
-        "Excellent spoken and written Local and English languages.",
-        "Good interpersonal and communication skills.",
-        "Previous experience working in a clinical setting is an asset.",
-        "Ability to prepare weekly and monthly program reports.",
-        "Be flexible and adaptable regarding daily work implementation."
-      ],
-      "responsibilities": [
-        "Lead community outreach activities, mid upper arm circumference screening/Active case finding for malnutrition in children under-5.",
-        "Provision of OTP services in target communities and Internally Displaced Persons camps.",
-        "Oversee timely identification of complications, non-responder, and two-way referrals to the stabilization center (SC).",
-        "Develop Community Management of Acute Malnutrition (CMAM) workplan and produce trend of malnutrition based on admission.",
-        "Carry-out mortality audit at the OTP.",
-        "Support M & E unit during assessments and prepare timely reports.",
-        "Monitor OTP performance and output indicators.",
-        "Ensure correct clinical diagnosis and appropriate treatment according to protocols.",
-        "Carry-out daily ward-round and develop 24-hour call-duty roster for CMAM-SC assistants.",
-        "Take weekly and monthly physical inventory of all nutrition supplies.",
-        "Oversee preparation of safe therapeutic milk and food for admitted SAM children and caregivers.",
-        "Work closely with CMAM assistants to ensure all protocols are understood and appropriate referrals take place.",
-        "Report on progress and any problems in a timely manner.",
-        "Update patient forms to ensure completion, accuracy, and coherence.",
-        "Provide key health and education messages to beneficiaries."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/assistant-technical-officer-nutrition-cmam-218",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Public Health Officer",
-      "company": "Clinora Health Group",
-      "location": "Osogbo, Osun, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "NGN100,000 - NGN120,000 / monthly",
-      "experience": "1–3 years’ experience (entry-level considered)",
-      "qualification": "Degree in Public Health or related field",
-      "requirements": [
-        "Degree in Public Health or related field",
-        "1–3 years’ experience (entry-level considered)",
-        "Strong communication and reporting skills."
-      ],
-      "responsibilities": [
-        "Implement and monitor public health programs",
-        "Conduct community health assessments and outreach",
-        "Deliver health education and awareness activities",
-        "Collect, analyze, and report public health data",
-        "Support surveillance, immunization, and screening programs",
-        "Collaborate with healthcare providers and stakeholders",
-        "Ensure compliance with public health policies"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-02",
-      "deadline": "2026-03-02",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/public-health-officer-217",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Epidemiologist",
-      "company": "Medecins Sans Frontiers Switzerland",
-      "location": "Bauchi, Nigeria",
-      "job_type": "Contract",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "Experience in field epidemiology.",
-      "qualification": "Medical doctor (preferable), Nurse or biomedical background with a Degree in Epidemiology (not in Public Health).",
-      "requirements": [
-        "Training in GIS (production of maps) is helpful but not a must.",
-        "Experience in field epidemiology.",
-        "GIS map production skills will be of great advantage.",
-        "English is essential, Hausa language is essential but not mandatory.",
-        "Knowledge of epidemiology related analytical software (Excel, Epi-info, R, STATA or SPSS).",
-        "Commitment to MSF Principles, Behavioural Flexibility, Results and Quality Orientation, Teamwork and Cooperation, Stress management."
-      ],
-      "responsibilities": [
-        "Assessing, implementing and maintaining the epidemiological surveillance systems/monitoring according to MSF protocols.",
-        "Support the mission epidemiologist in carrying out key epidemiological activities in outbreak investigation.",
-        "Implementing and maintaining a surveillance system to monitor epidemiological trends of relevant outbreak-prone diseases.",
-        "Engage in surveillance activities and active case finding, ensuring consistent case definitions and data recording.",
-        "Monitoring and implementing initial assessments, rapid health assessments, and follow-up surveys.",
-        "Preparing and adapting routine documentation as guided by the mission epidemiologist.",
-        "Manage data systems and ensure accurate, high-quality databases; analyze results and prepare regular reports.",
-        "Produce maps to communicate data from surveillance activities.",
-        "Provide training sessions to medical teams on relevant aspects of epidemiology.",
-        "Support and take up other activities and responsibilities as needed."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-02",
-      "deadline": "2026-02-13",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/epidemiologist-216",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Pharmacist",
-      "company": "A Reputable Organization in the Pharmaceutical Company - Elizabeth Maddeux Limited",
-      "location": "Egbeda, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Pharmacist",
-      "salary": "NGN250,000 - NGN350,000 / monthly",
-      "experience": "1–3 years",
-      "qualification": "Bachelor of Pharmacy (B.Pharm) or Doctor of Pharmacy (PharmD)",
-      "requirements": [
-        "Minimum of 1–3 years relevant experience in a retail, hospital, or industrial pharmacy setting",
-        "Current registration and a valid license with the Pharmacists Council of Nigeria (PCN)",
-        "Strong knowledge of pharmaceutical regulations and best practices in Nigeria"
-      ],
-      "responsibilities": [
-        "Ensure compliance with NAFDAC, PCN, GMP, and other applicable regulatory requirements",
-        "Maintain valid professional license and support regulatory inspections and audits",
-        "Ensure proper documentation and record-keeping in line with regulatory standards",
-        "Supervise or support pharmaceutical manufacturing processes",
-        "Monitor production processes to ensure quality and efficiency",
-        "Investigate deviations and support corrective and preventive actions (CAPA)",
-        "Review and approve batch manufacturing records and quality documents",
-        "Support quality testing, validation, and product release processes",
-        "Ensure proper handling, storage, and distribution of pharmaceutical products",
-        "Monitor, document, and report adverse drug reactions in line with pharmacovigilance guidelines",
-        "Support product registration, renewal, and variation submissions",
-        "Provide technical and regulatory guidance to production, sales, and distribution teams",
-        "Ensure accurate documentation and data integrity"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-02",
-      "deadline": "2026-03-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/pharmacist-215",
-      "_source": "medlocum"
     },
     {
       "job_title": "Epidemiologist",
@@ -5431,48 +5458,6 @@
       "_source": "medicalworldnigeria"
     },
     {
-      "job_title": "Registered Nurse (Aesthetics Clinic)",
-      "company": "Kelina Hospital",
-      "location": "Lekki, Lagos",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "N120,000 monthly",
-      "experience": "Minimum of 2 years nursing experience",
-      "qualification": "BSc",
-      "requirements": [
-        "Must be a Registered Nurse with a valid practicing license",
-        "Minimum of 2 years nursing experience (aesthetics experience is an added advantage)",
-        "Strong interest in aesthetics and willingness to learn",
-        "Good knowledge of basic nursing care and infection control standards",
-        "Excellent communication and interpersonal skills",
-        "Professional appearance and patient-focused attitude",
-        "Ability to work as part of a team and follow clinical instructions",
-        "Attention to detail and commitment to safety and quality care"
-      ],
-      "responsibilities": [
-        "Assist with and support aesthetic procedures under supervision, in line with clinical guidelines",
-        "Conduct basic client assessments and prepare clients for treatments",
-        "Provide nursing care before, during, and after aesthetic procedures",
-        "Observe and monitor clients’ responses to treatments and report any concerns",
-        "Ensure proper infection control, hygiene, and safety standards at all times",
-        "Prepare treatment rooms, equipment, and supplies for daily operations",
-        "Maintain accurate client records and documentation",
-        "Educate clients on post-treatment care and general skincare advice",
-        "Participate actively in training and learning opportunities related to aesthetic nursing",
-        "Support the clinical team to ensure smooth day-to-day clinic operations"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-01-21",
-      "deadline": "2026-01-23",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-Aesthetics-Clinic-at-Future-Moves-Recruitment-Agency?pid=77051",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "NYSC Nurse",
       "company": "Tractrac MSL",
       "location": "Keffi, Nasarawa, Nigeria",
@@ -6146,38 +6131,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/community-health-extension-worker-chew-lily-hospitals-limited-4/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Optician",
-      "company": "Lily Hospitals Limited",
-      "location": "Port Harcourt, Rivers, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Allied Health",
-      "salary": "Competitive salary and benefits package.",
-      "experience": "1 to 3 years relevant work experience preferably in the health or Service sector.",
-      "qualification": "Ordinary Diploma (OND) or Higher National Diploma (HND) in Dispensing Opticianry or any related science degree.",
-      "requirements": [
-        "Maintain accurate patient records, prescriptions, and transactions.",
-        "Stay updated on optical technology, lens materials, and industry trends."
-      ],
-      "responsibilities": [
-        "Interpret prescriptions and assist patients in selecting appropriate eyeglasses or contact lenses.",
-        "Guide patients in frame selection based on face shape, color, and style preferences.",
-        "Perform fittings and adjustments to ensure proper alignment, comfort, and vision correction.",
-        "Collaborate with optical labs to ensure timely delivery and address order concerns.",
-        "Fabricate, grind, and polish lenses to precise specifications.",
-        "Measure and verify lenses to ensure they meet prescription requirements and are defect-free."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-01-15",
-      "deadline": "2026-01-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/optician-lily-hospitals-limited-2/",
       "_source": "jobsinnigeria"
     },
     {
@@ -7663,71 +7616,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacy-technician-aniso-specialist-medical-centre/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Medical Officer",
-      "company": "Annunciation Specialist Hospital, Emene",
-      "location": "Emene, Enugu, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "MBBS or equivalent",
-        "Full registration with MDCN",
-        "Valid practicing license"
-      ],
-      "responsibilities": [
-        "Diagnose, treat, and manage patients’ medical conditions",
-        "Conduct patient examinations and request relevant investigations",
-        "Prescribe medications and monitor treatment outcomes",
-        "Maintain accurate medical records",
-        "Collaborate with multidisciplinary healthcare teams",
-        "Adhere to infection prevention and patient safety protocols."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2025-12-24",
-      "deadline": "2026-01-31",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/medical-officer-annunciation-specialist-hospital-emene/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Resident Officer (Family Medicine)",
-      "company": "Annunciation Specialist Hospital, Emene",
-      "location": "Emene, Enugu, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "MBBS",
-        "MDCN registration",
-        "Evidence of residency training placement."
-      ],
-      "responsibilities": [
-        "Provide outpatient and inpatient family medicine services",
-        "Participate in ward rounds and case reviews",
-        "Deliver preventive and health education services",
-        "Maintain patient records and clinical documentation",
-        "Participate in continuous medical education."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2025-12-24",
-      "deadline": "2026-01-31",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/resident-officer-family-medicine-annunciation-specialist-hospital-emene/",
       "_source": "jobsinnigeria"
     },
     {
