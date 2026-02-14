@@ -5,6 +5,7 @@ import json
 import os
 import sys
 from datetime import datetime
+from html import escape
 from pathlib import Path
 
 import requests
@@ -41,61 +42,83 @@ def format_date(date_str: str) -> str:
 
 def build_email_html(jobs: list) -> str:
     """Build HTML email content."""
+    invalid_salary_values = {"", "n", "n,", "na", "n/a", "none", "null", "-", "--", "nil"}
 
-    # Get date range for subject
-    dates = [j.get("date_posted", "") for j in jobs if j.get("date_posted")]
-    date_range = ""
-    if dates:
-        oldest = format_date(min(dates))
-        newest = format_date(max(dates))
-        date_range = f"{oldest} - {newest}"
-
-    # Build job listings HTML
+    # Build job cards in a monochrome-forward style with subtle brand accents.
     job_rows = ""
-    for i, job in enumerate(jobs, 1):
-        title = job.get("job_title", "Untitled Role")
-        company = job.get("company", "Company not listed")
-        location = job.get("location", "")
-        salary = job.get("salary", "")
-        deadline = job.get("deadline", "")
-        apply_url = job.get("apply_url", "https://jobbermed.com")
+    for job in jobs:
+        title = escape(str(job.get("job_title") or "Untitled Role"))
+        company = escape(str(job.get("company") or "Company not listed"))
+        location = escape(str(job.get("location") or "").strip())
+        apply_url = escape(str(job.get("apply_url") or "https://jobbermed.com"), quote=True)
 
-        meta_parts = [company]
+        salary_raw = str(job.get("salary") or "").strip()
+        salary_normalized = salary_raw.lower()
+
+        posted_raw = str(job.get("date_posted") or "").strip()
+        deadline_raw = str(job.get("deadline") or "").strip()
+        job_type_raw = str(job.get("job_type") or "").strip()
+
+        meta = company
         if location:
-            meta_parts.append(location)
-        meta = " • ".join(meta_parts)
+            meta = f"{meta} • {location}"
 
-        deadline_html = ""
-        if deadline:
-            deadline_html = f'<span style="color: #b45309; font-size: 13px;">Closes {format_date(deadline)}</span>'
+        tags = []
+        if posted_raw:
+            tags.append(
+                f'<span style="display:inline-block;background:#f0f0f0;color:#111111;'
+                f'font-size:12px;line-height:1;padding:6px 10px;border-radius:999px;'
+                f'margin-right:6px;margin-bottom:6px;">Posted {escape(format_date(posted_raw))}</span>'
+            )
+        if deadline_raw:
+            tags.append(
+                f'<span style="display:inline-block;background:#f0f0f0;color:#111111;'
+                f'font-size:12px;line-height:1;padding:6px 10px;border-radius:999px;'
+                f'margin-right:6px;margin-bottom:6px;">Closes {escape(format_date(deadline_raw))}</span>'
+            )
+        if job_type_raw:
+            tags.append(
+                f'<span style="display:inline-block;background:#f0f0f0;color:#111111;'
+                f'font-size:12px;line-height:1;padding:6px 10px;border-radius:999px;'
+                f'margin-right:6px;margin-bottom:6px;">{escape(job_type_raw)}</span>'
+            )
+        tags_html = f'<p style="margin:0 0 10px 0;">{"".join(tags)}</p>' if tags else ""
 
         salary_html = ""
-        if salary:
-            salary_html = f'<p style="color: #1800ad; font-weight: 600; margin: 8px 0 0 0;">{salary}</p>'
+        if salary_normalized not in invalid_salary_values:
+            salary_html = (
+                f'<p style="margin:0; color:#1800ad; font-weight:600; font-size:13px;">'
+                f"{escape(salary_raw)}"
+                "</p>"
+            )
 
-        job_rows += f'''
+        job_rows += f"""
         <tr>
-          <td style="padding: 20px 0; border-bottom: 1px solid #e2ddd6;">
-            <table width="100%" cellpadding="0" cellspacing="0">
+          <td style="padding: 0 32px 14px 32px;">
+            <table width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e2ddd6; border-radius:16px; background:#ffffff;">
               <tr>
-                <td>
-                  <h3 style="margin: 0 0 6px 0; font-size: 17px; color: #1c1b19;">
-                    <a href="{apply_url}" style="color: #1c1b19; text-decoration: none;">{title}</a>
+                <td style="padding: 16px 18px 10px 18px;">
+                  <h3 style="margin: 0 0 8px 0; font-size: 18px; line-height: 1.35; color: #1c1b19; font-weight: 600;">
+                    <a href="{apply_url}" style="color:#1c1b19; text-decoration:none;">{title}</a>
                   </h3>
-                  <p style="margin: 0 0 8px 0; color: #6d6760; font-size: 13px;">{meta}</p>
-                  {deadline_html}
+                  <p style="margin: 0 0 10px 0; color: #6d6760; font-size: 13px; line-height: 1.4;">{meta}</p>
+                  {tags_html}
                   {salary_html}
                 </td>
-                <td width="100" align="right" valign="top">
-                  <a href="{apply_url}" style="display: inline-block; background: #1800ad; color: white; padding: 10px 16px; border-radius: 8px; text-decoration: none; font-size: 13px; font-weight: 600;">View →</a>
+              </tr>
+              <tr>
+                <td style="padding: 0 18px 16px 18px;">
+                  <a href="{apply_url}" style="display:inline-block; background:#111111; color:#ffffff; padding:10px 16px; border-radius:10px; text-decoration:none; font-size:13px; font-weight:600;">
+                    View Original Posting →
+                  </a>
                 </td>
               </tr>
             </table>
           </td>
         </tr>
-        '''
+        """
 
-    html = f'''
+    html_content = f"""
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,64 +126,64 @@ def build_email_html(jobs: list) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JobberMed Weekly Digest</title>
 </head>
-<body style="margin: 0; padding: 0; background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff; padding: 40px 20px;">
+<body style="margin:0; padding:0; background-color:#f7f4ef; font-family:'IBM Plex Sans','Segoe UI',Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f7f4ef; padding:28px 12px;">
     <tr>
       <td align="center">
-        <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-
-          <!-- Header -->
+        <table width="640" cellpadding="0" cellspacing="0" style="width:100%; max-width:640px; background-color:#ffffff; border-radius:18px; overflow:hidden; border:1px solid #e2ddd6; box-shadow:0 10px 24px rgba(0,0,0,0.06);">
           <tr>
-            <td style="padding: 0; background: #1800ad;">
-              <img src="https://jobbermed.com/images/email-banner.jpg" alt=\"JobberMed banner\" width=\"600\" style=\"display:block;border:0;outline:none;text-decoration:none;width:100%;height:auto;\" />
-            </td>
+            <td style="height:12px; line-height:12px; font-size:0; background:#1800ad; background-image:linear-gradient(90deg,#1800ad 0%,#0cc0df 100%);">&nbsp;</td>
           </tr>
-
-          <!-- Intro -->
           <tr>
-            <td style="padding: 28px 40px 20px 40px;">
-              <p style="margin: 0; color: #1c1b19; font-size: 15px; line-height: 1.6;">
-                Here are the <strong>top {len(jobs)} medical and healthcare jobs</strong> posted this week across the healthcare industry in the country.
+            <td style="padding:26px 32px; background:#111111;">
+              <h1 style="margin:0; color:#ffffff; font-size:28px; line-height:1.2; font-weight:800;">
+                Healthcare jobs across Nigeria and Africa.
+              </h1>
+              <div style="width:180px; height:5px; margin-top:14px; border-radius:999px; background:#0cc0df;"></div>
+              <p style="margin:14px 0 0 0; color:rgba(255,255,255,0.85); font-size:15px; line-height:1.5;">
+                Delivered to your email every week.
               </p>
             </td>
           </tr>
-
-          <!-- Job Listings -->
           <tr>
-            <td style="padding: 0 40px;">
+            <td style="padding:20px 32px 20px 32px;">
+              <p style="margin:0; color:#1c1b19; font-size:15px; line-height:1.6;">
+                Here are the top <strong>{len(jobs)} medical and healthcare opportunities</strong> curated this week.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0;">
               <table width="100%" cellpadding="0" cellspacing="0">
                 {job_rows}
               </table>
             </td>
           </tr>
-
-          <!-- CTA -->
           <tr>
-            <td style="padding: 32px 40px; text-align: center;">
-              <a href="https://jobbermed.com" style="display: inline-block; background: #1800ad; color: white; padding: 14px 32px; border-radius: 10px; text-decoration: none; font-size: 16px; font-weight: 600;">Browse All Jobs →</a>
+            <td style="padding:20px 32px 34px 32px; text-align:center;">
+              <a href="https://jobbermed.com" style="display:inline-block; background:#111111; color:#ffffff; padding:14px 32px; border-radius:12px; text-decoration:none; font-size:16px; font-weight:600;">
+                Browse All Jobs →
+              </a>
             </td>
           </tr>
-
-          <!-- Footer -->
           <tr>
-            <td style="background: #f5f6fb; padding: 24px 40px; text-align: center; border-top: 1px solid #e2ddd6;">
-              <p style="margin: 0 0 8px 0; color: #6d6760; font-size: 13px;">
+            <td style="background:#111111; padding:24px 32px; text-align:center;">
+              <p style="margin:0 0 8px 0; color:rgba(255,255,255,0.72); font-size:13px; line-height:1.5;">
                 You're receiving this because you subscribed at jobbermed.com
               </p>
-              <p style="margin: 0; color: #6d6760; font-size: 13px;">
-                <a href="{{{{unsubscribe}}}}" style="color: #1800ad;">Unsubscribe</a> · <a href="https://jobbermed.com" style="color: #1800ad;">Visit Website</a>
+              <p style="margin:0; color:rgba(255,255,255,0.72); font-size:13px;">
+                <a href="{{{{unsubscribe}}}}" style="color:#0cc0df; text-decoration:none;">Unsubscribe</a> · <a href="https://jobbermed.com" style="color:#0cc0df; text-decoration:none;">Visit Website</a>
               </p>
             </td>
           </tr>
-
         </table>
       </td>
     </tr>
   </table>
 </body>
 </html>
-'''
-    return html
+"""
+    return html_content
 
 
 def send_campaign(html_content: str, job_count: int) -> bool:
