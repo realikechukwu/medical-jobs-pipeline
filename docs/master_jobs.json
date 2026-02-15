@@ -1,15 +1,36 @@
 {
   "metadata": {
-    "extracted_at": "2026-02-14T04:27:20.813277",
+    "extracted_at": "2026-02-15T04:37:22.260461",
     "model": "gpt-4o-mini",
     "total_processed": 244,
     "duplicates_removed": 25,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 45
+    "openai_calls": 26
   },
   "jobs": [
+    {
+      "job_title": "REGISTERED NURSE/MIDWIFE VACANCY",
+      "company": "GOSAB MEDICAL SERVICES",
+      "location": "Aba, Abia State, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "NGN70,000 - NGN90,000 / monthly",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-14",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/registered-nursemidwife-vacancy-318",
+      "_source": "medlocum"
+    },
     {
       "job_title": "Consultant in Nutrition Administrative Data Guidance Dissemination",
       "company": "UNICEF",
@@ -3864,48 +3885,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/internal-medicine-physician-236",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Nephrologist",
-      "company": "African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, FCT, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "Minimum of 5-7 years of post-specialization experience in nephrology",
-      "qualification": "Medical Degree (MD/MBBS) from an internationally recognized university; Certification in Nephrology or equivalent international certification; Valid medical license in the country of practice",
-      "requirements": [
-        "Medical Degree (MD/MBBS) from an internationally recognized university.",
-        "Certification in Nephrology or equivalent international certification.",
-        "Valid medical license in the country of practice.",
-        "Minimum of 5-7 years of post-specialization experience in nephrology, preferably in an international hospital setting.",
-        "Extensive experience in managing acute and chronic kidney diseases, dialysis (hemodialysis and peritoneal dialysis), and kidney transplantation.",
-        "Proficiency in renal biopsy and other relevant procedures.",
-        "Strong diagnostic and clinical decision-making skills.",
-        "Excellent communication, interpersonal, and leadership abilities.",
-        "Commitment to continuous professional development and medical ethics."
-      ],
-      "responsibilities": [
-        "Conduct comprehensive medical evaluations for patients with suspected or confirmed kidney diseases.",
-        "Interpret laboratory results (e.g., creatinine, GFR, electrolytes, urinalysis) and imaging studies related to renal function.",
-        "Utilize advanced diagnostic techniques, including renal biopsy, for accurate diagnosis.",
-        "Diagnose a wide range of kidney conditions, including acute kidney injury, chronic kidney disease, glomerular diseases, and genetic kidney disorders.",
-        "Formulate differential diagnoses and determine the most appropriate diagnostic pathway.",
-        "Develop and implement individualized treatment plans for patients with various kidney diseases.",
-        "Prescribe and manage medications, including immunosuppressants, diuretics, and agents for anemia and bone disease.",
-        "Oversee conservative management strategies for chronic kidney disease to delay progression.",
-        "Initiate and manage patients on hemodialysis, including prescription writing and oversight of dialysis sessions.",
-        "Evaluate potential kidney transplant recipients and donors, determining suitability for transplantation."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-04",
-      "deadline": "2026-02-05",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/nephrologist-235",
       "_source": "medlocum"
     },
     {
