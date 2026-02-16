@@ -1,15 +1,40 @@
 {
   "metadata": {
-    "extracted_at": "2026-02-15T04:37:22.260461",
+    "extracted_at": "2026-02-16T04:41:08.874497",
     "model": "gpt-4o-mini",
     "total_processed": 244,
-    "duplicates_removed": 25,
+    "duplicates_removed": 24,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
     "openai_calls": 26
   },
   "jobs": [
+    {
+      "job_title": "Medical Laboratory Technician",
+      "company": "Pedro Medical World Limited",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "#100k per month",
+      "experience": "Atleast 1 years working experience (Post graduation)",
+      "qualification": "License Medical Laboratory Technician",
+      "requirements": [
+        "License Medical Laboratory Technician"
+      ],
+      "responsibilities": [
+        "Routine diagnosis and every other related responsibilities State by the MLSCN and assigned by the organization"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-15",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-technician-319",
+      "_source": "medlocum"
+    },
     {
       "job_title": "REGISTERED NURSE/MIDWIFE VACANCY",
       "company": "GOSAB MEDICAL SERVICES",
@@ -3849,45 +3874,6 @@
       "_source": "medlocum"
     },
     {
-      "job_title": "Internal Medicine Physician",
-      "company": "African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, FCT, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "Minimum of 5 years of post-residency experience in internal medicine",
-      "qualification": "MBBS or equivalent medical degree from a recognized institution. Completion of a residency in Internal Medicine. Fellowship certification in Internal Medicine. Registered (or eligible) on the specialist register with the Medical and Dental Council of Nigeria. Valid licence to practise medicine. Evidence of continued professional development.",
-      "requirements": [
-        "MBBS or equivalent medical degree from a recognized institution.",
-        "Completion of a residency in Internal Medicine.",
-        "Fellowship certification in Internal Medicine.",
-        "Registered (or eligible) on the specialist register with the Medical and Dental Council of Nigeria.",
-        "Valid licence to practise medicine.",
-        "Evidence of continued professional development."
-      ],
-      "responsibilities": [
-        "Conduct thorough patient assessments, including detailed histories and physical examinations.",
-        "Diagnose and manage a range of acute and chronic illnesses, including complex multi-system diseases.",
-        "Order, perform, and interpret diagnostic investigations (lab work, imaging, etc.).",
-        "Develop and implement evidence-based, patient-centred treatment plans.",
-        "Provide preventive care services and health education to patients and their families.",
-        "Maintain high-quality, legally compliant, and ethical documentation and patient records.",
-        "Supervise, mentor, and evaluate junior medical staff, residents, and interns.",
-        "Contribute to departmental operations, workforce planning, and process optimization.",
-        "Deliver teaching sessions and clinical training for junior clinicians and allied health staff.",
-        "Participate in audits, incident reviews, and patient safety initiatives."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-04",
-      "deadline": "2026-02-05",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/internal-medicine-physician-236",
-      "_source": "medlocum"
-    },
-    {
       "job_title": "Medical Doctor",
       "company": "EHA Clinics",
       "location": "Life Camp, Abuja",
@@ -4041,6 +4027,54 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Gastrointestinal-Surgeon-and-Endoscopist-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77181",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Internal Medicine Physician",
+      "company": "African Medical Centre of Excellence (AMCE)",
+      "location": "Abuja",
+      "job_type": "",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "Minimum of 5 years of post-residency experience in internal medicine.",
+      "qualification": "bsc",
+      "requirements": [
+        "MBBS or equivalent medical degree from a recognized institution.",
+        "Completion of a residency in Internal Medicine.",
+        "Fellowship certification in Internal Medicine.",
+        "Registered (or eligible) on the specialist register with the Medical and Dental Council of Nigeria.",
+        "Valid licence to practise medicine.",
+        "Evidence of continued professional development."
+      ],
+      "responsibilities": [
+        "Conduct thorough patient assessments, including detailed histories and physical examinations.",
+        "Diagnose and manage a range of acute and chronic illnesses, including complex multi-system diseases.",
+        "Order, perform, and interpret diagnostic investigations (lab work, imaging, etc.).",
+        "Develop and implement evidence-based, patient-centred treatment plans.",
+        "Provide preventive care services and health education to patients and their families.",
+        "Maintain high-quality, legally compliant, and ethical documentation and patient records.",
+        "Supervise, mentor, and evaluate junior medical staff, residents, and interns.",
+        "Contribute to departmental operations, workforce planning, and process optimization.",
+        "Promote a collaborative and inclusive team culture that supports learning and high performance.",
+        "Deliver teaching sessions and clinical training for junior clinicians and allied health staff.",
+        "Engage in professional development programs and support the growth of emerging talent.",
+        "Participate in audits, incident reviews, and patient safety initiatives.",
+        "Lead and contribute to the development of clinical protocols and best practices.",
+        "Monitor clinical outcomes to support continuous quality improvement.",
+        "Contribute to or lead research initiatives and clinical trials in internal medicine.",
+        "Present findings at conferences and publish in peer-reviewed journals when applicable.",
+        "Champion equality, diversity, and inclusion within the department.",
+        "Ensure that policies and practices support an inclusive and equitable environment for patients and staff."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-02-03",
+      "deadline": "2026-02-05",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Internal-Medicine-Physician-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77151",
       "_source": "medicalworldnigeria"
     },
     {
