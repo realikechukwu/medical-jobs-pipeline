@@ -1,15 +1,373 @@
 {
   "metadata": {
-    "extracted_at": "2026-02-20T04:30:25.883438",
+    "extracted_at": "2026-02-21T04:21:47.473701",
     "model": "gpt-4o-mini",
     "total_processed": 244,
-    "duplicates_removed": 22,
+    "duplicates_removed": 27,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 34
+    "openai_calls": 33
   },
   "jobs": [
+    {
+      "job_title": "Physiologist",
+      "company": "Union Diagnostics Limited",
+      "location": "Port Harcourt, Rivers, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "2 - 10 years",
+      "qualification": "Bachelor's Degree",
+      "requirements": [
+        "Bachelor's Degree",
+        "2 - 10 years of work experience"
+      ],
+      "responsibilities": [
+        "Vital signs check",
+        "Performing ECG",
+        "Performing EEG",
+        "Performing Spirometry"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-20",
+      "deadline": "2026-03-31",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/physiologist-369",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Senior Nursing Officer",
+      "company": "International Institute of Tropical Agriculture (IITA)",
+      "location": "Ibadan, Oyo, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "4-5 years",
+      "qualification": "BSc in Nursing / Bachelor of Nursing Science",
+      "requirements": [
+        "BSc in Nursing / Bachelor of Nursing Science",
+        "Diploma in Public / Occupational Health Nursing",
+        "Family Planning Certificate",
+        "Post Basic Diploma in Accident & Emergency Nursing",
+        "Post Basic Nursing Certificate in Theatre Techniques",
+        "Post Basic Nursing Certificate in Paediatric Nursing",
+        "Diploma in Nursing Science",
+        "Experience in Accident and Emergency unit, Theatre Techniques, Paediatric Nursing, Outpatient Departments, and Community Health Nursing"
+      ],
+      "responsibilities": [
+        "Evaluate accurate vital signs.",
+        "Dress wound on routine and emergency basis.",
+        "Carry out eye lavage, ear syringing, and administration of parenteral medications.",
+        "Set up intravenous infusion as the need arises.",
+        "Administer all immunizations.",
+        "Assess Visual acuity using Snellen's chart.",
+        "Accompany very ill patients outside hospitals.",
+        "Perform incision and drainage of abscesses.",
+        "Suture minor wound lacerations.",
+        "Enter patients' attendance the company daily.",
+        "Wash autoclave and store instruments used in nursing care."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-20",
+      "deadline": "2026-03-06",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/senior-nursing-officer-368",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Production Pharmacist",
+      "company": "TNL Pharma Limited",
+      "location": "Igando, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Pharmacist",
+      "salary": "",
+      "experience": "2–5 years",
+      "qualification": "Bachelor of Pharmacy (B.Pharm)",
+      "requirements": [
+        "Valid Pharmacist license (PCN registration if in Nigeria)",
+        "Strong knowledge of GMP and regulatory requirements",
+        "Good documentation and leadership skills",
+        "Proficiency in MS Office"
+      ],
+      "responsibilities": [
+        "Supervise daily pharmaceutical production activities.",
+        "Ensure adherence to approved batch manufacturing records (BMR).",
+        "Monitor dispensing, granulation, compression, coating, filling, and packaging processes.",
+        "Ensure production targets are met within timelines.",
+        "Ensure strict compliance with GMP, SOPs, and regulatory guidelines.",
+        "Review and complete batch documentation accurately.",
+        "Investigate and report deviations, non-conformances, and incidents.",
+        "Support internal and external audits and inspections.",
+        "Prepare and review batch manufacturing and packing records.",
+        "Maintain accurate production logs and reports.",
+        "Ensure timely documentation of all production activities.",
+        "Ensure proper cleaning and maintenance of production equipment.",
+        "Coordinate equipment qualification and calibration.",
+        "Monitor environmental conditions in production areas.",
+        "Supervise production operators and technicians.",
+        "Train production staff on SOPs and GMP requirements.",
+        "Ensure proper shift handover and workforce discipline.",
+        "Enforce safety, hygiene, and housekeeping standards.",
+        "Ensure proper use of PPE in production areas.",
+        "Report any safety hazards immediately.",
+        "Identify process improvement opportunities.",
+        "Support validation activities (process validation, cleaning validation).",
+        "Participate in cost reduction and efficiency initiatives."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-20",
+      "deadline": "2026-02-28",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/production-pharmacist-367",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Production Pharmacist",
+      "company": "Ascentech Services Limited",
+      "location": "Ota, Ogun, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Pharmacist",
+      "salary": "",
+      "experience": "2–3 years",
+      "qualification": "B.Pharm or Pharm.D.",
+      "requirements": [
+        "Full PCN registration with valid practicing license",
+        "Strong knowledge of GMP and production documentation",
+        "Good leadership, communication, and problem-solving skills."
+      ],
+      "responsibilities": [
+        "Supervise tablet, capsule, liquid, or semi-solid production processes.",
+        "Ensure strict adherence to approved Batch Manufacturing Records (BMRs) and SOPs.",
+        "Perform line clearance and review batch documentation for accuracy.",
+        "Investigate production deviations and implement CAPA.",
+        "Coordinate production staff to meet output and quality targets."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-20",
+      "deadline": "2026-03-05",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/production-pharmacist-366",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Nurse / Midwife",
+      "company": "Feetal Hospital & Diagnostics",
+      "location": "Ajah, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "NGN200,000 - NGN300,000 / monthly",
+      "experience": "2 years",
+      "qualification": "Bachelor's degree",
+      "requirements": [
+        "Bachelor's degree",
+        "At least 2 years post NYSC work experience as a Nurse / Midwife",
+        "Fluent in English",
+        "Confident and medically sound",
+        "Ability to write and express themselves articulately",
+        "Patient-friendly and have client-care etiquette",
+        "Reside in AJAH, Lagos",
+        "Willing to work different shifts"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-20",
+      "deadline": "2026-02-27",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/nurse-midwife-365",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Male Nurse",
+      "company": "In-Country Medicare Limited",
+      "location": "Galadimawa, Abuja, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "Registered Nurse (RN) with the Nursing and Midwifery Council of Nigeria (NMCN)",
+      "requirements": [
+        "Current and valid practicing license",
+        "Fresh graduates are encouraged to apply",
+        "Proven excellent phlebotomy skills (mandatory)",
+        "Strong clinical competence and sound nursing judgment",
+        "Good communication and interpersonal skills",
+        "Ability to work independently and within a multidisciplinary team",
+        "High level of professionalism, integrity, and empathy."
+      ],
+      "responsibilities": [
+        "Deliver safe, high-quality nursing care in accordance with established clinical guidelines and best practices",
+        "Perform phlebotomy procedures accurately and efficiently",
+        "Monitor, assess, and document patients’ conditions and responses to treatment",
+        "Administer medications and treatments as prescribed",
+        "Maintain strict infection prevention and control standards",
+        "Collaborate effectively with physicians and other healthcare professionals",
+        "Ensure accurate, timely nursing documentation and reporting",
+        "Provide patient and family education on care plans and health management",
+        "Uphold patient confidentiality, dignity, and ethical."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-20",
+      "deadline": "2026-03-11",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/male-nurses-364",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Accident & Emergency Nurse",
+      "company": "Reddington Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "Minimum of 5 years experience in emergency or acute care setting preferred.",
+      "qualification": "Registered Nurse (RN) qualification; Valid Nursing and Midwifery Council of Nigeria (NMCN) license; Post-basic qualification in Accident & Emergency / Critical Care / Emergency Nursing",
+      "requirements": [
+        "Registered Nurse (RN) qualification.",
+        "Valid Nursing and Midwifery Council of Nigeria (NMCN) license.",
+        "Post-basic qualification in Accident & Emergency / Critical Care / Emergency Nursing",
+        "Minimum of [5] years experience in emergency or acute care setting preferred.",
+        "Ability to work under pressure and make quick clinical decisions.",
+        "Strong teamwork and communication skills."
+      ],
+      "responsibilities": [
+        "Triage and assess patients presenting to the emergency unit.",
+        "Provide immediate nursing interventions for acute and critical cases.",
+        "Monitor vital signs and patient conditions continuously.",
+        "Administer medications, IV fluids, and emergency treatments as prescribed.",
+        "Assist doctors during emergency procedures and resuscitation.",
+        "Maintain accurate and timely clinical documentation.",
+        "Ensure infection control and patient safety protocols are strictly followed.",
+        "Provide emotional support and clear communication to patients and relatives."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-20",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/accident-emergency-nurse-363",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Locum Nurses",
+      "company": "In-Country Medicare Limited",
+      "location": "Galadimawa, Abuja (FCT), Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "Minimum of 2–3 years clinical experience",
+      "qualification": "Bachelor of Nursing Science (BNSc) or equivalent qualification",
+      "requirements": [
+        "Must be a Registered Nurse (RN) with the Nursing and Midwifery Council of Nigeria (NMCN)",
+        "Valid and current practicing license (mandatory)",
+        "Strong clinical skills and professional judgment",
+        "Good communication and interpersonal skills",
+        "Ability to adapt quickly and work efficiently in a dynamic healthcare environment."
+      ],
+      "responsibilities": [
+        "Provide safe, patient-centered nursing care in line with established clinical standards",
+        "Conduct patient assessments and document findings accurately",
+        "Administer medications and treatments as prescribed",
+        "Maintain infection prevention and control protocols",
+        "Support emergency response and clinical procedures when required",
+        "Ensure accurate documentation and handover reporting",
+        "Collaborate effectively with the multidisciplinary healthcare team",
+        "Uphold professional ethics, confidentiality, and patient dignity."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-20",
+      "deadline": "2026-03-18",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/locum-nurses-362",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Nursing Officer",
+      "company": "Ronsberger Nigeria Limited",
+      "location": "Garki II, Abuja (FCT), Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "2 - 5 years",
+      "qualification": "Bachelor's Degree",
+      "requirements": [
+        "Bachelor's Degree",
+        "2 - 5 years experience"
+      ],
+      "responsibilities": [
+        "Attending to request for authorization of Code from Healthcare providers",
+        "Interpret such and treat in line with NHIS operational guideline",
+        "Keep records of all incoming and outgoing calls",
+        "Vetting of medical bills from Hospitals, interpret such and treat in line with NHIS operational guideline",
+        "Keep records of all settled and outstanding medical bills",
+        "Carrying out quality assurance functions including hospital visitation",
+        "Liaising with other departments on Enrollees’ complaints and enquiries"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-20",
+      "deadline": "2026-03-02",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/nursing-officer-361",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Registered Nurse",
+      "company": "Neveah Limited",
+      "location": "Ogun",
+      "job_type": "Full-time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "4",
+      "qualification": "bsc",
+      "requirements": [
+        "Bachelor's Degree",
+        "Minimum 4 years nursing experience, including 2 years in a manufacturing or industrial setting",
+        "Registered Nurse"
+      ],
+      "responsibilities": [
+        "Administer first aid and emergency care; coordinate medical evacuations",
+        "Conduct pre-employment and periodic medical screenings",
+        "Maintain accurate medical records and incident reports",
+        "Facilitate health promotion and wellness programs",
+        "Liaise with external healthcare providers for referrals"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-02-20",
+      "deadline": "2026-02-28",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-at-Neveah-Limited?pid=77363",
+      "_source": "medicalworldnigeria"
+    },
     {
       "job_title": "Radiographer",
       "company": "ICS Outsourcing Limited",
@@ -503,37 +861,6 @@
       "_source": "medicalworldnigeria"
     },
     {
-      "job_title": "Nurse / Midwife",
-      "company": "Feetal Hospital & Diagnostics",
-      "location": "Ajah, Lagos",
-      "job_type": "Full time",
-      "job_category": "Nurse",
-      "salary": "N200,000 - N300,000 / Month",
-      "experience": "2 years",
-      "qualification": "Bachelor's degree",
-      "requirements": [
-        "Bachelor's degree",
-        "At least 2 years post NYSC work experience as a Nurse / Midwife",
-        "Fluent in English Language",
-        "Confident and medically sound",
-        "Able to write and express themselves articulately",
-        "Patient-friendly with client-care etiquette",
-        "Reside in Ajah, Lagos",
-        "Willing to work different shifts"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-19",
-      "deadline": "2026-02-27",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Nurse-Midwife-at-Feetal-Hospital-and-Diagnostics?pid=77352",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Medical Laboratory Scientist",
       "company": "Medbury Medical Services",
       "location": "Lekki, Lagos, Nigeria",
@@ -931,84 +1258,6 @@
       "_source": "medicalworldnigeria"
     },
     {
-      "job_title": "Male Nurse",
-      "company": "In-Country Medicare Limited",
-      "location": "Galadimawa, Abuja",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "Registered Nurse (RN) with the Nursing and Midwifery Council of Nigeria (NMCN)",
-        "Current and valid practicing license",
-        "Fresh graduates are encouraged to apply",
-        "Proven excellent phlebotomy skills (mandatory)",
-        "Strong clinical competence and sound nursing judgment",
-        "Good communication and interpersonal skills",
-        "Ability to work independently and within a multidisciplinary team",
-        "High level of professionalism, integrity, and empathy."
-      ],
-      "responsibilities": [
-        "Deliver safe, high-quality nursing care in accordance with established clinical guidelines and best practices",
-        "Perform phlebotomy procedures accurately and efficiently",
-        "Monitor, assess, and document patients’ conditions and responses to treatment",
-        "Administer medications and treatments as prescribed",
-        "Maintain strict infection prevention and control standards",
-        "Collaborate effectively with physicians and other healthcare professionals",
-        "Ensure accurate, timely nursing documentation and reporting",
-        "Provide patient and family education on care plans and health management",
-        "Uphold patient confidentiality, dignity, and ethical."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-18",
-      "deadline": "2026-03-11",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Male-Nurses-at-In-Country-Medicare-Limited?pid=77346",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Accident & Emergency Nurse",
-      "company": "Reddington Hospital",
-      "location": "Lagos",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "Minimum of 5 years in emergency or acute care setting preferred",
-      "qualification": "BSc",
-      "requirements": [
-        "Registered Nurse (RN) qualification",
-        "Valid Nursing and Midwifery Council of Nigeria (NMCN) license",
-        "Post-basic qualification in Accident & Emergency / Critical Care / Emergency Nursing",
-        "Ability to work under pressure and make quick clinical decisions",
-        "Strong teamwork and communication skills"
-      ],
-      "responsibilities": [
-        "Triage and assess patients presenting to the emergency unit",
-        "Provide immediate nursing interventions for acute and critical cases",
-        "Monitor vital signs and patient conditions continuously",
-        "Administer medications, IV fluids, and emergency treatments as prescribed",
-        "Assist doctors during emergency procedures and resuscitation",
-        "Maintain accurate and timely clinical documentation",
-        "Ensure infection control and patient safety protocols are strictly followed",
-        "Provide emotional support and clear communication to patients and relatives"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-18",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Accident-and-Emergency-Nurse-at-Reddington-Hospital?pid=77345",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Locum Nurse",
       "company": "In-Country Medicare Limited",
       "location": "Galadimawa, Abuja (FCT)",
@@ -1043,39 +1292,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Locum-Nurses-at-In-Country-Medicare-Limited?pid=77344",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Nursing Officer",
-      "company": "Ronsberger Nigeria Limited",
-      "location": "Garki II, Abuja (FCT)",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "5",
-      "qualification": "bsc",
-      "requirements": [
-        "Bachelor's Degree",
-        "2 - 5 years experience"
-      ],
-      "responsibilities": [
-        "Attending to request for authorization of Code from Healthcare providers",
-        "Interpret such and treat in line with NHIS operational guideline",
-        "Keep records of all incoming and outgoing calls",
-        "Vetting of medical bills from Hospitals, interpret such and treat in line with NHIS operational guideline",
-        "Keep records of all settled and outstanding medical bills",
-        "Carrying out quality assurance functions including hospital visitation",
-        "Liaising with other departments on Enrollees’ complaints and enquiries"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-18",
-      "deadline": "2026-03-02",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Nursing-Officer-at-Ronsberger-Nigeria-Limited?pid=77341",
       "_source": "medicalworldnigeria"
     },
     {
@@ -3320,293 +3536,6 @@
       "_source": "medlocum"
     },
     {
-      "job_title": "Senior Technical Officer, Global Health Security (GHS)",
-      "company": "FHI 360",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "6+ years",
-      "qualification": "Master’s Degree or its International Equivalent in a Related Field",
-      "requirements": [
-        "Strong knowledge of public health principles, particularly in disease surveillance and field epidemiology",
-        "Familiarity with Nigeria’s public health systems and disease surveillance frameworks",
-        "Proficiency in data collection, analysis, and reporting tools",
-        "Ability to work independently and manage a variety of activities",
-        "Excellent communication and interpersonal skills",
-        "Strong organizational and problem-solving skills",
-        "Excellent writing and presentation skills",
-        "Ability to work effectively in a multidisciplinary team",
-        "Ability to travel in Nigeria minimum of 25%"
-      ],
-      "responsibilities": [
-        "Participate in development and monitoring of work plans and budgets",
-        "Collaborate with public health officials to strengthen emergency management and outbreak response",
-        "Support collection, analysis, and dissemination of data on infectious diseases",
-        "Provide technical assistance to stakeholders to improve disease detection and reporting",
-        "Facilitate coordination between partners to enhance data sharing",
-        "Develop and deliver capacity-building initiatives for surveillance officers"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-10",
-      "deadline": "2026-02-21",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/senior-technical-officer-global-health-security-ghs-283",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Optometrist",
-      "company": "RightSight Specialist Eye Centre",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "A minimum of 2 years experience",
-      "qualification": "Must possess a doctor of optometry (O.D) degree",
-      "requirements": [
-        "Excellent verbal and communication skills",
-        "Attention to detail",
-        "Highly professional",
-        "Fast learner",
-        "Must be duly registered with the board and have a valid practicing license.",
-        "Must be an intermediate user of Microsoft office suite",
-        "Must have completed NYSC",
-        "Must be ready to learn",
-        "Residence within or around Isolo is an added advantage"
-      ],
-      "responsibilities": [
-        "Recognize and treat common eye conditions",
-        "Prescribe vision aids",
-        "Recognize serious optical diseases that should be referred to the ophthalmologist"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-10",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/optometrist-282",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "General Practitioner",
-      "company": "Nova",
-      "location": "Maitama, Abuja (FCT, Nigeria)",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "NGN275,000 - NGN350,000 / monthly",
-      "experience": "",
-      "qualification": "Minimum MBBS, MBChB, or its equivalent; Registered with the Medical and Dental Council of Nigeria with a valid practicing license; Completion of compulsory internship and national service or exemption.",
-      "requirements": [
-        "Skills to perform minor trauma care including suturing, plaster casting, debridement etc.",
-        "Demonstrates evidence of independently attending to common primary healthcare conditions.",
-        "Results and Quality Orientation, Teamwork and Cooperation, Behavioural Flexibility.",
-        "Exhibits courteousness, empathy, enthusiasm, great team spirit highly collaborative with an entrepreneurial, roll-up-your sleeves attitude, pragmatic, and able to work independently when required.",
-        "Efficient and professional communication with Nurses, Clinical Assistants, Nutrition Assistant and Hygiene Agent.",
-        "Keep up to date with relevant medical research, technology, and evidence-based medical practice by attending continuing education courses and professional meetings."
-      ],
-      "responsibilities": [
-        "Discuss and review patients' medical history, symptoms, allergies, and current medications.",
-        "Perform a range of functions including but not limited to; initial history taking, clinical assessments, diagnosis, treatment, and evaluation of care.",
-        "Ask patients situation-specific questions to formulate accurate diagnoses and perform specialized diagnostic physical exams and treatment procedures.",
-        "Review and act appropriately on blood results and referrals/correspondence regarding patients.",
-        "Formulate suitable treatment plans to address non-threatening conditions, such as common colds, cases of flu, ear infections, urinary tract infections, allergies, and rashes; ensuring compliance with approved standard treatment guidelines.",
-        "Prescribe various diagnostic tests to aid in providing accurate diagnoses.",
-        "Analyze diagnostic test results and explain them to patients.",
-        "Prescribe suitable medications to patients and provide proper dosage and administration instructions.",
-        "Participate in all treatment and preventative healthcare services as delegated and agreed upon by the supervising Clinical Managers.",
-        "Maintain accurate records of patient's contact details, medical history, prescribed medications, allergies, diagnoses, and progress, via designated Electronic Medical Record System.",
-        "Attend regular educational meetings organized by the practice in order to update clinical knowledge, practice policy and guidelines, and disseminate other useful information relevant to the provision of adequate healthcare for patients.",
-        "Advise patients on suitable diets and exercise regimens to improve their overall health.",
-        "Develop and utilize treatment tools that standardize the provision of care on the platform.",
-        "Support the training of other medical providers (doctors)",
-        "Facilitate knowledge-sharing sessions amongst medical practitioners on the platform.",
-        "Routinely review and assess the consultations for compliance with set guidelines.",
-        "Know and ensure all medical protocols are followed and implemented, checking universal precautions are followed at all times and reducing bio-hazard risks and improving infection control.",
-        "Ensure professional confidentiality is respected.",
-        "Ensure absolute confidentiality of medical data and patients’ information.",
-        "Responsible for patient safety and apply patient centered care."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-10",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/general-practitioner-281",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "School Doctor",
-      "company": "Word of Faith Group of Schools",
-      "location": "Abuja (FCT), Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "",
-      "qualification": "",
-      "requirements": [
-        "Must be a qualified Medical Doctor",
-        "Must possess a valid practicing license",
-        "Experience working with children or in a school environment is an added advantage",
-        "Good communication and interpersonal skills",
-        "Must be reliable and available on agreed working days."
-      ],
-      "responsibilities": [
-        "Provide basic medical care and first aid to students and staff",
-        "Attend to minor illnesses and injuries during school hours",
-        "Carry out routine health checks and medical assessments when required",
-        "Maintain accurate medical records for students and staff",
-        "Advise school management on health, safety, and hygiene matters",
-        "Respond promptly and appropriately to medical emergencies within the school",
-        "Refer serious medical cases to appropriate healthcare facilities",
-        "Support health awareness programs and school health initiatives."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-10",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/school-doctor-280",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Pharmacy Officer",
-      "company": "Purple Consult",
-      "location": "Victoria Island, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Pharmacist",
-      "salary": "",
-      "experience": "4 – 6 years",
-      "qualification": "",
-      "requirements": [
-        "Relevant qualifications",
-        "Proximity to the location is required."
-      ],
-      "responsibilities": [
-        "Dispense medications accurately in line with prescriptions and hospital protocols.",
-        "Manage drug inventory, stock levels, and reorder cycles to prevent shortages or expiries.",
-        "Ensure compliance with regulatory, safety, and quality standards.",
-        "Collaborate with medical and billing teams on medication usage and pricing.",
-        "Maintain accurate pharmaceutical records and documentation.",
-        "Monitor drug storage conditions and ensure proper handling.",
-        "Provide medication guidance and support to patients and clinical staff."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-10",
-      "deadline": "2026-03-31",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/pharmacy-officer-279",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Medical Records Officer (Health Information Officer)",
-      "company": "Purple Consult",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "4-6 years",
-      "qualification": "Bachelor's Degree",
-      "requirements": [
-        "Bachelor's Degree",
-        "4-6 years experience",
-        "Proximity to Victoria Island is a must"
-      ],
-      "responsibilities": [
-        "Manage, maintain, and safeguard accurate patient medical records (physical and electronic).",
-        "Ensure timely documentation, retrieval, and updating of patient health information.",
-        "Enforce data confidentiality and compliance with hospital policies and regulatory standards.",
-        "Collaborate with clinical, billing, and insurance teams to support accurate service documentation.",
-        "Audit medical records for completeness, accuracy, and consistency.",
-        "Support billing and claims processes through proper coding and documentation.",
-        "Maintain efficient filing systems and improve records management workflows."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-10",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/medical-records-officer-health-information-officer-278",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Nurses",
-      "company": "Purple Consult",
-      "location": "Victoria Island, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "4-6 years",
-      "qualification": "Bachelor's Degree",
-      "requirements": [
-        "Candidates should possess a Bachelor's Degree with 4-6 years experience",
-        "Proximity is mandatory."
-      ],
-      "responsibilities": [
-        "Deliver high-quality patient care in line with hospital standards.",
-        "Monitor patient conditions and promptly report changes.",
-        "Administer medications and treatments as prescribed.",
-        "Maintain accurate and up-to-date patient records.",
-        "Collaborate with doctors and other healthcare professionals.",
-        "Ensure strict adherence to infection control and safety protocols.",
-        "Provide patient education and emotional support to patients and families."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-10",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/nurses-277",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Laboratory Officer",
-      "company": "Purple Consult",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "4–6 years post-qualification experience",
-      "qualification": "",
-      "requirements": [
-        "4–6 years post-qualification experience",
-        "Must reside in close proximity to Victoria Island, Lagos"
-      ],
-      "responsibilities": [
-        "Conduct and validate routine and specialized laboratory tests",
-        "Ensure proper sample collection, handling, and documentation",
-        "Maintain laboratory equipment and enforce quality control standards",
-        "Adhere strictly to safety, infection control, and regulatory protocols",
-        "Prepare and submit accurate test reports within turnaround times",
-        "Collaborate with clinicians for diagnostic support and clarification",
-        "Maintain accurate laboratory records and inventory tracking."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-10",
-      "deadline": "2026-03-05",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/laboratory-officer-276",
-      "_source": "medlocum"
-    },
-    {
       "job_title": "Head Wealth and Funds Manager",
       "company": "Talent Pool Resources International Limited",
       "location": "Lagos, Nigeria",
@@ -3823,40 +3752,6 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-at-Montaigne-AH-Limited-Montaigne-Place?pid=77253",
       "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Nutrition Intern (Programme Management and Partner Coordination)",
-      "company": "UNICEF",
-      "location": "Lusaka, Zambia",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "",
-      "qualification": "Final Year student or graduated with an undergraduate degree qualification within the last two years, in any relevant Human Development field (e.g. Social Sciences, Nutrition, Public Health)",
-      "requirements": [
-        "Strong academic performance as demonstrated by recent university or institution records is required",
-        "A qualification in Nutrition, Food Sciences or Public Health is an added advantage",
-        "Demonstrable experience in effectively planning and organizing meetings and events for different stakeholders is required (does not have to be workplace related experience)",
-        "Demonstrable experience in data extraction and analysis is required (does not have to be workplace related experience)",
-        "Strong writing skills (samples may be requested)",
-        "Technological proficiency, including the use of PowerPoint, Word and Excel, is required",
-        "Proficiency in English and at least one other local language"
-      ],
-      "responsibilities": [
-        "Provide secretariat services to the Nutrition Cluster",
-        "Support the Chief Nutrition at UNICEF in preparations and follow-ups to the Nutrition Cooperating Partners meeting",
-        "Provide secretariat services for nutrition section meetings",
-        "Analyse and summarize routine and publicly available nutrition data as guided to inform advocacy and decision-making"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-09",
-      "deadline": "2026-02-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/nutrition-intern-programme-management-and-partner-coordination-275",
-      "_source": "medlocum"
     },
     {
       "job_title": "Pharmacy Assistant",
@@ -4963,103 +4858,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Oncology-Nurse-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77178",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Senior Nurse, Outpatient",
-      "company": "African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "2",
-      "qualification": "bsc",
-      "requirements": [
-        "Diploma in Nursing or Bachelor’s Degree in Nursing (BSN)",
-        "Registered with the Nursing and Midwifery Council of Nigeria and a valid practising licence",
-        "Certification in Advanced Cardiac Life Support (ACLS) or other relevant specialty training (desirable)",
-        "Minimum of 3–5 years’ clinical nursing experience, with at least 2 years in an outpatient or ambulatory care setting",
-        "Demonstrated ability to supervise and mentor junior nursing staff",
-        "In-depth understanding of outpatient care protocols and long-term condition management",
-        "Strong skills in patient engagement, education, and counselling",
-        "Proficient in managing patient flow and clinic scheduling systems",
-        "Accurate record-keeping and familiarity with outpatient care standards and regulations",
-        "Excellent clinical judgment and ability to respond effectively in outpatient emergencies."
-      ],
-      "responsibilities": [
-        "Lead initial and follow-up patient assessments, including vital signs, medical history, and presenting concerns.",
-        "Collaborate with the multidisciplinary team to implement tailored care plans that optimise patient outcomes.",
-        "Supervise and provide expert guidance in the administration of medications, wound care, and prescribed treatments.",
-        "Monitor and report significant changes in patient condition to the medical team for timely interventions.",
-        "Ensure efficient patient flow across outpatient clinics, reducing delays and enhancing service delivery.",
-        "Oversee scheduling of follow-up appointments, diagnostic referrals, and specialist consultations.",
-        "Promote collaborative communication between physicians, nurses, and allied health professionals to provide holistic care.",
-        "Deliver patient and family education on diagnoses, treatment options, medications, and self-care practices.",
-        "Counsel patients on preventive health, lifestyle modifications, and adherence to care plans.",
-        "Assist physicians during consultations and minor procedures, maintaining a sterile environment.",
-        "Maintain accurate, detailed, and timely clinical documentation in line with professional standards.",
-        "Lead quality improvement initiatives to enhance efficiency and patient outcomes in the outpatient setting."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-03",
-      "deadline": "2026-02-05",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Senior-Nurse-Outpatient-at-African-Medical-Centre-of-Excellence-AMCE?pid=77177",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Rotational Nurse",
-      "company": "African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "Minimum of 3 years of recent clinical nursing experience in a hospital setting.",
-      "qualification": "bsc",
-      "requirements": [
-        "Bachelor’s Degree in Nursing from a recognized institution or Diploma in Nursing with post-basic training.",
-        "Valid nursing license and registration with regulatory authority.",
-        "Membership in a professional nursing association (preferred).",
-        "Experience in more than one specialty area is an advantage.",
-        "Clinical skills including IV therapy, wound care, vital signs monitoring, and patient triage.",
-        "Strong understanding of clinical protocols across general medicine and surgery.",
-        "Knowledge of emergency care, infection control, and patient safety standards.",
-        "Familiarity with hospital information systems and electronic health records."
-      ],
-      "responsibilities": [
-        "Deliver direct patient care, including medication administration, wound management, and patient monitoring.",
-        "Assist in pre-admission, admission, and discharge processes across various departments.",
-        "Respond promptly to changes in patient condition and intervene appropriately.",
-        "Support emergency response protocols including CPR and stabilization measures.",
-        "Educate patients and families on health conditions, treatments, and discharge instructions.",
-        "Provide emotional support to patients and their caregivers during hospitalization.",
-        "Empower patients to participate in decisions related to their care.",
-        "Collaborate with physicians, allied health professionals, and other nurses to provide holistic care.",
-        "Participate in ward rounds and multidisciplinary case discussions.",
-        "Contribute to policy development and clinical pathway updates.",
-        "Maintain accurate and timely nursing records using electronic health systems.",
-        "Ensure compliance with hospital policies, clinical protocols, and professional standards.",
-        "Support quality assurance, incident reporting, and risk management initiatives.",
-        "Adhere to infection prevention and control protocols, including PPE usage.",
-        "Ensure safe handling and administration of all medications and clinical products.",
-        "Participate in regular safety training and quality improvement initiatives.",
-        "Engage in ongoing clinical education to remain current with nursing best practices.",
-        "Participate in hospital-wide training programs and competency assessments.",
-        "Provide mentorship to student nurses and junior staff as required."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-03",
-      "deadline": "2026-02-05",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Rotational-Nurse-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77172",
       "_source": "medicalworldnigeria"
     },
     {
