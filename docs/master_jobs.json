@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "extracted_at": "2026-02-21T04:21:47.473701",
+    "extracted_at": "2026-02-22T04:32:59.367901",
     "model": "gpt-4o-mini",
     "total_processed": 244,
     "duplicates_removed": 27,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 33
+    "openai_calls": 27
   },
   "jobs": [
     {
